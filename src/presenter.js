@@ -8,5 +8,5 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const objetoPerdido = new ObjetoPerdido(nombreInput.value);
-  div.innerHTML = "<p>" + objetoPerdido.getNombre() + "</p>";
+  div.innerHTML = "<p>" + objetoPerdido.getInformacion() + "</p>";
 });

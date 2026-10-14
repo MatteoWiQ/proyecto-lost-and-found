@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "91abe4d2ec351e81f8e3f2bb7b0d27149ef34f95",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-14T23:29:37.000Z",
       "message": "feat: validar nombre en formulario",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/91abe4d2ec351e81f8e3f2bb7b0d27149ef34f95"
     },
     "stats": {
       "total": 8,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-14T23:36:23.000Z",
+      "message": "feat: registrar categoria del objeto",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 18,
+      "deletions": 4,
+      "date": "2026-10-14"
+    },
+    "coverage": 85.71,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }

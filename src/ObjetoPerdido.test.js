@@ -9,5 +9,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("");
     expect(objeto.getNombre()).toEqual("nombre obligatorio");
   });
+  it("registrar categoria", () => {
+    const objeto = new ObjetoPerdido("Laptop","Tecnologia");
+    expect(objeto.getInformacion()).toEqual("Laptop, Tecnologia");
+  });
+
 
 });

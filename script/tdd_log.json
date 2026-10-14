@@ -78,9 +78,47 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "91abe4d2ec351e81f8e3f2bb7b0d27149ef34f95",
     "commitName": "feat: validar nombre en formulario",
     "commitTimestamp": 1792020580985,
     "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1792020765983,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1792020900746,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1792020928712,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1792020958020,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: registrar categoria del objeto",
+    "commitTimestamp": 1792020985800,
+    "testId": 2
   }
 ]

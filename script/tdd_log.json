@@ -116,9 +116,39 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b4f6ee463c5c3e94e58b250f450df998a15454f1",
     "commitName": "feat: registrar categoria del objeto",
     "commitTimestamp": 1792020985800,
     "testId": 2
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1792021220754,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 2,
+    "numTotalTests": 4,
+    "timestamp": 1792021740685,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1792021773192,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar categorias",
+    "commitTimestamp": 1792021792601,
+    "testId": 3
   }
 ]

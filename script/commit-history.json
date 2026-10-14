@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b4f6ee463c5c3e94e58b250f450df998a15454f1",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-14T23:36:23.000Z",
       "message": "feat: registrar categoria del objeto",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/b4f6ee463c5c3e94e58b250f450df998a15454f1"
     },
     "stats": {
       "total": 22,
@@ -53,6 +53,25 @@
     },
     "coverage": 85.71,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-14T23:49:51.000Z",
+      "message": "feat: validar categorias",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 29,
+      "deletions": 2,
+      "date": "2026-10-14"
+    },
+    "coverage": 94.12,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

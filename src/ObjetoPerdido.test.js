@@ -13,6 +13,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Laptop","Tecnologia");
     expect(objeto.getInformacion()).toEqual("Laptop, Tecnologia");
   });
+  it("registrar categorias validas", () => {
+    const objeto = new ObjetoPerdido("Documento", "Cualquier Cosa");
+    expect(objeto.getInformacion()).toEqual("No existe esa categoria");
+  });
 
 
 });

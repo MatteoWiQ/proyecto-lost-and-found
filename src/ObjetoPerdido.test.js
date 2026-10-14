@@ -5,4 +5,9 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Laptop");
     expect(objeto.getNombre()).toEqual("Laptop");
   });
+  it("deberia haber un nombre obligatoriamente", () => {
+    const objeto = new ObjetoPerdido("");
+    expect(objeto.getNombre()).toEqual("nombre obligatorio");
+  });
+
 });

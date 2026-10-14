@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "6f325013d897316c4bafaaf2f936ae35f09580ed",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-14T23:24:04.000Z",
       "message": "feat: Registrar nombre en formulario",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/6f325013d897316c4bafaaf2f936ae35f09580ed"
     },
     "stats": {
       "total": 91,
@@ -15,6 +15,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-14T23:29:37.000Z",
+      "message": "feat: validar nombre en formulario",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-14"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }

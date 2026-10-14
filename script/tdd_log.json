@@ -48,9 +48,39 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6f325013d897316c4bafaaf2f936ae35f09580ed",
     "commitName": "feat: Registrar nombre en formulario",
     "commitTimestamp": 1792020247896,
     "testId": 0
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 0,
+    "numTotalTests": 1,
+    "timestamp": 1792020408216,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1792020422810,
+    "success": false,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1792020547873,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar nombre en formulario",
+    "commitTimestamp": 1792020580985,
+    "testId": 1
   }
 ]

@@ -1,15 +1,12 @@
-import sumar from "./sumador";
+import ObjetoPerdido from "./ObjetoPerdido.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const nombreInput = document.querySelector("#nombre");
+const form = document.querySelector("#lost-object-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  const objetoPerdido = new ObjetoPerdido(nombreInput.value);
+  div.innerHTML = "<p>" + objetoPerdido.getNombre() + "</p>";
 });

@@ -1,9 +1,19 @@
 {
   "name": "parcel-jest-base",
   "version": "1.0.0",
-  "description": "",
-  "default": "index.html",
+  "description": "**Proyecto:** LAF  \r **Tablero Jira:** https://isoft-lost-and-found.atlassian.net/jira/software/projects/LAF/boards/1/backlog  \r **Sprint 1:** `INGENIER Sprint 1` — 12/10/2026 → 22/10/2026",
+  "homepage": "https://github.com/MatteoWiQ/backlog-ingenieria#readme",
+  "bugs": {
+    "url": "https://github.com/MatteoWiQ/backlog-ingenieria/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatteoWiQ/backlog-ingenieria.git"
+  },
+  "license": "ISC",
+  "author": "Israel Antezana R.",
   "type": "module",
+  "main": "cypress.config.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -15,20 +25,19 @@
     "semantic-commits-on": "node semantic-commits.js enable",
     "semantic-commits-off": "node semantic-commits.js disabled"
   },
-  "author": "Israel Antezana R.",
-  "license": "ISC",
+  "dependencies": {
+    "parcel-jest-base": "file:"
+  },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "babel-jest": "^29.7.0",
-    "cross-spawn": "^7.0.3",
+    "cross-spawn": "^7.0.6",
     "cypress": "^13.13.3",
     "eslint": "^9.10.0",
     "husky": "^9.1.6",
     "jest": "^29.7.0",
     "parcel": "^2.12.0"
   },
-  "dependencies": {
-    "parcel-jest-base": "file:"
-  }
+  "default": "index.html"
 }

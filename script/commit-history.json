@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4985fbd8b28001dd2b728bfe74a336e6216db36c",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-15T20:38:53.000Z",
       "message": "feat:Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/4985fbd8b28001dd2b728bfe74a336e6216db36c"
     },
     "stats": {
       "total": 19,
@@ -433,6 +433,25 @@
     },
     "coverage": 92.55,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T20:46:37.000Z",
+      "message": "feat:Deberia indicar que el registro exitoso esta Pendiente de validacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 9,
+      "deletions": 2,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.55,
+    "test_count": 23,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -988,9 +988,47 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4985fbd8b28001dd2b728bfe74a336e6216db36c",
     "commitName": "feat:Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso",
     "commitTimestamp": 1792096735322,
     "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792097000954,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792097007475,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792097032297,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1792097120288,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Deberia indicar que el registro exitoso esta Pendiente de validacion",
+    "commitTimestamp": 1792097197819,
+    "testId": 23
   }
 ]

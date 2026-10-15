@@ -183,7 +183,7 @@ class ObjetoPerdido{
          + ", " + this.getLugar()
          + ", " + this.getCommentario()
          && this.validarFoto() === ""){
-            return "Registro exitoso. ¡Guardado correctamente!";
+            return "Registro exitoso. ¡Guardado correctamente! - Pendiente de validación";
         }
         return "Registro fallido: "+ this.getInformacion();
     }

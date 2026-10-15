@@ -146,9 +146,55 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22b14b78ec5f6334c92da490352dfdf2f3fb6d21",
     "commitName": "feat: validar categorias",
     "commitTimestamp": 1792021792601,
     "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1792022252557,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1792022282061,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 4,
+    "numTotalTests": 5,
+    "timestamp": 1792022449125,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 2,
+    "numTotalTests": 5,
+    "timestamp": 1792022517544,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1792022599045,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Validar rango de caracteres en el nombre",
+    "commitTimestamp": 1792022638100,
+    "testId": 4
   }
 ]

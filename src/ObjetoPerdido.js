@@ -8,29 +8,39 @@ class ObjetoPerdido{
         this.categoria = categoria;
     }
     getNombre(){
-        if(this.nombre === ""){
-            return "nombre obligatorio";
+        if (this.validarNombre()!=""){
+            return this.validarNombre();
         }
         return this.nombre;
     }
+    validarNombre(){
+        if(this.nombre === ""){
+            return "nombre obligatorio";
+        }
+        if (this.nombre.length > 100){
+            return "Cantidad de caracteres no es valida";
+        }
+        return "";
+    }
     getCategoria(){
-        if(!this.validarCategoria()){
-            return "No existe esa categoria";
+        if(this.validarCategoria()!=""){
+            return this.validarCategoria();
         }
         return this.categoria;
     }
     validarCategoria(){
-        if(categorias.includes(this.categoria)){
-            return true;
+        if(!categorias.includes(this.categoria)){
+            return "No existe esa categoria";
         }
+        return "";
     }
     getInformacion(){
         let message="";
-        if (this.getNombre() === "nombre obligatorio"){
-            message = "nombre obligatorio";
+        if (this.validarNombre()!=""){
+            message = this.validarNombre();
         }
-        else if (this.getCategoria() === "No existe esa categoria"){
-            message += "No existe esa categoria";
+        else if (this.validarCategoria()!=""){
+            message += this.validarCategoria();
         }
         return message === "" ? this.getNombre() + ", " + this.getCategoria() : message;
     }

@@ -9,6 +9,11 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("");
     expect(objeto.getNombre()).toEqual("nombre obligatorio");
   });
+  it("nombre registrable", () => {
+    const nombre="a".repeat(101);
+    const objeto = new ObjetoPerdido(nombre,"Tecnologia");
+    expect(objeto.getInformacion()).toEqual("Cantidad de caracteres no es valida");
+  });
   it("registrar categoria", () => {
     const objeto = new ObjetoPerdido("Laptop","Tecnologia");
     expect(objeto.getInformacion()).toEqual("Laptop, Tecnologia");

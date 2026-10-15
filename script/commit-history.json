@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "22b14b78ec5f6334c92da490352dfdf2f3fb6d21",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-14T23:49:51.000Z",
       "message": "feat: validar categorias",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/22b14b78ec5f6334c92da490352dfdf2f3fb6d21"
     },
     "stats": {
       "total": 31,
@@ -72,6 +72,25 @@
     },
     "coverage": 94.12,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T00:03:56.000Z",
+      "message": "feat: Validar rango de caracteres en el nombre",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 24,
+      "deletions": 9,
+      "date": "2026-10-15"
+    },
+    "coverage": 95.65,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

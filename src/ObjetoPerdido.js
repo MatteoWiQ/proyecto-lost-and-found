@@ -36,7 +36,16 @@ class ObjetoPerdido{
         return "";
     }
     getFecha(){
+        if(this.validarFecha()!=""){
+            return this.validarFecha();
+        }
         return this.fecha;
+    }
+    validarFecha(){
+        if (this.fecha === "") {
+            return "La fecha es obligatoria";
+        }
+        return "";
     }
     getInformacion(){
         let message="";
@@ -46,7 +55,10 @@ class ObjetoPerdido{
         else if (this.validarCategoria()!=""){
             message += this.validarCategoria();
         }
-        return message === "" ? this.getNombre() + ", " + this.getCategoria() + ", " + this.fecha : message;
+        else if (this.validarFecha()!=""){
+            message += this.validarFecha();
+        }
+        return message === "" ? this.getNombre() + ", " + this.getCategoria() + ", " + this.getFecha() : message;
     }
 }
 

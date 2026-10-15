@@ -238,9 +238,55 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1db5594a722cade29905474402e0e0383d242c8c",
     "commitName": "feat: registrar fecha",
     "commitTimestamp": 1792023351485,
     "testId": 5
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1792023519726,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1792023536791,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1792023563004,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1792023594809,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1792023615732,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Fecha obligatoria",
+    "commitTimestamp": 1792023639173,
+    "testId": 6
   }
 ]

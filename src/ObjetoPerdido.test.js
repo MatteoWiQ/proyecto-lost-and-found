@@ -26,6 +26,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2023-10-10");
     expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2023-10-10");
   });
+  it("Registrar fecha obligatoria", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "");
+    expect(objeto.getInformacion()).toEqual("La fecha es obligatoria");
+  });
 
 
 

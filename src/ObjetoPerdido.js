@@ -194,6 +194,9 @@ class ObjetoPerdido{
     obtenerNotificacionCatalogo() {
         return "Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.";
     }
+    obtenerInstruccionesEntrega() {
+        return "Debes entregar el objeto físico en Bienestar Estudiantil para su custodia y devolución.";
+    }
 }
 
 export default ObjetoPerdido;

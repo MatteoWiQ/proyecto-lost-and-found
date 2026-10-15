@@ -456,12 +456,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "148c67d50eeea3c2f59cf251cf8e1546195459d7",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-15T21:54:26.000Z",
       "message": "feat:Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/148c67d50eeea3c2f59cf251cf8e1546195459d7"
     },
     "stats": {
       "total": 20,
@@ -471,6 +471,25 @@
     },
     "coverage": 92.71,
     "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T21:58:52.000Z",
+      "message": "feat:Mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.78,
+    "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
   }

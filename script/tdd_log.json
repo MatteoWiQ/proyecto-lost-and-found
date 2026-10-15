@@ -1048,9 +1048,31 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "148c67d50eeea3c2f59cf251cf8e1546195459d7",
     "commitName": "feat:Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.",
     "commitTimestamp": 1792101266318,
     "testId": 24
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1792101399415,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1792101416337,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil",
+    "commitTimestamp": 1792101532690,
+    "testId": 25
   }
 ]

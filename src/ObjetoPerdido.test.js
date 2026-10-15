@@ -116,4 +116,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
     expect(objeto.obtenerNotificacionCatalogo()).toEqual("Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.");
   });
+
+  it("Deberia mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerInstruccionesEntrega()).toEqual("Debes entregar el objeto físico en Bienestar Estudiantil para su custodia y devolución.");
+  });
 });

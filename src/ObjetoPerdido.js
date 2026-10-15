@@ -74,6 +74,10 @@ class ObjetoPerdido{
         if (this.hora === "") {
             return "La hora es obligatoria";
         }
+        const [hora, minuto] = this.hora.split(":").map(Number);
+        if (hora < 6 || hora > 22) {
+            return "La hora esta fuera de rango";
+        }
         return "";
     }
     

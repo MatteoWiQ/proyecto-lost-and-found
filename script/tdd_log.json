@@ -458,9 +458,31 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0027ed328b97d10daa2f1b1ff4e569ea0df99728",
     "commitName": "feat: Registrar hora obligatoriamente",
     "commitTimestamp": 1792025358834,
     "testId": 11
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1792025451149,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1792025508730,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: invalidar horas fuera de rango",
+    "commitTimestamp": 1792025529591,
+    "testId": 12
   }
 ]

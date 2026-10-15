@@ -46,7 +46,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "");
     expect(objeto.getInformacion()).toEqual("La hora es obligatoria");
   });
-
+  it("Invalidar hora fuera de rango", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "23:40");
+    expect(objeto.getInformacion()).toEqual("La hora esta fuera de rango");
+  });
 
 
 

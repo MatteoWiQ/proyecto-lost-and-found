@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0027ed328b97d10daa2f1b1ff4e569ea0df99728",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T00:49:17.000Z",
       "message": "feat: Registrar hora obligatoriamente",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/0027ed328b97d10daa2f1b1ff4e569ea0df99728"
     },
     "stats": {
       "total": 16,
@@ -224,6 +224,25 @@
     },
     "coverage": 94,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T00:52:08.000Z",
+      "message": "feat: invalidar horas fuera de rango",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2026-10-15"
+    },
+    "coverage": 94.34,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

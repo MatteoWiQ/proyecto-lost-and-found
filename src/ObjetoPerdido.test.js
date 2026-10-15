@@ -40,7 +40,7 @@ describe("ObjetoPerdido", () => {
   });
   it("Registrar hora", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "10:30");
-    expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 10:30");
+    expect(objeto.getNombre()+", "+objeto.getCategoria()+", "+objeto.getFecha()+", "+objeto.getHora()).toEqual("Documento, Tecnologia, 2026-10-14, 10:30");
   });
   it("Registrar hora obligatoria", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "");
@@ -49,6 +49,18 @@ describe("ObjetoPerdido", () => {
   it("Invalidar hora fuera de rango", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "23:40");
     expect(objeto.getInformacion()).toEqual("La hora esta fuera de rango");
+  });
+  it("Invalidar horas incorrectas", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "223340");
+    expect(objeto.getInformacion()).toEqual("La hora no esta en formato correcto");
+  });
+  it("Invalidar horas futuras", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-15", "22:30");
+    expect(objeto.getInformacion()).toEqual("No se permiten horas futuras");
+  });
+  it("Registrar Lugar", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A");
+    expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A");
   });
 
 

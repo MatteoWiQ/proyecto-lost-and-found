@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f453e4dc96c260da542c85fed5eae7f9e6871ecb",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T00:52:08.000Z",
       "message": "feat: invalidar horas fuera de rango",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/f453e4dc96c260da542c85fed5eae7f9e6871ecb"
     },
     "stats": {
       "total": 9,
@@ -243,6 +243,25 @@
     },
     "coverage": 94.34,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:07:23.000Z",
+      "message": "feat: Registrar el lugar",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 35,
+      "deletions": 3,
+      "date": "2026-10-15"
+    },
+    "coverage": 95.08,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }

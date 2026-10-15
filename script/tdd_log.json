@@ -480,9 +480,135 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f453e4dc96c260da542c85fed5eae7f9e6871ecb",
     "commitName": "feat: invalidar horas fuera de rango",
     "commitTimestamp": 1792025529591,
     "testId": 12
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1792025603634,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1792025622222,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1792025664319,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1792025704446,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1792025846634,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1792025861913,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1792025941419,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1792026002442,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1792026044996,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1792026097086,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1792026235609,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1792026286739,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1792026326464,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1792026370387,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1792026425339,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Registrar el lugar",
+    "commitTimestamp": 1792026444357,
+    "testId": 13
   }
 ]

@@ -3,11 +3,12 @@
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 
 class ObjetoPerdido{
-    constructor(nombre,categoria,fecha, hora){
+    constructor(nombre,categoria,fecha, hora, lugar){
         this.nombre = nombre;
         this.categoria = categoria;
         this.fecha = fecha;
         this.hora = hora;
+        this.lugar = lugar;
     }
     getNombre(){
         if (this.validarNombre()!=""){
@@ -75,10 +76,21 @@ class ObjetoPerdido{
             return "La hora es obligatoria";
         }
         const [hora, minuto] = this.hora.split(":").map(Number);
+        if (isNaN(hora) || isNaN(minuto)) {
+            return "La hora no esta en formato correcto";
+        }
         if (hora < 6 || hora > 22) {
             return "La hora esta fuera de rango";
         }
+        const fechaHora = new Date(`${this.fecha}T${this.hora}`);
+        const ahora = new Date();
+        if (fechaHora > ahora) {
+            return "No se permiten horas futuras";
+        }
         return "";
+    }
+    getLugar(){
+        return this.lugar;
     }
     
     getInformacion(){
@@ -95,7 +107,11 @@ class ObjetoPerdido{
         else if (this.validarHora()!=""){
             message += this.validarHora();
         }
-        return message === "" ? this.getNombre() + ", " + this.getCategoria() + ", " + this.getFecha() + ", " + this.getHora() : message;
+        return message === "" ? this.getNombre()
+         + ", " + this.getCategoria() 
+         + ", " + this.getFecha() 
+         + ", " + this.getHora()
+         + ", " + this.getLugar() : message;
     }
 }
 

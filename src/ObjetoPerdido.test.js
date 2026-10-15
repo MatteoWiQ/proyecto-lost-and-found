@@ -60,7 +60,7 @@ describe("ObjetoPerdido", () => {
   });
   it("Registrar Lugar", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A");
-    expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A");
+    expect(objeto.getNombre()+", "+objeto.getCategoria()+", "+objeto.getFecha()+", "+objeto.getHora()+", "+objeto.getLugar()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A");
   });
   it("Lugar Obligatorio", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "");
@@ -70,6 +70,15 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Parque");
     expect(objeto.getInformacion()).toEqual("El lugar no existe");
   });
+  it("Aceptar comentarios adicionales", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional");
+    expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A, Comentario adicional");
+  });
+  it("Aceptar comentarios adicionales", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional");
+    expect(objeto.ValidacionFinal()).toEqual("Registro exitoso");
+  });
+
 
 
 });

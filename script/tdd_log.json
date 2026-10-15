@@ -658,9 +658,63 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "06138a15042abf056c34275c60f5efbd77abe540",
     "commitName": "feat: Validar lugares inexistentes",
     "commitTimestamp": 1792026937141,
     "testId": 15
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1792027128948,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1792027146528,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1792027160674,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1792027199390,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1792027297495,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1792027338885,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Registro exitoso",
+    "commitTimestamp": 1792027357950,
+    "testId": 16
   }
 ]

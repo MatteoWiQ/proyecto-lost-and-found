@@ -3,12 +3,13 @@
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
 class ObjetoPerdido{
-    constructor(nombre,categoria,fecha, hora, lugar){
+    constructor(nombre,categoria,fecha, hora, lugar, commentario){
         this.nombre = nombre;
         this.categoria = categoria;
         this.fecha = fecha;
         this.hora = hora;
         this.lugar = lugar;
+        this.commentario = commentario;
     }
     getNombre(){
         if (this.validarNombre()!=""){
@@ -105,7 +106,9 @@ class ObjetoPerdido{
         }
         return "";
     }
-    
+    getCommentario(){
+        return this.commentario;
+    }
     getInformacion(){
         let message="";
         if (this.validarNombre()!=""){
@@ -127,7 +130,19 @@ class ObjetoPerdido{
          + ", " + this.getCategoria() 
          + ", " + this.getFecha() 
          + ", " + this.getHora()
-         + ", " + this.getLugar() : message;
+         + ", " + this.getLugar()
+         + ", " + this.getCommentario() : message;
+    }
+    ValidacionFinal(){
+        if(this.getInformacion() === this.getNombre()
+         + ", " + this.getCategoria() 
+         + ", " + this.getFecha() 
+         + ", " + this.getHora()
+         + ", " + this.getLugar()
+         + ", " + this.getCommentario()){
+            return "Registro exitoso";
+        }
+        return "Registro fallido";
     }
 }
 

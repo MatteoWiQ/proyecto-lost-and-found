@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "06138a15042abf056c34275c60f5efbd77abe540",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:15:35.000Z",
       "message": "feat: Validar lugares inexistentes",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/06138a15042abf056c34275c60f5efbd77abe540"
     },
     "stats": {
       "total": 19,
@@ -300,6 +300,25 @@
     },
     "coverage": 94.37,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:22:36.000Z",
+      "message": "feat: Registro exitoso",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 28,
+      "deletions": 4,
+      "date": "2026-10-15"
+    },
+    "coverage": 93.42,
+    "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
   }

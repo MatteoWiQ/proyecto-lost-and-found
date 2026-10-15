@@ -926,9 +926,71 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "11426611c9fa6558c49b9e89e879b7d4f7e700cf",
     "commitName": "style: Mejorar la interfaz para fotos",
     "commitTimestamp": 1792031519861,
     "testId": 21
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792096083472,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096092572,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096118983,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096159836,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096315461,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096451434,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792096506657,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso",
+    "commitTimestamp": 1792096735322,
+    "testId": 22
   }
 ]

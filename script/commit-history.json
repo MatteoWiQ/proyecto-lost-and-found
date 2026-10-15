@@ -399,17 +399,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "11426611c9fa6558c49b9e89e879b7d4f7e700cf",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T02:31:58.000Z",
       "message": "style: Mejorar la interfaz para fotos",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/11426611c9fa6558c49b9e89e879b7d4f7e700cf"
     },
     "stats": {
       "total": 169,
       "additions": 131,
       "deletions": 38,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.55,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T20:38:53.000Z",
+      "message": "feat:Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 12,
+      "deletions": 7,
       "date": "2026-10-15"
     },
     "coverage": 92.55,

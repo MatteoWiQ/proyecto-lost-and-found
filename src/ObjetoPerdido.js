@@ -3,13 +3,14 @@
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
 class ObjetoPerdido{
-    constructor(nombre,categoria,fecha, hora, lugar, commentario){
+    constructor(nombre,categoria,fecha, hora, lugar, commentario, foto){
         this.nombre = nombre;
         this.categoria = categoria;
         this.fecha = fecha;
         this.hora = hora;
         this.lugar = lugar;
         this.commentario = commentario;
+        this.foto = foto;
     }
     getNombre(){
         if (this.validarNombre()!=""){
@@ -108,6 +109,9 @@ class ObjetoPerdido{
     }
     getCommentario(){
         return this.commentario;
+    }
+    getFoto(){
+        return this.foto;
     }
     getInformacion(){
         let message="";

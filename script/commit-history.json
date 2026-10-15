@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b207a88a12df6210918d23a7e02dadfd2bd24df4",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:26:42.000Z",
       "message": "feat: Mensaje de error",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/b207a88a12df6210918d23a7e02dadfd2bd24df4"
     },
     "stats": {
       "total": 6,
@@ -357,6 +357,25 @@
     },
     "coverage": 96.05,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:44:30.000Z",
+      "message": "registrar foto",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-10-15"
+    },
+    "coverage": 96.15,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -748,9 +748,39 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b207a88a12df6210918d23a7e02dadfd2bd24df4",
     "commitName": "feat: Mensaje de error",
     "commitTimestamp": 1792027603791,
     "testId": 18
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792028439966,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 1,
+    "numTotalTests": 21,
+    "timestamp": 1792028488097,
+    "success": false,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1792028655231,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "registrar foto",
+    "commitTimestamp": 1792028672138,
+    "testId": 19
   }
 ]

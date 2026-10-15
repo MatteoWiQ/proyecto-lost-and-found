@@ -24,7 +24,7 @@ describe("ObjetoPerdido", () => {
   });
   it("Registrar fecha", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14");
-    expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14");
+    expect(objeto.getNombre()+", "+objeto.getCategoria()+", "+objeto.getFecha()).toEqual("Documento, Tecnologia, 2026-10-14");
   });
   it("Registrar fecha obligatoria", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "");
@@ -38,7 +38,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "10-1023-2020");
     expect(objeto.getInformacion()).toEqual("La fecha no puede ser incorrecta");
   });
-  
+  it("Registrar hora", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "10:30");
+    expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 10:30");
+  });
 
 
 

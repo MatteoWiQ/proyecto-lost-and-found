@@ -390,9 +390,47 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0fee0c0bad277f20aeab1cdf13ce327a46aeb73e",
     "commitName": "style: agregando estilo al formulario",
     "commitTimestamp": 1792024948103,
     "testId": 9
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1792025025148,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1792025036201,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1792025108685,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1792025148348,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Registrar hora",
+    "commitTimestamp": 1792025169264,
+    "testId": 10
   }
 ]

@@ -3,10 +3,11 @@
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 
 class ObjetoPerdido{
-    constructor(nombre,categoria,fecha){
+    constructor(nombre,categoria,fecha, hora){
         this.nombre = nombre;
         this.categoria = categoria;
         this.fecha = fecha;
+        this.hora = hora;
     }
     getNombre(){
         if (this.validarNombre()!=""){
@@ -14,6 +15,7 @@ class ObjetoPerdido{
         }
         return this.nombre;
     }
+
     validarNombre(){
         if(this.nombre === ""){
             return "nombre obligatorio";
@@ -62,6 +64,9 @@ class ObjetoPerdido{
         }
         return "";
     }
+    getHora(){
+        return this.hora;
+    }
     
     getInformacion(){
         let message="";
@@ -74,7 +79,7 @@ class ObjetoPerdido{
         else if (this.validarFecha()!=""){
             message += this.validarFecha();
         }
-        return message === "" ? this.getNombre() + ", " + this.getCategoria() + ", " + this.getFecha() : message;
+        return message === "" ? this.getNombre() + ", " + this.getCategoria() + ", " + this.getFecha() + ", " + this.getHora() : message;
     }
 }
 

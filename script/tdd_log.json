@@ -712,9 +712,15 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7a1cfb16e410251c4d6697019f7a2f06a7f69a7b",
     "commitName": "feat: Registro exitoso",
     "commitTimestamp": 1792027357950,
     "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: mejora de presenter e index",
+    "commitTimestamp": 1792027457742,
+    "testId": 17
   }
 ]

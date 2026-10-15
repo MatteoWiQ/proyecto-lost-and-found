@@ -304,17 +304,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7a1cfb16e410251c4d6697019f7a2f06a7f69a7b",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:22:36.000Z",
       "message": "feat: Registro exitoso",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/7a1cfb16e410251c4d6697019f7a2f06a7f69a7b"
     },
     "stats": {
       "total": 32,
       "additions": 28,
       "deletions": 4,
+      "date": "2026-10-15"
+    },
+    "coverage": 93.42,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:24:16.000Z",
+      "message": "refactor: mejora de presenter e index",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 14,
+      "deletions": 2,
       "date": "2026-10-15"
     },
     "coverage": 93.42,

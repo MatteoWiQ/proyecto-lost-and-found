@@ -192,9 +192,55 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8cf79ae2e2757130a8fe5c1250d8708ffaa03ad2",
     "commitName": "feat: Validar rango de caracteres en el nombre",
     "commitTimestamp": 1792022638100,
     "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1792023008691,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 2,
+    "numTotalTests": 6,
+    "timestamp": 1792023044851,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 2,
+    "numTotalTests": 6,
+    "timestamp": 1792023096512,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1792023140143,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1792023332472,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: registrar fecha",
+    "commitTimestamp": 1792023351485,
+    "testId": 5
   }
 ]

@@ -16,12 +16,17 @@ describe("ObjetoPerdido", () => {
   });
   it("registrar categoria", () => {
     const objeto = new ObjetoPerdido("Laptop","Tecnologia");
-    expect(objeto.getInformacion()).toEqual("Laptop, Tecnologia");
+    expect(objeto.getNombre()+", "+objeto.getCategoria()).toEqual("Laptop, Tecnologia");
   });
   it("registrar categorias validas", () => {
     const objeto = new ObjetoPerdido("Documento", "Cualquier Cosa");
     expect(objeto.getInformacion()).toEqual("No existe esa categoria");
   });
+  it("Registrar fecha", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2023-10-10");
+    expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2023-10-10");
+  });
+
 
 
 });

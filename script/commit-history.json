@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8cf79ae2e2757130a8fe5c1250d8708ffaa03ad2",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T00:03:56.000Z",
       "message": "feat: Validar rango de caracteres en el nombre",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/8cf79ae2e2757130a8fe5c1250d8708ffaa03ad2"
     },
     "stats": {
       "total": 33,
@@ -91,6 +91,25 @@
     },
     "coverage": 95.65,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T00:15:50.000Z",
+      "message": "feat: registrar fecha",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 14,
+      "deletions": 4,
+      "date": "2026-10-15"
+    },
+    "coverage": 92,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

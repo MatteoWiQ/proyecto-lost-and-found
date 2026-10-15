@@ -42,6 +42,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "10:30");
     expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 10:30");
   });
+  it("Registrar hora obligatoria", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "");
+    expect(objeto.getInformacion()).toEqual("La hora es obligatoria");
+  });
 
 
 

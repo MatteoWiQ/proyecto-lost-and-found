@@ -428,9 +428,39 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "07bdb9d0aa0c9b88513324e56d1e837498f2f7c0",
     "commitName": "feat: Registrar hora",
     "commitTimestamp": 1792025169264,
     "testId": 10
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1792025243026,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1792025305557,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1792025337301,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Registrar hora obligatoriamente",
+    "commitTimestamp": 1792025358834,
+    "testId": 11
   }
 ]

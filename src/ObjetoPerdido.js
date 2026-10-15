@@ -65,7 +65,16 @@ class ObjetoPerdido{
         return "";
     }
     getHora(){
+        if(this.validarHora()!=""){
+            return this.validarHora();
+        }
         return this.hora;
+    }
+    validarHora(){
+        if (this.hora === "") {
+            return "La hora es obligatoria";
+        }
+        return "";
     }
     
     getInformacion(){
@@ -78,6 +87,9 @@ class ObjetoPerdido{
         }
         else if (this.validarFecha()!=""){
             message += this.validarFecha();
+        }
+        else if (this.validarHora()!=""){
+            message += this.validarHora();
         }
         return message === "" ? this.getNombre() + ", " + this.getCategoria() + ", " + this.getFecha() + ", " + this.getHora() : message;
     }

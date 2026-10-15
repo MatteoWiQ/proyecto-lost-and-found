@@ -102,13 +102,18 @@ describe("ObjetoPerdido", () => {
   it("Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso", () => {
     const foto = { name: "objeto.jpg", type: "image/jpg" };
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
-    expect(objeto.ValidacionFinal()).toEqual("Registro exitoso. ¡Guardado correctamente! - Pendiente de validación");
+    expect(objeto.ValidacionFinal()).toEqual("Registro exitoso. ¡Guardado correctamente!");
   });
 
   it("Deberia indicar que el registro exitoso esta Pendiente de validacion", () => {
     const foto = { name: "objeto.jpg", type: "image/jpg" };
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
-    
-    expect(objeto.ValidacionFinal()).toEqual("Registro exitoso. ¡Guardado correctamente! - Pendiente de validación");
+    expect(objeto.obtenerEstadoValidacion()).toEqual("Pendiente de validación");
+  });
+
+  it("Deberia notificar que la publicacion aparecera en el catalogo tras la aprobacion de Bienestar Estudiantil", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerNotificacionCatalogo()).toEqual("Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.");
   });
 });

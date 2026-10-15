@@ -183,9 +183,16 @@ class ObjetoPerdido{
          + ", " + this.getLugar()
          + ", " + this.getCommentario()
          && this.validarFoto() === ""){
-            return "Registro exitoso. ¡Guardado correctamente! - Pendiente de validación";
+            return "Registro exitoso. ¡Guardado correctamente!";
         }
         return "Registro fallido: "+ this.getInformacion();
+    }
+
+    obtenerEstadoValidacion() {
+        return "Pendiente de validación";
+    }
+    obtenerNotificacionCatalogo() {
+        return "Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.";
     }
 }
 

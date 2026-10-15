@@ -437,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e4cd93b5545da458dd6732f23fbfc187bd8d27d9",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-15T20:46:37.000Z",
       "message": "feat:Deberia indicar que el registro exitoso esta Pendiente de validacion",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/e4cd93b5545da458dd6732f23fbfc187bd8d27d9"
     },
     "stats": {
       "total": 11,
@@ -452,6 +452,25 @@
     },
     "coverage": 92.55,
     "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T21:54:26.000Z",
+      "message": "feat:Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 16,
+      "deletions": 4,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.71,
+    "test_count": 24,
     "failed_tests": 0,
     "conclusion": "success"
   }

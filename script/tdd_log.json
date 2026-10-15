@@ -1026,9 +1026,31 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e4cd93b5545da458dd6732f23fbfc187bd8d27d9",
     "commitName": "feat:Deberia indicar que el registro exitoso esta Pendiente de validacion",
     "commitTimestamp": 1792097197819,
     "testId": 23
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1792098944764,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1792101226767,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.",
+    "commitTimestamp": 1792101266318,
+    "testId": 24
   }
 ]

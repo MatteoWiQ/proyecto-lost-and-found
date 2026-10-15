@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e1aa3c8711c566d54a620169f8d1186dc3ea6755",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:44:30.000Z",
       "message": "registrar foto",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/e1aa3c8711c566d54a620169f8d1186dc3ea6755"
     },
     "stats": {
       "total": 12,
@@ -376,6 +376,25 @@
     },
     "coverage": 96.15,
     "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:58:19.000Z",
+      "message": "feat: Validar formatos",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 45,
+      "deletions": 2,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.55,
+    "test_count": 22,
     "failed_tests": 0,
     "conclusion": "success"
   }

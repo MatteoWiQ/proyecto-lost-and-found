@@ -2,6 +2,7 @@
 
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
+const formatos = ["jpg", "jpeg", "png", "webp", "heic"];
 class ObjetoPerdido{
     constructor(nombre,categoria,fecha, hora, lugar, commentario, foto){
         this.nombre = nombre;
@@ -110,8 +111,44 @@ class ObjetoPerdido{
     getCommentario(){
         return this.commentario;
     }
+
     getFoto(){
+        if(this.validarFoto()!=""){
+            return this.validarFoto();
+        }
         return this.foto;
+    }
+    validarFoto(){
+        if (!this.foto) {
+            return "Formato de imagen no permitido";
+        }
+
+        // Admite tanto un nombre ("objeto.jpg") como un File con name/type.
+        const nombre = typeof this.foto === "string" ? this.foto : this.foto.name;
+        if (typeof nombre !== "string") {
+            return "Formato de imagen no permitido";
+        }
+
+        const extension = nombre.split(".").pop().toLowerCase();
+        if (!formatos.includes(extension)) {
+            return "Formato de imagen no permitido";
+        }
+
+        // Si viene el MIME type, también debe ser compatible con la extensión.
+        if (this.foto.type) {
+            const tiposPorFormato = {
+                jpg: ["image/jpeg", "image/jpg"],
+                jpeg: ["image/jpeg", "image/jpg"],
+                png: ["image/png"],
+                webp: ["image/webp"],
+                heic: ["image/heic", "image/heif"],
+            };
+            if (!tiposPorFormato[extension].includes(this.foto.type.toLowerCase())) {
+                return "Formato de imagen no permitido";
+            }
+        }
+
+        return "";
     }
     getInformacion(){
         let message="";

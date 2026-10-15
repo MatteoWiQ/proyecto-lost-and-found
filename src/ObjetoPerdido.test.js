@@ -83,10 +83,16 @@ describe("ObjetoPerdido", () => {
     expect(objeto.ValidacionFinal()).toEqual("Registro fallido: El lugar no existe");
   });
   it("acepta una imagen JPG", () => {
-    const foto = { name: "objeto.jpg", type: "image/jpeg" };
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
 
     expect(objeto.getFoto()).toEqual(foto);
+  });
+  it("Invalidar formatos", () => {
+    const foto = { name: "objeto.png", type: "image/pdf" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+
+    expect(objeto.validarFoto()).toEqual("Formato de imagen no permitido");
   });
 
 

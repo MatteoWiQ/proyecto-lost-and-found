@@ -778,9 +778,79 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e1aa3c8711c566d54a620169f8d1186dc3ea6755",
     "commitName": "registrar foto",
     "commitTimestamp": 1792028672138,
     "testId": 19
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1792028956971,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792028970064,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 1,
+    "numTotalTests": 22,
+    "timestamp": 1792029123838,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 2,
+    "numTotalTests": 22,
+    "timestamp": 1792029192097,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 2,
+    "numTotalTests": 22,
+    "timestamp": 1792029322483,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 2,
+    "numTotalTests": 22,
+    "timestamp": 1792029355272,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792029449616,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792029476481,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Validar formatos",
+    "commitTimestamp": 1792029500861,
+    "testId": 20
   }
 ]

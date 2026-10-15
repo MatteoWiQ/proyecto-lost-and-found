@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a4d84fcf969b14913e3481cdea686aa5c2706286",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T00:34:26.000Z",
       "message": "feat: validar fechas incorrectas",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/a4d84fcf969b14913e3481cdea686aa5c2706286"
     },
     "stats": {
       "total": 11,
       "additions": 9,
       "deletions": 2,
+      "date": "2026-10-15"
+    },
+    "coverage": 95.12,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T00:42:26.000Z",
+      "message": "style: agregando estilo al formulario",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 135,
+      "additions": 135,
+      "deletions": 0,
       "date": "2026-10-15"
     },
     "coverage": 95.12,

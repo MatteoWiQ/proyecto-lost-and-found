@@ -2,7 +2,9 @@
 <html xml:lang="es">
   <head>
     <title>Lost and Found</title>
+    <link rel="stylesheet" href="./src/styles.css">
   </head>
+  
   <body>
     <h1>Formulario de registro de objetos perdidos</h1>
     <form id="lost-object-form">
@@ -16,6 +18,8 @@
           <option value="Cuadernos">Cuadernos</option>
           <option value="Varios">Varios</option>
       </select>
+      <label for="fecha">fecha:</label>
+        <input type="date" id="fecha" />
       <input type="submit" value="Registrar" id="registrar-objecto-button">
     </form>
     <div id="resultado-div"></div>

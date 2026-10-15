@@ -38,6 +38,7 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "10-1023-2020");
     expect(objeto.getInformacion()).toEqual("La fecha no puede ser incorrecta");
   });
+  
 
 
 

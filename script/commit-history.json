@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9a9120289296ff0d69b62351ef5f2228c2a8a921",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:07:23.000Z",
       "message": "feat: Registrar el lugar",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/9a9120289296ff0d69b62351ef5f2228c2a8a921"
     },
     "stats": {
       "total": 38,
@@ -262,6 +262,25 @@
     },
     "coverage": 95.08,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:10:53.000Z",
+      "message": "feat: Validar vacio en lugar",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 17,
+      "deletions": 1,
+      "date": "2026-10-15"
+    },
+    "coverage": 94.12,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -89,8 +89,18 @@ class ObjetoPerdido{
         }
         return "";
     }
+
     getLugar(){
+        if(this.validarLugar()!=""){
+            return this.validarLugar();
+        }
         return this.lugar;
+    }
+    validarLugar(){
+        if (this.lugar === "") {
+            return "El lugar es obligatorio";
+        }
+        return "";
     }
     
     getInformacion(){
@@ -106,6 +116,9 @@ class ObjetoPerdido{
         }
         else if (this.validarHora()!=""){
             message += this.validarHora();
+        }
+        else if (this.validarLugar()!=""){
+            message += this.validarLugar();
         }
         return message === "" ? this.getNombre()
          + ", " + this.getCategoria() 

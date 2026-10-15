@@ -57,6 +57,9 @@ class ObjetoPerdido{
         if (fecha > hoy) {
             return "La fecha no puede ser futura";
         }
+        else if (isNaN(fecha.getTime())) {
+            return "La fecha no puede ser incorrecta";
+        }
         return "";
     }
     

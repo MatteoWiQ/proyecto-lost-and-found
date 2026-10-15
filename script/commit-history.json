@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c11c882fb530848d8b486f63d5d1840fd55d2487",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T00:27:49.000Z",
       "message": "feat: validar fechas futuras",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/c11c882fb530848d8b486f63d5d1840fd55d2487"
     },
     "stats": {
       "total": 18,
@@ -148,6 +148,25 @@
     },
     "coverage": 94.87,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T00:34:26.000Z",
+      "message": "feat: validar fechas incorrectas",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 9,
+      "deletions": 2,
+      "date": "2026-10-15"
+    },
+    "coverage": 95.12,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

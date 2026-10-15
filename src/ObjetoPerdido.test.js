@@ -30,6 +30,11 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "");
     expect(objeto.getInformacion()).toEqual("La fecha es obligatoria");
   });
+  it("Registrar fecha futura invalido", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2028-10-10");
+    expect(objeto.getInformacion()).toEqual("La fecha no puede ser futura");
+  });
+
 
 
 

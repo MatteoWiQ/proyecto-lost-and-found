@@ -45,8 +45,21 @@ class ObjetoPerdido{
         if (this.fecha === "") {
             return "La fecha es obligatoria";
         }
+        else if (this.validarDia() != "") {
+            return this.validarDia();
+        }
         return "";
     }
+    
+    validarDia(){
+        let fecha = new Date(this.fecha);
+        let hoy = new Date();
+        if (fecha > hoy) {
+            return "La fecha no puede ser futura";
+        }
+        return "";
+    }
+    
     getInformacion(){
         let message="";
         if (this.validarNombre()!=""){

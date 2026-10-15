@@ -284,9 +284,31 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9e33f3c698ad7c98ea89969f5e9e3797cdf29ba3",
     "commitName": "feat: Fecha obligatoria",
     "commitTimestamp": 1792023639173,
     "testId": 6
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1792024000908,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792024052098,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar fechas futuras",
+    "commitTimestamp": 1792024070836,
+    "testId": 7
   }
 ]

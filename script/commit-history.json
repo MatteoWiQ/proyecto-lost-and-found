@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6ccdeaff2f06fbffbe985bdc08b4e6cf91951546",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:10:53.000Z",
       "message": "feat: Validar vacio en lugar",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/6ccdeaff2f06fbffbe985bdc08b4e6cf91951546"
     },
     "stats": {
       "total": 18,
@@ -281,6 +281,25 @@
     },
     "coverage": 94.12,
     "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:15:35.000Z",
+      "message": "feat: Validar lugares inexistentes",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 17,
+      "deletions": 2,
+      "date": "2026-10-15"
+    },
+    "coverage": 94.37,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }

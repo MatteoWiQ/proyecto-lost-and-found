@@ -1,7 +1,7 @@
 
 
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
-
+const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
 class ObjetoPerdido{
     constructor(nombre,categoria,fecha, hora, lugar){
         this.nombre = nombre;
@@ -99,6 +99,9 @@ class ObjetoPerdido{
     validarLugar(){
         if (this.lugar === "") {
             return "El lugar es obligatorio";
+        }
+        if (!lugares.includes(this.lugar)) {
+            return "El lugar no existe";
         }
         return "";
     }

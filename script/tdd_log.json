@@ -636,9 +636,31 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6ccdeaff2f06fbffbe985bdc08b4e6cf91951546",
     "commitName": "feat: Validar vacio en lugar",
     "commitTimestamp": 1792026654310,
     "testId": 14
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1792026754682,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1792026912244,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Validar lugares inexistentes",
+    "commitTimestamp": 1792026937141,
+    "testId": 15
   }
 ]

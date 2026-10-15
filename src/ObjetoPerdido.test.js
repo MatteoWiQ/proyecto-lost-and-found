@@ -66,6 +66,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "");
     expect(objeto.getInformacion()).toEqual("El lugar es obligatorio");
   });
+   it("Validar Lugares invalidos", () => {
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Parque");
+    expect(objeto.getInformacion()).toEqual("El lugar no existe");
+  });
 
 
 });

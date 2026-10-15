@@ -1,5 +1,5 @@
 
-/* Estilos generales */
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +12,6 @@ body {
   color: #102544;
 }
 
-/* Título principal */
 h1 {
   max-width: 760px;
   margin: 0 auto 25px;
@@ -20,8 +19,6 @@ h1 {
   font-size: 28px;
   font-weight: 700;
 }
-
-/* Formulario */
 #lost-object-form {
   max-width: 760px;
   margin: 0 auto;
@@ -35,7 +32,7 @@ h1 {
   box-shadow: 0 2px 8px rgba(15, 35, 65, 0.02);
 }
 
-/* Etiquetas */
+
 #lost-object-form label {
   display: block;
   margin-bottom: 8px;
@@ -44,9 +41,9 @@ h1 {
   font-weight: 500;
 }
 
-/* Campos de entrada y selectores */
 #lost-object-form input[type="text"],
 #lost-object-form input[type="date"],
+#lost-object-form input[type="time"],
 #lost-object-form select {
   width: 100%;
   height: 42px;
@@ -61,19 +58,50 @@ h1 {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Efecto al seleccionar un campo */
+#lost-object-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  color: #102544;
+  background: #fff;
+  border: 1px solid #c7d5e8;
+  border-radius: 8px;
+}
+
+.foto-preview-container {
+  grid-column: 1 / -1;
+  padding: 16px;
+  border: 1px solid #dce5f0;
+  border-radius: 10px;
+  background: #f9fbfe;
+}
+
+.foto-preview-container p {
+  margin: 0 0 10px;
+}
+
+#foto-preview,
+.foto-publicada {
+  display: block;
+  max-width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.foto-publicada {
+  margin-top: 12px;
+}
+
 #lost-object-form input:focus,
 #lost-object-form select:focus {
   border-color: #3979c6;
   box-shadow: 0 0 0 3px rgba(57, 121, 198, 0.12);
 }
-
-/* Espacio entre etiquetas y campos */
 #lost-object-form label:not(:first-child) {
   margin-top: 8px;
 }
 
-/* Botón de registro */
 #registrar-objecto-button {
   grid-column: 1 / -1;
   width: 100%;
@@ -107,7 +135,23 @@ h1 {
   line-height: 1.5;
 }
 
-/* Adaptación para celulares */
+#resultado-div.resultado {
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+#resultado-div.resultado-exito {
+  color: #17663a;
+  background: #effaf3;
+  border-color: #b7e4c7;
+}
+
+#resultado-div.resultado-error {
+  color: #a12622;
+  background: #fff3f2;
+  border-color: #f3c1bd;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 24px 14px;

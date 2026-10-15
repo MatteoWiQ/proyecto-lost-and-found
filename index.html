@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html xml:lang="es">
+<html lang="es">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost and Found</title>
     <link rel="stylesheet" href="./src/styles.css">
   </head>
@@ -34,9 +36,15 @@
         </select>
         <label for="commentario">commentario:</label>
         <input type="text" id="commentario" />
+        <label for="foto">Fotografía del objeto:</label>
+        <input type="file" id="foto" accept=".jpg,.jpeg,.png,.webp,.heic,image/jpeg,image/png,image/webp,image/heic,image/heif" required />
+        <div id="foto-preview-container" class="foto-preview-container" hidden>
+          <p>Vista previa:</p>
+          <img id="foto-preview" alt="Vista previa de la fotografía del objeto" />
+        </div>
       <input type="submit" value="Registrar" id="registrar-objecto-button">
     </form>
-    <div id="resultado-div"></div>
+    <div id="resultado-div" aria-live="polite"></div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

@@ -848,9 +848,87 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d71ec64f5243a8cc72058b64d216f06596fbe622",
     "commitName": "feat: Validar formatos",
     "commitTimestamp": 1792029500861,
     "testId": 20
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792029786112,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 2,
+    "numTotalTests": 22,
+    "timestamp": 1792030420914,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 1,
+    "numTotalTests": 22,
+    "timestamp": 1792030516409,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792030597296,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 1,
+    "numTotalTests": 22,
+    "timestamp": 1792031001935,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 2,
+    "numTotalTests": 22,
+    "timestamp": 1792031108535,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 1,
+    "numTotalTests": 22,
+    "timestamp": 1792031292163,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 1,
+    "numTotalTests": 22,
+    "timestamp": 1792031388956,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792031458770,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: Mejorar la interfaz para fotos",
+    "commitTimestamp": 1792031519861,
+    "testId": 21
   }
 ]

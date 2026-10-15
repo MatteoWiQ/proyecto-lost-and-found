@@ -2,7 +2,7 @@
 
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
-const formatos = ["jpg", "jpeg", "png", "webp", "heic"];
+const formatos = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg"];
 class ObjetoPerdido{
     constructor(nombre,categoria,fecha, hora, lugar, commentario, foto){
         this.nombre = nombre;
@@ -119,31 +119,28 @@ class ObjetoPerdido{
         return this.foto;
     }
     validarFoto(){
-        if (!this.foto) {
+        const nombreFoto = typeof this.foto === "string" ? this.foto : this.foto?.name;
+        if (typeof nombreFoto !== "string") {
             return "Formato de imagen no permitido";
         }
 
-        // Admite tanto un nombre ("objeto.jpg") como un File con name/type.
-        const nombre = typeof this.foto === "string" ? this.foto : this.foto.name;
-        if (typeof nombre !== "string") {
-            return "Formato de imagen no permitido";
-        }
-
-        const extension = nombre.split(".").pop().toLowerCase();
+        const extension = nombreFoto.split(".").pop().toLowerCase();
         if (!formatos.includes(extension)) {
             return "Formato de imagen no permitido";
         }
 
-        // Si viene el MIME type, también debe ser compatible con la extensión.
-        if (this.foto.type) {
+        if (typeof this.foto === "object" && this.foto.type) {
             const tiposPorFormato = {
                 jpg: ["image/jpeg", "image/jpg"],
                 jpeg: ["image/jpeg", "image/jpg"],
                 png: ["image/png"],
-                webp: ["image/webp"],
-                heic: ["image/heic", "image/heif"],
+                gif: ["image/gif"],
+                bmp: ["image/bmp"],
+                tiff: ["image/tiff"],
+                svg: ["image/svg+xml"],
             };
-            if (!tiposPorFormato[extension].includes(this.foto.type.toLowerCase())) {
+
+            if (!tiposPorFormato[extension]?.includes(this.foto.type.toLowerCase())) {
                 return "Formato de imagen no permitido";
             }
         }
@@ -153,7 +150,7 @@ class ObjetoPerdido{
     getInformacion(){
         let message="";
         if (this.validarNombre()!=""){
-            message = this.validarNombre();
+            message += this.validarNombre();
         }
         else if (this.validarCategoria()!=""){
             message += this.validarCategoria();
@@ -167,12 +164,16 @@ class ObjetoPerdido{
         else if (this.validarLugar()!=""){
             message += this.validarLugar();
         }
+        else if (this.validarFoto()!=""){
+            message += this.validarFoto();
+        }
         return message === "" ? this.getNombre()
          + ", " + this.getCategoria() 
          + ", " + this.getFecha() 
          + ", " + this.getHora()
          + ", " + this.getLugar()
-         + ", " + this.getCommentario() : message;
+         + ", " + this.getCommentario()
+          : message;
     }
     ValidacionFinal(){
         if(this.getInformacion() === this.getNombre()
@@ -180,10 +181,11 @@ class ObjetoPerdido{
          + ", " + this.getFecha() 
          + ", " + this.getHora()
          + ", " + this.getLugar()
-         + ", " + this.getCommentario()){
+         + ", " + this.getCommentario()
+         && this.validarFoto() === ""){
             return "Registro exitoso";
         }
-        return "Registro fallido: "+this.getInformacion();
+        return "Registro fallido: "+ this.getInformacion();
     }
 }
 

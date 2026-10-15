@@ -380,17 +380,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d71ec64f5243a8cc72058b64d216f06596fbe622",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:58:19.000Z",
       "message": "feat: Validar formatos",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/d71ec64f5243a8cc72058b64d216f06596fbe622"
     },
     "stats": {
       "total": 47,
       "additions": 45,
       "deletions": 2,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.55,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T02:31:58.000Z",
+      "message": "style: Mejorar la interfaz para fotos",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 169,
+      "additions": 131,
+      "deletions": 38,
       "date": "2026-10-15"
     },
     "coverage": 92.55,

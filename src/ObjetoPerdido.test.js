@@ -71,11 +71,13 @@ describe("ObjetoPerdido", () => {
     expect(objeto.getInformacion()).toEqual("El lugar no existe");
   });
   it("Aceptar comentarios adicionales", () => {
-    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional");
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
     expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A, Comentario adicional");
   });
   it("Aceptar comentarios adicionales", () => {
-    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional");
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
     expect(objeto.ValidacionFinal()).toEqual("Registro exitoso");
   });
   it("Mensaje de error", () => {

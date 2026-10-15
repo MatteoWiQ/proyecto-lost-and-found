@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a8908129360592029c860ca69ce7432d70babf68",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T01:24:16.000Z",
       "message": "refactor: mejora de presenter e index",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/a8908129360592029c860ca69ce7432d70babf68"
     },
     "stats": {
       "total": 16,
@@ -338,6 +338,25 @@
     },
     "coverage": 93.42,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-15T01:26:42.000Z",
+      "message": "feat: Mensaje de error",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-10-15"
+    },
+    "coverage": 96.05,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

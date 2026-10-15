@@ -718,9 +718,39 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a8908129360592029c860ca69ce7432d70babf68",
     "commitName": "refactor: mejora de presenter e index",
     "commitTimestamp": 1792027457742,
     "testId": 17
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1792027543595,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1792027560503,
+    "success": false,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792027579240,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mensaje de error",
+    "commitTimestamp": 1792027603791,
+    "testId": 18
   }
 ]

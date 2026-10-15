@@ -142,7 +142,7 @@ class ObjetoPerdido{
          + ", " + this.getCommentario()){
             return "Registro exitoso";
         }
-        return "Registro fallido";
+        return "Registro fallido: "+this.getInformacion();
     }
 }
 

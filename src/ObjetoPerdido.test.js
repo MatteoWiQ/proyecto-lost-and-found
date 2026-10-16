@@ -55,7 +55,7 @@ describe("ObjetoPerdido", () => {
     expect(objeto.getInformacion()).toEqual("La hora no esta en formato correcto");
   });
   it("Invalidar horas futuras", () => {
-    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-15", "22:30");
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-16", "10:30");
     expect(objeto.getInformacion()).toEqual("No se permiten horas futuras");
   });
   it("Registrar Lugar", () => {

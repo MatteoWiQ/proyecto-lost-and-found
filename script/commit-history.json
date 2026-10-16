@@ -494,17 +494,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "65386b082c786cd5fdb75760b49f102ce8d7d92b",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T01:09:01.000Z",
       "message": "feat:Retornar la ubicacion exacta y las pautas de entrega de Bienestar Estudiantil",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/65386b082c786cd5fdb75760b49f102ce8d7d92b"
     },
     "stats": {
       "total": 11,
       "additions": 11,
       "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.86,
+    "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T04:19:58.000Z",
+      "message": "fix: Arreglo de error en el test de invalidar horas futuras",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
       "date": "2026-10-16"
     },
     "coverage": 92.86,

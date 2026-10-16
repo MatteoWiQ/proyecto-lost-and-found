@@ -1108,9 +1108,143 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "65386b082c786cd5fdb75760b49f102ce8d7d92b",
     "commitName": "feat:Retornar la ubicacion exacta y las pautas de entrega de Bienestar Estudiantil",
     "commitTimestamp": 1792112942022,
     "testId": 26
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1792113318935,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1792113392781,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792116853540,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792122950099,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 2,
+    "numTotalTests": 27,
+    "timestamp": 1792123007794,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123077840,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123181123,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123552111,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123578563,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123645909,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123839261,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123875190,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123936215,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792124067948,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792124207448,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792124305788,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Arreglo de error en el test de invalidar horas futuras",
+    "commitTimestamp": 1792124398254,
+    "testId": 27
   }
 ]

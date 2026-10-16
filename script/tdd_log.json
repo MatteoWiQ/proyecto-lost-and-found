@@ -1394,9 +1394,15 @@
     "testId": 34
   },
   {
-    "commitId": "HEAD",
+    "commitId": "41ab60227d1dcf05838be485dd18b8e06d632a4f",
     "commitName": "fix: Arreglo de ventana de detalles del objeto perdido",
     "commitTimestamp": 1792158420195,
     "testId": 35
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Centrar la ventana de detalle del objeto en la pantalla",
+    "commitTimestamp": 1792159119826,
+    "testId": 36
   }
 ]

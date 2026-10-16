@@ -150,4 +150,18 @@ describe("ObjetoPerdido", () => {
       foto: foto
     });
   });
+
+  it("Deberia retornar la informacion detallada y completa del objeto para su consulta", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerDetalleCompleto()).toEqual({
+      nombre: "Laptop",
+      categoria: "Tecnologia",
+      fecha: "2026-10-14",
+      hora: "20:30",
+      lugar: "Bloque A",
+      commentario: "Comentario adicional",
+      foto: foto
+    });
+  });
 });

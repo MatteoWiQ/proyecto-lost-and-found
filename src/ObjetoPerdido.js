@@ -188,6 +188,7 @@ class ObjetoPerdido{
         return "Registro fallido: "+ this.getInformacion();
     }
 
+    //Santiago
     obtenerEstadoValidacion() {
         return "Pendiente de validación";
     }
@@ -215,6 +216,18 @@ class ObjetoPerdido{
             categoria: this.categoria,
             fecha: this.fecha,
             lugar: this.lugar,
+            foto: this.foto
+        };
+    }
+
+    obtenerDetalleCompleto() {
+        return {
+            nombre: this.nombre,
+            categoria: this.categoria,
+            fecha: this.fecha,
+            hora: this.hora,
+            lugar: this.lugar,
+            commentario: this.commentario,
             foto: this.foto
         };
     }

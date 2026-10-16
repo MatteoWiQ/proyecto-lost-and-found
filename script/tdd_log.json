@@ -1294,9 +1294,31 @@
     "testId": 29
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b8eb4933c527ba544ef51fd3904cb7a8d25a2a96",
     "commitName": "feat:Retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)",
     "commitTimestamp": 1792126736267,
     "testId": 29
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 1,
+    "numTotalTests": 29,
+    "timestamp": 1792126870952,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1792126912737,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Retornar la informacion detallada y completa del objeto para su consulta",
+    "commitTimestamp": 1792127179212,
+    "testId": 30
   }
 ]

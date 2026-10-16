@@ -551,12 +551,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b8eb4933c527ba544ef51fd3904cb7a8d25a2a96",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T04:58:56.000Z",
       "message": "feat:Retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b8eb4933c527ba544ef51fd3904cb7a8d25a2a96"
     },
     "stats": {
       "total": 22,
@@ -566,6 +566,25 @@
     },
     "coverage": 93.14,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T05:06:19.000Z",
+      "message": "feat:Retornar la informacion detallada y completa del objeto para su consulta",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 93.2,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }

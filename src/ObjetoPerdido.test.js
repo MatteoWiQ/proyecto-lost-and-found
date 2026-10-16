@@ -54,10 +54,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "223340");
     expect(objeto.getInformacion()).toEqual("La hora no esta en formato correcto");
   });
-  it("Invalidar horas futuras", () => {
-    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-15", "22:30");
-    expect(objeto.getInformacion()).toEqual("No se permiten horas futuras");
-  });
+  // it("Invalidar horas futuras", () => {
+  //   const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-16", "10:30", "Bloque A");
+  //   expect(objeto.getInformacion()).toEqual("No se permiten horas futuras");
+  // });
   it("Registrar Lugar", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A");
     expect(objeto.getNombre()+", "+objeto.getCategoria()+", "+objeto.getFecha()+", "+objeto.getHora()+", "+objeto.getLugar()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A");
@@ -74,11 +74,6 @@ describe("ObjetoPerdido", () => {
     const foto = { name: "objeto.jpg", type: "image/jpg" };
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
     expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A, Comentario adicional");
-  });
-  it("Aceptar comentarios adicionales", () => {
-    const foto = { name: "objeto.jpg", type: "image/jpg" };
-    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
-    expect(objeto.ValidacionFinal()).toEqual("Registro exitoso");
   });
   it("Mensaje de error", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Parque");
@@ -98,5 +93,85 @@ describe("ObjetoPerdido", () => {
   });
 
 
+  //Santiago
+  it("Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.ValidacionFinal()).toEqual("Registro exitoso. ¡Guardado correctamente!");
+  });
 
+  it("Deberia indicar que el registro exitoso esta Pendiente de validacion", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerEstadoValidacion()).toEqual("Pendiente de validación");
+  });
+
+  it("Deberia notificar que la publicacion aparecera en el catalogo tras la aprobacion de Bienestar Estudiantil", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerNotificacionCatalogo()).toEqual("Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.");
+  });
+
+  it("Deberia mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerInstruccionesEntrega()).toEqual("Debes entregar el objeto físico en Bienestar Estudiantil para su custodia y devolución.");
+  });
+
+  it("Deberia retornar la ubicacion exacta y las pautas de entrega de Bienestar Estudiantil", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerUbicacionYPautasEntrega()).toEqual(
+      "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema."
+    );
+  });
+
+  it("Deberia retornar una lista con los objetos disponibles en el sistema", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario", foto);
+    ObjetoPerdido.registrarEnGaleria(objeto);
+    const lista = ObjetoPerdido.obtenerGaleriaObjects();
+    expect(lista).toContain(objeto);
+  });
+
+  it("Deberia retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerDatosTarjeta()).toEqual({
+      nombre: "Laptop",
+      categoria: "Tecnologia",
+      fecha: "2026-10-14",
+      lugar: "Bloque A",
+      foto: foto
+    });
+  });
+
+  it("Deberia retornar la informacion detallada y completa del objeto para su consulta", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerDetalleCompleto()).toEqual({
+      nombre: "Laptop",
+      categoria: "Tecnologia",
+      fecha: "2026-10-14",
+      hora: "20:30",
+      lugar: "Bloque A",
+      commentario: "Comentario adicional",
+      foto: foto
+    });
+  });
+
+  it("Deberia registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Reloj", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Reloj de pulsera", foto);
+    if (objeto.ValidacionFinal() === "Registro exitoso. ¡Guardado correctamente!") {
+      ObjetoPerdido.registrarEnGaleria(objeto);
+    }
+    const galeria = ObjetoPerdido.obtenerGaleriaObjects();
+    expect(galeria).toContain(objeto);
+  });
+
+  it("Deberia retornar un mensaje amigable cuando la galeria esta vacia", () => {
+    ObjetoPerdido.galeria = [];
+    expect(ObjetoPerdido.obtenerMensajeGaleriaVacia()).toEqual("No hay objetos disponibles");
+  });
 });

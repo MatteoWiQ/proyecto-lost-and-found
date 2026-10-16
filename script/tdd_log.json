@@ -926,9 +926,511 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "11426611c9fa6558c49b9e89e879b7d4f7e700cf",
     "commitName": "style: Mejorar la interfaz para fotos",
     "commitTimestamp": 1792031519861,
     "testId": 21
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792096083472,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096092572,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096118983,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096159836,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096315461,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792096451434,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792096506657,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "4985fbd8b28001dd2b728bfe74a336e6216db36c",
+    "commitName": "feat:Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso",
+    "commitTimestamp": 1792096735322,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1792097000954,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792097007475,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792097032297,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1792097120288,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "e4cd93b5545da458dd6732f23fbfc187bd8d27d9",
+    "commitName": "feat:Deberia indicar que el registro exitoso esta Pendiente de validacion",
+    "commitTimestamp": 1792097197819,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1792098944764,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1792101226767,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "148c67d50eeea3c2f59cf251cf8e1546195459d7",
+    "commitName": "feat:Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.",
+    "commitTimestamp": 1792101266318,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1792101399415,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1792101416337,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "22300c570afb3f17d0193a64962500a2b4ef8c94",
+    "commitName": "feat:Mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil",
+    "commitTimestamp": 1792101532690,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1792112738897,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792112746727,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792112818623,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792112823016,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "65386b082c786cd5fdb75760b49f102ce8d7d92b",
+    "commitName": "feat:Retornar la ubicacion exacta y las pautas de entrega de Bienestar Estudiantil",
+    "commitTimestamp": 1792112942022,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1792113318935,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1792113392781,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792116853540,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792122950099,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 2,
+    "numTotalTests": 27,
+    "timestamp": 1792123007794,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123077840,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123181123,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123552111,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123578563,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123645909,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123839261,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123875190,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792123936215,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792124067948,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792124207448,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792124305788,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "d2d19cce2a7b3cd117e77ecbaa9f25a2c06d7348",
+    "commitName": "fix: Arreglo de error en el test de invalidar horas futuras",
+    "commitTimestamp": 1792124398254,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792126211425,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1792126396283,
+    "success": false,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1792126420648,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "fa999bc693ab2680b26ef085b0f4fa49e45f0864",
+    "commitName": "feat:Retornar una lista con los objetos disponibles en el sistema.",
+    "commitTimestamp": 1792126473146,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1792126665644,
+    "success": false,
+    "testId": 29
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1792126701898,
+    "success": true,
+    "testId": 29
+  },
+  {
+    "commitId": "b8eb4933c527ba544ef51fd3904cb7a8d25a2a96",
+    "commitName": "feat:Retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)",
+    "commitTimestamp": 1792126736267,
+    "testId": 29
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 1,
+    "numTotalTests": 29,
+    "timestamp": 1792126870952,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 29,
+    "failedTests": 0,
+    "numTotalTests": 29,
+    "timestamp": 1792126912737,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "commitId": "f28f602e2d4e3cc338dc401dcbeeb87d82b96266",
+    "commitName": "feat:Retornar la informacion detallada y completa del objeto para su consulta",
+    "commitTimestamp": 1792127179212,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792127273433,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792127539955,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792128996880,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "commitId": "cef87ad03df8433e2f8be1cf7072c706f6188552",
+    "commitName": "feat:Registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa",
+    "commitTimestamp": 1792129118226,
+    "testId": 31
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792129595219,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1792129830625,
+    "success": false,
+    "testId": 32
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792129867141,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "commitId": "b393fecd88197950818784ce9d4bf71024a82702",
+    "commitName": "feat:Retornar un mensaje amigable cuando la galeria esta vacia",
+    "commitTimestamp": 1792129915681,
+    "testId": 32
+  },
+  {
+    "commitId": "33a074fb0d366fa7f9d5a5e572b409fe5a50000e",
+    "commitName": "feat:Integracion de la interfaz (html, presenter y css)",
+    "commitTimestamp": 1792131884703,
+    "testId": 33
+  },
+  {
+    "commitId": "88b4a8ba3cf1d9eab8693db4f9d398d61032adbf",
+    "commitName": "fix: Arreglo de mensaje amistoso de estado vacio",
+    "commitTimestamp": 1792157553873,
+    "testId": 34
+  },
+  {
+    "commitId": "41ab60227d1dcf05838be485dd18b8e06d632a4f",
+    "commitName": "fix: Arreglo de ventana de detalles del objeto perdido",
+    "commitTimestamp": 1792158420195,
+    "testId": 35
+  },
+  {
+    "commitId": "69c3908c8d63533cdd7f9a79427284541149441a",
+    "commitName": "fix: Centrar la ventana de detalle del objeto en la pantalla",
+    "commitTimestamp": 1792159119826,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792159933701,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792160147733,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "66d163d3ab00de66b632a0e156cfdb3fd2b803ae",
+    "commitName": "fix: corregir test de fecha futura para evitar fallos por fecha actual",
+    "commitTimestamp": 1792160185358,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir test de invalidar horas futuras",
+    "commitTimestamp": 1792160729374,
+    "testId": 38
   }
 ]

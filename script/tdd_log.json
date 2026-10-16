@@ -1242,9 +1242,39 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d2d19cce2a7b3cd117e77ecbaa9f25a2c06d7348",
     "commitName": "fix: Arreglo de error en el test de invalidar horas futuras",
     "commitTimestamp": 1792124398254,
     "testId": 27
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792126211425,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 1,
+    "numTotalTests": 27,
+    "timestamp": 1792126396283,
+    "success": false,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1792126420648,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Retornar una lista con los objetos disponibles en el sistema.",
+    "commitTimestamp": 1792126473146,
+    "testId": 28
   }
 ]

@@ -130,4 +130,12 @@ describe("ObjetoPerdido", () => {
       "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema."
     );
   });
+
+  it("Deberia retornar una lista con los objetos disponibles en el sistema", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario", foto);
+    ObjetoPerdido.registrarEnGaleria(objeto);
+    const lista = ObjetoPerdido.obtenerGaleriaObjects();
+    expect(lista).toContain(objeto);
+  });
 });

@@ -684,17 +684,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69c3908c8d63533cdd7f9a79427284541149441a",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T13:58:39.000Z",
       "message": "fix: Centrar la ventana de detalle del objeto en la pantalla",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/69c3908c8d63533cdd7f9a79427284541149441a"
     },
     "stats": {
       "total": 10,
       "additions": 5,
       "deletions": 5,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T14:16:25.000Z",
+      "message": "fix: corregir test de fecha futura para evitar fallos por fecha actual",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
       "date": "2026-10-16"
     },
     "coverage": 92.45,

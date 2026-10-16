@@ -1400,9 +1400,31 @@
     "testId": 35
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69c3908c8d63533cdd7f9a79427284541149441a",
     "commitName": "fix: Centrar la ventana de detalle del objeto en la pantalla",
     "commitTimestamp": 1792159119826,
     "testId": 36
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792159933701,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792160147733,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir test de fecha futura para evitar fallos por fecha actual",
+    "commitTimestamp": 1792160185358,
+    "testId": 37
   }
 ]

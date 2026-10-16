@@ -570,12 +570,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f28f602e2d4e3cc338dc401dcbeeb87d82b96266",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T05:06:19.000Z",
       "message": "feat:Retornar la informacion detallada y completa del objeto para su consulta",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/f28f602e2d4e3cc338dc401dcbeeb87d82b96266"
     },
     "stats": {
       "total": 27,
@@ -585,6 +585,25 @@
     },
     "coverage": 93.2,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T05:38:38.000Z",
+      "message": "feat:Registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 55,
+      "additions": 48,
+      "deletions": 7,
+      "date": "2026-10-16"
+    },
+    "coverage": 93.2,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

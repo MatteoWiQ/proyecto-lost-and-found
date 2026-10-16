@@ -50,11 +50,41 @@ form.addEventListener("submit", (event) => {
     : "resultado-error";
   resultadoDiv.textContent = resultado;
 
-  if (resultado === "Registro exitoso") {
-    const imagen = document.createElement("img");
-    imagen.src = fotoUrl;
-    imagen.alt = "Fotografía del objeto registrado";
-    imagen.className = "foto-publicada";
-    resultadoDiv.append(imagen);
+  if (resultado === "Registro exitoso. ¡Guardado correctamente!") {
+    ObjetoPerdido.registrarEnGaleria(objetoPerdido);
+    actualizarGaleriaUI();
   }
 });
+
+function actualizarGaleriaUI() {
+  const galeriaContainer = document.querySelector("#galeria-container") || crearContenedorGaleria();
+  galeriaContainer.innerHTML = ""; // Limpiamos para redibujar actualizada
+
+  const objetos = ObjetoPerdido.obtenerGaleriaObjects();
+
+  objetos.forEach((obj) => {
+    const tarjeta = document.createElement("div");
+    tarjeta.className = "objeto-tarjeta";
+
+    const datos = obj.obtenerDatosTarjeta();
+    const urlFoto = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
+
+    tarjeta.innerHTML = `
+      <img src="${urlFoto}" alt="${datos.nombre}" class="tarjeta-img" />
+      <h3>${datos.nombre}</h3>
+      <p><strong>Categoría:</strong> ${datos.categoria}</p>
+      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
+      <p><strong>Fecha:</strong> ${datos.fecha}</p>
+    `;
+
+    galeriaContainer.appendChild(tarjeta);
+  });
+}
+
+function crearContenedorGaleria() {
+  const contenedor = document.createElement("div");
+  contenedor.id = "galeria-container";
+  contenedor.className = "galeria-grid";
+  document.body.appendChild(contenedor);
+  return contenedor;
+}

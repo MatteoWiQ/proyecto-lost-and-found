@@ -1316,9 +1316,39 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f28f602e2d4e3cc338dc401dcbeeb87d82b96266",
     "commitName": "feat:Retornar la informacion detallada y completa del objeto para su consulta",
     "commitTimestamp": 1792127179212,
     "testId": 30
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792127273433,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792127539955,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792128996880,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa",
+    "commitTimestamp": 1792129118226,
+    "testId": 31
   }
 ]

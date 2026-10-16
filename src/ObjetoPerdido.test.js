@@ -164,4 +164,14 @@ describe("ObjetoPerdido", () => {
       foto: foto
     });
   });
+
+  it("Deberia registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Reloj", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Reloj de pulsera", foto);
+    if (objeto.ValidacionFinal() === "Registro exitoso. ¡Guardado correctamente!") {
+      ObjetoPerdido.registrarEnGaleria(objeto);
+    }
+    const galeria = ObjetoPerdido.obtenerGaleriaObjects();
+    expect(galeria).toContain(objeto);
+  });
 });

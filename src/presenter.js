@@ -79,10 +79,10 @@ function actualizarGaleriaUI() {
     return;
   }
 
-  objetos.forEach((obj) => {
+  objetos.forEach((obj, index) => {
     const tarjeta = document.createElement("div");
     tarjeta.className = "objeto-tarjeta";
-
+    tarjeta.style.cursor = "pointer";
     const datos = obj.obtenerDatosTarjeta();
     const urlFoto = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
 
@@ -94,8 +94,31 @@ function actualizarGaleriaUI() {
       <p><strong>Fecha:</strong> ${datos.fecha}</p>
     `;
 
+    tarjeta.addEventListener("click", () => {
+      const detalle = obj.obtenerDetalleCompleto();
+      const detalleInfo = document.querySelector("#detalle-info");
+      const detalleContainer = document.querySelector("#detalle-container");
+      const urlDetalleFoto = typeof detalle.foto === "string" ? detalle.foto : URL.createObjectURL(detalle.foto);
+      detalleInfo.innerHTML = `
+        <img src="${urlDetalleFoto}" alt="${detalle.nombre}" style="max-width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" />
+        <p><strong>Nombre:</strong> ${detalle.nombre}</p>
+        <p><strong>Categoría:</strong> ${detalle.categoria}</p>
+        <p><strong>Fecha:</strong> ${detalle.fecha}</p>
+        <p><strong>Hora:</strong> ${detalle.hora}</p>
+        <p><strong>Ubicación:</strong> ${detalle.lugar}</p>
+        <p><strong>Comentario:</strong> ${detalle.commentario || "Ninguno"}</p>
+      `;
+      detalleContainer.style.display = "block";
+    });
     galeriaContainer.appendChild(tarjeta);
   });
+
+  const btnCerrar = document.querySelector("#cerrar-detalle");
+  if (btnCerrar) {
+    btnCerrar.onclick = () => {
+      document.querySelector("#detalle-container").style.display = "none";
+    };
+  }
 }
 
 function crearContenedorGaleria() {

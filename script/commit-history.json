@@ -646,17 +646,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "88b4a8ba3cf1d9eab8693db4f9d398d61032adbf",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T13:32:33.000Z",
       "message": "fix: Arreglo de mensaje amistoso de estado vacio",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/88b4a8ba3cf1d9eab8693db4f9d398d61032adbf"
     },
     "stats": {
       "total": 4,
       "additions": 3,
       "deletions": 1,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T13:47:00.000Z",
+      "message": "fix: Arreglo de ventana de detalles del objeto perdido",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 70,
+      "additions": 68,
+      "deletions": 2,
       "date": "2026-10-16"
     },
     "coverage": 92.45,

@@ -1070,9 +1070,47 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22300c570afb3f17d0193a64962500a2b4ef8c94",
     "commitName": "feat:Mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil",
     "commitTimestamp": 1792101532690,
     "testId": 25
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1792112738897,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792112746727,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792112818623,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 26,
+    "failedTests": 0,
+    "numTotalTests": 26,
+    "timestamp": 1792112823016,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Retornar la ubicacion exacta y las pautas de entrega de Bienestar Estudiantil",
+    "commitTimestamp": 1792112942022,
+    "testId": 26
   }
 ]

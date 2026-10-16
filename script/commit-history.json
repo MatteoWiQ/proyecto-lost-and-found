@@ -475,12 +475,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "22300c570afb3f17d0193a64962500a2b4ef8c94",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-15T21:58:52.000Z",
       "message": "feat:Mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/22300c570afb3f17d0193a64962500a2b4ef8c94"
     },
     "stats": {
       "total": 9,
@@ -490,6 +490,25 @@
     },
     "coverage": 92.78,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T01:09:01.000Z",
+      "message": "feat:Retornar la ubicacion exacta y las pautas de entrega de Bienestar Estudiantil",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.86,
+    "test_count": 26,
     "failed_tests": 0,
     "conclusion": "success"
   }

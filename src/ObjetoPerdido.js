@@ -231,6 +231,13 @@ class ObjetoPerdido{
             foto: this.foto
         };
     }
+
+    static obtenerMensajeGaleriaVacia() {
+        if (ObjetoPerdido.galeria.length === 0) {
+            return "No hay objetos disponibles";
+        }
+        return "";
+    }
 }
 
 export default ObjetoPerdido;

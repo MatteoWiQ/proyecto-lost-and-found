@@ -174,4 +174,9 @@ describe("ObjetoPerdido", () => {
     const galeria = ObjetoPerdido.obtenerGaleriaObjects();
     expect(galeria).toContain(objeto);
   });
+
+  it("Deberia retornar un mensaje amigable cuando la galeria esta vacia", () => {
+    ObjetoPerdido.galeria = [];
+    expect(ObjetoPerdido.obtenerMensajeGaleriaVacia()).toEqual("No hay objetos disponibles");
+  });
 });

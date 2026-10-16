@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cef87ad03df8433e2f8be1cf7072c706f6188552",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T05:38:38.000Z",
       "message": "feat:Registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/cef87ad03df8433e2f8be1cf7072c706f6188552"
     },
     "stats": {
       "total": 55,
@@ -604,6 +604,25 @@
     },
     "coverage": 93.2,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T05:51:55.000Z",
+      "message": "feat:Retornar un mensaje amigable cuando la galeria esta vacia",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

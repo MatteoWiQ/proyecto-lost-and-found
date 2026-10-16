@@ -1346,9 +1346,39 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cef87ad03df8433e2f8be1cf7072c706f6188552",
     "commitName": "feat:Registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa",
     "commitTimestamp": 1792129118226,
     "testId": 31
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792129595219,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1792129830625,
+    "success": false,
+    "testId": 32
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792129867141,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Retornar un mensaje amigable cuando la galeria esta vacia",
+    "commitTimestamp": 1792129915681,
+    "testId": 32
   }
 ]

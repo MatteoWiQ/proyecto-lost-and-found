@@ -105,3 +105,5 @@ function crearContenedorGaleria() {
   document.body.appendChild(contenedor);
   return contenedor;
 }
+
+actualizarGaleriaUI();

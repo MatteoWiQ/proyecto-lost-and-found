@@ -1382,9 +1382,15 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "33a074fb0d366fa7f9d5a5e572b409fe5a50000e",
     "commitName": "feat:Integracion de la interfaz (html, presenter y css)",
     "commitTimestamp": 1792131884703,
     "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: Arreglo de mensaje amistoso de estado vacio",
+    "commitTimestamp": 1792157553873,
+    "testId": 34
   }
 ]

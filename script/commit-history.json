@@ -703,12 +703,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "66d163d3ab00de66b632a0e156cfdb3fd2b803ae",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T14:16:25.000Z",
       "message": "fix: corregir test de fecha futura para evitar fallos por fecha actual",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/66d163d3ab00de66b632a0e156cfdb3fd2b803ae"
     },
     "stats": {
       "total": 2,
@@ -718,6 +718,25 @@
     },
     "coverage": 92.45,
     "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T14:25:29.000Z",
+      "message": "fix: corregir test de invalidar horas futuras",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 4,
+      "deletions": 9,
+      "date": "2026-10-16"
+    },
+    "coverage": 91.51,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

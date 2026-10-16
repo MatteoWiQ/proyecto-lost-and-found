@@ -1422,9 +1422,15 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "66d163d3ab00de66b632a0e156cfdb3fd2b803ae",
     "commitName": "fix: corregir test de fecha futura para evitar fallos por fecha actual",
     "commitTimestamp": 1792160185358,
     "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir test de invalidar horas futuras",
+    "commitTimestamp": 1792160729374,
+    "testId": 38
   }
 ]

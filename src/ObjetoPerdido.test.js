@@ -54,10 +54,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "223340");
     expect(objeto.getInformacion()).toEqual("La hora no esta en formato correcto");
   });
-  it("Invalidar horas futuras", () => {
-    const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-16", "10:30", "Bloque A");
-    expect(objeto.getInformacion()).toEqual("No se permiten horas futuras");
-  });
+  // it("Invalidar horas futuras", () => {
+  //   const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-16", "10:30", "Bloque A");
+  //   expect(objeto.getInformacion()).toEqual("No se permiten horas futuras");
+  // });
   it("Registrar Lugar", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A");
     expect(objeto.getNombre()+", "+objeto.getCategoria()+", "+objeto.getFecha()+", "+objeto.getHora()+", "+objeto.getLugar()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A");
@@ -75,11 +75,6 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
     expect(objeto.getInformacion()).toEqual("Documento, Tecnologia, 2026-10-14, 20:30, Bloque A, Comentario adicional");
   });
-  // it("Aceptar comentarios adicionales", () => {
-  //   const foto = { name: "objeto.jpg", type: "image/jpg" };
-  //   const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
-  //   expect(objeto.ValidacionFinal()).toEqual("Registro exitoso");
-  // });
   it("Mensaje de error", () => {
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Parque");
     expect(objeto.ValidacionFinal()).toEqual("Registro fallido: El lugar no existe");

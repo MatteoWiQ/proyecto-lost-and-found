@@ -32,6 +32,7 @@ fotoInput.addEventListener("change", () => {
   resultadoDiv.textContent = "";
 });
 
+//Santiago
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -45,22 +46,38 @@ form.addEventListener("submit", (event) => {
                                           foto);
   const errorFoto = objetoPerdido.validarFoto();
   const resultado = errorFoto || objetoPerdido.ValidacionFinal();
-  resultadoDiv.className = resultado === "Registro exitoso"
+  
+  resultadoDiv.className = resultado === "Registro exitoso. ¡Guardado correctamente!"
     ? "resultado-exito"
     : "resultado-error";
-  resultadoDiv.textContent = resultado;
 
   if (resultado === "Registro exitoso. ¡Guardado correctamente!") {
+    resultadoDiv.innerHTML = `
+      <strong>${resultado}</strong><br>
+      • <strong>Estado:</strong> ${objetoPerdido.obtenerEstadoValidacion()}<br>
+      • <strong>Notificación:</strong> ${objetoPerdido.obtenerNotificacionCatalogo()}<br>
+      • <strong>Instrucciones:</strong> ${objetoPerdido.obtenerInstruccionesEntrega()}<br>
+      • <strong>Pautas de entrega:</strong> ${objetoPerdido.obtenerUbicacionYPautasEntrega()}
+    `;
+
     ObjetoPerdido.registrarEnGaleria(objetoPerdido);
     actualizarGaleriaUI();
+  } else {
+    resultadoDiv.textContent = resultado;
   }
 });
 
 function actualizarGaleriaUI() {
   const galeriaContainer = document.querySelector("#galeria-container") || crearContenedorGaleria();
-  galeriaContainer.innerHTML = ""; // Limpiamos para redibujar actualizada
+  galeriaContainer.innerHTML = "";
 
   const objetos = ObjetoPerdido.obtenerGaleriaObjects();
+
+  if (objetos.length === 0) {
+    const mensajeVacio = ObjetoPerdido.obtenerMensajeGaleriaVacia();
+    galeriaContainer.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
+    return;
+  }
 
   objetos.forEach((obj) => {
     const tarjeta = document.createElement("div");

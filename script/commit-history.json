@@ -608,17 +608,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b393fecd88197950818784ce9d4bf71024a82702",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T05:51:55.000Z",
       "message": "feat:Retornar un mensaje amigable cuando la galeria esta vacia",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b393fecd88197950818784ce9d4bf71024a82702"
     },
     "stats": {
       "total": 12,
       "additions": 12,
       "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T06:24:44.000Z",
+      "message": "feat:Integracion de la interfaz (html, presenter y css)",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 93,
+      "additions": 90,
+      "deletions": 3,
       "date": "2026-10-16"
     },
     "coverage": 92.45,

@@ -138,4 +138,16 @@ describe("ObjetoPerdido", () => {
     const lista = ObjetoPerdido.obtenerGaleriaObjects();
     expect(lista).toContain(objeto);
   });
+
+  it("Deberia retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)", () => {
+    const foto = { name: "objeto.jpg", type: "image/jpg" };
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
+    expect(objeto.obtenerDatosTarjeta()).toEqual({
+      nombre: "Laptop",
+      categoria: "Tecnologia",
+      fecha: "2026-10-14",
+      lugar: "Bloque A",
+      foto: foto
+    });
+  });
 });

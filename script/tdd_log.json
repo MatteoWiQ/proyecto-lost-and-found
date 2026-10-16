@@ -1272,9 +1272,31 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fa999bc693ab2680b26ef085b0f4fa49e45f0864",
     "commitName": "feat:Retornar una lista con los objetos disponibles en el sistema.",
     "commitTimestamp": 1792126473146,
     "testId": 28
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 1,
+    "numTotalTests": 28,
+    "timestamp": 1792126665644,
+    "success": false,
+    "testId": 29
+  },
+  {
+    "numPassedTests": 28,
+    "failedTests": 0,
+    "numTotalTests": 28,
+    "timestamp": 1792126701898,
+    "success": true,
+    "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat:Retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)",
+    "commitTimestamp": 1792126736267,
+    "testId": 29
   }
 ]

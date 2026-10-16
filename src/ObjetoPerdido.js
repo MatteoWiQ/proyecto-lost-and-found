@@ -208,6 +208,16 @@ class ObjetoPerdido{
     static obtenerGaleriaObjects() {
         return ObjetoPerdido.galeria;
     }
+
+    obtenerDatosTarjeta() {
+        return {
+            nombre: this.nombre,
+            categoria: this.categoria,
+            fecha: this.fecha,
+            lugar: this.lugar,
+            foto: this.foto
+        };
+    }
 }
 
 export default ObjetoPerdido;

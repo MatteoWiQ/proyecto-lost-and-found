@@ -532,12 +532,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fa999bc693ab2680b26ef085b0f4fa49e45f0864",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T04:54:33.000Z",
       "message": "feat:Retornar una lista con los objetos disponibles en el sistema.",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/fa999bc693ab2680b26ef085b0f4fa49e45f0864"
     },
     "stats": {
       "total": 16,
@@ -547,6 +547,25 @@
     },
     "coverage": 93.07,
     "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T04:58:56.000Z",
+      "message": "feat:Retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 93.14,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }

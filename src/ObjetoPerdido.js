@@ -183,9 +183,60 @@ class ObjetoPerdido{
          + ", " + this.getLugar()
          + ", " + this.getCommentario()
          && this.validarFoto() === ""){
-            return "Registro exitoso";
+            return "Registro exitoso. ¡Guardado correctamente!";
         }
         return "Registro fallido: "+ this.getInformacion();
+    }
+
+    //Santiago
+    obtenerEstadoValidacion() {
+        return "Pendiente de validación";
+    }
+    obtenerNotificacionCatalogo() {
+        return "Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.";
+    }
+    obtenerInstruccionesEntrega() {
+        return "Debes entregar el objeto físico en Bienestar Estudiantil para su custodia y devolución.";
+    }
+    obtenerUbicacionYPautasEntrega() {
+        return "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema.";
+    }
+
+    static galeria = [];
+    static registrarEnGaleria(objeto) {
+        ObjetoPerdido.galeria.push(objeto);
+    }
+    static obtenerGaleriaObjects() {
+        return ObjetoPerdido.galeria;
+    }
+
+    obtenerDatosTarjeta() {
+        return {
+            nombre: this.nombre,
+            categoria: this.categoria,
+            fecha: this.fecha,
+            lugar: this.lugar,
+            foto: this.foto
+        };
+    }
+
+    obtenerDetalleCompleto() {
+        return {
+            nombre: this.nombre,
+            categoria: this.categoria,
+            fecha: this.fecha,
+            hora: this.hora,
+            lugar: this.lugar,
+            commentario: this.commentario,
+            foto: this.foto
+        };
+    }
+
+    static obtenerMensajeGaleriaVacia() {
+        if (ObjetoPerdido.galeria.length === 0) {
+            return "No hay objetos disponibles";
+        }
+        return "";
     }
 }
 

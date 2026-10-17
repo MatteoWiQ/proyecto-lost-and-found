@@ -399,12 +399,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "11426611c9fa6558c49b9e89e879b7d4f7e700cf",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-15T02:31:58.000Z",
       "message": "style: Mejorar la interfaz para fotos",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/11426611c9fa6558c49b9e89e879b7d4f7e700cf"
     },
     "stats": {
       "total": 169,
@@ -414,6 +414,329 @@
     },
     "coverage": 92.55,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4985fbd8b28001dd2b728bfe74a336e6216db36c",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T20:38:53.000Z",
+      "message": "feat:Deberia retornar un mensaje de confirmacion detallado cuando el registro es exitoso",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/4985fbd8b28001dd2b728bfe74a336e6216db36c"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 12,
+      "deletions": 7,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.55,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e4cd93b5545da458dd6732f23fbfc187bd8d27d9",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T20:46:37.000Z",
+      "message": "feat:Deberia indicar que el registro exitoso esta Pendiente de validacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/e4cd93b5545da458dd6732f23fbfc187bd8d27d9"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 9,
+      "deletions": 2,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.55,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "148c67d50eeea3c2f59cf251cf8e1546195459d7",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T21:54:26.000Z",
+      "message": "feat:Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/148c67d50eeea3c2f59cf251cf8e1546195459d7"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 16,
+      "deletions": 4,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.71,
+    "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "22300c570afb3f17d0193a64962500a2b4ef8c94",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-15T21:58:52.000Z",
+      "message": "feat:Mostrar las instrucciones para entregar el objeto fisico a Bienestar Estudiantil",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/22300c570afb3f17d0193a64962500a2b4ef8c94"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-10-15"
+    },
+    "coverage": 92.78,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "65386b082c786cd5fdb75760b49f102ce8d7d92b",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T01:09:01.000Z",
+      "message": "feat:Retornar la ubicacion exacta y las pautas de entrega de Bienestar Estudiantil",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/65386b082c786cd5fdb75760b49f102ce8d7d92b"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.86,
+    "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d2d19cce2a7b3cd117e77ecbaa9f25a2c06d7348",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T04:19:58.000Z",
+      "message": "fix: Arreglo de error en el test de invalidar horas futuras",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/d2d19cce2a7b3cd117e77ecbaa9f25a2c06d7348"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.86,
+    "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fa999bc693ab2680b26ef085b0f4fa49e45f0864",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T04:54:33.000Z",
+      "message": "feat:Retornar una lista con los objetos disponibles en el sistema.",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/fa999bc693ab2680b26ef085b0f4fa49e45f0864"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 93.07,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b8eb4933c527ba544ef51fd3904cb7a8d25a2a96",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T04:58:56.000Z",
+      "message": "feat:Retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b8eb4933c527ba544ef51fd3904cb7a8d25a2a96"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 93.14,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f28f602e2d4e3cc338dc401dcbeeb87d82b96266",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T05:06:19.000Z",
+      "message": "feat:Retornar la informacion detallada y completa del objeto para su consulta",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/f28f602e2d4e3cc338dc401dcbeeb87d82b96266"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 93.2,
+    "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cef87ad03df8433e2f8be1cf7072c706f6188552",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T05:38:38.000Z",
+      "message": "feat:Registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/cef87ad03df8433e2f8be1cf7072c706f6188552"
+    },
+    "stats": {
+      "total": 55,
+      "additions": 48,
+      "deletions": 7,
+      "date": "2026-10-16"
+    },
+    "coverage": 93.2,
+    "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b393fecd88197950818784ce9d4bf71024a82702",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T05:51:55.000Z",
+      "message": "feat:Retornar un mensaje amigable cuando la galeria esta vacia",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b393fecd88197950818784ce9d4bf71024a82702"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "33a074fb0d366fa7f9d5a5e572b409fe5a50000e",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T06:24:44.000Z",
+      "message": "feat:Integracion de la interfaz (html, presenter y css)",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/33a074fb0d366fa7f9d5a5e572b409fe5a50000e"
+    },
+    "stats": {
+      "total": 93,
+      "additions": 90,
+      "deletions": 3,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "88b4a8ba3cf1d9eab8693db4f9d398d61032adbf",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T13:32:33.000Z",
+      "message": "fix: Arreglo de mensaje amistoso de estado vacio",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/88b4a8ba3cf1d9eab8693db4f9d398d61032adbf"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "41ab60227d1dcf05838be485dd18b8e06d632a4f",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T13:47:00.000Z",
+      "message": "fix: Arreglo de ventana de detalles del objeto perdido",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/41ab60227d1dcf05838be485dd18b8e06d632a4f"
+    },
+    "stats": {
+      "total": 70,
+      "additions": 68,
+      "deletions": 2,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "69c3908c8d63533cdd7f9a79427284541149441a",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T13:58:39.000Z",
+      "message": "fix: Centrar la ventana de detalle del objeto en la pantalla",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/69c3908c8d63533cdd7f9a79427284541149441a"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 5,
+      "deletions": 5,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "66d163d3ab00de66b632a0e156cfdb3fd2b803ae",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T14:16:25.000Z",
+      "message": "fix: corregir test de fecha futura para evitar fallos por fecha actual",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/66d163d3ab00de66b632a0e156cfdb3fd2b803ae"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-16"
+    },
+    "coverage": 92.45,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-10-16T14:25:29.000Z",
+      "message": "fix: corregir test de invalidar horas futuras",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 4,
+      "deletions": 9,
+      "date": "2026-10-16"
+    },
+    "coverage": 91.51,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

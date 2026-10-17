@@ -172,3 +172,108 @@ h1 {
     grid-column: auto;
   }
 }
+
+/* Santiago */
+.galeria-grid {
+  max-width: 760px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.objeto-tarjeta {
+  background: #ffffff;
+  border: 1px solid #dce5f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(15, 35, 65, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tarjeta-img {
+  width: 100%;
+  height: 140px; 
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+}
+
+.objeto-tarjeta h3 {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #111827;
+}
+
+.objeto-tarjeta p {
+  margin: 0;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.galeria-vacia {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 24px;
+  color: #64748b;
+  font-size: 15px;
+  font-style: italic;
+  background-color: #ffffff;
+  border: 1px dashed #c7d5e8;
+  border-radius: 10px;
+}
+
+.foto-preview-container {
+  grid-column: 1 / -1;
+  padding: 16px;
+  border: 1px solid #dce5f0;
+  border-radius: 10px;
+  background: #f9fbfe;
+  text-align: center;
+}
+
+#foto-preview {
+  display: block;
+  max-width: 100%;
+  max-height: 180px;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.detalle-modal {
+  position: fixed;
+  inset: 0; 
+  width: 100vw;
+  height: 100vh;
+  background: rgba(16, 37, 68, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.detalle-contenido {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: auto; 
+}
+
+#cerrar-detalle {
+  padding: 8px 16px;
+  background-color: #174b87;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}

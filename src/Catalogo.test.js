@@ -10,4 +10,13 @@ describe('Catalogo', () => {
 
     expect(resultados).toEqual([laptop]);
   });
+  it('Deberia buscar un objeto por una parte de su nombre', () => {
+  const laptop = { nombre: 'Laptop Lenovo' };
+  const mochila = { nombre: 'Mochila azul' };
+  const objetos = [laptop, mochila];
+
+  const resultados = buscarObjetos(objetos, 'Laptop');
+
+  expect(resultados).toEqual([laptop]);
+});
 });

@@ -1466,9 +1466,31 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "acc0daa115ff54f2f0e5020d19dbd8dcde06d8a7",
     "commitName": "feat: buscar objetos por nombre completo",
     "commitTimestamp": 1792285398682,
     "testId": 39
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 1,
+    "numTotalTests": 32,
+    "timestamp": 1792285511218,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792285553272,
+    "success": true,
+    "testId": 40
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: buscar objetos por coincidencia parcial",
+    "commitTimestamp": 1792285651849,
+    "testId": 40
   }
 ]

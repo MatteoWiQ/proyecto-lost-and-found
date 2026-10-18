@@ -1,7 +1,8 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
 import {
   buscarObjetos,
-  obtenerMensajeBusqueda
+  obtenerMensajeBusqueda,
+  filtrarPorCategoria
 } from "./Catalogo.js";
 
 const nombreInput = document.querySelector("#nombre");
@@ -17,6 +18,7 @@ const form = document.querySelector("#lost-object-form");
 const resultadoDiv = document.querySelector("#resultado-div");
 let fotoUrl;
 const busquedaInput = document.querySelector("#busqueda");
+const filtroCategoriaInput = document.querySelector("#filtro-categoria");
 
 fotoInput.addEventListener("change", () => {
   const foto = fotoInput.files[0];
@@ -66,7 +68,7 @@ form.addEventListener("submit", (event) => {
     `;
 
     ObjetoPerdido.registrarEnGaleria(objetoPerdido);
-    actualizarGaleriaUI();
+    actualizarResultadosCatalogo();
   } else {
     resultadoDiv.textContent = resultado;
   }
@@ -125,9 +127,19 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
   }
 }
 
-busquedaInput.addEventListener("input", () => {
+function actualizarResultadosCatalogo() {
   const objetos = ObjetoPerdido.obtenerGaleriaObjects();
-  const resultados = buscarObjetos(objetos, busquedaInput.value);
+  const categoriaSeleccionada = filtroCategoriaInput.value;
+
+  const objetosFiltrados = categoriaSeleccionada === ""
+    ? objetos
+    : filtrarPorCategoria(objetos, categoriaSeleccionada);
+
+  const resultados = buscarObjetos(
+    objetosFiltrados,
+    busquedaInput.value
+  );
+
   const mensaje = obtenerMensajeBusqueda(
     resultados,
     busquedaInput.value
@@ -142,7 +154,10 @@ busquedaInput.addEventListener("input", () => {
   }
 
   actualizarGaleriaUI(resultados);
-});
+}
+
+busquedaInput.addEventListener("input", actualizarResultadosCatalogo);
+filtroCategoriaInput.addEventListener("change", actualizarResultadosCatalogo);
 
 function crearContenedorGaleria() {
   const contenedor = document.createElement("div");

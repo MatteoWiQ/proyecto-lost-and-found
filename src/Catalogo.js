@@ -13,5 +13,8 @@ function obtenerMensajeBusqueda(resultados, textoBuscado) {
 
   return "";
 }
+function filtrarPorCategoria(objetos, categoria) {
+  return objetos.filter((objeto) => objeto.categoria === categoria);
+}
 
-export { buscarObjetos, obtenerMensajeBusqueda };
+export { buscarObjetos, obtenerMensajeBusqueda, filtrarPorCategoria };

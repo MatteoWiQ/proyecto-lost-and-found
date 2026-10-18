@@ -1,7 +1,8 @@
 import {
   buscarObjetos,
-  obtenerMensajeBusqueda
-} from './Catalogo.js';
+  obtenerMensajeBusqueda,
+  filtrarPorCategoria
+} from "./Catalogo.js";
 
 describe('Catalogo', () => {
   it('Deberia buscar un objeto por su nombre completo', () => {
@@ -39,5 +40,14 @@ describe('Catalogo', () => {
   const mensaje = obtenerMensajeBusqueda(resultados, textoBuscado);
 
   expect(mensaje).toBe('No se encontraron objetos');
+});
+it("Deberia filtrar los objetos por categoria", () => {
+  const laptop = { nombre: "Laptop", categoria: "Tecnologia" };
+  const polera = { nombre: "Polera", categoria: "Ropa" };
+  const objetos = [laptop, polera];
+
+  const resultados = filtrarPorCategoria(objetos, "Tecnologia");
+
+  expect(resultados).toEqual([laptop]);
 });
 });

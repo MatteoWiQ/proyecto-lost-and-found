@@ -1,4 +1,7 @@
-import { buscarObjetos } from './Catalogo.js';
+import {
+  buscarObjetos,
+  obtenerMensajeBusqueda
+} from './Catalogo.js';
 
 describe('Catalogo', () => {
   it('Deberia buscar un objeto por su nombre completo', () => {
@@ -28,4 +31,13 @@ describe('Catalogo', () => {
 
     expect(resultados).toEqual([laptop]);
     });
+
+    it('Deberia mostrar un mensaje cuando no existen coincidencias', () => {
+  const resultados = [];
+  const textoBuscado = 'Tablet';
+
+  const mensaje = obtenerMensajeBusqueda(resultados, textoBuscado);
+
+  expect(mensaje).toBe('No se encontraron objetos');
+});
 });

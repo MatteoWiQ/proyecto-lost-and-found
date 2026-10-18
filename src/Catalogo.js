@@ -6,4 +6,12 @@ function buscarObjetos(objetos, texto) {
   );
 }
 
-export { buscarObjetos };
+function obtenerMensajeBusqueda(resultados, textoBuscado) {
+  if (textoBuscado !== "" && resultados.length === 0) {
+    return "No se encontraron objetos";
+  }
+
+  return "";
+}
+
+export { buscarObjetos, obtenerMensajeBusqueda };

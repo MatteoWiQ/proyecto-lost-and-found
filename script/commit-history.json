@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5abcc0a951d9371316875a2999224f17d3d1c2d2",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T01:19:13.000Z",
       "message": "feat: ignorar mayusculas en la busqueda",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/5abcc0a951d9371316875a2999224f17d3d1c2d2"
     },
     "stats": {
       "total": 15,
@@ -794,6 +794,25 @@
     },
     "coverage": 91.74,
     "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:52:19.000Z",
+      "message": "feat: mostrar mensaje cuando no existen coincidencias",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 45,
+      "additions": 40,
+      "deletions": 5,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.07,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -1,5 +1,8 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
-import { buscarObjetos } from "./Catalogo.js";
+import {
+  buscarObjetos,
+  obtenerMensajeBusqueda
+} from "./Catalogo.js";
 
 const nombreInput = document.querySelector("#nombre");
 const categoriaInput = document.querySelector("#categoria");
@@ -122,12 +125,24 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
   }
 }
 
-  busquedaInput.addEventListener("input", () => {
+busquedaInput.addEventListener("input", () => {
   const objetos = ObjetoPerdido.obtenerGaleriaObjects();
   const resultados = buscarObjetos(objetos, busquedaInput.value);
+  const mensaje = obtenerMensajeBusqueda(
+    resultados,
+    busquedaInput.value
+  );
+
+  if (mensaje) {
+    const galeriaContainer = document.querySelector("#galeria-container");
+    galeriaContainer.innerHTML = `
+      <p class="galeria-vacia">${mensaje}</p>
+    `;
+    return;
+  }
 
   actualizarGaleriaUI(resultados);
-  });
+});
 
 function crearContenedorGaleria() {
   const contenedor = document.createElement("div");

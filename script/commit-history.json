@@ -836,12 +836,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "90a86f52b68efbf5d6c80ed98c8833bb1f1f4d89",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T02:10:32.000Z",
       "message": "feat: filtrar objetos por categoria",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/90a86f52b68efbf5d6c80ed98c8833bb1f1f4d89"
     },
     "stats": {
       "total": 53,
@@ -851,6 +851,25 @@
     },
     "coverage": 91.23,
     "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:22:10.000Z",
+      "message": "feat: filtrar objetos por ubicacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 56,
+      "additions": 45,
+      "deletions": 11,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.38,
+    "test_count": 36,
     "failed_tests": 0,
     "conclusion": "success"
   }

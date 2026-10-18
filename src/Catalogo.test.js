@@ -1,7 +1,8 @@
 import {
   buscarObjetos,
   obtenerMensajeBusqueda,
-  filtrarPorCategoria
+  filtrarPorCategoria,
+  filtrarPorUbicacion
 } from "./Catalogo.js";
 
 describe('Catalogo', () => {
@@ -47,6 +48,16 @@ it("Deberia filtrar los objetos por categoria", () => {
   const objetos = [laptop, polera];
 
   const resultados = filtrarPorCategoria(objetos, "Tecnologia");
+
+  expect(resultados).toEqual([laptop]);
+});
+
+it("Deberia filtrar los objetos por ubicacion", () => {
+  const laptop = { nombre: "Laptop", lugar: "Biblioteca" };
+  const polera = { nombre: "Polera", lugar: "Bloque A" };
+  const objetos = [laptop, polera];
+
+  const resultados = filtrarPorUbicacion(objetos, "Biblioteca");
 
   expect(resultados).toEqual([laptop]);
 });

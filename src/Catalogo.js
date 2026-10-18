@@ -16,5 +16,8 @@ function obtenerMensajeBusqueda(resultados, textoBuscado) {
 function filtrarPorCategoria(objetos, categoria) {
   return objetos.filter((objeto) => objeto.categoria === categoria);
 }
+function filtrarPorUbicacion(objetos, ubicacion) {
+  return objetos.filter((objeto) => objeto.lugar === ubicacion);
+}
 
-export { buscarObjetos, obtenerMensajeBusqueda, filtrarPorCategoria };
+export { buscarObjetos, obtenerMensajeBusqueda, filtrarPorCategoria, filtrarPorUbicacion };

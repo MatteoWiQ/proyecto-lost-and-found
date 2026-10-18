@@ -1,8 +1,10 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
+
 import {
   buscarObjetos,
   obtenerMensajeBusqueda,
-  filtrarPorCategoria
+  filtrarPorCategoria,
+  filtrarPorUbicacion
 } from "./Catalogo.js";
 
 const nombreInput = document.querySelector("#nombre");
@@ -19,6 +21,7 @@ const resultadoDiv = document.querySelector("#resultado-div");
 let fotoUrl;
 const busquedaInput = document.querySelector("#busqueda");
 const filtroCategoriaInput = document.querySelector("#filtro-categoria");
+const filtroUbicacionInput = document.querySelector("#filtro-ubicacion");
 
 fotoInput.addEventListener("change", () => {
   const foto = fotoInput.files[0];
@@ -45,15 +48,15 @@ form.addEventListener("submit", (event) => {
 
   const foto = fotoInput.files[0];
   const objetoPerdido = new ObjetoPerdido(nombreInput.value,
-                                          categoriaInput.value, 
-                                          fechaInput.value, 
-                                          horaInput.value, 
-                                          lugarInput.value, 
-                                          commentarioInput.value,
-                                          foto);
+    categoriaInput.value,
+    fechaInput.value,
+    horaInput.value,
+    lugarInput.value,
+    commentarioInput.value,
+    foto);
   const errorFoto = objetoPerdido.validarFoto();
   const resultado = errorFoto || objetoPerdido.ValidacionFinal();
-  
+
   resultadoDiv.className = resultado === "Registro exitoso. ¡Guardado correctamente!"
     ? "resultado-exito"
     : "resultado-error";
@@ -130,10 +133,15 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
 function actualizarResultadosCatalogo() {
   const objetos = ObjetoPerdido.obtenerGaleriaObjects();
   const categoriaSeleccionada = filtroCategoriaInput.value;
+  const ubicacionSeleccionada = filtroUbicacionInput.value;
 
-  const objetosFiltrados = categoriaSeleccionada === ""
+  const objetosPorCategoria = categoriaSeleccionada === ""
     ? objetos
     : filtrarPorCategoria(objetos, categoriaSeleccionada);
+
+  const objetosFiltrados = ubicacionSeleccionada === ""
+    ? objetosPorCategoria
+    : filtrarPorUbicacion(objetosPorCategoria, ubicacionSeleccionada);
 
   const resultados = buscarObjetos(
     objetosFiltrados,
@@ -158,6 +166,8 @@ function actualizarResultadosCatalogo() {
 
 busquedaInput.addEventListener("input", actualizarResultadosCatalogo);
 filtroCategoriaInput.addEventListener("change", actualizarResultadosCatalogo);
+filtroUbicacionInput.addEventListener("change", actualizarResultadosCatalogo);
+
 
 function crearContenedorGaleria() {
   const contenedor = document.createElement("div");

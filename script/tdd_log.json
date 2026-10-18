@@ -1592,9 +1592,39 @@
     "testId": 44
   },
   {
-    "commitId": "HEAD",
+    "commitId": "90a86f52b68efbf5d6c80ed98c8833bb1f1f4d89",
     "commitName": "feat: filtrar objetos por categoria",
     "commitTimestamp": 1792289434000,
     "testId": 44
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 1,
+    "numTotalTests": 36,
+    "timestamp": 1792289507045,
+    "success": false,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1792289534871,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1792289992034,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: filtrar objetos por ubicacion",
+    "commitTimestamp": 1792290131924,
+    "testId": 45
   }
 ]

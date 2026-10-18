@@ -1690,9 +1690,15 @@
     "testId": 47
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1d636ce6d559c441eb9da28547b3c5436f0a42b1",
     "commitName": "feat: mostrar mensaje cuando los filtros no tienen resultados",
     "commitTimestamp": 1792290932236,
     "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: centrar controles de busqueda y filtros",
+    "commitTimestamp": 1792290942856,
+    "testId": 48
   }
 ]

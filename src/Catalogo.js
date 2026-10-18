@@ -1,5 +1,9 @@
 function buscarObjetos(objetos, texto) {
-  return objetos.filter((objeto) => objeto.nombre.includes(texto));
+  const textoNormalizado = texto.toLowerCase();
+
+  return objetos.filter((objeto) =>
+    objeto.nombre.toLowerCase().includes(textoNormalizado)
+  );
 }
 
 export { buscarObjetos };

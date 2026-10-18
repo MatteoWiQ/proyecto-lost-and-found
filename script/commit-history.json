@@ -760,12 +760,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "83c3c65663a70f598f6e8ecd56e0ea0e9964111e",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T01:07:30.000Z",
       "message": "feat: buscar objetos por coincidencia parcial",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/83c3c65663a70f598f6e8ecd56e0ea0e9964111e"
     },
     "stats": {
       "total": 11,
@@ -775,6 +775,25 @@
     },
     "coverage": 91.67,
     "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:19:13.000Z",
+      "message": "feat: ignorar mayusculas en la busqueda",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.74,
+    "test_count": 33,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -1488,9 +1488,39 @@
     "testId": 40
   },
   {
-    "commitId": "HEAD",
+    "commitId": "83c3c65663a70f598f6e8ecd56e0ea0e9964111e",
     "commitName": "feat: buscar objetos por coincidencia parcial",
     "commitTimestamp": 1792285651849,
     "testId": 40
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792285741636,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 1,
+    "numTotalTests": 33,
+    "timestamp": 1792285801177,
+    "success": false,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1792286256134,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ignorar mayusculas en la busqueda",
+    "commitTimestamp": 1792286354853,
+    "testId": 41
   }
 ]

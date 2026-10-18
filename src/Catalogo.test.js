@@ -19,4 +19,13 @@ describe('Catalogo', () => {
 
   expect(resultados).toEqual([laptop]);
 });
+    it('Deberia buscar sin distinguir mayusculas y minusculas', () => {
+    const laptop = { nombre: 'Laptop Lenovo' };
+    const mochila = { nombre: 'Mochila azul' };
+    const objetos = [laptop, mochila];
+
+    const resultados = buscarObjetos(objetos, 'laptop');
+
+    expect(resultados).toEqual([laptop]);
+    });
 });

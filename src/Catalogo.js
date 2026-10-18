@@ -28,5 +28,14 @@ function filtrarObjetos(objetos, categoria, ubicacion) {
     ? objetosPorCategoria
     : filtrarPorUbicacion(objetosPorCategoria, ubicacion);
 }
+function obtenerMensajeFiltros(resultados, categoria, ubicacion) {
+  const hayFiltrosActivos = categoria !== "" || ubicacion !== "";
 
-export { buscarObjetos, obtenerMensajeBusqueda, filtrarPorCategoria, filtrarPorUbicacion, filtrarObjetos };
+  if (hayFiltrosActivos && resultados.length === 0) {
+    return "No se encontraron resultados";
+  }
+
+  return "";
+}
+
+export { buscarObjetos, obtenerMensajeBusqueda, filtrarPorCategoria, filtrarPorUbicacion, filtrarObjetos, obtenerMensajeFiltros };

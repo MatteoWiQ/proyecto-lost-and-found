@@ -874,12 +874,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e00908000d65d82a266717aa2f3354fe65acf2b4",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T02:28:37.000Z",
       "message": "feat: combinar filtros de categoria y ubicacion",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/e00908000d65d82a266717aa2f3354fe65acf2b4"
     },
     "stats": {
       "total": 62,
@@ -889,6 +889,25 @@
     },
     "coverage": 91.53,
     "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:35:31.000Z",
+      "message": "feat: mostrar mensaje cuando los filtros no tienen resultados",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 40,
+      "deletions": 8,
+      "date": "2026-10-18"
+    },
+    "coverage": 90.98,
+    "test_count": 38,
     "failed_tests": 0,
     "conclusion": "success"
   }

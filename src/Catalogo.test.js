@@ -3,7 +3,8 @@ import {
   obtenerMensajeBusqueda,
   filtrarPorCategoria,
   filtrarPorUbicacion,
-  filtrarObjetos
+  filtrarObjetos,
+  obtenerMensajeFiltros
 } from "./Catalogo.js";
 
 describe('Catalogo', () => {
@@ -91,5 +92,18 @@ it("Deberia combinar los filtros de categoria y ubicacion", () => {
   );
 
   expect(resultados).toEqual([laptop]);
+});
+it("Deberia mostrar un mensaje cuando los filtros no tienen resultados", () => {
+  const resultados = [];
+  const categoria = "Ropa";
+  const ubicacion = "Biblioteca";
+
+  const mensaje = obtenerMensajeFiltros(
+    resultados,
+    categoria,
+    ubicacion
+  );
+
+  expect(mensaje).toBe("No se encontraron resultados");
 });
 });

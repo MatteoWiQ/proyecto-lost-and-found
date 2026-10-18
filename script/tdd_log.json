@@ -1652,9 +1652,47 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e00908000d65d82a266717aa2f3354fe65acf2b4",
     "commitName": "feat: combinar filtros de categoria y ubicacion",
     "commitTimestamp": 1792290518736,
     "testId": 46
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 1,
+    "numTotalTests": 38,
+    "timestamp": 1792290576649,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792290616282,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792290743106,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792290908440,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar mensaje cuando los filtros no tienen resultados",
+    "commitTimestamp": 1792290932236,
+    "testId": 47
   }
 ]

@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "de63a61bcd2ed2e3fed8531ebf4ab4c8991b2ba9",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T14:25:29.000Z",
       "message": "fix: corregir test de invalidar horas futuras",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/de63a61bcd2ed2e3fed8531ebf4ab4c8991b2ba9"
     },
     "stats": {
       "total": 13,
@@ -737,6 +737,101 @@
     },
     "coverage": 91.51,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "acc0daa115ff54f2f0e5020d19dbd8dcde06d8a7",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:03:17.000Z",
+      "message": "feat: buscar objetos por nombre completo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/acc0daa115ff54f2f0e5020d19dbd8dcde06d8a7"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 32,
+      "deletions": 2,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.67,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "83c3c65663a70f598f6e8ecd56e0ea0e9964111e",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:07:30.000Z",
+      "message": "feat: buscar objetos por coincidencia parcial",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/83c3c65663a70f598f6e8ecd56e0ea0e9964111e"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.67,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5abcc0a951d9371316875a2999224f17d3d1c2d2",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:19:13.000Z",
+      "message": "feat: ignorar mayusculas en la busqueda",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/5abcc0a951d9371316875a2999224f17d3d1c2d2"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.74,
+    "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b19c15126ef5c99f34ab0390ce2a5072f80a9900",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:52:19.000Z",
+      "message": "feat: mostrar mensaje cuando no existen coincidencias",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b19c15126ef5c99f34ab0390ce2a5072f80a9900"
+    },
+    "stats": {
+      "total": 45,
+      "additions": 40,
+      "deletions": 5,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.07,
+    "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:54:25.000Z",
+      "message": "style: ordenar pruebas del catalogo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.07,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }

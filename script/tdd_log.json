@@ -1428,9 +1428,143 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "de63a61bcd2ed2e3fed8531ebf4ab4c8991b2ba9",
     "commitName": "fix: corregir test de invalidar horas futuras",
     "commitTimestamp": 1792160729374,
     "testId": 38
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792281940442,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1792283380393,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792283487196,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792285285679,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "acc0daa115ff54f2f0e5020d19dbd8dcde06d8a7",
+    "commitName": "feat: buscar objetos por nombre completo",
+    "commitTimestamp": 1792285398682,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 1,
+    "numTotalTests": 32,
+    "timestamp": 1792285511218,
+    "success": false,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792285553272,
+    "success": true,
+    "testId": 40
+  },
+  {
+    "commitId": "83c3c65663a70f598f6e8ecd56e0ea0e9964111e",
+    "commitName": "feat: buscar objetos por coincidencia parcial",
+    "commitTimestamp": 1792285651849,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1792285741636,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 1,
+    "numTotalTests": 33,
+    "timestamp": 1792285801177,
+    "success": false,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 0,
+    "numTotalTests": 33,
+    "timestamp": 1792286256134,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "commitId": "5abcc0a951d9371316875a2999224f17d3d1c2d2",
+    "commitName": "feat: ignorar mayusculas en la busqueda",
+    "commitTimestamp": 1792286354853,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 1,
+    "numTotalTests": 34,
+    "timestamp": 1792288113246,
+    "success": false,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1792288175655,
+    "success": true,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1792288269353,
+    "success": true,
+    "testId": 42
+  },
+  {
+    "commitId": "b19c15126ef5c99f34ab0390ce2a5072f80a9900",
+    "commitName": "feat: mostrar mensaje cuando no existen coincidencias",
+    "commitTimestamp": 1792288340393,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1792288458394,
+    "success": true,
+    "testId": 43
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: ordenar pruebas del catalogo",
+    "commitTimestamp": 1792288466738,
+    "testId": 43
   }
 ]

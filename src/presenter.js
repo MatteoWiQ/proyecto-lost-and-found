@@ -3,8 +3,7 @@ import ObjetoPerdido from "./ObjetoPerdido.js";
 import {
   buscarObjetos,
   obtenerMensajeBusqueda,
-  filtrarPorCategoria,
-  filtrarPorUbicacion
+  filtrarObjetos
 } from "./Catalogo.js";
 
 const nombreInput = document.querySelector("#nombre");
@@ -132,16 +131,11 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
 
 function actualizarResultadosCatalogo() {
   const objetos = ObjetoPerdido.obtenerGaleriaObjects();
-  const categoriaSeleccionada = filtroCategoriaInput.value;
-  const ubicacionSeleccionada = filtroUbicacionInput.value;
-
-  const objetosPorCategoria = categoriaSeleccionada === ""
-    ? objetos
-    : filtrarPorCategoria(objetos, categoriaSeleccionada);
-
-  const objetosFiltrados = ubicacionSeleccionada === ""
-    ? objetosPorCategoria
-    : filtrarPorUbicacion(objetosPorCategoria, ubicacionSeleccionada);
+  const objetosFiltrados = filtrarObjetos(
+  objetos,
+  filtroCategoriaInput.value,
+  filtroUbicacionInput.value
+);
 
   const resultados = buscarObjetos(
     objetosFiltrados,

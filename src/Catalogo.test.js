@@ -2,7 +2,8 @@ import {
   buscarObjetos,
   obtenerMensajeBusqueda,
   filtrarPorCategoria,
-  filtrarPorUbicacion
+  filtrarPorUbicacion,
+  filtrarObjetos
 } from "./Catalogo.js";
 
 describe('Catalogo', () => {
@@ -58,6 +59,36 @@ it("Deberia filtrar los objetos por ubicacion", () => {
   const objetos = [laptop, polera];
 
   const resultados = filtrarPorUbicacion(objetos, "Biblioteca");
+
+  expect(resultados).toEqual([laptop]);
+});
+
+it("Deberia combinar los filtros de categoria y ubicacion", () => {
+  const laptop = {
+    nombre: "Laptop",
+    categoria: "Tecnologia",
+    lugar: "Biblioteca"
+  };
+
+  const celular = {
+    nombre: "Celular",
+    categoria: "Tecnologia",
+    lugar: "Bloque A"
+  };
+
+  const polera = {
+    nombre: "Polera",
+    categoria: "Ropa",
+    lugar: "Biblioteca"
+  };
+
+  const objetos = [laptop, celular, polera];
+
+  const resultados = filtrarObjetos(
+    objetos,
+    "Tecnologia",
+    "Biblioteca"
+  );
 
   expect(resultados).toEqual([laptop]);
 });

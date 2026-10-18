@@ -1622,9 +1622,39 @@
     "testId": 45
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f0684ebcdeee39a1cc5a31e4e5011c20960a7b03",
     "commitName": "feat: filtrar objetos por ubicacion",
     "commitTimestamp": 1792290131924,
     "testId": 45
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 1,
+    "numTotalTests": 37,
+    "timestamp": 1792290276677,
+    "success": false,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1792290322671,
+    "success": true,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1792290428434,
+    "success": true,
+    "testId": 46
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: combinar filtros de categoria y ubicacion",
+    "commitTimestamp": 1792290518736,
+    "testId": 46
   }
 ]

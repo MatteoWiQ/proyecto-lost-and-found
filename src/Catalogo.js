@@ -19,5 +19,14 @@ function filtrarPorCategoria(objetos, categoria) {
 function filtrarPorUbicacion(objetos, ubicacion) {
   return objetos.filter((objeto) => objeto.lugar === ubicacion);
 }
+function filtrarObjetos(objetos, categoria, ubicacion) {
+  const objetosPorCategoria = categoria === ""
+    ? objetos
+    : filtrarPorCategoria(objetos, categoria);
 
-export { buscarObjetos, obtenerMensajeBusqueda, filtrarPorCategoria, filtrarPorUbicacion };
+  return ubicacion === ""
+    ? objetosPorCategoria
+    : filtrarPorUbicacion(objetosPorCategoria, ubicacion);
+}
+
+export { buscarObjetos, obtenerMensajeBusqueda, filtrarPorCategoria, filtrarPorUbicacion, filtrarObjetos };

@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f0684ebcdeee39a1cc5a31e4e5011c20960a7b03",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T02:22:10.000Z",
       "message": "feat: filtrar objetos por ubicacion",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/f0684ebcdeee39a1cc5a31e4e5011c20960a7b03"
     },
     "stats": {
       "total": 56,
@@ -870,6 +870,25 @@
     },
     "coverage": 91.38,
     "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:28:37.000Z",
+      "message": "feat: combinar filtros de categoria y ubicacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 48,
+      "deletions": 14,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.53,
+    "test_count": 37,
     "failed_tests": 0,
     "conclusion": "success"
   }

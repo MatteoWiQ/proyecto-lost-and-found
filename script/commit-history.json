@@ -798,17 +798,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b19c15126ef5c99f34ab0390ce2a5072f80a9900",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T01:52:19.000Z",
       "message": "feat: mostrar mensaje cuando no existen coincidencias",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b19c15126ef5c99f34ab0390ce2a5072f80a9900"
     },
     "stats": {
       "total": 45,
       "additions": 40,
       "deletions": 5,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.07,
+    "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:54:25.000Z",
+      "message": "style: ordenar pruebas del catalogo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2026-10-18"
     },
     "coverage": 91.07,

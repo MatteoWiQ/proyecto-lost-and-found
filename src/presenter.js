@@ -1,4 +1,5 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
+import { buscarObjetos } from "./Catalogo.js";
 
 const nombreInput = document.querySelector("#nombre");
 const categoriaInput = document.querySelector("#categoria");
@@ -12,6 +13,7 @@ const previewContainer = document.querySelector("#foto-preview-container");
 const form = document.querySelector("#lost-object-form");
 const resultadoDiv = document.querySelector("#resultado-div");
 let fotoUrl;
+const busquedaInput = document.querySelector("#busqueda");
 
 fotoInput.addEventListener("change", () => {
   const foto = fotoInput.files[0];
@@ -67,11 +69,10 @@ form.addEventListener("submit", (event) => {
   }
 });
 
-function actualizarGaleriaUI() {
+function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
   const galeriaContainer = document.querySelector("#galeria-container") || crearContenedorGaleria();
   galeriaContainer.innerHTML = "";
 
-  const objetos = ObjetoPerdido.obtenerGaleriaObjects();
 
   if (objetos.length === 0) {
     const mensajeVacio = ObjetoPerdido.obtenerMensajeGaleriaVacia();
@@ -120,6 +121,13 @@ function actualizarGaleriaUI() {
     };
   }
 }
+
+  busquedaInput.addEventListener("input", () => {
+  const objetos = ObjetoPerdido.obtenerGaleriaObjects();
+  const resultados = buscarObjetos(objetos, busquedaInput.value);
+
+  actualizarGaleriaUI(resultados);
+  });
 
 function crearContenedorGaleria() {
   const contenedor = document.createElement("div");

@@ -1428,9 +1428,47 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "de63a61bcd2ed2e3fed8531ebf4ab4c8991b2ba9",
     "commitName": "fix: corregir test de invalidar horas futuras",
     "commitTimestamp": 1792160729374,
     "testId": 38
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1792281940442,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1792283380393,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792283487196,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1792285285679,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: buscar objetos por nombre completo",
+    "commitTimestamp": 1792285398682,
+    "testId": 39
   }
 ]

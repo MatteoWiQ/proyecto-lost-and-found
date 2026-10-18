@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "de63a61bcd2ed2e3fed8531ebf4ab4c8991b2ba9",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-10-16T14:25:29.000Z",
       "message": "fix: corregir test de invalidar horas futuras",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/de63a61bcd2ed2e3fed8531ebf4ab4c8991b2ba9"
     },
     "stats": {
       "total": 13,
@@ -737,6 +737,25 @@
     },
     "coverage": 91.51,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T01:03:17.000Z",
+      "message": "feat: buscar objetos por nombre completo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 32,
+      "deletions": 2,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.67,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

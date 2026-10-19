@@ -1,7 +1,10 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
+
 import {
   buscarObjetos,
-  obtenerMensajeBusqueda
+  obtenerMensajeBusqueda,
+  filtrarObjetos,
+  obtenerMensajeFiltros
 } from "./Catalogo.js";
 
 const nombreInput = document.querySelector("#nombre");
@@ -17,6 +20,8 @@ const form = document.querySelector("#lost-object-form");
 const resultadoDiv = document.querySelector("#resultado-div");
 let fotoUrl;
 const busquedaInput = document.querySelector("#busqueda");
+const filtroCategoriaInput = document.querySelector("#filtro-categoria");
+const filtroUbicacionInput = document.querySelector("#filtro-ubicacion");
 
 fotoInput.addEventListener("change", () => {
   const foto = fotoInput.files[0];
@@ -43,15 +48,15 @@ form.addEventListener("submit", (event) => {
 
   const foto = fotoInput.files[0];
   const objetoPerdido = new ObjetoPerdido(nombreInput.value,
-                                          categoriaInput.value, 
-                                          fechaInput.value, 
-                                          horaInput.value, 
-                                          lugarInput.value, 
-                                          commentarioInput.value,
-                                          foto);
+    categoriaInput.value,
+    fechaInput.value,
+    horaInput.value,
+    lugarInput.value,
+    commentarioInput.value,
+    foto);
   const errorFoto = objetoPerdido.validarFoto();
   const resultado = errorFoto || objetoPerdido.ValidacionFinal();
-  
+
   resultadoDiv.className = resultado === "Registro exitoso. ¡Guardado correctamente!"
     ? "resultado-exito"
     : "resultado-error";
@@ -66,7 +71,7 @@ form.addEventListener("submit", (event) => {
     `;
 
     ObjetoPerdido.registrarEnGaleria(objetoPerdido);
-    actualizarGaleriaUI();
+    actualizarResultadosCatalogo();
   } else {
     resultadoDiv.textContent = resultado;
   }
@@ -125,13 +130,31 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
   }
 }
 
-busquedaInput.addEventListener("input", () => {
+function actualizarResultadosCatalogo() {
   const objetos = ObjetoPerdido.obtenerGaleriaObjects();
-  const resultados = buscarObjetos(objetos, busquedaInput.value);
-  const mensaje = obtenerMensajeBusqueda(
+  const objetosFiltrados = filtrarObjetos(
+    objetos,
+    filtroCategoriaInput.value,
+    filtroUbicacionInput.value
+  );
+
+  const resultados = buscarObjetos(
+    objetosFiltrados,
+    busquedaInput.value
+  );
+
+  const mensajeBusqueda = obtenerMensajeBusqueda(
     resultados,
     busquedaInput.value
   );
+
+  const mensajeFiltros = obtenerMensajeFiltros(
+    resultados,
+    filtroCategoriaInput.value,
+    filtroUbicacionInput.value
+  );
+
+  const mensaje = mensajeBusqueda || mensajeFiltros;
 
   if (mensaje) {
     const galeriaContainer = document.querySelector("#galeria-container");
@@ -142,7 +165,12 @@ busquedaInput.addEventListener("input", () => {
   }
 
   actualizarGaleriaUI(resultados);
-});
+}
+
+busquedaInput.addEventListener("input", actualizarResultadosCatalogo);
+filtroCategoriaInput.addEventListener("change", actualizarResultadosCatalogo);
+filtroUbicacionInput.addEventListener("change", actualizarResultadosCatalogo);
+
 
 function crearContenedorGaleria() {
   const contenedor = document.createElement("div");

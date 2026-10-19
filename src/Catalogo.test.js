@@ -1,7 +1,11 @@
 import {
   buscarObjetos,
-  obtenerMensajeBusqueda
-} from './Catalogo.js';
+  obtenerMensajeBusqueda,
+  filtrarPorCategoria,
+  filtrarPorUbicacion,
+  filtrarObjetos,
+  obtenerMensajeFiltros
+} from "./Catalogo.js";
 
 describe('Catalogo', () => {
   it('Deberia buscar un objeto por su nombre completo', () => {
@@ -39,5 +43,67 @@ describe('Catalogo', () => {
   const mensaje = obtenerMensajeBusqueda(resultados, textoBuscado);
 
   expect(mensaje).toBe('No se encontraron objetos');
+});
+it("Deberia filtrar los objetos por categoria", () => {
+  const laptop = { nombre: "Laptop", categoria: "Tecnologia" };
+  const polera = { nombre: "Polera", categoria: "Ropa" };
+  const objetos = [laptop, polera];
+
+  const resultados = filtrarPorCategoria(objetos, "Tecnologia");
+
+  expect(resultados).toEqual([laptop]);
+});
+
+it("Deberia filtrar los objetos por ubicacion", () => {
+  const laptop = { nombre: "Laptop", lugar: "Biblioteca" };
+  const polera = { nombre: "Polera", lugar: "Bloque A" };
+  const objetos = [laptop, polera];
+
+  const resultados = filtrarPorUbicacion(objetos, "Biblioteca");
+
+  expect(resultados).toEqual([laptop]);
+});
+
+it("Deberia combinar los filtros de categoria y ubicacion", () => {
+  const laptop = {
+    nombre: "Laptop",
+    categoria: "Tecnologia",
+    lugar: "Biblioteca"
+  };
+
+  const celular = {
+    nombre: "Celular",
+    categoria: "Tecnologia",
+    lugar: "Bloque A"
+  };
+
+  const polera = {
+    nombre: "Polera",
+    categoria: "Ropa",
+    lugar: "Biblioteca"
+  };
+
+  const objetos = [laptop, celular, polera];
+
+  const resultados = filtrarObjetos(
+    objetos,
+    "Tecnologia",
+    "Biblioteca"
+  );
+
+  expect(resultados).toEqual([laptop]);
+});
+it("Deberia mostrar un mensaje cuando los filtros no tienen resultados", () => {
+  const resultados = [];
+  const categoria = "Ropa";
+  const ubicacion = "Biblioteca";
+
+  const mensaje = obtenerMensajeFiltros(
+    resultados,
+    categoria,
+    ubicacion
+  );
+
+  expect(mensaje).toBe("No se encontraron resultados");
 });
 });

@@ -817,12 +817,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7841f240027cc87050c22b3fb94a2ada1c526f92",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T01:54:25.000Z",
       "message": "style: ordenar pruebas del catalogo",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/7841f240027cc87050c22b3fb94a2ada1c526f92"
     },
     "stats": {
       "total": 0,
@@ -832,6 +832,101 @@
     },
     "coverage": 91.07,
     "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "90a86f52b68efbf5d6c80ed98c8833bb1f1f4d89",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:10:32.000Z",
+      "message": "feat: filtrar objetos por categoria",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/90a86f52b68efbf5d6c80ed98c8833bb1f1f4d89"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 45,
+      "deletions": 8,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.23,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f0684ebcdeee39a1cc5a31e4e5011c20960a7b03",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:22:10.000Z",
+      "message": "feat: filtrar objetos por ubicacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/f0684ebcdeee39a1cc5a31e4e5011c20960a7b03"
+    },
+    "stats": {
+      "total": 56,
+      "additions": 45,
+      "deletions": 11,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.38,
+    "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e00908000d65d82a266717aa2f3354fe65acf2b4",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:28:37.000Z",
+      "message": "feat: combinar filtros de categoria y ubicacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/e00908000d65d82a266717aa2f3354fe65acf2b4"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 48,
+      "deletions": 14,
+      "date": "2026-10-18"
+    },
+    "coverage": 91.53,
+    "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1d636ce6d559c441eb9da28547b3c5436f0a42b1",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:35:31.000Z",
+      "message": "feat: mostrar mensaje cuando los filtros no tienen resultados",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/1d636ce6d559c441eb9da28547b3c5436f0a42b1"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 40,
+      "deletions": 8,
+      "date": "2026-10-18"
+    },
+    "coverage": 90.98,
+    "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-10-18T02:35:41.000Z",
+      "message": "style: centrar controles de busqueda y filtros",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 188,
+      "additions": 124,
+      "deletions": 64,
+      "date": "2026-10-18"
+    },
+    "coverage": 90.98,
+    "test_count": 38,
     "failed_tests": 0,
     "conclusion": "success"
   }

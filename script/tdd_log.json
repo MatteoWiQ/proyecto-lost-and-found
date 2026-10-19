@@ -1562,9 +1562,143 @@
     "testId": 43
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7841f240027cc87050c22b3fb94a2ada1c526f92",
     "commitName": "style: ordenar pruebas del catalogo",
     "commitTimestamp": 1792288466738,
     "testId": 43
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 1,
+    "numTotalTests": 35,
+    "timestamp": 1792288987306,
+    "success": false,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 0,
+    "numTotalTests": 35,
+    "timestamp": 1792289044667,
+    "success": true,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 0,
+    "numTotalTests": 35,
+    "timestamp": 1792289328253,
+    "success": true,
+    "testId": 44
+  },
+  {
+    "commitId": "90a86f52b68efbf5d6c80ed98c8833bb1f1f4d89",
+    "commitName": "feat: filtrar objetos por categoria",
+    "commitTimestamp": 1792289434000,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 1,
+    "numTotalTests": 36,
+    "timestamp": 1792289507045,
+    "success": false,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1792289534871,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1792289992034,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "f0684ebcdeee39a1cc5a31e4e5011c20960a7b03",
+    "commitName": "feat: filtrar objetos por ubicacion",
+    "commitTimestamp": 1792290131924,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 1,
+    "numTotalTests": 37,
+    "timestamp": 1792290276677,
+    "success": false,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1792290322671,
+    "success": true,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1792290428434,
+    "success": true,
+    "testId": 46
+  },
+  {
+    "commitId": "e00908000d65d82a266717aa2f3354fe65acf2b4",
+    "commitName": "feat: combinar filtros de categoria y ubicacion",
+    "commitTimestamp": 1792290518736,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 1,
+    "numTotalTests": 38,
+    "timestamp": 1792290576649,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792290616282,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792290743106,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 0,
+    "numTotalTests": 38,
+    "timestamp": 1792290908440,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "1d636ce6d559c441eb9da28547b3c5436f0a42b1",
+    "commitName": "feat: mostrar mensaje cuando los filtros no tienen resultados",
+    "commitTimestamp": 1792290932236,
+    "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: centrar controles de busqueda y filtros",
+    "commitTimestamp": 1792290942856,
+    "testId": 48
   }
 ]

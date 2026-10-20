@@ -1906,9 +1906,23 @@
     "testId": 63
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fe2f763a66e24f2d862936943479e69ef2a51cb8",
     "commitName": "test: agregar prueba para ocultar reportes con el filtro inactivo",
     "commitTimestamp": 1792505220616,
     "testId": 63
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792505256272,
+    "success": true,
+    "testId": 64
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ocultar reportes pendientes del catalogo con el filtro inactivo",
+    "commitTimestamp": 1792505270554,
+    "testId": 64
   }
 ]

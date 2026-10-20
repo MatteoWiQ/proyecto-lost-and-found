@@ -18,6 +18,9 @@ export function obtenerMensajePendientes(pendientes) {
   return "";
 }
 
-export function obtenerObjetosParaCatalogo(objetos) {
-  return objetos;
+export function obtenerObjetosParaCatalogo(objetos, mostrarOcultos) {
+  if (mostrarOcultos) {
+    return objetos;
+  }
+  return obtenerPublicados(objetos);
 }

@@ -1197,12 +1197,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fe2f763a66e24f2d862936943479e69ef2a51cb8",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:06:58.000Z",
       "message": "test: agregar prueba para ocultar reportes con el filtro inactivo",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/fe2f763a66e24f2d862936943479e69ef2a51cb8"
     },
     "stats": {
       "total": 10,
@@ -1214,5 +1214,24 @@
     "test_count": 46,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:07:48.000Z",
+      "message": "feat: ocultar reportes pendientes del catalogo con el filtro inactivo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

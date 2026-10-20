@@ -1892,9 +1892,23 @@
     "testId": 62
   },
   {
-    "commitId": "HEAD",
+    "commitId": "24c3b6896b8f70397aca9d0b7e72cfbd9325fb62",
     "commitName": "feat: incluir los reportes ocultos cuando el filtro esta activo",
     "commitTimestamp": 1792505139298,
     "testId": 62
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792505202721,
+    "success": false,
+    "testId": 63
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba para ocultar reportes con el filtro inactivo",
+    "commitTimestamp": 1792505220616,
+    "testId": 63
   }
 ]

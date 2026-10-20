@@ -43,4 +43,14 @@ describe("Aprobacion", () => {
 
     expect(visibles).toEqual([pendiente, publicado]);
   });
+
+  it("Deberia mostrar solo los publicados cuando el filtro esta inactivo", () => {
+    const pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
+    const publicado = new ObjetoPerdido("Chaqueta", "Ropa");
+    publicado.aprobar();
+
+    const visibles = obtenerObjetosParaCatalogo([pendiente, publicado], false);
+
+    expect(visibles).toEqual([publicado]);
+  });
 });

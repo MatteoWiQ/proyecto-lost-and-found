@@ -1007,12 +1007,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2a1adca7f938a34ba83b4b5e1c4be3ed056e6d4a",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T13:58:52.000Z",
       "message": "test: agregar prueba para listar publicaciones pendientes",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/2a1adca7f938a34ba83b4b5e1c4be3ed056e6d4a"
     },
     "stats": {
       "total": 14,
@@ -1022,6 +1022,25 @@
     },
     "coverage": 91.2,
     "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:59:28.000Z",
+      "message": "feat: listar publicaciones pendientes de validacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.34,
+    "test_count": 41,
     "failed_tests": 0,
     "conclusion": "success"
   }

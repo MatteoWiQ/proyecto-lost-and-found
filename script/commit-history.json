@@ -1235,17 +1235,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9006f2bf63c320efaeb385f1d7ed1bca4a8049dc",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:12:07.000Z",
       "message": "feat: agregar panel de aprobacion y filtro de reportes ocultos",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/9006f2bf63c320efaeb385f1d7ed1bca4a8049dc"
     },
     "stats": {
       "total": 68,
       "additions": 66,
       "deletions": 2,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:12:18.000Z",
+      "message": "style: dar formato visual al panel de administracion y sus badges",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 93,
+      "additions": 93,
+      "deletions": 0,
       "date": "2026-10-20"
     },
     "coverage": 91.24,

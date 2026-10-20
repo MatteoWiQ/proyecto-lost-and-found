@@ -1934,9 +1934,15 @@
     "testId": 65
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9006f2bf63c320efaeb385f1d7ed1bca4a8049dc",
     "commitName": "feat: agregar panel de aprobacion y filtro de reportes ocultos",
     "commitTimestamp": 1792505529388,
     "testId": 65
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: dar formato visual al panel de administracion y sus badges",
+    "commitTimestamp": 1792505540415,
+    "testId": 66
   }
 ]

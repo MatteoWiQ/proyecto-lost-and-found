@@ -1159,12 +1159,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1efb838cc49e7a4dd11fe23174e593878eb4e6db",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:04:55.000Z",
       "message": "test: agregar prueba para mostrar los reportes ocultos",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/1efb838cc49e7a4dd11fe23174e593878eb4e6db"
     },
     "stats": {
       "total": 12,
@@ -1176,5 +1176,24 @@
     "test_count": 45,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:05:37.000Z",
+      "message": "feat: incluir los reportes ocultos cuando el filtro esta activo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.11,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

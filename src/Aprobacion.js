@@ -17,3 +17,7 @@ export function obtenerMensajePendientes(pendientes) {
   }
   return "";
 }
+
+export function obtenerObjetosParaCatalogo(objetos) {
+  return objetos;
+}

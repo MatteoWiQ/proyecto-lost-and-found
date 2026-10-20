@@ -1878,9 +1878,23 @@
     "testId": 61
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1efb838cc49e7a4dd11fe23174e593878eb4e6db",
     "commitName": "test: agregar prueba para mostrar los reportes ocultos",
     "commitTimestamp": 1792505097317,
     "testId": 61
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792505125405,
+    "success": true,
+    "testId": 62
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: incluir los reportes ocultos cuando el filtro esta activo",
+    "commitTimestamp": 1792505139298,
+    "testId": 62
   }
 ]

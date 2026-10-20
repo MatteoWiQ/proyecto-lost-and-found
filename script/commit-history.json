@@ -1216,16 +1216,35 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "28e724b7c5631b92fb1ac818f4bb002790de8405",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:07:48.000Z",
       "message": "feat: ocultar reportes pendientes del catalogo con el filtro inactivo",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/28e724b7c5631b92fb1ac818f4bb002790de8405"
     },
     "stats": {
       "total": 7,
       "additions": 5,
+      "deletions": 2,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:12:07.000Z",
+      "message": "feat: agregar panel de aprobacion y filtro de reportes ocultos",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 68,
+      "additions": 66,
       "deletions": 2,
       "date": "2026-10-20"
     },

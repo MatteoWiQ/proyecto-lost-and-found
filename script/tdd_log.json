@@ -1920,9 +1920,23 @@
     "testId": 64
   },
   {
-    "commitId": "HEAD",
+    "commitId": "28e724b7c5631b92fb1ac818f4bb002790de8405",
     "commitName": "feat: ocultar reportes pendientes del catalogo con el filtro inactivo",
     "commitTimestamp": 1792505270554,
     "testId": 64
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792505449740,
+    "success": true,
+    "testId": 65
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar panel de aprobacion y filtro de reportes ocultos",
+    "commitTimestamp": 1792505529388,
+    "testId": 65
   }
 ]

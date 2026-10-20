@@ -48,6 +48,12 @@
   </form>
   <div id="resultado-div" aria-live="polite"></div>
 
+  <section id="pendientes-container" class="admin-panel" aria-label="Panel de administración">
+    <h2>Panel de administración</h2>
+    <p class="admin-ayuda">Las publicaciones quedan ocultas en el catálogo hasta ser aprobadas.</p>
+    <div id="pendientes-lista" class="pendientes-lista"></div>
+  </section>
+
   <section class="catalogo-controles" aria-label="Búsqueda y filtros">
     <div class="catalogo-control">
       <label for="busqueda">Buscar objeto:</label>
@@ -79,6 +85,11 @@
           Facultad de Tecnología
         </option>
       </select>
+    </div>
+
+    <div class="catalogo-control catalogo-control-checkbox">
+      <label for="mostrar-ocultos">Mostrar reportes ocultos:</label>
+      <input type="checkbox" id="mostrar-ocultos" />
     </div>
   </section>
 

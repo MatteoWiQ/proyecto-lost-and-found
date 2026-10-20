@@ -7,6 +7,13 @@ import {
   obtenerMensajeFiltros
 } from "./Catalogo.js";
 
+import {
+  obtenerPendientes,
+  aprobarPublicacion,
+  obtenerMensajePendientes,
+  obtenerObjetosParaCatalogo
+} from "./Aprobacion.js";
+
 const nombreInput = document.querySelector("#nombre");
 const categoriaInput = document.querySelector("#categoria");
 const fechaInput = document.querySelector("#fecha");
@@ -22,6 +29,8 @@ let fotoUrl;
 const busquedaInput = document.querySelector("#busqueda");
 const filtroCategoriaInput = document.querySelector("#filtro-categoria");
 const filtroUbicacionInput = document.querySelector("#filtro-ubicacion");
+const mostrarOcultosInput = document.querySelector("#mostrar-ocultos");
+const pendientesLista = document.querySelector("#pendientes-lista");
 
 fotoInput.addEventListener("change", () => {
   const foto = fotoInput.files[0];
@@ -71,6 +80,7 @@ form.addEventListener("submit", (event) => {
     `;
 
     ObjetoPerdido.registrarEnGaleria(objetoPerdido);
+    actualizarPendientesUI();
     actualizarResultadosCatalogo();
   } else {
     resultadoDiv.textContent = resultado;
@@ -101,6 +111,7 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
       <p><strong>Categoría:</strong> ${datos.categoria}</p>
       <p><strong>Ubicación:</strong> ${datos.lugar}</p>
       <p><strong>Fecha:</strong> ${datos.fecha}</p>
+      <p class="${obj.obtenerEstado() === "Publicado" ? "badge-publicado" : "badge-oculto"}">${obj.obtenerEstado()}</p>
     `;
 
     tarjeta.addEventListener("click", () => {
@@ -131,7 +142,10 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
 }
 
 function actualizarResultadosCatalogo() {
-  const objetos = ObjetoPerdido.obtenerGaleriaObjects();
+  const objetos = obtenerObjetosParaCatalogo(
+    ObjetoPerdido.obtenerGaleriaObjects(),
+    mostrarOcultosInput.checked
+  );
   const objetosFiltrados = filtrarObjetos(
     objetos,
     filtroCategoriaInput.value,
@@ -167,9 +181,47 @@ function actualizarResultadosCatalogo() {
   actualizarGaleriaUI(resultados);
 }
 
+function actualizarPendientesUI() {
+  const pendientes = obtenerPendientes(ObjetoPerdido.obtenerGaleriaObjects());
+  const mensaje = obtenerMensajePendientes(pendientes);
+
+  if (mensaje) {
+    pendientesLista.innerHTML = `<p class="galeria-vacia">${mensaje}</p>`;
+    return;
+  }
+
+  pendientesLista.innerHTML = "";
+
+  pendientes.forEach((objeto) => {
+    const item = document.createElement("div");
+    item.className = "pendiente-item";
+
+    const datos = objeto.obtenerDatosTarjeta();
+    const urlFoto = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
+
+    item.innerHTML = `
+      <img src="${urlFoto}" alt="${datos.nombre}" class="tarjeta-img" />
+      <p><strong>${datos.nombre}</strong></p>
+      <p><strong>Categoría:</strong> ${datos.categoria}</p>
+      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
+      <p><strong>Fecha:</strong> ${datos.fecha}</p>
+      <button class="btn-aprobar">Aprobar</button>
+    `;
+
+    item.querySelector(".btn-aprobar").addEventListener("click", () => {
+      aprobarPublicacion(objeto);
+      actualizarPendientesUI();
+      actualizarResultadosCatalogo();
+    });
+
+    pendientesLista.appendChild(item);
+  });
+}
+
 busquedaInput.addEventListener("input", actualizarResultadosCatalogo);
 filtroCategoriaInput.addEventListener("change", actualizarResultadosCatalogo);
 filtroUbicacionInput.addEventListener("change", actualizarResultadosCatalogo);
+mostrarOcultosInput.addEventListener("change", actualizarResultadosCatalogo);
 
 
 function crearContenedorGaleria() {
@@ -181,3 +233,4 @@ function crearContenedorGaleria() {
 }
 
 actualizarGaleriaUI();
+actualizarPendientesUI();

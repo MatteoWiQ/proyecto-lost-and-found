@@ -1140,12 +1140,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "7a3e1689164d14cf8de6d6556d456b9b78974b3f",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:03:58.000Z",
       "message": "feat: mostrar mensaje cuando no hay publicaciones pendientes",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/7a3e1689164d14cf8de6d6556d456b9b78974b3f"
     },
     "stats": {
       "total": 7,
@@ -1157,5 +1157,24 @@
     "test_count": 44,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:04:55.000Z",
+      "message": "test: agregar prueba para mostrar los reportes ocultos",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.04,
+    "test_count": 45,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

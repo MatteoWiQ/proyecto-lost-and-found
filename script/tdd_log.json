@@ -1864,9 +1864,23 @@
     "testId": 60
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7a3e1689164d14cf8de6d6556d456b9b78974b3f",
     "commitName": "feat: mostrar mensaje cuando no hay publicaciones pendientes",
     "commitTimestamp": 1792505040162,
     "testId": 60
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 1,
+    "numTotalTests": 45,
+    "timestamp": 1792505084690,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba para mostrar los reportes ocultos",
+    "commitTimestamp": 1792505097317,
+    "testId": 61
   }
 ]

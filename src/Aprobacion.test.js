@@ -1,5 +1,5 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
-import { obtenerPendientes, obtenerPublicados, aprobarPublicacion, obtenerMensajePendientes } from "./Aprobacion.js";
+import { obtenerPendientes, obtenerPublicados, aprobarPublicacion, obtenerMensajePendientes, obtenerObjetosParaCatalogo } from "./Aprobacion.js";
 
 describe("Aprobacion", () => {
   it("Deberia listar solo las publicaciones pendientes de validacion", () => {
@@ -32,5 +32,15 @@ describe("Aprobacion", () => {
 
   it("Deberia mostrar un mensaje cuando no hay publicaciones pendientes", () => {
     expect(obtenerMensajePendientes([])).toEqual("No hay publicaciones pendientes");
+  });
+
+  it("Deberia incluir los reportes ocultos cuando el filtro esta activo", () => {
+    const pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
+    const publicado = new ObjetoPerdido("Chaqueta", "Ropa");
+    publicado.aprobar();
+
+    const visibles = obtenerObjetosParaCatalogo([pendiente, publicado], true);
+
+    expect(visibles).toEqual([pendiente, publicado]);
   });
 });

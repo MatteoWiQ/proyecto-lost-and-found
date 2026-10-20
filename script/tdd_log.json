@@ -1982,9 +1982,23 @@
     "testId": 69
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8f71f6228b395368018b0ff559a8afdfda45d170",
     "commitName": "test: agregar prueba para construir campos de ficha con estado",
     "commitTimestamp": 1792505794064,
     "testId": 69
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1792505833243,
+    "success": true,
+    "testId": 70
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: incluir estado en los campos de la ficha tecnica",
+    "commitTimestamp": 1792505852455,
+    "testId": 70
   }
 ]

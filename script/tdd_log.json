@@ -1940,9 +1940,23 @@
     "testId": 65
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2f65a380964d9e0158a580d7a67a97bd2c7ad36b",
     "commitName": "style: dar formato visual al panel de administracion y sus badges",
     "commitTimestamp": 1792505540415,
     "testId": 66
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792505609457,
+    "success": false,
+    "testId": 67
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba de la ficha tecnica con estado",
+    "commitTimestamp": 1792505617212,
+    "testId": 67
   }
 ]

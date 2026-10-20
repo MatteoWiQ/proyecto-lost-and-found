@@ -1780,9 +1780,23 @@
     "testId": 54
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5037b632e8e01dcdd0ceb08ca9ffa93f06a482b2",
     "commitName": "feat: listar publicaciones pendientes de validacion",
     "commitTimestamp": 1792504770321,
     "testId": 54
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 1,
+    "numTotalTests": 42,
+    "timestamp": 1792504814019,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba para listar publicaciones aprobadas",
+    "commitTimestamp": 1792504825585,
+    "testId": 55
   }
 ]

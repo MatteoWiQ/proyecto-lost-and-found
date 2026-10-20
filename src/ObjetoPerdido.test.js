@@ -179,4 +179,10 @@ describe("ObjetoPerdido", () => {
     const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
     expect(objeto.obtenerEstado()).toEqual("Pendiente de validación");
   });
+
+  it("Deberia cambiar a estado Publicado al aprobarse", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.aprobar();
+    expect(objeto.obtenerEstado()).toEqual("Publicado");
+  });
 });

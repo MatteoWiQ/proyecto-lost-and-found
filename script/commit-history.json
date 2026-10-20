@@ -1273,12 +1273,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "60541c2401beb4afe5dda49043de9e4d2e1b6f31",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:13:35.000Z",
       "message": "test: agregar prueba de la ficha tecnica con estado",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/60541c2401beb4afe5dda49043de9e4d2e1b6f31"
     },
     "stats": {
       "total": 8,
@@ -1290,5 +1290,24 @@
     "test_count": 47,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:15:17.000Z",
+      "message": "feat: obtener ficha tecnica con el estado actual del objeto",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.3,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

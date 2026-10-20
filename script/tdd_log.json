@@ -1794,9 +1794,23 @@
     "testId": 55
   },
   {
-    "commitId": "HEAD",
+    "commitId": "012eff4b475b814fd7e58c1e15288414a68648c7",
     "commitName": "test: agregar prueba para listar publicaciones aprobadas",
     "commitTimestamp": 1792504825585,
     "testId": 55
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1792504855172,
+    "success": true,
+    "testId": 56
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: listar publicaciones aprobadas visibles en el catalogo",
+    "commitTimestamp": 1792504873011,
+    "testId": 56
   }
 ]

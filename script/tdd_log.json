@@ -1808,9 +1808,23 @@
     "testId": 56
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b28e0a838a092053ae9e191a97c886ad10a87806",
     "commitName": "feat: listar publicaciones aprobadas visibles en el catalogo",
     "commitTimestamp": 1792504873011,
     "testId": 56
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 1,
+    "numTotalTests": 43,
+    "timestamp": 1792504902875,
+    "success": false,
+    "testId": 57
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba para aprobar una publicacion desde el modulo",
+    "commitTimestamp": 1792504918864,
+    "testId": 57
   }
 ]

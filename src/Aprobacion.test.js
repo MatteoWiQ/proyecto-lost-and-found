@@ -1,5 +1,5 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
-import { obtenerPendientes, obtenerPublicados } from "./Aprobacion.js";
+import { obtenerPendientes, obtenerPublicados, aprobarPublicacion } from "./Aprobacion.js";
 
 describe("Aprobacion", () => {
   it("Deberia listar solo las publicaciones pendientes de validacion", () => {
@@ -20,5 +20,13 @@ describe("Aprobacion", () => {
     const publicados = obtenerPublicados([pendiente, publicado]);
 
     expect(publicados).toEqual([publicado]);
+  });
+
+  it("Deberia aprobar una publicacion y dejarla en estado Publicado", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+
+    aprobarPublicacion(objeto);
+
+    expect(objeto.obtenerEstado()).toEqual("Publicado");
   });
 });

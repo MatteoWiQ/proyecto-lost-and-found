@@ -1064,12 +1064,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "b28e0a838a092053ae9e191a97c886ad10a87806",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:01:11.000Z",
       "message": "feat: listar publicaciones aprobadas visibles en el catalogo",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b28e0a838a092053ae9e191a97c886ad10a87806"
     },
     "stats": {
       "total": 4,
@@ -1081,5 +1081,24 @@
     "test_count": 42,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:01:57.000Z",
+      "message": "test: agregar prueba para aprobar una publicacion desde el modulo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.47,
+    "test_count": 43,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

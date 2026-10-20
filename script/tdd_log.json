@@ -1822,9 +1822,23 @@
     "testId": 57
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8556264dd68358490cbe97fefea2f79e4eb56ede",
     "commitName": "test: agregar prueba para aprobar una publicacion desde el modulo",
     "commitTimestamp": 1792504918864,
     "testId": 57
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 0,
+    "numTotalTests": 43,
+    "timestamp": 1792504950022,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aprobar una publicacion desde el modulo de aprobacion",
+    "commitTimestamp": 1792504964745,
+    "testId": 58
   }
 ]

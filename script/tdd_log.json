@@ -1738,9 +1738,23 @@
     "testId": 51
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7d3076990b1291703778e4e9b43993fd09cce9ec",
     "commitName": "test: agregar prueba para aprobar una publicacion",
     "commitTimestamp": 1792504621804,
     "testId": 51
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 0,
+    "numTotalTests": 40,
+    "timestamp": 1792504653832,
+    "success": true,
+    "testId": 52
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aprobar una publicacion cambiando su estado a publicado",
+    "commitTimestamp": 1792504670873,
+    "testId": 52
   }
 ]

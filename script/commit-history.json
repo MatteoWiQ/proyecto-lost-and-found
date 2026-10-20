@@ -969,12 +969,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7d3076990b1291703778e4e9b43993fd09cce9ec",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T13:57:00.000Z",
       "message": "test: agregar prueba para aprobar una publicacion",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/7d3076990b1291703778e4e9b43993fd09cce9ec"
     },
     "stats": {
       "total": 6,
@@ -986,5 +986,24 @@
     "test_count": 40,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:57:49.000Z",
+      "message": "feat: aprobar una publicacion cambiando su estado a publicado",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.2,
+    "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

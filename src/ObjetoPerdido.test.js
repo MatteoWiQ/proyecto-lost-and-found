@@ -174,4 +174,9 @@ describe("ObjetoPerdido", () => {
     ObjetoPerdido.galeria = [];
     expect(ObjetoPerdido.obtenerMensajeGaleriaVacia()).toEqual("No hay objetos disponibles");
   });
+
+  it("Deberia iniciar con estado Pendiente de validacion", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    expect(objeto.obtenerEstado()).toEqual("Pendiente de validación");
+  });
 });

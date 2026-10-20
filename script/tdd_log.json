@@ -1696,9 +1696,23 @@
     "testId": 47
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b0a9eeabd7d3ffba6a9be387a385f9d710d2ac2b",
     "commitName": "style: centrar controles de busqueda y filtros",
     "commitTimestamp": 1792290942856,
     "testId": 48
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 1,
+    "numTotalTests": 39,
+    "timestamp": 1792504410114,
+    "success": false,
+    "testId": 49
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba del estado inicial de la publicacion",
+    "commitTimestamp": 1792504425078,
+    "testId": 49
   }
 ]

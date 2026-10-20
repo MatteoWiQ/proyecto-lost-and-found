@@ -912,12 +912,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b0a9eeabd7d3ffba6a9be387a385f9d710d2ac2b",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T02:35:41.000Z",
       "message": "style: centrar controles de busqueda y filtros",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b0a9eeabd7d3ffba6a9be387a385f9d710d2ac2b"
     },
     "stats": {
       "total": 188,
@@ -929,5 +929,24 @@
     "test_count": 38,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:53:43.000Z",
+      "message": "test: agregar prueba del estado inicial de la publicacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 90.98,
+    "test_count": 39,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

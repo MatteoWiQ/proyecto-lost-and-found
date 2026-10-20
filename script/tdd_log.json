@@ -1696,9 +1696,391 @@
     "testId": 47
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b0a9eeabd7d3ffba6a9be387a385f9d710d2ac2b",
     "commitName": "style: centrar controles de busqueda y filtros",
     "commitTimestamp": 1792290942856,
     "testId": 48
+  },
+  {
+    "numPassedTests": 38,
+    "failedTests": 1,
+    "numTotalTests": 39,
+    "timestamp": 1792504410114,
+    "success": false,
+    "testId": 49
+  },
+  {
+    "commitId": "acb3a45f38632ddab27997d537ea4590ed7d9216",
+    "commitName": "test: agregar prueba del estado inicial de la publicacion",
+    "commitTimestamp": 1792504425078,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792504470879,
+    "success": true,
+    "testId": 50
+  },
+  {
+    "commitId": "a7bdd37b7287625853c34fd7ecd86dfe21404542",
+    "commitName": "feat: asignar estado pendiente de validacion al registrar un objeto",
+    "commitTimestamp": 1792504485983,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 1,
+    "numTotalTests": 40,
+    "timestamp": 1792504537781,
+    "success": false,
+    "testId": 51
+  },
+  {
+    "commitId": "7d3076990b1291703778e4e9b43993fd09cce9ec",
+    "commitName": "test: agregar prueba para aprobar una publicacion",
+    "commitTimestamp": 1792504621804,
+    "testId": 51
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 0,
+    "numTotalTests": 40,
+    "timestamp": 1792504653832,
+    "success": true,
+    "testId": 52
+  },
+  {
+    "commitId": "6ef8e22144637bd61d657d5b073b2272e883112e",
+    "commitName": "feat: aprobar una publicacion cambiando su estado a publicado",
+    "commitTimestamp": 1792504670873,
+    "testId": 52
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 0,
+    "numTotalTests": 40,
+    "timestamp": 1792504714116,
+    "success": false,
+    "testId": 53
+  },
+  {
+    "commitId": "2a1adca7f938a34ba83b4b5e1c4be3ed056e6d4a",
+    "commitName": "test: agregar prueba para listar publicaciones pendientes",
+    "commitTimestamp": 1792504733973,
+    "testId": 53
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 0,
+    "numTotalTests": 41,
+    "timestamp": 1792504757614,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "commitId": "5037b632e8e01dcdd0ceb08ca9ffa93f06a482b2",
+    "commitName": "feat: listar publicaciones pendientes de validacion",
+    "commitTimestamp": 1792504770321,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 1,
+    "numTotalTests": 42,
+    "timestamp": 1792504814019,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "commitId": "012eff4b475b814fd7e58c1e15288414a68648c7",
+    "commitName": "test: agregar prueba para listar publicaciones aprobadas",
+    "commitTimestamp": 1792504825585,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1792504855172,
+    "success": true,
+    "testId": 56
+  },
+  {
+    "commitId": "b28e0a838a092053ae9e191a97c886ad10a87806",
+    "commitName": "feat: listar publicaciones aprobadas visibles en el catalogo",
+    "commitTimestamp": 1792504873011,
+    "testId": 56
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 1,
+    "numTotalTests": 43,
+    "timestamp": 1792504902875,
+    "success": false,
+    "testId": 57
+  },
+  {
+    "commitId": "8556264dd68358490cbe97fefea2f79e4eb56ede",
+    "commitName": "test: agregar prueba para aprobar una publicacion desde el modulo",
+    "commitTimestamp": 1792504918864,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 0,
+    "numTotalTests": 43,
+    "timestamp": 1792504950022,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "063a22ef6def1f7fa7f10a6ed126ef5e3693520c",
+    "commitName": "feat: aprobar una publicacion desde el modulo de aprobacion",
+    "commitTimestamp": 1792504964745,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 1,
+    "numTotalTests": 44,
+    "timestamp": 1792504996303,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "commitId": "69b19f6bdb38e9b2077cc46f3e6a924e89683a95",
+    "commitName": "test: agregar prueba del mensaje cuando no hay pendientes",
+    "commitTimestamp": 1792505007287,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 0,
+    "numTotalTests": 44,
+    "timestamp": 1792505028313,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "commitId": "7a3e1689164d14cf8de6d6556d456b9b78974b3f",
+    "commitName": "feat: mostrar mensaje cuando no hay publicaciones pendientes",
+    "commitTimestamp": 1792505040162,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 1,
+    "numTotalTests": 45,
+    "timestamp": 1792505084690,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "commitId": "1efb838cc49e7a4dd11fe23174e593878eb4e6db",
+    "commitName": "test: agregar prueba para mostrar los reportes ocultos",
+    "commitTimestamp": 1792505097317,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 0,
+    "numTotalTests": 45,
+    "timestamp": 1792505125405,
+    "success": true,
+    "testId": 62
+  },
+  {
+    "commitId": "24c3b6896b8f70397aca9d0b7e72cfbd9325fb62",
+    "commitName": "feat: incluir los reportes ocultos cuando el filtro esta activo",
+    "commitTimestamp": 1792505139298,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 1,
+    "numTotalTests": 46,
+    "timestamp": 1792505202721,
+    "success": false,
+    "testId": 63
+  },
+  {
+    "commitId": "fe2f763a66e24f2d862936943479e69ef2a51cb8",
+    "commitName": "test: agregar prueba para ocultar reportes con el filtro inactivo",
+    "commitTimestamp": 1792505220616,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792505256272,
+    "success": true,
+    "testId": 64
+  },
+  {
+    "commitId": "28e724b7c5631b92fb1ac818f4bb002790de8405",
+    "commitName": "feat: ocultar reportes pendientes del catalogo con el filtro inactivo",
+    "commitTimestamp": 1792505270554,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1792505449740,
+    "success": true,
+    "testId": 65
+  },
+  {
+    "commitId": "9006f2bf63c320efaeb385f1d7ed1bca4a8049dc",
+    "commitName": "feat: agregar panel de aprobacion y filtro de reportes ocultos",
+    "commitTimestamp": 1792505529388,
+    "testId": 65
+  },
+  {
+    "commitId": "2f65a380964d9e0158a580d7a67a97bd2c7ad36b",
+    "commitName": "style: dar formato visual al panel de administracion y sus badges",
+    "commitTimestamp": 1792505540415,
+    "testId": 66
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792505609457,
+    "success": false,
+    "testId": 67
+  },
+  {
+    "commitId": "60541c2401beb4afe5dda49043de9e4d2e1b6f31",
+    "commitName": "test: agregar prueba de la ficha tecnica con estado",
+    "commitTimestamp": 1792505617212,
+    "testId": 67
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792505701318,
+    "success": true,
+    "testId": 68
+  },
+  {
+    "commitId": "60a46c0df3c0cbb765c6def5f6eaf41c80962951",
+    "commitName": "feat: obtener ficha tecnica con el estado actual del objeto",
+    "commitTimestamp": 1792505719304,
+    "testId": 68
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792505779860,
+    "success": false,
+    "testId": 69
+  },
+  {
+    "commitId": "8f71f6228b395368018b0ff559a8afdfda45d170",
+    "commitName": "test: agregar prueba para construir campos de ficha con estado",
+    "commitTimestamp": 1792505794064,
+    "testId": 69
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1792505833243,
+    "success": true,
+    "testId": 70
+  },
+  {
+    "commitId": "1d8840a071c2f07a42a4b44a3edd6220374e4188",
+    "commitName": "feat: incluir estado en los campos de la ficha tecnica",
+    "commitTimestamp": 1792505852455,
+    "testId": 70
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 1,
+    "numTotalTests": 49,
+    "timestamp": 1792505882769,
+    "success": false,
+    "testId": 71
+  },
+  {
+    "commitId": "ab4a723c716c29a5de502fa9b50fd4f018f9b711",
+    "commitName": "test: agregar prueba de campos basicos de la ficha tecnica",
+    "commitTimestamp": 1792505895495,
+    "testId": 71
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 0,
+    "numTotalTests": 49,
+    "timestamp": 1792510352472,
+    "success": true,
+    "testId": 72
+  },
+  {
+    "commitId": "87d5be8a6e2a035af749b29711002e0374f943a4",
+    "commitName": "feat: incluir campos basicos de la ficha tecnica",
+    "commitTimestamp": 1792510376407,
+    "testId": 72
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510408170,
+    "success": true,
+    "testId": 73
+  },
+  {
+    "commitId": "42bac68d2aa58d8e0366dc39436e1f37339ec110",
+    "commitName": "test: agregar prueba para indicar ninguno cuando no hay comentario",
+    "commitTimestamp": 1792510420752,
+    "testId": 73
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510510992,
+    "success": true,
+    "testId": 74
+  },
+  {
+    "commitId": "94fd90ea38ffc7af236da5939b78626c39eb07a0",
+    "commitName": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
+    "commitTimestamp": 1792510551967,
+    "testId": 74
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510927673,
+    "success": true,
+    "testId": 75
+  },
+  {
+    "commitId": "bd3ea763d1d9a6e305b6db20d11f219777c6c6a8",
+    "commitName": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
+    "commitTimestamp": 1792514843258,
+    "testId": 75
+  },
+  {
+    "commitId": "327b3d43100cac8027bb01c2cb7168522307c1ca",
+    "commitName": "fix: corregir main en package.json para build de Vercel (parcel html)",
+    "commitTimestamp": 1792515402257,
+    "testId": 76
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: quitar main de package.json (no es librería) para build parcel html",
+    "commitTimestamp": 1792515619488,
+    "testId": 77
   }
 ]

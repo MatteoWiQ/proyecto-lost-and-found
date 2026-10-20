@@ -912,12 +912,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b0a9eeabd7d3ffba6a9be387a385f9d710d2ac2b",
     "author": "Soria",
     "commit": {
       "date": "2026-10-18T02:35:41.000Z",
       "message": "style: centrar controles de busqueda y filtros",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b0a9eeabd7d3ffba6a9be387a385f9d710d2ac2b"
     },
     "stats": {
       "total": 188,
@@ -927,6 +927,557 @@
     },
     "coverage": 90.98,
     "test_count": 38,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "acb3a45f38632ddab27997d537ea4590ed7d9216",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:53:43.000Z",
+      "message": "test: agregar prueba del estado inicial de la publicacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/acb3a45f38632ddab27997d537ea4590ed7d9216"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 90.98,
+    "test_count": 39,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a7bdd37b7287625853c34fd7ecd86dfe21404542",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:54:44.000Z",
+      "message": "feat: asignar estado pendiente de validacion al registrar un objeto",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/a7bdd37b7287625853c34fd7ecd86dfe21404542"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.13,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7d3076990b1291703778e4e9b43993fd09cce9ec",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:57:00.000Z",
+      "message": "test: agregar prueba para aprobar una publicacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/7d3076990b1291703778e4e9b43993fd09cce9ec"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.13,
+    "test_count": 40,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "6ef8e22144637bd61d657d5b073b2272e883112e",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:57:49.000Z",
+      "message": "feat: aprobar una publicacion cambiando su estado a publicado",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/6ef8e22144637bd61d657d5b073b2272e883112e"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.2,
+    "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2a1adca7f938a34ba83b4b5e1c4be3ed056e6d4a",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:58:52.000Z",
+      "message": "test: agregar prueba para listar publicaciones pendientes",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/2a1adca7f938a34ba83b4b5e1c4be3ed056e6d4a"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.2,
+    "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5037b632e8e01dcdd0ceb08ca9ffa93f06a482b2",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:59:28.000Z",
+      "message": "feat: listar publicaciones pendientes de validacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/5037b632e8e01dcdd0ceb08ca9ffa93f06a482b2"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 3,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.34,
+    "test_count": 41,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "012eff4b475b814fd7e58c1e15288414a68648c7",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:00:23.000Z",
+      "message": "test: agregar prueba para listar publicaciones aprobadas",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/012eff4b475b814fd7e58c1e15288414a68648c7"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.34,
+    "test_count": 42,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "b28e0a838a092053ae9e191a97c886ad10a87806",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:01:11.000Z",
+      "message": "feat: listar publicaciones aprobadas visibles en el catalogo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/b28e0a838a092053ae9e191a97c886ad10a87806"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.47,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8556264dd68358490cbe97fefea2f79e4eb56ede",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:01:57.000Z",
+      "message": "test: agregar prueba para aprobar una publicacion desde el modulo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/8556264dd68358490cbe97fefea2f79e4eb56ede"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.47,
+    "test_count": 43,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "063a22ef6def1f7fa7f10a6ed126ef5e3693520c",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:02:43.000Z",
+      "message": "feat: aprobar una publicacion desde el modulo de aprobacion",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/063a22ef6def1f7fa7f10a6ed126ef5e3693520c"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.6,
+    "test_count": 43,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "69b19f6bdb38e9b2077cc46f3e6a924e89683a95",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:03:25.000Z",
+      "message": "test: agregar prueba del mensaje cuando no hay pendientes",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/69b19f6bdb38e9b2077cc46f3e6a924e89683a95"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.6,
+    "test_count": 44,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "7a3e1689164d14cf8de6d6556d456b9b78974b3f",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:03:58.000Z",
+      "message": "feat: mostrar mensaje cuando no hay publicaciones pendientes",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/7a3e1689164d14cf8de6d6556d456b9b78974b3f"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.04,
+    "test_count": 44,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1efb838cc49e7a4dd11fe23174e593878eb4e6db",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:04:55.000Z",
+      "message": "test: agregar prueba para mostrar los reportes ocultos",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/1efb838cc49e7a4dd11fe23174e593878eb4e6db"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.04,
+    "test_count": 45,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "24c3b6896b8f70397aca9d0b7e72cfbd9325fb62",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:05:37.000Z",
+      "message": "feat: incluir los reportes ocultos cuando el filtro esta activo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/24c3b6896b8f70397aca9d0b7e72cfbd9325fb62"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.11,
+    "test_count": 45,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fe2f763a66e24f2d862936943479e69ef2a51cb8",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:06:58.000Z",
+      "message": "test: agregar prueba para ocultar reportes con el filtro inactivo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/fe2f763a66e24f2d862936943479e69ef2a51cb8"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.11,
+    "test_count": 46,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "28e724b7c5631b92fb1ac818f4bb002790de8405",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:07:48.000Z",
+      "message": "feat: ocultar reportes pendientes del catalogo con el filtro inactivo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/28e724b7c5631b92fb1ac818f4bb002790de8405"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 5,
+      "deletions": 2,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9006f2bf63c320efaeb385f1d7ed1bca4a8049dc",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:12:07.000Z",
+      "message": "feat: agregar panel de aprobacion y filtro de reportes ocultos",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/9006f2bf63c320efaeb385f1d7ed1bca4a8049dc"
+    },
+    "stats": {
+      "total": 68,
+      "additions": 66,
+      "deletions": 2,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2f65a380964d9e0158a580d7a67a97bd2c7ad36b",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:12:18.000Z",
+      "message": "style: dar formato visual al panel de administracion y sus badges",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/2f65a380964d9e0158a580d7a67a97bd2c7ad36b"
+    },
+    "stats": {
+      "total": 93,
+      "additions": 93,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "60541c2401beb4afe5dda49043de9e4d2e1b6f31",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:13:35.000Z",
+      "message": "test: agregar prueba de la ficha tecnica con estado",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/60541c2401beb4afe5dda49043de9e4d2e1b6f31"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 47,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "60a46c0df3c0cbb765c6def5f6eaf41c80962951",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:15:17.000Z",
+      "message": "feat: obtener ficha tecnica con el estado actual del objeto",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/60a46c0df3c0cbb765c6def5f6eaf41c80962951"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.3,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8f71f6228b395368018b0ff559a8afdfda45d170",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:16:32.000Z",
+      "message": "test: agregar prueba para construir campos de ficha con estado",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/8f71f6228b395368018b0ff559a8afdfda45d170"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.3,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1d8840a071c2f07a42a4b44a3edd6220374e4188",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:17:30.000Z",
+      "message": "feat: incluir estado en los campos de la ficha tecnica",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/1d8840a071c2f07a42a4b44a3edd6220374e4188"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 48,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ab4a723c716c29a5de502fa9b50fd4f018f9b711",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:18:13.000Z",
+      "message": "test: agregar prueba de campos basicos de la ficha tecnica",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/ab4a723c716c29a5de502fa9b50fd4f018f9b711"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 49,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "87d5be8a6e2a035af749b29711002e0374f943a4",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:32:54.000Z",
+      "message": "feat: incluir campos basicos de la ficha tecnica",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/87d5be8a6e2a035af749b29711002e0374f943a4"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 49,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "42bac68d2aa58d8e0366dc39436e1f37339ec110",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:33:39.000Z",
+      "message": "test: agregar prueba para indicar ninguno cuando no hay comentario",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/42bac68d2aa58d8e0366dc39436e1f37339ec110"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "94fd90ea38ffc7af236da5939b78626c39eb07a0",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:35:50.000Z",
+      "message": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/94fd90ea38ffc7af236da5939b78626c39eb07a0"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 11,
+      "deletions": 8,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bd3ea763d1d9a6e305b6db20d11f219777c6c6a8",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T16:47:21.000Z",
+      "message": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/bd3ea763d1d9a6e305b6db20d11f219777c6c6a8"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "327b3d43100cac8027bb01c2cb7168522307c1ca",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T16:56:40.000Z",
+      "message": "fix: corregir main en package.json para build de Vercel (parcel html)",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/327b3d43100cac8027bb01c2cb7168522307c1ca"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T17:00:17.000Z",
+      "message": "fix: quitar main de package.json (no es librería) para build parcel html",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 0,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
     "failed_tests": 0,
     "conclusion": "success"
   }

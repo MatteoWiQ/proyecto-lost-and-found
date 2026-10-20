@@ -174,4 +174,23 @@ describe("ObjetoPerdido", () => {
     ObjetoPerdido.galeria = [];
     expect(ObjetoPerdido.obtenerMensajeGaleriaVacia()).toEqual("No hay objetos disponibles");
   });
+
+  it("Deberia iniciar con estado Pendiente de validacion", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    expect(objeto.obtenerEstado()).toEqual("Pendiente de validación");
+  });
+
+  it("Deberia cambiar a estado Publicado al aprobarse", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.aprobar();
+    expect(objeto.obtenerEstado()).toEqual("Publicado");
+  });
+
+  it("Deberia retornar la ficha tecnica con el estado actual del objeto", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-15", "10:30", "Biblioteca", "Rayada", "laptop.png");
+
+    const ficha = objeto.obtenerFichaTecnica();
+
+    expect(ficha.estado).toEqual("Pendiente de validación");
+  });
 });

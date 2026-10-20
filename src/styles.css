@@ -322,3 +322,96 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* seccion 5: panel de administracion y filtro de reportes ocultos */
+.admin-panel {
+  max-width: 760px;
+  margin: 24px auto 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #c7d5e8;
+  border-radius: 10px;
+}
+
+.admin-panel h2 {
+  margin-top: 0;
+  color: #183153;
+  font-size: 20px;
+}
+
+.admin-ayuda {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.pendientes-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.pendiente-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background-color: #f9fbfe;
+  border: 1px solid #dce5f0;
+  border-radius: 10px;
+}
+
+.pendiente-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #102544;
+}
+
+.btn-aprobar {
+  padding: 10px 16px;
+  background-color: #174b87;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-aprobar:hover {
+  background-color: #102544;
+}
+
+.catalogo-control-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+.catalogo-control-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.badge-oculto,
+.badge-publicado {
+  align-self: flex-start;
+  margin: 4px 0 0;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-oculto {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffe08a;
+}
+
+.badge-publicado {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #a3cfb7;
+}

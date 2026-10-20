@@ -2024,9 +2024,23 @@
     "testId": 72
   },
   {
-    "commitId": "HEAD",
+    "commitId": "87d5be8a6e2a035af749b29711002e0374f943a4",
     "commitName": "feat: incluir campos basicos de la ficha tecnica",
     "commitTimestamp": 1792510376407,
     "testId": 72
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510408170,
+    "success": true,
+    "testId": 73
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba para indicar ninguno cuando no hay comentario",
+    "commitTimestamp": 1792510420752,
+    "testId": 73
   }
 ]

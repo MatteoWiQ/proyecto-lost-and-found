@@ -1368,12 +1368,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "87d5be8a6e2a035af749b29711002e0374f943a4",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T15:32:54.000Z",
       "message": "feat: incluir campos basicos de la ficha tecnica",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/87d5be8a6e2a035af749b29711002e0374f943a4"
     },
     "stats": {
       "total": 6,
@@ -1383,6 +1383,25 @@
     },
     "coverage": 91.37,
     "test_count": 49,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:33:39.000Z",
+      "message": "test: agregar prueba para indicar ninguno cuando no hay comentario",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
     "failed_tests": 0,
     "conclusion": "success"
   }

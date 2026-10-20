@@ -22,4 +22,12 @@ describe("FichaTecnica", () => {
       { etiqueta: "Ubicación", valor: "Biblioteca" }
     ]));
   });
+
+  it("Deberia indicar Ninguno cuando no hay comentario", () => {
+    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", commentario: "", foto: "laptop.png", estado: "Pendiente de validación" };
+
+    const campos = obtenerCamposFicha(ficha);
+
+    expect(campos).toContainEqual({ etiqueta: "Comentario", valor: "Ninguno" });
+  });
 });

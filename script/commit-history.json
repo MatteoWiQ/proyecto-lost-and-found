@@ -1330,12 +1330,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1d8840a071c2f07a42a4b44a3edd6220374e4188",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:17:30.000Z",
       "message": "feat: incluir estado en los campos de la ficha tecnica",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/1d8840a071c2f07a42a4b44a3edd6220374e4188"
     },
     "stats": {
       "total": 5,
@@ -1347,5 +1347,24 @@
     "test_count": 48,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:18:13.000Z",
+      "message": "test: agregar prueba de campos basicos de la ficha tecnica",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 49,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

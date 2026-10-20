@@ -1121,12 +1121,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69b19f6bdb38e9b2077cc46f3e6a924e89683a95",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:03:25.000Z",
       "message": "test: agregar prueba del mensaje cuando no hay pendientes",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/69b19f6bdb38e9b2077cc46f3e6a924e89683a95"
     },
     "stats": {
       "total": 6,
@@ -1138,5 +1138,24 @@
     "test_count": 44,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:03:58.000Z",
+      "message": "feat: mostrar mensaje cuando no hay publicaciones pendientes",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.04,
+    "test_count": 44,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

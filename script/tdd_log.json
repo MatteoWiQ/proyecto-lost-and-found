@@ -1850,9 +1850,23 @@
     "testId": 59
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69b19f6bdb38e9b2077cc46f3e6a924e89683a95",
     "commitName": "test: agregar prueba del mensaje cuando no hay pendientes",
     "commitTimestamp": 1792505007287,
     "testId": 59
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 0,
+    "numTotalTests": 44,
+    "timestamp": 1792505028313,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar mensaje cuando no hay publicaciones pendientes",
+    "commitTimestamp": 1792505040162,
+    "testId": 60
   }
 ]

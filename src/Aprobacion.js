@@ -10,3 +10,10 @@ export function aprobarPublicacion(objeto) {
   objeto.aprobar();
   return objeto;
 }
+
+export function obtenerMensajePendientes(pendientes) {
+  if (pendientes.length === 0) {
+    return "No hay publicaciones pendientes";
+  }
+  return "";
+}

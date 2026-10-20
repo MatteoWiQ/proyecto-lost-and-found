@@ -2052,9 +2052,23 @@
     "testId": 74
   },
   {
-    "commitId": "HEAD",
+    "commitId": "94fd90ea38ffc7af236da5939b78626c39eb07a0",
     "commitName": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
     "commitTimestamp": 1792510551967,
     "testId": 74
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510927673,
+    "success": true,
+    "testId": 75
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
+    "commitTimestamp": 1792514843258,
+    "testId": 75
   }
 ]

@@ -1406,17 +1406,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "94fd90ea38ffc7af236da5939b78626c39eb07a0",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T15:35:50.000Z",
       "message": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/94fd90ea38ffc7af236da5939b78626c39eb07a0"
     },
     "stats": {
       "total": 19,
       "additions": 11,
       "deletions": 8,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T16:47:21.000Z",
+      "message": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
       "date": "2026-10-20"
     },
     "coverage": 91.37,

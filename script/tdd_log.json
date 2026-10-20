@@ -1968,9 +1968,23 @@
     "testId": 68
   },
   {
-    "commitId": "HEAD",
+    "commitId": "60a46c0df3c0cbb765c6def5f6eaf41c80962951",
     "commitName": "feat: obtener ficha tecnica con el estado actual del objeto",
     "commitTimestamp": 1792505719304,
     "testId": 68
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792505779860,
+    "success": false,
+    "testId": 69
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba para construir campos de ficha con estado",
+    "commitTimestamp": 1792505794064,
+    "testId": 69
   }
 ]

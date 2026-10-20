@@ -1292,16 +1292,35 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "60a46c0df3c0cbb765c6def5f6eaf41c80962951",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:15:17.000Z",
       "message": "feat: obtener ficha tecnica con el estado actual del objeto",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/60a46c0df3c0cbb765c6def5f6eaf41c80962951"
     },
     "stats": {
       "total": 13,
       "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.3,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:16:32.000Z",
+      "message": "test: agregar prueba para construir campos de ficha con estado",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
       "deletions": 0,
       "date": "2026-10-20"
     },

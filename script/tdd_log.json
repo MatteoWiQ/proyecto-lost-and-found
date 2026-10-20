@@ -2010,9 +2010,23 @@
     "testId": 71
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ab4a723c716c29a5de502fa9b50fd4f018f9b711",
     "commitName": "test: agregar prueba de campos basicos de la ficha tecnica",
     "commitTimestamp": 1792505895495,
     "testId": 71
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 0,
+    "numTotalTests": 49,
+    "timestamp": 1792510352472,
+    "success": true,
+    "testId": 72
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: incluir campos basicos de la ficha tecnica",
+    "commitTimestamp": 1792510376407,
+    "testId": 72
   }
 ]

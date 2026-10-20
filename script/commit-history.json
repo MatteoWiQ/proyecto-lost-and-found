@@ -931,12 +931,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "acb3a45f38632ddab27997d537ea4590ed7d9216",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T13:53:43.000Z",
       "message": "test: agregar prueba del estado inicial de la publicacion",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/acb3a45f38632ddab27997d537ea4590ed7d9216"
     },
     "stats": {
       "total": 5,
@@ -948,5 +948,24 @@
     "test_count": 39,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:54:44.000Z",
+      "message": "feat: asignar estado pendiente de validacion al registrar un objeto",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.13,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

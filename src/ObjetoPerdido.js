@@ -12,6 +12,7 @@ class ObjetoPerdido{
         this.lugar = lugar;
         this.commentario = commentario;
         this.foto = foto;
+        this.estado = "Pendiente de validación";
     }
     getNombre(){
         if (this.validarNombre()!=""){
@@ -186,6 +187,10 @@ class ObjetoPerdido{
             return "Registro exitoso. ¡Guardado correctamente!";
         }
         return "Registro fallido: "+ this.getInformacion();
+    }
+
+    obtenerEstado() {
+        return this.estado;
     }
 
     //Santiago

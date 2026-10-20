@@ -1710,9 +1710,23 @@
     "testId": 49
   },
   {
-    "commitId": "HEAD",
+    "commitId": "acb3a45f38632ddab27997d537ea4590ed7d9216",
     "commitName": "test: agregar prueba del estado inicial de la publicacion",
     "commitTimestamp": 1792504425078,
     "testId": 49
+  },
+  {
+    "numPassedTests": 39,
+    "failedTests": 0,
+    "numTotalTests": 39,
+    "timestamp": 1792504470879,
+    "success": true,
+    "testId": 50
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: asignar estado pendiente de validacion al registrar un objeto",
+    "commitTimestamp": 1792504485983,
+    "testId": 50
   }
 ]

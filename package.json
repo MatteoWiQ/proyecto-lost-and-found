@@ -13,7 +13,6 @@
   "license": "ISC",
   "author": "Israel Antezana R.",
   "type": "module",
-  "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",

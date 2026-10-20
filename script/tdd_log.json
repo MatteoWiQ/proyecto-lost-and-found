@@ -2072,9 +2072,15 @@
     "testId": 75
   },
   {
-    "commitId": "HEAD",
+    "commitId": "327b3d43100cac8027bb01c2cb7168522307c1ca",
     "commitName": "fix: corregir main en package.json para build de Vercel (parcel html)",
     "commitTimestamp": 1792515402257,
     "testId": 76
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: quitar main de package.json (no es librería) para build parcel html",
+    "commitTimestamp": 1792515619488,
+    "testId": 77
   }
 ]

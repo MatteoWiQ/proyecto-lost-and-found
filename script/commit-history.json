@@ -1102,12 +1102,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "063a22ef6def1f7fa7f10a6ed126ef5e3693520c",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:02:43.000Z",
       "message": "feat: aprobar una publicacion desde el modulo de aprobacion",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/063a22ef6def1f7fa7f10a6ed126ef5e3693520c"
     },
     "stats": {
       "total": 5,
@@ -1119,5 +1119,24 @@
     "test_count": 43,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:03:25.000Z",
+      "message": "test: agregar prueba del mensaje cuando no hay pendientes",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.6,
+    "test_count": 44,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

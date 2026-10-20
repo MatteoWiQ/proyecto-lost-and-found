@@ -1,5 +1,5 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
-import { obtenerPendientes, obtenerPublicados, aprobarPublicacion } from "./Aprobacion.js";
+import { obtenerPendientes, obtenerPublicados, aprobarPublicacion, obtenerMensajePendientes } from "./Aprobacion.js";
 
 describe("Aprobacion", () => {
   it("Deberia listar solo las publicaciones pendientes de validacion", () => {
@@ -28,5 +28,9 @@ describe("Aprobacion", () => {
     aprobarPublicacion(objeto);
 
     expect(objeto.obtenerEstado()).toEqual("Publicado");
+  });
+
+  it("Deberia mostrar un mensaje cuando no hay publicaciones pendientes", () => {
+    expect(obtenerMensajePendientes([])).toEqual("No hay publicaciones pendientes");
   });
 });

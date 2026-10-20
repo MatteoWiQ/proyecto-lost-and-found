@@ -1836,9 +1836,23 @@
     "testId": 58
   },
   {
-    "commitId": "HEAD",
+    "commitId": "063a22ef6def1f7fa7f10a6ed126ef5e3693520c",
     "commitName": "feat: aprobar una publicacion desde el modulo de aprobacion",
     "commitTimestamp": 1792504964745,
     "testId": 58
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 1,
+    "numTotalTests": 44,
+    "timestamp": 1792504996303,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba del mensaje cuando no hay pendientes",
+    "commitTimestamp": 1792505007287,
+    "testId": 59
   }
 ]

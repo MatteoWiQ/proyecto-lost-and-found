@@ -185,4 +185,12 @@ describe("ObjetoPerdido", () => {
     objeto.aprobar();
     expect(objeto.obtenerEstado()).toEqual("Publicado");
   });
+
+  it("Deberia retornar la ficha tecnica con el estado actual del objeto", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-15", "10:30", "Biblioteca", "Rayada", "laptop.png");
+
+    const ficha = objeto.obtenerFichaTecnica();
+
+    expect(ficha.estado).toEqual("Pendiente de validación");
+  });
 });

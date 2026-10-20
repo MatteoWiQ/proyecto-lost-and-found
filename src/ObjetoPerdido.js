@@ -193,6 +193,19 @@ class ObjetoPerdido{
         return this.estado;
     }
 
+    obtenerFichaTecnica() {
+        return {
+            nombre: this.nombre,
+            categoria: this.categoria,
+            fecha: this.fecha,
+            hora: this.hora,
+            lugar: this.lugar,
+            commentario: this.commentario,
+            foto: this.foto,
+            estado: this.estado
+        };
+    }
+
     aprobar() {
         this.estado = "Publicado";
     }

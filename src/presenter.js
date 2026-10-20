@@ -14,6 +14,8 @@ import {
   obtenerObjetosParaCatalogo
 } from "./Aprobacion.js";
 
+import { obtenerCamposFicha } from "./FichaTecnica.js";
+
 const nombreInput = document.querySelector("#nombre");
 const categoriaInput = document.querySelector("#categoria");
 const fechaInput = document.querySelector("#fecha");
@@ -116,18 +118,19 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
 
     tarjeta.addEventListener("click", () => {
       const detalle = obj.obtenerDetalleCompleto();
+      const ficha = obj.obtenerFichaTecnica ? obj.obtenerFichaTecnica() : detalle;
+      const campos = obtenerCamposFicha(ficha);
       const detalleInfo = document.querySelector("#detalle-info");
       const detalleContainer = document.querySelector("#detalle-container");
-      const urlDetalleFoto = typeof detalle.foto === "string" ? detalle.foto : URL.createObjectURL(detalle.foto);
+      const urlDetalleFoto = typeof ficha.foto === "string" ? ficha.foto : URL.createObjectURL(ficha.foto);
       detalleInfo.innerHTML = `
-        <img src="${urlDetalleFoto}" alt="${detalle.nombre}" style="max-width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" />
-        <p><strong>Nombre:</strong> ${detalle.nombre}</p>
-        <p><strong>Categoría:</strong> ${detalle.categoria}</p>
-        <p><strong>Fecha:</strong> ${detalle.fecha}</p>
-        <p><strong>Hora:</strong> ${detalle.hora}</p>
-        <p><strong>Ubicación:</strong> ${detalle.lugar}</p>
-        <p><strong>Comentario:</strong> ${detalle.commentario || "Ninguno"}</p>
+        <img src="${urlDetalleFoto}" alt="${ficha.nombre}" style="max-width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" />
+        ${campos.map((campo) => `<p><strong>${campo.etiqueta}:</strong> ${campo.valor}</p>`).join("")}
       `;
+      const btnCerrar = document.querySelector("#cerrar-detalle");
+      if (btnCerrar) {
+        btnCerrar.textContent = "Volver al catálogo";
+      }
       detalleContainer.style.display = "block";
     });
     galeriaContainer.appendChild(tarjeta);

@@ -1254,12 +1254,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2f65a380964d9e0158a580d7a67a97bd2c7ad36b",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T14:12:18.000Z",
       "message": "style: dar formato visual al panel de administracion y sus badges",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/2f65a380964d9e0158a580d7a67a97bd2c7ad36b"
     },
     "stats": {
       "total": 93,
@@ -1269,6 +1269,215 @@
     },
     "coverage": 91.24,
     "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "60541c2401beb4afe5dda49043de9e4d2e1b6f31",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:13:35.000Z",
+      "message": "test: agregar prueba de la ficha tecnica con estado",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/60541c2401beb4afe5dda49043de9e4d2e1b6f31"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.24,
+    "test_count": 47,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "60a46c0df3c0cbb765c6def5f6eaf41c80962951",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:15:17.000Z",
+      "message": "feat: obtener ficha tecnica con el estado actual del objeto",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/60a46c0df3c0cbb765c6def5f6eaf41c80962951"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.3,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8f71f6228b395368018b0ff559a8afdfda45d170",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:16:32.000Z",
+      "message": "test: agregar prueba para construir campos de ficha con estado",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/8f71f6228b395368018b0ff559a8afdfda45d170"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.3,
+    "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1d8840a071c2f07a42a4b44a3edd6220374e4188",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:17:30.000Z",
+      "message": "feat: incluir estado en los campos de la ficha tecnica",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/1d8840a071c2f07a42a4b44a3edd6220374e4188"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 48,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ab4a723c716c29a5de502fa9b50fd4f018f9b711",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T14:18:13.000Z",
+      "message": "test: agregar prueba de campos basicos de la ficha tecnica",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/ab4a723c716c29a5de502fa9b50fd4f018f9b711"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 49,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "87d5be8a6e2a035af749b29711002e0374f943a4",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:32:54.000Z",
+      "message": "feat: incluir campos basicos de la ficha tecnica",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/87d5be8a6e2a035af749b29711002e0374f943a4"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 49,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "42bac68d2aa58d8e0366dc39436e1f37339ec110",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:33:39.000Z",
+      "message": "test: agregar prueba para indicar ninguno cuando no hay comentario",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/42bac68d2aa58d8e0366dc39436e1f37339ec110"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "94fd90ea38ffc7af236da5939b78626c39eb07a0",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:35:50.000Z",
+      "message": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/94fd90ea38ffc7af236da5939b78626c39eb07a0"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 11,
+      "deletions": 8,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bd3ea763d1d9a6e305b6db20d11f219777c6c6a8",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T16:47:21.000Z",
+      "message": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/bd3ea763d1d9a6e305b6db20d11f219777c6c6a8"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "327b3d43100cac8027bb01c2cb7168522307c1ca",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T16:56:40.000Z",
+      "message": "fix: corregir main en package.json para build de Vercel (parcel html)",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/327b3d43100cac8027bb01c2cb7168522307c1ca"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T17:00:17.000Z",
+      "message": "fix: quitar main de package.json (no es librería) para build parcel html",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 0,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
     "failed_tests": 0,
     "conclusion": "success"
   }

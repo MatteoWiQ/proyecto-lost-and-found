@@ -1940,9 +1940,147 @@
     "testId": 65
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2f65a380964d9e0158a580d7a67a97bd2c7ad36b",
     "commitName": "style: dar formato visual al panel de administracion y sus badges",
     "commitTimestamp": 1792505540415,
     "testId": 66
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 1,
+    "numTotalTests": 47,
+    "timestamp": 1792505609457,
+    "success": false,
+    "testId": 67
+  },
+  {
+    "commitId": "60541c2401beb4afe5dda49043de9e4d2e1b6f31",
+    "commitName": "test: agregar prueba de la ficha tecnica con estado",
+    "commitTimestamp": 1792505617212,
+    "testId": 67
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792505701318,
+    "success": true,
+    "testId": 68
+  },
+  {
+    "commitId": "60a46c0df3c0cbb765c6def5f6eaf41c80962951",
+    "commitName": "feat: obtener ficha tecnica con el estado actual del objeto",
+    "commitTimestamp": 1792505719304,
+    "testId": 68
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1792505779860,
+    "success": false,
+    "testId": 69
+  },
+  {
+    "commitId": "8f71f6228b395368018b0ff559a8afdfda45d170",
+    "commitName": "test: agregar prueba para construir campos de ficha con estado",
+    "commitTimestamp": 1792505794064,
+    "testId": 69
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1792505833243,
+    "success": true,
+    "testId": 70
+  },
+  {
+    "commitId": "1d8840a071c2f07a42a4b44a3edd6220374e4188",
+    "commitName": "feat: incluir estado en los campos de la ficha tecnica",
+    "commitTimestamp": 1792505852455,
+    "testId": 70
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 1,
+    "numTotalTests": 49,
+    "timestamp": 1792505882769,
+    "success": false,
+    "testId": 71
+  },
+  {
+    "commitId": "ab4a723c716c29a5de502fa9b50fd4f018f9b711",
+    "commitName": "test: agregar prueba de campos basicos de la ficha tecnica",
+    "commitTimestamp": 1792505895495,
+    "testId": 71
+  },
+  {
+    "numPassedTests": 49,
+    "failedTests": 0,
+    "numTotalTests": 49,
+    "timestamp": 1792510352472,
+    "success": true,
+    "testId": 72
+  },
+  {
+    "commitId": "87d5be8a6e2a035af749b29711002e0374f943a4",
+    "commitName": "feat: incluir campos basicos de la ficha tecnica",
+    "commitTimestamp": 1792510376407,
+    "testId": 72
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510408170,
+    "success": true,
+    "testId": 73
+  },
+  {
+    "commitId": "42bac68d2aa58d8e0366dc39436e1f37339ec110",
+    "commitName": "test: agregar prueba para indicar ninguno cuando no hay comentario",
+    "commitTimestamp": 1792510420752,
+    "testId": 73
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510510992,
+    "success": true,
+    "testId": 74
+  },
+  {
+    "commitId": "94fd90ea38ffc7af236da5939b78626c39eb07a0",
+    "commitName": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
+    "commitTimestamp": 1792510551967,
+    "testId": 74
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510927673,
+    "success": true,
+    "testId": 75
+  },
+  {
+    "commitId": "bd3ea763d1d9a6e305b6db20d11f219777c6c6a8",
+    "commitName": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
+    "commitTimestamp": 1792514843258,
+    "testId": 75
+  },
+  {
+    "commitId": "327b3d43100cac8027bb01c2cb7168522307c1ca",
+    "commitName": "fix: corregir main en package.json para build de Vercel (parcel html)",
+    "commitTimestamp": 1792515402257,
+    "testId": 76
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: quitar main de package.json (no es librería) para build parcel html",
+    "commitTimestamp": 1792515619488,
+    "testId": 77
   }
 ]

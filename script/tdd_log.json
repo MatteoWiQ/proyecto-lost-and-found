@@ -2066,9 +2066,15 @@
     "testId": 75
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bd3ea763d1d9a6e305b6db20d11f219777c6c6a8",
     "commitName": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
     "commitTimestamp": 1792514843258,
     "testId": 75
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: corregir main en package.json para build de Vercel (parcel html)",
+    "commitTimestamp": 1792515402257,
+    "testId": 76
   }
 ]

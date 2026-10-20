@@ -1425,11 +1425,30 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bd3ea763d1d9a6e305b6db20d11f219777c6c6a8",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T16:47:21.000Z",
       "message": "fix: saltar husky en CI (Vercel) para evitar error en postinstall",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/bd3ea763d1d9a6e305b6db20d11f219777c6c6a8"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T16:56:40.000Z",
+      "message": "fix: corregir main en package.json para build de Vercel (parcel html)",
       "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
     },
     "stats": {

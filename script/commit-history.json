@@ -1387,17 +1387,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "42bac68d2aa58d8e0366dc39436e1f37339ec110",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T15:33:39.000Z",
       "message": "test: agregar prueba para indicar ninguno cuando no hay comentario",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/42bac68d2aa58d8e0366dc39436e1f37339ec110"
     },
     "stats": {
       "total": 8,
       "additions": 8,
       "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T15:35:50.000Z",
+      "message": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 11,
+      "deletions": 8,
       "date": "2026-10-20"
     },
     "coverage": 91.37,

@@ -2038,9 +2038,23 @@
     "testId": 73
   },
   {
-    "commitId": "HEAD",
+    "commitId": "42bac68d2aa58d8e0366dc39436e1f37339ec110",
     "commitName": "test: agregar prueba para indicar ninguno cuando no hay comentario",
     "commitTimestamp": 1792510420752,
     "testId": 73
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792510510992,
+    "success": true,
+    "testId": 74
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar ficha tecnica completa con estado y boton volver al catalogo",
+    "commitTimestamp": 1792510551967,
+    "testId": 74
   }
 ]

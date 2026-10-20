@@ -988,16 +988,35 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "6ef8e22144637bd61d657d5b073b2272e883112e",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T13:57:49.000Z",
       "message": "feat: aprobar una publicacion cambiando su estado a publicado",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/6ef8e22144637bd61d657d5b073b2272e883112e"
     },
     "stats": {
       "total": 4,
       "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-20"
+    },
+    "coverage": 91.2,
+    "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-20T13:58:52.000Z",
+      "message": "test: agregar prueba para listar publicaciones pendientes",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
       "deletions": 0,
       "date": "2026-10-20"
     },

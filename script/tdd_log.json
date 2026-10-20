@@ -1752,9 +1752,23 @@
     "testId": 52
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6ef8e22144637bd61d657d5b073b2272e883112e",
     "commitName": "feat: aprobar una publicacion cambiando su estado a publicado",
     "commitTimestamp": 1792504670873,
     "testId": 52
+  },
+  {
+    "numPassedTests": 40,
+    "failedTests": 0,
+    "numTotalTests": 40,
+    "timestamp": 1792504714116,
+    "success": false,
+    "testId": 53
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba para listar publicaciones pendientes",
+    "commitTimestamp": 1792504733973,
+    "testId": 53
   }
 ]

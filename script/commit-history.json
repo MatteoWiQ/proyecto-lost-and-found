@@ -1596,17 +1596,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "e792e2d7cdf30a620e9cdf3bce9026d2697dc382",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:20:29.000Z",
       "message": "feat: implementar debeMostrarOcultos para vista administrador",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/e792e2d7cdf30a620e9cdf3bce9026d2697dc382"
     },
     "stats": {
       "total": 4,
       "additions": 4,
       "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:21:37.000Z",
+      "message": "style: separar vistas usuario/admin - barra superior, switch, modales, grillas, responsive",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 497,
+      "additions": 259,
+      "deletions": 238,
       "date": "2026-10-21"
     },
     "coverage": 91.78,

@@ -2184,9 +2184,15 @@
     "testId": 84
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e792e2d7cdf30a620e9cdf3bce9026d2697dc382",
     "commitName": "feat: implementar debeMostrarOcultos para vista administrador",
     "commitTimestamp": 1792621231777,
     "testId": 84
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: separar vistas usuario/admin - barra superior, switch, modales, grillas, responsive",
+    "commitTimestamp": 1792621298813,
+    "testId": 85
   }
 ]

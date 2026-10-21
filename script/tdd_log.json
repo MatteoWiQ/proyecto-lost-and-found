@@ -2142,9 +2142,31 @@
     "testId": 81
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a64a2db42e6d3e99ba283b48f66164bfcd3ac928",
     "commitName": "feat: implementar debeMostrarOcultos para vista administrador",
     "commitTimestamp": 1792620338487,
     "testId": 81
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1792620358610,
+    "success": true,
+    "testId": 82
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1792620465661,
+    "success": true,
+    "testId": 82
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: separar vista usuario y administrador con switch en barra superior",
+    "commitTimestamp": 1792620480283,
+    "testId": 82
   }
 ]

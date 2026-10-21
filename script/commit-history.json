@@ -1539,17 +1539,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a64a2db42e6d3e99ba283b48f66164bfcd3ac928",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:05:36.000Z",
       "message": "feat: implementar debeMostrarOcultos para vista administrador",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/a64a2db42e6d3e99ba283b48f66164bfcd3ac928"
     },
     "stats": {
       "total": 4,
       "additions": 4,
       "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:07:58.000Z",
+      "message": "feat: separar vista usuario y administrador con switch en barra superior",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 690,
+      "additions": 597,
+      "deletions": 93,
       "date": "2026-10-21"
     },
     "coverage": 91.78,

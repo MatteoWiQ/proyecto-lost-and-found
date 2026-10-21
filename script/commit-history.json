@@ -1501,12 +1501,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "277feb0adc5d8e91fdb1978d80361553b5d4579b",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:03:43.000Z",
       "message": "feat: implementar modulo Vista para gestionar vista usuario/administrador",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/277feb0adc5d8e91fdb1978d80361553b5d4579b"
     },
     "stats": {
       "total": 16,
@@ -1518,5 +1518,24 @@
     "test_count": 54,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:04:59.000Z",
+      "message": "test: agregar pruebas para debeMostrarOcultos segun vista",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.72,
+    "test_count": 56,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]

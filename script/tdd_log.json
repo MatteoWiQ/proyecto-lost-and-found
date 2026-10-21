@@ -2114,9 +2114,23 @@
     "testId": 79
   },
   {
-    "commitId": "HEAD",
+    "commitId": "277feb0adc5d8e91fdb1978d80361553b5d4579b",
     "commitName": "feat: implementar modulo Vista para gestionar vista usuario/administrador",
     "commitTimestamp": 1792620225115,
     "testId": 79
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 2,
+    "numTotalTests": 56,
+    "timestamp": 1792620279617,
+    "success": false,
+    "testId": 80
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar pruebas para debeMostrarOcultos segun vista",
+    "commitTimestamp": 1792620300733,
+    "testId": 80
   }
 ]

@@ -2196,9 +2196,15 @@
     "testId": 85
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9f5e060f2c106f006896cca38e3f519c438f0135",
     "commitName": "feat: separar vista usuario y administrador con switch en barra superior",
     "commitTimestamp": 1792621380701,
     "testId": 86
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "sprint 1 terminado",
+    "commitTimestamp": 1792623193499,
+    "testId": 87
   }
 ]

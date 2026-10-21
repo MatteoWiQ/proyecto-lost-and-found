@@ -1634,17 +1634,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9f5e060f2c106f006896cca38e3f519c438f0135",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:22:58.000Z",
       "message": "feat: separar vista usuario y administrador con switch en barra superior",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/9f5e060f2c106f006896cca38e3f519c438f0135"
     },
     "stats": {
       "total": 278,
       "additions": 185,
       "deletions": 93,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-10-21T22:53:12.000Z",
+      "message": "sprint 1 terminado",
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+    },
+    "stats": {
+      "total": 191,
+      "additions": 191,
+      "deletions": 0,
       "date": "2026-10-21"
     },
     "coverage": 91.78,

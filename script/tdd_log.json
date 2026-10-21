@@ -2142,9 +2142,23 @@
     "testId": 81
   },
   {
-    "commitId": "HEAD",
+    "commitId": "31073f33576c9b9ec048baf4efc6ce12c289dfce",
     "commitName": "feat: implementar cambiarVista con validacion de vistas validas",
     "commitTimestamp": 1792621124829,
     "testId": 81
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1792621147013,
+    "success": true,
+    "testId": 82
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba cambiarVista ignora vista invalida",
+    "commitTimestamp": 1792621160058,
+    "testId": 82
   }
 ]

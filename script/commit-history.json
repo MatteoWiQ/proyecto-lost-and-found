@@ -1539,12 +1539,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "31073f33576c9b9ec048baf4efc6ce12c289dfce",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:18:43.000Z",
       "message": "feat: implementar cambiarVista con validacion de vistas validas",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/31073f33576c9b9ec048baf4efc6ce12c289dfce"
     },
     "stats": {
       "total": 6,
@@ -1554,6 +1554,25 @@
     },
     "coverage": 91.72,
     "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:19:18.000Z",
+      "message": "test: agregar prueba cambiarVista ignora vista invalida",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.72,
+    "test_count": 54,
     "failed_tests": 0,
     "conclusion": "success"
   }

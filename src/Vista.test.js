@@ -19,3 +19,11 @@ describe("Vista - cambiarVista round-trip", () => {
     expect(obtenerVista()).toEqual("usuario");
   });
 });
+
+describe("Vista - cambiarVista ignora invalida", () => {
+  it("Deberia ignorar vista invalida y mantener la actual", () => {
+    cambiarVista("usuario");
+    cambiarVista("invalida");
+    expect(obtenerVista()).toEqual("usuario");
+  });
+});

@@ -14,3 +14,7 @@ export function cambiarVista(nuevaVista) {
     vistaActual = nuevaVista;
   }
 }
+
+export function debeMostrarOcultos(vista) {
+  return vista === "administrador";
+}

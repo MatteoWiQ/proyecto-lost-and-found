@@ -2128,9 +2128,23 @@
     "testId": 80
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1e8ca426230ef006cb0eab9ba301825996e27628",
     "commitName": "test: agregar pruebas para debeMostrarOcultos segun vista",
     "commitTimestamp": 1792620300733,
     "testId": 80
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1792620320115,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar debeMostrarOcultos para vista administrador",
+    "commitTimestamp": 1792620338487,
+    "testId": 81
   }
 ]

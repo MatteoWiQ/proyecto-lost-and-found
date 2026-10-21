@@ -2078,9 +2078,31 @@
     "testId": 76
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f81a4e0f58fd4cc86efb9b823687a55f13f0ba87",
     "commitName": "fix: quitar main de package.json (no es librería) para build parcel html",
     "commitTimestamp": 1792515619488,
     "testId": 77
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792620109510,
+    "success": true,
+    "testId": 78
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1792620150724,
+    "success": false,
+    "testId": 78
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar pruebas para gestion de vista usuario/administrador",
+    "commitTimestamp": 1792620173167,
+    "testId": 78
   }
 ]

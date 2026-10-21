@@ -1577,12 +1577,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5ce27aff9d2d8ac14dd6c814925ef5315b0b2aa1",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:19:55.000Z",
       "message": "test: agregar pruebas debeMostrarOcultos usuario false administrador true",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/5ce27aff9d2d8ac14dd6c814925ef5315b0b2aa1"
     },
     "stats": {
       "total": 12,
@@ -1594,5 +1594,24 @@
     "test_count": 56,
     "failed_tests": 2,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:20:29.000Z",
+      "message": "feat: implementar debeMostrarOcultos para vista administrador",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

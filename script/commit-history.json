@@ -1482,12 +1482,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4143c3236eab617cc85bfdf93859d2fc7a33807b",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:02:51.000Z",
       "message": "test: agregar pruebas para gestion de vista usuario/administrador",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/4143c3236eab617cc85bfdf93859d2fc7a33807b"
     },
     "stats": {
       "total": 24,
@@ -1497,6 +1497,25 @@
     },
     "coverage": 91.37,
     "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:03:43.000Z",
+      "message": "feat: implementar modulo Vista para gestionar vista usuario/administrador",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.72,
+    "test_count": 54,
     "failed_tests": 0,
     "conclusion": "success"
   }

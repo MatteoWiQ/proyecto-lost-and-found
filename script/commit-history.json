@@ -1615,17 +1615,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8d93d07d0597838747a7f3efcbdc194c6d6b7913",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:21:37.000Z",
       "message": "style: separar vistas usuario/admin - barra superior, switch, modales, grillas, responsive",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/8d93d07d0597838747a7f3efcbdc194c6d6b7913"
     },
     "stats": {
       "total": 497,
       "additions": 259,
       "deletions": 238,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:22:58.000Z",
+      "message": "feat: separar vista usuario y administrador con switch en barra superior",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 278,
+      "additions": 185,
+      "deletions": 93,
       "date": "2026-10-21"
     },
     "coverage": 91.78,

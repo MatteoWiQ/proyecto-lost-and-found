@@ -9,97 +9,121 @@
 </head>
 
 <body>
-  <h1>Formulario de registro de objetos perdidos</h1>
-  <form id="lost-object-form">
-    <label for="nombre">nombre:</label>
-    <input type="text" id="nombre" />
-    <label for="categoria">categoria:</label>
-    <select id="categoria">
-      <option value="Tecnologia">Tecnologia</option>
-      <option value="Documentos">Documentos</option>
-      <option value="Ropa">Ropa</option>
-      <option value="Cuadernos">Cuadernos</option>
-      <option value="Varios">Varios</option>
-    </select>
-    <label for="fecha">fecha:</label>
-    <input type="date" id="fecha" />
-    <label for="hora">hora:</label>
-    <input type="time" id="hora" />
-    <label for="lugar">lugar:</label>
-    <select class="input-field" id="lugar">
-      <option value="">Seleccionar lugar</option>
-      <option value="Bloque A">Bloque A</option>
-      <option value="Bloque B">Bloque B</option>
-      <option value="Biblioteca">Biblioteca</option>
-      <option value="Canchas">Canchas</option>
-      <option value="Cafetería">Cafetería</option>
-      <option value="Facultad de Tecnología">Facultad de Tecnología</option>
-    </select>
-    <label for="commentario">commentario:</label>
-    <input type="text" id="commentario" />
-    <label for="foto">Fotografía del objeto:</label>
-    <input type="file" id="foto"
-      accept=".jpg,.jpeg,.png,.webp,.heic,image/jpeg,image/png,image/webp,image/heic,image/heif" required />
-    <div id="foto-preview-container" class="foto-preview-container" hidden>
-      <p>Vista previa:</p>
-      <img id="foto-preview" alt="Vista previa de la fotografía del objeto" />
-    </div>
-    <input type="submit" value="Registrar" id="registrar-objecto-button">
-  </form>
-  <div id="resultado-div" aria-live="polite"></div>
+  <header class="barra-superior">
+    <h1>Lost and Found</h1>
+    <nav class="switch-vista" aria-label="Cambiar vista">
+      <button type="button" id="btn-vista-usuario" class="activo" data-vista="usuario">Usuario</button>
+      <button type="button" id="btn-vista-admin" data-vista="administrador">Administrador</button>
+    </nav>
+  </header>
 
-  <section id="pendientes-container" class="admin-panel" aria-label="Panel de administración">
-    <h2>Panel de administración</h2>
-    <p class="admin-ayuda">Las publicaciones quedan ocultas en el catálogo hasta ser aprobadas.</p>
-    <div id="pendientes-lista" class="pendientes-lista"></div>
-  </section>
+  <main id="vista-usuario" class="vista activa">
+    <section class="formulario-section">
+      <h2>Registrar objeto perdido</h2>
+      <form id="lost-object-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+        <label for="categoria">Categoría:</label>
+        <select id="categoria">
+          <option value="Tecnologia">Tecnología</option>
+          <option value="Documentos">Documentos</option>
+          <option value="Ropa">Ropa</option>
+          <option value="Cuadernos">Cuadernos</option>
+          <option value="Varios">Varios</option>
+        </select>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" />
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" />
+        <label for="lugar">Lugar:</label>
+        <select class="input-field" id="lugar">
+          <option value="">Seleccionar lugar</option>
+          <option value="Bloque A">Bloque A</option>
+          <option value="Bloque B">Bloque B</option>
+          <option value="Biblioteca">Biblioteca</option>
+          <option value="Canchas">Canchas</option>
+          <option value="Cafetería">Cafetería</option>
+          <option value="Facultad de Tecnología">Facultad de Tecnología</option>
+        </select>
+        <label for="commentario">Comentario:</label>
+        <input type="text" id="commentario" />
+        <label for="foto">Fotografía del objeto:</label>
+        <input type="file" id="foto"
+          accept=".jpg,.jpeg,.png,.webp,.heic,image/jpeg,image/png,image/webp,image/heic,image/heif" required />
+        <div id="foto-preview-container" class="foto-preview-container" hidden>
+          <p>Vista previa:</p>
+          <img id="foto-preview" alt="Vista previa de la fotografía del objeto" />
+        </div>
+        <input type="submit" value="Registrar" id="registrar-objecto-button">
+      </form>
+      <div id="resultado-div" aria-live="polite"></div>
+    </section>
 
-  <section class="catalogo-controles" aria-label="Búsqueda y filtros">
-    <div class="catalogo-control">
-      <label for="busqueda">Buscar objeto:</label>
-      <input type="search" id="busqueda" placeholder="Buscar por nombre">
-    </div>
+    <section class="catalogo-section">
+      <div class="catalogo-controles" aria-label="Búsqueda y filtros">
+        <div class="catalogo-control">
+          <label for="busqueda">Buscar objeto:</label>
+          <input type="search" id="busqueda" placeholder="Buscar por nombre">
+        </div>
 
-    <div class="catalogo-control">
-      <label for="filtro-categoria">Filtrar por categoría:</label>
-      <select id="filtro-categoria">
-        <option value="">Todas las categorías</option>
-        <option value="Tecnologia">Tecnología</option>
-        <option value="Documentos">Documentos</option>
-        <option value="Ropa">Ropa</option>
-        <option value="Cuadernos">Cuadernos</option>
-        <option value="Varios">Varios</option>
-      </select>
-    </div>
+        <div class="catalogo-control">
+          <label for="filtro-categoria">Filtrar por categoría:</label>
+          <select id="filtro-categoria">
+            <option value="">Todas las categorías</option>
+            <option value="Tecnologia">Tecnología</option>
+            <option value="Documentos">Documentos</option>
+            <option value="Ropa">Ropa</option>
+            <option value="Cuadernos">Cuadernos</option>
+            <option value="Varios">Varios</option>
+          </select>
+        </div>
 
-    <div class="catalogo-control">
-      <label for="filtro-ubicacion">Filtrar por ubicación:</label>
-      <select id="filtro-ubicacion">
-        <option value="">Todas las ubicaciones</option>
-        <option value="Bloque A">Bloque A</option>
-        <option value="Bloque B">Bloque B</option>
-        <option value="Biblioteca">Biblioteca</option>
-        <option value="Canchas">Canchas</option>
-        <option value="Cafetería">Cafetería</option>
-        <option value="Facultad de Tecnología">
-          Facultad de Tecnología
-        </option>
-      </select>
-    </div>
+        <div class="catalogo-control">
+          <label for="filtro-ubicacion">Filtrar por ubicación:</label>
+          <select id="filtro-ubicacion">
+            <option value="">Todas las ubicaciones</option>
+            <option value="Bloque A">Bloque A</option>
+            <option value="Bloque B">Bloque B</option>
+            <option value="Biblioteca">Biblioteca</option>
+            <option value="Canchas">Canchas</option>
+            <option value="Cafetería">Cafetería</option>
+            <option value="Facultad de Tecnología">
+              Facultad de Tecnología
+            </option>
+          </select>
+        </div>
+      </div>
 
-    <div class="catalogo-control catalogo-control-checkbox">
-      <label for="mostrar-ocultos">Mostrar reportes ocultos:</label>
-      <input type="checkbox" id="mostrar-ocultos" />
-    </div>
-  </section>
+      <div id="galeria-container" class="galeria-grid"></div>
+    </section>
+  </main>
 
-  <div id="galeria-container" class="galeria-grid"></div>
+  <main id="vista-admin" class="vista" hidden>
+    <section class="admin-section">
+      <h2>Panel de administración</h2>
+      <p class="admin-ayuda">Las publicaciones quedan ocultas en el catálogo hasta ser aprobadas.</p>
+
+      <div class="catalogo-controles" aria-label="Filtros administrador">
+        <div class="catalogo-control catalogo-control-checkbox">
+          <label for="mostrar-ocultos">Mostrar reportes ocultos:</label>
+          <input type="checkbox" id="mostrar-ocultos" />
+        </div>
+      </div>
+
+      <div id="pendientes-container" class="admin-panel">
+        <h3>Publicaciones pendientes</h3>
+        <div id="pendientes-lista" class="pendientes-lista"></div>
+      </div>
+
+      <div id="galeria-admin-container" class="galeria-grid"></div>
+    </section>
+  </main>
 
   <div id="detalle-container" class="detalle-modal" style="display: none;">
     <div class="detalle-contenido">
       <h3>Detalle del Objeto</h3>
       <div id="detalle-info"></div>
-      <button id="cerrar-detalle">Cerrar</button>
+      <button id="cerrar-detalle">Volver al catálogo</button>
     </div>
   </div>
 

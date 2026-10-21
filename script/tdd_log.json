@@ -2190,9 +2190,15 @@
     "testId": 84
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8d93d07d0597838747a7f3efcbdc194c6d6b7913",
     "commitName": "style: separar vistas usuario/admin - barra superior, switch, modales, grillas, responsive",
     "commitTimestamp": 1792621298813,
     "testId": 85
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: separar vista usuario y administrador con switch en barra superior",
+    "commitTimestamp": 1792621380701,
+    "testId": 86
   }
 ]

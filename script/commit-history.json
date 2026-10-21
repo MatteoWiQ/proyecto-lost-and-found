@@ -1463,18 +1463,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f81a4e0f58fd4cc86efb9b823687a55f13f0ba87",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-20T17:00:17.000Z",
       "message": "fix: quitar main de package.json (no es librería) para build parcel html",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/f81a4e0f58fd4cc86efb9b823687a55f13f0ba87"
     },
     "stats": {
       "total": 1,
       "additions": 0,
       "deletions": 1,
       "date": "2026-10-20"
+    },
+    "coverage": 91.37,
+    "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:16:54.000Z",
+      "message": "test: agregar pruebas estado inicial vistaInicial y obtenerVista",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-10-21"
     },
     "coverage": 91.37,
     "test_count": 50,

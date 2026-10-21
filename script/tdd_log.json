@@ -2114,9 +2114,23 @@
     "testId": 79
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1791ddee179a91a187520072ab06f9714572ad44",
     "commitName": "feat: implementar vistaInicial y obtenerVista estado inicial usuario",
     "commitTimestamp": 1792621049091,
     "testId": 79
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 1,
+    "numTotalTests": 53,
+    "timestamp": 1792621074183,
+    "success": false,
+    "testId": 80
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar prueba cambiarVista round-trip admin-usuario",
+    "commitTimestamp": 1792621087719,
+    "testId": 80
   }
 ]

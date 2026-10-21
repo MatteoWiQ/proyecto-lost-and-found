@@ -1501,12 +1501,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1791ddee179a91a187520072ab06f9714572ad44",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:17:27.000Z",
       "message": "feat: implementar vistaInicial y obtenerVista estado inicial usuario",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/1791ddee179a91a187520072ab06f9714572ad44"
     },
     "stats": {
       "total": 10,
@@ -1518,5 +1518,24 @@
     "test_count": 52,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:18:06.000Z",
+      "message": "test: agregar prueba cambiarVista round-trip admin-usuario",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.61,
+    "test_count": 53,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

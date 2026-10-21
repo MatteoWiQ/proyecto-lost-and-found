@@ -1,4 +1,4 @@
-import { vistaInicial, obtenerVista, cambiarVista } from "./Vista.js";
+import { vistaInicial, obtenerVista, cambiarVista, debeMostrarOcultos } from "./Vista.js";
 
 describe("Vista - estado inicial", () => {
   it("Deberia iniciar en vista usuario por defecto", () => {
@@ -25,5 +25,15 @@ describe("Vista - cambiarVista ignora invalida", () => {
     cambiarVista("usuario");
     cambiarVista("invalida");
     expect(obtenerVista()).toEqual("usuario");
+  });
+});
+
+describe("Vista - debeMostrarOcultos", () => {
+  it("Deberia retornar false para vista usuario (no mostrar ocultos)", () => {
+    expect(debeMostrarOcultos("usuario")).toEqual(false);
+  });
+
+  it("Deberia retornar true para vista administrador (mostrar ocultos)", () => {
+    expect(debeMostrarOcultos("administrador")).toEqual(true);
   });
 });

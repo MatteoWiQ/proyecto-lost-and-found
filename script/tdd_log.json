@@ -2156,9 +2156,23 @@
     "testId": 82
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a9b2b5e46e0f87b7235a9eabb0572655d36fe163",
     "commitName": "test: agregar prueba cambiarVista ignora vista invalida",
     "commitTimestamp": 1792621160058,
     "testId": 82
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 2,
+    "numTotalTests": 56,
+    "timestamp": 1792621183941,
+    "success": false,
+    "testId": 83
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: agregar pruebas debeMostrarOcultos usuario false administrador true",
+    "commitTimestamp": 1792621196951,
+    "testId": 83
   }
 ]

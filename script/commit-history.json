@@ -1558,12 +1558,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a9b2b5e46e0f87b7235a9eabb0572655d36fe163",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:19:18.000Z",
       "message": "test: agregar prueba cambiarVista ignora vista invalida",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/a9b2b5e46e0f87b7235a9eabb0572655d36fe163"
     },
     "stats": {
       "total": 8,
@@ -1575,5 +1575,24 @@
     "test_count": 54,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:19:55.000Z",
+      "message": "test: agregar pruebas debeMostrarOcultos usuario false administrador true",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.72,
+    "test_count": 56,
+    "failed_tests": 2,
+    "conclusion": "failure"
   }
 ]

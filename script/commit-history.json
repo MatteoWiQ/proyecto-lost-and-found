@@ -1482,12 +1482,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "13d06a522cd1d516aeb59deaaf6831500e27e9f8",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:16:54.000Z",
       "message": "test: agregar pruebas estado inicial vistaInicial y obtenerVista",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/13d06a522cd1d516aeb59deaaf6831500e27e9f8"
     },
     "stats": {
       "total": 11,
@@ -1497,6 +1497,25 @@
     },
     "coverage": 91.37,
     "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:17:27.000Z",
+      "message": "feat: implementar vistaInicial y obtenerVista estado inicial usuario",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.61,
+    "test_count": 52,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -2100,9 +2100,23 @@
     "testId": 78
   },
   {
-    "commitId": "HEAD",
+    "commitId": "13d06a522cd1d516aeb59deaaf6831500e27e9f8",
     "commitName": "test: agregar pruebas estado inicial vistaInicial y obtenerVista",
     "commitTimestamp": 1792621015905,
     "testId": 78
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 0,
+    "numTotalTests": 52,
+    "timestamp": 1792621035742,
+    "success": true,
+    "testId": 79
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar vistaInicial y obtenerVista estado inicial usuario",
+    "commitTimestamp": 1792621049091,
+    "testId": 79
   }
 ]

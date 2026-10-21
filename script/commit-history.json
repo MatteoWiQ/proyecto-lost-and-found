@@ -1520,12 +1520,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "423b85ffede6496ac1685f6676cab1fd71882632",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-10-21T22:18:06.000Z",
       "message": "test: agregar prueba cambiarVista round-trip admin-usuario",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/423b85ffede6496ac1685f6676cab1fd71882632"
     },
     "stats": {
       "total": 12,
@@ -1537,5 +1537,24 @@
     "test_count": 53,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-10-21T22:18:43.000Z",
+      "message": "feat: implementar cambiarVista con validacion de vistas validas",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2026-10-21"
+    },
+    "coverage": 91.72,
+    "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

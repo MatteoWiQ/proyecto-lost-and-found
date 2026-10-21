@@ -2128,9 +2128,23 @@
     "testId": 80
   },
   {
-    "commitId": "HEAD",
+    "commitId": "423b85ffede6496ac1685f6676cab1fd71882632",
     "commitName": "test: agregar prueba cambiarVista round-trip admin-usuario",
     "commitTimestamp": 1792621087719,
     "testId": 80
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1792621109315,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar cambiarVista con validacion de vistas validas",
+    "commitTimestamp": 1792621124829,
+    "testId": 81
   }
 ]

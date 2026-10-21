@@ -8,3 +8,9 @@ export function vistaInicial() {
 export function obtenerVista() {
   return vistaActual;
 }
+
+export function cambiarVista(nuevaVista) {
+  if (VISTAS_VALIDAS.includes(nuevaVista)) {
+    vistaActual = nuevaVista;
+  }
+}

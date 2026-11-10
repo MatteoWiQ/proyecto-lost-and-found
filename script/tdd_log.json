@@ -2256,9 +2256,23 @@
     "testId": 88
   },
   {
-    "commitId": "HEAD",
+    "commitId": "aa6d783d6f47d9c1cf8f11a80427b7b0b5dae997",
     "commitName": "refac: Get a Obtener para estandarizar espanol",
     "commitTimestamp": 1794318930331,
     "testId": 88
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794318977955,
+    "success": true,
+    "testId": 89
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: Cambio de message a mensaje espanol",
+    "commitTimestamp": 1794319019195,
+    "testId": 89
   }
 ]

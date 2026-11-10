@@ -1672,17 +1672,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "aa6d783d6f47d9c1cf8f11a80427b7b0b5dae997",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-10T13:55:27.000Z",
       "message": "refac: Get a Obtener para estandarizar espanol",
-      "url": "/commit/HEAD"
+      "url": "/commit/aa6d783d6f47d9c1cf8f11a80427b7b0b5dae997"
     },
     "stats": {
       "total": 106,
       "additions": 53,
       "deletions": 53,
+      "date": "2026-11-10"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-10T13:56:56.000Z",
+      "message": "refact: Cambio de message a mensaje espanol",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2026-11-10"
     },
     "coverage": 91.78,

@@ -2276,9 +2276,23 @@
     "testId": 89
   },
   {
-    "commitId": "HEAD",
+    "commitId": "be7bbff805e88c2677206c6c8688ae0b21ed5c15",
     "commitName": "refactor: renombrar formatos a extensionesImagenPermitidas",
     "commitTimestamp": 1794320494023,
     "testId": 90
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794324580216,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
+    "commitTimestamp": 1794324612762,
+    "testId": 91
   }
 ]

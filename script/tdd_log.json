@@ -2270,9 +2270,15 @@
     "testId": 89
   },
   {
-    "commitId": "HEAD",
+    "commitId": "71b4ec9025d7dd232f71bb2ec60f07f9c899dd27",
     "commitName": "refact: Cambio de message a mensaje espanol",
     "commitTimestamp": 1794319019195,
     "testId": 89
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: renombrar formatos a extensionesImagenPermitidas",
+    "commitTimestamp": 1794320494023,
+    "testId": 90
   }
 ]

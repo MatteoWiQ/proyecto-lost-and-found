@@ -22,69 +22,71 @@ import {
   debeMostrarOcultos
 } from "./Vista.js";
 
-const nombreInput = document.querySelector("#nombre");
-const categoriaInput = document.querySelector("#categoria");
-const fechaInput = document.querySelector("#fecha");
-const horaInput = document.querySelector("#hora");
-const lugarInput = document.querySelector("#lugar");
-const commentarioInput = document.querySelector("#commentario");
-const fotoInput = document.querySelector("#foto");
-const fotoPreview = document.querySelector("#foto-preview");
-const previewContainer = document.querySelector("#foto-preview-container");
-const form = document.querySelector("#lost-object-form");
-const resultadoDiv = document.querySelector("#resultado-div");
-let fotoUrl;
+const entradaNombre = document.querySelector("#nombre");
+const entradaCategoria = document.querySelector("#categoria");
+const entradaFecha = document.querySelector("#fecha");
+const entradaHora = document.querySelector("#hora");
+const entradaLugar = document.querySelector("#lugar");
+const entradaComentario = document.querySelector("#commentario");
+const entradaFoto = document.querySelector("#foto");
+const vistaPreviaFoto = document.querySelector("#foto-preview");
+const contenedorVistaPrevia = document.querySelector("#foto-preview-container");
+const formularioObjetoPerdido = document.querySelector("#lost-object-form");
+const contenedorResultado = document.querySelector("#resultado-div");
+let urlFoto;
 
-const busquedaInput = document.querySelector("#busqueda");
-const filtroCategoriaInput = document.querySelector("#filtro-categoria");
-const filtroUbicacionInput = document.querySelector("#filtro-ubicacion");
-const mostrarOcultosInput = document.querySelector("#mostrar-ocultos");
-const pendientesLista = document.querySelector("#pendientes-lista");
+const entradaBusqueda = document.querySelector("#busqueda");
+const entradaFiltroCategoria = document.querySelector("#filtro-categoria");
+const entradaFiltroUbicacion = document.querySelector("#filtro-ubicacion");
+const entradaMostrarOcultos = document.querySelector("#mostrar-ocultos");
+const listaPendientes = document.querySelector("#pendientes-lista");
 
-const btnVistaUsuario = document.querySelector("#btn-vista-usuario");
-const btnVistaAdmin = document.querySelector("#btn-vista-admin");
-const vistaUsuario = document.querySelector("#vista-usuario");
-const vistaAdmin = document.querySelector("#vista-admin");
+const botonVistaUsuario = document.querySelector("#btn-vista-usuario");
+const botonVistaAdmin = document.querySelector("#btn-vista-admin");
+const seccionVistaUsuario = document.querySelector("#vista-usuario");
+const seccionVistaAdmin = document.querySelector("#vista-admin");
 
-fotoInput.addEventListener("change", () => {
-  const foto = fotoInput.files[0];
+entradaFoto.addEventListener("change", () => {
+  const foto = entradaFoto.files[0];
   if (!foto) return;
 
   const objeto = new ObjetoPerdido("", "", "", "", "", "", foto);
   const error = objeto.validarFoto();
   if (error) {
-    resultadoDiv.textContent = error;
-    fotoInput.value = "";
-    previewContainer.hidden = true;
+    contenedorResultado.textContent = error;
+    entradaFoto.value = "";
+    contenedorVistaPrevia.hidden = true;
     return;
   }
 
-  fotoUrl = URL.createObjectURL(foto);
-  fotoPreview.src = fotoUrl;
-  previewContainer.hidden = false;
-  resultadoDiv.textContent = "";
+  urlFoto = URL.createObjectURL(foto);
+  vistaPreviaFoto.src = urlFoto;
+  contenedorVistaPrevia.hidden = false;
+  contenedorResultado.textContent = "";
 });
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+formularioObjetoPerdido.addEventListener("submit", (evento) => {
+  evento.preventDefault();
 
-  const foto = fotoInput.files[0];
-  const objetoPerdido = new ObjetoPerdido(nombreInput.value,
-    categoriaInput.value,
-    fechaInput.value,
-    horaInput.value,
-    lugarInput.value,
-    commentarioInput.value,
-    foto);
+  const foto = entradaFoto.files[0];
+  const objetoPerdido = new ObjetoPerdido(
+    entradaNombre.value,
+    entradaCategoria.value,
+    entradaFecha.value,
+    entradaHora.value,
+    entradaLugar.value,
+    entradaComentario.value,
+    foto
+  );
   const errorFoto = objetoPerdido.validarFoto();
   const resultado = errorFoto || objetoPerdido.ValidacionFinal();
 
-  resultadoDiv.className = resultado === "Registro exitoso. ¡Guardado correctamente!"
+  contenedorResultado.className = resultado === "Registro exitoso. ¡Guardado correctamente!"
     ? "resultado-exito"
     : "resultado-error";
 
   if (resultado === "Registro exitoso. ¡Guardado correctamente!") {
-    resultadoDiv.innerHTML = `
+    contenedorResultado.innerHTML = `
       <strong>${resultado}</strong><br>
       • <strong>Estado:</strong> ${objetoPerdido.obtenerEstadoValidacion()}<br>
       • <strong>Notificación:</strong> ${objetoPerdido.obtenerNotificacionCatalogo()}<br>
@@ -97,36 +99,36 @@ form.addEventListener("submit", (event) => {
     actualizarResultadosCatalogo();
     actualizarGaleriaAdmin();
   } else {
-    resultadoDiv.textContent = resultado;
+    contenedorResultado.textContent = resultado;
   }
 });
 
 function mostrarVista(vista) {
   if (vista === "usuario") {
-    vistaUsuario.hidden = false;
-    vistaAdmin.hidden = true;
-    btnVistaUsuario.classList.add("activo");
-    btnVistaAdmin.classList.remove("activo");
+    seccionVistaUsuario.hidden = false;
+    seccionVistaAdmin.hidden = true;
+    botonVistaUsuario.classList.add("activo");
+    botonVistaAdmin.classList.remove("activo");
   } else if (vista === "administrador") {
-    vistaUsuario.hidden = true;
-    vistaAdmin.hidden = false;
-    btnVistaAdmin.classList.add("activo");
-    btnVistaUsuario.classList.remove("activo");
+    seccionVistaUsuario.hidden = true;
+    seccionVistaAdmin.hidden = false;
+    botonVistaAdmin.classList.add("activo");
+    botonVistaUsuario.classList.remove("activo");
   }
   cambiarVista(vista);
 }
 
-btnVistaUsuario.addEventListener("click", () => mostrarVista("usuario"));
-btnVistaAdmin.addEventListener("click", () => mostrarVista("administrador"));
+botonVistaUsuario.addEventListener("click", () => mostrarVista("usuario"));
+botonVistaAdmin.addEventListener("click", () => mostrarVista("administrador"));
 
 function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
-  const galeriaContainer = document.querySelector("#galeria-container");
-  if (!galeriaContainer) return;
-  galeriaContainer.innerHTML = "";
+  const contenedorGaleria = document.querySelector("#galeria-container");
+  if (!contenedorGaleria) return;
+  contenedorGaleria.innerHTML = "";
 
   if (objetos.length === 0) {
     const mensajeVacio = ObjetoPerdido.obtenerMensajeGaleriaVacia();
-    galeriaContainer.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
+    contenedorGaleria.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
     return;
   }
 
@@ -135,10 +137,10 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
     tarjeta.className = "objeto-tarjeta";
     tarjeta.style.cursor = "pointer";
     const datos = obj.obtenerDatosTarjeta();
-    const urlFoto = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
+    const urlFotoTarjeta = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
 
-    tarjeta.innerHTML = `
-      <img src="${urlFoto}" alt="${datos.nombre}" class="tarjeta-img" />
+   tarjeta.innerHTML = `
+      <img src="${urlFotoTarjeta}" alt="${datos.nombre}" class="tarjeta-img" />
       <h3>${datos.nombre}</h3>
       <p><strong>Categoría:</strong> ${datos.categoria}</p>
       <p><strong>Ubicación:</strong> ${datos.lugar}</p>
@@ -149,38 +151,39 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
     tarjeta.addEventListener("click", () => {
       const ficha = obj.obtenerFichaTecnica ? obj.obtenerFichaTecnica() : obj.obtenerDetalleCompleto();
       const campos = obtenerCamposFicha(ficha);
-      const detalleInfo = document.querySelector("#detalle-info");
-      const detalleContainer = document.querySelector("#detalle-container");
+      const informacionDetalle = document.querySelector("#detalle-info");
+      const contenedorDetalle = document.querySelector("#detalle-container");
       const urlDetalleFoto = typeof ficha.foto === "string" ? ficha.foto : URL.createObjectURL(ficha.foto);
-      detalleInfo.innerHTML = `
+      
+      informacionDetalle.innerHTML = `
         <img src="${urlDetalleFoto}" alt="${ficha.nombre}" style="max-width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" />
         ${campos.map((campo) => `<p><strong>${campo.etiqueta}:</strong> ${campo.valor}</p>`).join("")}
       `;
-      const btnCerrar = document.querySelector("#cerrar-detalle");
-      if (btnCerrar) {
-        btnCerrar.textContent = "Volver al catálogo";
+      const botonCerrar = document.querySelector("#cerrar-detalle");
+      if (botonCerrar) {
+        botonCerrar.textContent = "Volver al catálogo";
       }
-      detalleContainer.style.display = "block";
+      contenedorDetalle.style.display = "block";
     });
-    galeriaContainer.appendChild(tarjeta);
+    contenedorGaleria.appendChild(tarjeta);
   });
 
-  const btnCerrar = document.querySelector("#cerrar-detalle");
-  if (btnCerrar) {
-    btnCerrar.onclick = () => {
+  const botonCerrar = document.querySelector("#cerrar-detalle");
+  if (botonCerrar) {
+    botonCerrar.onclick = () => {
       document.querySelector("#detalle-container").style.display = "none";
     };
   }
 }
 
 function actualizarGaleriaAdmin(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
-  const galeriaContainer = document.querySelector("#galeria-admin-container");
-  if (!galeriaContainer) return;
-  galeriaContainer.innerHTML = "";
+  const contenedorGaleriaAdmin = document.querySelector("#galeria-admin-container");
+  if (!contenedorGaleriaAdmin) return;
+  contenedorGaleriaAdmin.innerHTML = "";
 
   if (objetos.length === 0) {
     const mensajeVacio = ObjetoPerdido.obtenerMensajeGaleriaVacia();
-    galeriaContainer.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
+    contenedorGaleriaAdmin.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
     return;
   }
 
@@ -189,17 +192,18 @@ function actualizarGaleriaAdmin(objetos = ObjetoPerdido.obtenerGaleriaObjects())
     tarjeta.className = "objeto-tarjeta";
     tarjeta.style.cursor = "pointer";
     const datos = obj.obtenerDatosTarjeta();
-    const urlFoto = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
+    const urlFotoTarjeta = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
 
     tarjeta.innerHTML = `
-      <img src="${urlFoto}" alt="${datos.nombre}" class="tarjeta-img" />
+      <button class="boton-aprobar">Aprobar</button>
+      <img src="${urlFotoTarjeta}" alt="${datos.nombre}" class="tarjeta-img" />
       <h3>${datos.nombre}</h3>
       <p><strong>Categoría:</strong> ${datos.categoria}</p>
       <p><strong>Ubicación:</strong> ${datos.lugar}</p>
       <p><strong>Fecha:</strong> ${datos.fecha}</p>
       <p class="${obj.obtenerEstado() === "Publicado" ? "badge-publicado" : "badge-oculto"}">${obj.obtenerEstado()}</p>
     `;
-    galeriaContainer.appendChild(tarjeta);
+    contenedorGaleriaAdmin.appendChild(tarjeta);
   });
 }
 
@@ -211,32 +215,32 @@ function actualizarResultadosCatalogo() {
   );
   const objetosFiltrados = filtrarObjetos(
     objetos,
-    filtroCategoriaInput.value,
-    filtroUbicacionInput.value
+    entradaFiltroCategoria.value,
+    entradaFiltroUbicacion.value
   );
 
   const resultados = buscarObjetos(
     objetosFiltrados,
-    busquedaInput.value
+    entradaBusqueda.value
   );
 
   const mensajeBusqueda = obtenerMensajeBusqueda(
     resultados,
-    busquedaInput.value
+    entradaBusqueda.value
   );
 
   const mensajeFiltros = obtenerMensajeFiltros(
     resultados,
-    filtroCategoriaInput.value,
-    filtroUbicacionInput.value
+    entradaFiltroCategoria.value,
+    entradaFiltroUbicacion.value
   );
 
   const mensaje = mensajeBusqueda || mensajeFiltros;
 
   if (mensaje) {
-    const galeriaContainer = document.querySelector("#galeria-container");
-    if (galeriaContainer) {
-      galeriaContainer.innerHTML = `
+    const contenedorGaleria = document.querySelector("#galeria-container");
+    if (contenedorGaleria) {
+      contenedorGaleria.innerHTML = `
         <p class="galeria-vacia">${mensaje}</p>
       `;
     }
@@ -251,47 +255,47 @@ function actualizarPendientesUI() {
   const mensaje = obtenerMensajePendientes(pendientes);
 
   if (mensaje) {
-    pendientesLista.innerHTML = `<p class="galeria-vacia">${mensaje}</p>`;
+    listaPendientes.innerHTML = `<p class="galeria-vacia">${mensaje}</p>`;
     return;
   }
 
-  pendientesLista.innerHTML = "";
+  listaPendientes.innerHTML = "";
 
   pendientes.forEach((objeto) => {
     const item = document.createElement("div");
     item.className = "pendiente-item";
 
     const datos = objeto.obtenerDatosTarjeta();
-    const urlFoto = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
+    const urlFotoPendiente = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
 
     item.innerHTML = `
-      <img src="${urlFoto}" alt="${datos.nombre}" class="tarjeta-img" />
+      <img src="${urlFotoPendiente}" alt="${datos.nombre}" class="tarjeta-img" />
       <p><strong>${datos.nombre}</strong></p>
       <p><strong>Categoría:</strong> ${datos.categoria}</p>
       <p><strong>Ubicación:</strong> ${datos.lugar}</p>
       <p><strong>Fecha:</strong> ${datos.fecha}</p>
-      <button class="btn-aprobar">Aprobar</button>
+      <button class="boton-aprobar">Aprobar</button>
     `;
 
-    item.querySelector(".btn-aprobar").addEventListener("click", () => {
+    item.querySelector(".boton-aprobar").addEventListener("click", () => {
       aprobarPublicacion(objeto);
       actualizarPendientesUI();
       actualizarResultadosCatalogo();
       actualizarGaleriaAdmin();
     });
 
-    pendientesLista.appendChild(item);
+    listaPendientes.appendChild(item);
   });
 }
 
-mostrarOcultosInput.addEventListener("change", () => {
+entradaMostrarOcultos.addEventListener("change", () => {
   actualizarResultadosCatalogo();
   actualizarGaleriaAdmin();
 });
 
-busquedaInput.addEventListener("input", actualizarResultadosCatalogo);
-filtroCategoriaInput.addEventListener("change", actualizarResultadosCatalogo);
-filtroUbicacionInput.addEventListener("change", actualizarResultadosCatalogo);
+entradaBusqueda.addEventListener("input", actualizarResultadosCatalogo);
+entradaFiltroCategoria.addEventListener("change", actualizarResultadosCatalogo);
+entradaFiltroUbicacion.addEventListener("change", actualizarResultadosCatalogo);
 
 function crearContenedorGaleria() {
   const contenedor = document.createElement("div");

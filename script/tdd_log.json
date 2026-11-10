@@ -2290,9 +2290,23 @@
     "testId": 91
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6b1e142dadae8df05eb89cbc2a41ac24a57be564",
     "commitName": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
     "commitTimestamp": 1794324612762,
     "testId": 91
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794324807004,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
+    "commitTimestamp": 1794324814467,
+    "testId": 92
   }
 ]

@@ -1729,17 +1729,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6b1e142dadae8df05eb89cbc2a41ac24a57be564",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-10T15:30:12.000Z",
       "message": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
-      "url": "/commit/HEAD"
+      "url": "/commit/6b1e142dadae8df05eb89cbc2a41ac24a57be564"
     },
     "stats": {
       "total": 0,
       "additions": 0,
       "deletions": 0,
+      "date": "2026-11-10"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-10T15:33:34.000Z",
+      "message": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 208,
+      "additions": 106,
+      "deletions": 102,
       "date": "2026-11-10"
     },
     "coverage": 91.78,

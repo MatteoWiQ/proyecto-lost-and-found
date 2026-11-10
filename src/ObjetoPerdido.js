@@ -14,7 +14,7 @@ class ObjetoPerdido{
         this.foto = foto;
         this.estado = "Pendiente de validación";
     }
-    getNombre(){
+    obtenerNombre(){
         if (this.validarNombre()!=""){
             return this.validarNombre();
         }
@@ -30,7 +30,7 @@ class ObjetoPerdido{
         }
         return "";
     }
-    getCategoria(){
+    obtenerCategoria(){
         if(this.validarCategoria()!=""){
             return this.validarCategoria();
         }
@@ -42,7 +42,7 @@ class ObjetoPerdido{
         }
         return "";
     }
-    getFecha(){
+    obtenerFecha(){
         if(this.validarFecha()!=""){
             return this.validarFecha();
         }
@@ -69,7 +69,7 @@ class ObjetoPerdido{
         }
         return "";
     }
-    getHora(){
+    obtenerHora(){
         if(this.validarHora()!=""){
             return this.validarHora();
         }
@@ -94,7 +94,7 @@ class ObjetoPerdido{
         return "";
     }
 
-    getLugar(){
+    obtenerLugar(){
         if(this.validarLugar()!=""){
             return this.validarLugar();
         }
@@ -109,11 +109,11 @@ class ObjetoPerdido{
         }
         return "";
     }
-    getCommentario(){
+    obtenerCommentario(){
         return this.commentario;
     }
 
-    getFoto(){
+    obtenerFoto(){
         if(this.validarFoto()!=""){
             return this.validarFoto();
         }
@@ -148,7 +148,7 @@ class ObjetoPerdido{
 
         return "";
     }
-    getInformacion(){
+    obtenerInformacion(){
         let message="";
         if (this.validarNombre()!=""){
             message += this.validarNombre();
@@ -168,25 +168,25 @@ class ObjetoPerdido{
         else if (this.validarFoto()!=""){
             message += this.validarFoto();
         }
-        return message === "" ? this.getNombre()
-         + ", " + this.getCategoria() 
-         + ", " + this.getFecha() 
-         + ", " + this.getHora()
-         + ", " + this.getLugar()
-         + ", " + this.getCommentario()
+        return message === "" ? this.obtenerNombre()
+         + ", " + this.obtenerCategoria() 
+         + ", " + this.obtenerFecha() 
+         + ", " + this.obtenerHora()
+         + ", " + this.obtenerLugar()
+         + ", " + this.obtenerCommentario()
           : message;
     }
     ValidacionFinal(){
-        if(this.getInformacion() === this.getNombre()
-         + ", " + this.getCategoria() 
-         + ", " + this.getFecha() 
-         + ", " + this.getHora()
-         + ", " + this.getLugar()
-         + ", " + this.getCommentario()
+        if(this.obtenerInformacion() === this.obtenerNombre()
+         + ", " + this.obtenerCategoria() 
+         + ", " + this.obtenerFecha() 
+         + ", " + this.obtenerHora()
+         + ", " + this.obtenerLugar()
+         + ", " + this.obtenerCommentario()
          && this.validarFoto() === ""){
             return "Registro exitoso. ¡Guardado correctamente!";
         }
-        return "Registro fallido: "+ this.getInformacion();
+        return "Registro fallido: "+ this.obtenerInformacion();
     }
 
     obtenerEstado() {

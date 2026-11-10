@@ -1653,18 +1653,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a0db1c293d8d2b999b4725aa032e85db81250985",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-10-21T22:53:12.000Z",
       "message": "sprint 1 terminado",
-      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/backlog-ingenieria/commit/a0db1c293d8d2b999b4725aa032e85db81250985"
     },
     "stats": {
       "total": 191,
       "additions": 191,
       "deletions": 0,
       "date": "2026-10-21"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-10T13:55:27.000Z",
+      "message": "refac: Get a Obtener para estandarizar espanol",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 106,
+      "additions": 53,
+      "deletions": 53,
+      "date": "2026-11-10"
     },
     "coverage": 91.78,
     "test_count": 56,

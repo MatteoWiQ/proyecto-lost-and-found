@@ -7,7 +7,7 @@ import crypto from "crypto";
 const DATA_FILE = "script/commit-history.json";
 const HEAD_MARKER = "HEAD";
 
-function getCommitInfo(sha) {
+function obtenerCommitInfo(sha) {
   let commitMessage, commitDate, author;
   const isHeadCommit = sha === HEAD_MARKER;
   const gitSha = isHeadCommit ? "HEAD" : sha;
@@ -29,7 +29,7 @@ function getCommitInfo(sha) {
 
   let repoUrl = "";
   try {
-    repoUrl = execSync("git config --get remote.origin.url")
+    repoUrl = execSync("git config --obtener remote.origin.url")
       .toString()
       .trim()
       .replace(/\.git$/, "");
@@ -248,7 +248,7 @@ try {
   }
 
   // Obtener información del commit actual como HEAD
-  const currentCommitData = getCommitInfo(HEAD_MARKER);
+  const currentCommitData = obtenerCommitInfo(HEAD_MARKER);
   if (currentCommitData) {
     saveCommitData(currentCommitData);
   }

@@ -20,7 +20,7 @@ const isACommit = (lastEntry) => {
   return lastEntry.hasOwnProperty('commitId');
 };
 
-const getLastTestId = (filePath) => {
+const obtenerLastTestId = (filePath) => {
   ensureFileExists(filePath, []);
   const historyExecutionData = readJSONFile(filePath);
   const lastEntry = historyExecutionData[historyExecutionData.length - 1];
@@ -36,4 +36,4 @@ const getLastTestId = (filePath) => {
   }
 };
 
-export {getLastTestId };
+export {obtenerLastTestId };

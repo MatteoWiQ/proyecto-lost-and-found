@@ -2,7 +2,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 import path from 'path';
 import { spawn } from 'cross-spawn';
-import { getLastTestId } from './id_execution_tests_commit.js';
+import { obtenerLastTestId } from './id_execution_tests_commit.js';
 
 const COMMAND = 'jest';
 const args = ['--json', '--outputFile=./script/report.json'];
@@ -44,7 +44,7 @@ const extractAndAddObject = async (reportFile, tddLogFile) => {
     const totalTests = jsonData.numTotalTests;
     const startTime = jsonData.startTime;
     const success = jsonData.success;
-    let testId = getLastTestId(tddLogFile);
+    let testId = obtenerLastTestId(tddLogFile);
 
     const newReport = {
       numPassedTests: passedTests,

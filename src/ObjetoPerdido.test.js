@@ -126,13 +126,6 @@ describe("ObjetoPerdido", () => {
     );
   });
 
-  it("Deberia retornar una lista con los objetos disponibles en el sistema", () => {
-    const foto = { name: "objeto.jpg", type: "image/jpg" };
-    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario", foto);
-    ObjetoPerdido.registrarEnGaleria(objeto);
-    const lista = ObjetoPerdido.obtenerGaleriaObjects();
-    expect(lista).toContain(objeto);
-  });
 
   it("Deberia retornar los datos esenciales para la tarjeta (nombre, fotografia, ubicacion, fecha y categoria)", () => {
     const foto = { name: "objeto.jpg", type: "image/jpg" };
@@ -160,20 +153,6 @@ describe("ObjetoPerdido", () => {
     });
   });
 
-  it("Deberia registrar el objeto automaticamente en la galeria cuando pasa la validacion exitosa", () => {
-    const foto = { name: "objeto.jpg", type: "image/jpg" };
-    const objeto = new ObjetoPerdido("Reloj", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Reloj de pulsera", foto);
-    if (objeto.ValidacionFinal() === "Registro exitoso. ¡Guardado correctamente!") {
-      ObjetoPerdido.registrarEnGaleria(objeto);
-    }
-    const galeria = ObjetoPerdido.obtenerGaleriaObjects();
-    expect(galeria).toContain(objeto);
-  });
-
-  it("Deberia retornar un mensaje amigable cuando la galeria esta vacia", () => {
-    ObjetoPerdido.galeria = [];
-    expect(ObjetoPerdido.obtenerMensajeGaleriaVacia()).toEqual("No hay objetos disponibles");
-  });
 
   it("Deberia iniciar con estado Pendiente de validacion", () => {
     const objeto = new ObjetoPerdido("Laptop", "Tecnologia");

@@ -1,4 +1,5 @@
 import ObjetoPerdido from "./ObjetoPerdido.js";
+import Galeria from "./Galeria.js";
 
 import {
   buscarObjetos,
@@ -34,6 +35,7 @@ const contenedorVistaPrevia = document.querySelector("#foto-preview-container");
 const formularioObjetoPerdido = document.querySelector("#lost-object-form");
 const contenedorResultado = document.querySelector("#resultado-div");
 let urlFoto;
+const galeria = new Galeria();
 
 const entradaBusqueda = document.querySelector("#busqueda");
 const entradaFiltroCategoria = document.querySelector("#filtro-categoria");
@@ -94,7 +96,7 @@ formularioObjetoPerdido.addEventListener("submit", (evento) => {
       • <strong>Pautas de entrega:</strong> ${objetoPerdido.obtenerUbicacionYPautasEntrega()}
     `;
 
-    ObjetoPerdido.registrarEnGaleria(objetoPerdido);
+    galeria.registrarEnGaleria(objetoPerdido);
     actualizarPendientesUI();
     actualizarResultadosCatalogo();
     actualizarGaleriaAdmin();
@@ -121,13 +123,13 @@ function mostrarVista(vista) {
 botonVistaUsuario.addEventListener("click", () => mostrarVista("usuario"));
 botonVistaAdmin.addEventListener("click", () => mostrarVista("administrador"));
 
-function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
+function actualizarGaleriaUI(objetos = galeria.obtenerGaleriaObjects()) {
   const contenedorGaleria = document.querySelector("#galeria-container");
   if (!contenedorGaleria) return;
   contenedorGaleria.innerHTML = "";
 
   if (objetos.length === 0) {
-    const mensajeVacio = ObjetoPerdido.obtenerMensajeGaleriaVacia();
+    const mensajeVacio = galeria.obtenerMensajeGaleriaVacia();
     contenedorGaleria.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
     return;
   }
@@ -176,13 +178,13 @@ function actualizarGaleriaUI(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
   }
 }
 
-function actualizarGaleriaAdmin(objetos = ObjetoPerdido.obtenerGaleriaObjects()) {
+function actualizarGaleriaAdmin(objetos = galeria.obtenerGaleriaObjects()) {
   const contenedorGaleriaAdmin = document.querySelector("#galeria-admin-container");
   if (!contenedorGaleriaAdmin) return;
   contenedorGaleriaAdmin.innerHTML = "";
 
   if (objetos.length === 0) {
-    const mensajeVacio = ObjetoPerdido.obtenerMensajeGaleriaVacia();
+    const mensajeVacio = galeria.obtenerMensajeGaleriaVacia();
     contenedorGaleriaAdmin.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
     return;
   }
@@ -210,7 +212,7 @@ function actualizarGaleriaAdmin(objetos = ObjetoPerdido.obtenerGaleriaObjects())
 function actualizarResultadosCatalogo() {
   const vista = obtenerVista();
   const objetos = obtenerObjetosParaCatalogo(
-    ObjetoPerdido.obtenerGaleriaObjects(),
+    galeria.obtenerGaleriaObjects(),
     debeMostrarOcultos(vista)
   );
   const objetosFiltrados = filtrarObjetos(
@@ -251,7 +253,7 @@ function actualizarResultadosCatalogo() {
 }
 
 function actualizarPendientesUI() {
-  const pendientes = obtenerPendientes(ObjetoPerdido.obtenerGaleriaObjects());
+  const pendientes = obtenerPendientes(galeria.obtenerGaleriaObjects());
   const mensaje = obtenerMensajePendientes(pendientes);
 
   if (mensaje) {

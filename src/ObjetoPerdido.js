@@ -225,14 +225,7 @@ class ObjetoPerdido{
         return "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema.";
     }
 
-    static galeria = [];
-    static registrarEnGaleria(objeto) {
-        ObjetoPerdido.galeria.push(objeto);
-    }
-    static obtenerGaleriaObjects() {
-        return ObjetoPerdido.galeria;
-    }
-
+    
     obtenerDatosTarjeta() {
         return {
             nombre: this.nombre,
@@ -253,13 +246,6 @@ class ObjetoPerdido{
             commentario: this.commentario,
             foto: this.foto
         };
-    }
-
-    static obtenerMensajeGaleriaVacia() {
-        if (ObjetoPerdido.galeria.length === 0) {
-            return "No hay objetos disponibles";
-        }
-        return "";
     }
 }
 

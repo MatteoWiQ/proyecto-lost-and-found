@@ -54,13 +54,21 @@ class ObjetoPerdido{
         }
         return "";
     }
-    validarDia(){
+    validarNoFuturo(){
         let fecha = new Date(this.fecha);
         let hoy = new Date();
         if (fecha > hoy) {
             return "La fecha no puede ser futura";
         }
-        else if (this.validarFormatoTiempo(fecha)) {
+        return "";
+    }
+    validarDia(){
+        const errorFechaFutura = this.validarNoFuturo();
+        if (errorFechaFutura !== "") {
+            return errorFechaFutura;
+        }
+        const fecha = new Date(this.fecha);
+        if (this.validarFormatoTiempo(fecha)) {
             return "La fecha no puede ser incorrecta";
         }
         return "";
@@ -78,8 +86,13 @@ class ObjetoPerdido{
         if (this.hora === "") {
             return "La hora es obligatoria";
         }
-        const [hora, minuto] = this.hora.split(":").map(Number);
-        if (isNaN(hora) || isNaN(minuto)) {
+        const formatoHora = /^(\d{2}):(\d{2})$/.exec(this.hora);
+        if (!formatoHora) {
+            return "La hora no esta en formato correcto";
+        }
+        const hora = Number(formatoHora[1]);
+        const minuto = Number(formatoHora[2]);
+        if (minuto > 59) {
             return "La hora no esta en formato correcto";
         }
         if (hora < 6 || hora > 22) {

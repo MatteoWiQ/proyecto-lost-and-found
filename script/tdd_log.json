@@ -1049,7 +1049,7 @@
   },
   {
     "commitId": "148c67d50eeea3c2f59cf251cf8e1546195459d7",
-    "commitName": "feat:Tu publicación aparecerá en el catálogo tras ser aprobada por Bienestar Estudiantil.",
+    "commitName": "feat:Tu publicaciÃ³n aparecerÃ¡ en el catÃ¡logo tras ser aprobada por Bienestar Estudiantil.",
     "commitTimestamp": 1792101266318,
     "testId": 24
   },
@@ -2079,7 +2079,7 @@
   },
   {
     "commitId": "f81a4e0f58fd4cc86efb9b823687a55f13f0ba87",
-    "commitName": "fix: quitar main de package.json (no es librería) para build parcel html",
+    "commitName": "fix: quitar main de package.json (no es librerÃ­a) para build parcel html",
     "commitTimestamp": 1792515619488,
     "testId": 77
   },
@@ -2276,57 +2276,95 @@
     "testId": 89
   },
   {
-<<<<<<< HEAD
     "numPassedTests": 56,
     "failedTests": 0,
     "numTotalTests": 56,
     "timestamp": 1794491945544,
     "success": true,
-=======
-    "commitId": "be7bbff805e88c2677206c6c8688ae0b21ed5c15",
-    "commitName": "refactor: renombrar formatos a extensionesImagenPermitidas",
-    "commitTimestamp": 1794320494023,
->>>>>>> 7bba22352132667ded41655cfe038fac81de2525
     "testId": 90
   },
   {
     "numPassedTests": 56,
     "failedTests": 0,
     "numTotalTests": 56,
-<<<<<<< HEAD
     "timestamp": 1794491968156,
     "success": true,
     "testId": 90
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f31245c28e5b513f1bf9ac336262f73bb30742fa",
     "commitName": "refact: Cambiar validacion de hora",
     "commitTimestamp": 1794492005499,
     "testId": 90
-=======
-    "timestamp": 1794324580216,
-    "success": true,
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1794495224224,
+    "success": false,
     "testId": 91
   },
   {
-    "commitId": "6b1e142dadae8df05eb89cbc2a41ac24a57be564",
-    "commitName": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
-    "commitTimestamp": 1794324612762,
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1794495245734,
+    "success": false,
     "testId": 91
   },
   {
-    "numPassedTests": 56,
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1794495356573,
+    "success": false,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 55,
     "failedTests": 0,
-    "numTotalTests": 56,
-    "timestamp": 1794324807004,
+    "numTotalTests": 55,
+    "timestamp": 1794495497982,
     "success": true,
-    "testId": 92
+    "testId": 91
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794495546467,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 14,
+    "numTotalTests": 55,
+    "timestamp": 1794495573767,
+    "success": false,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1794495603364,
+    "success": false,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794495674669,
+    "success": true,
+    "testId": 91
   },
   {
     "commitId": "HEAD",
-    "commitName": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
-    "commitTimestamp": 1794324814467,
-    "testId": 92
->>>>>>> 7bba22352132667ded41655cfe038fac81de2525
+    "commitName": "refact: validar hora separado",
+    "commitTimestamp": 1794495707145,
+    "testId": 91
   }
 ]

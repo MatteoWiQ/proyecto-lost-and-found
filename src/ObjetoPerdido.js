@@ -1,5 +1,3 @@
-
-
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
 const formatos = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg"];
@@ -64,10 +62,13 @@ class ObjetoPerdido{
         if (fecha > hoy) {
             return "La fecha no puede ser futura";
         }
-        else if (isNaN(fecha.getTime())) {
+        else if (this.validarFormatoTiempo(fecha)) {
             return "La fecha no puede ser incorrecta";
         }
         return "";
+    }
+    validarFormatoTiempo(fecha){
+        return isNaN(fecha.getTime())
     }
     obtenerHora(){
         if(this.validarHora()!=""){
@@ -149,32 +150,32 @@ class ObjetoPerdido{
         return "";
     }
     obtenerInformacion(){
-        let message="";
+        let mensaje="";
         if (this.validarNombre()!=""){
-            message += this.validarNombre();
+            mensaje += this.validarNombre();
         }
         else if (this.validarCategoria()!=""){
-            message += this.validarCategoria();
+            mensaje += this.validarCategoria();
         }
         else if (this.validarFecha()!=""){
-            message += this.validarFecha();
+            mensaje += this.validarFecha();
         }
         else if (this.validarHora()!=""){
-            message += this.validarHora();
+            mensaje += this.validarHora();
         }
         else if (this.validarLugar()!=""){
-            message += this.validarLugar();
+            mensaje += this.validarLugar();
         }
         else if (this.validarFoto()!=""){
-            message += this.validarFoto();
+            mensaje += this.validarFoto();
         }
-        return message === "" ? this.obtenerNombre()
+        return mensaje === "" ? this.obtenerNombre()
          + ", " + this.obtenerCategoria() 
          + ", " + this.obtenerFecha() 
          + ", " + this.obtenerHora()
          + ", " + this.obtenerLugar()
          + ", " + this.obtenerCommentario()
-          : message;
+          : mensaje;
     }
     ValidacionFinal(){
         if(this.obtenerInformacion() === this.obtenerNombre()

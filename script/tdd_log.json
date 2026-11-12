@@ -2270,9 +2270,31 @@
     "testId": 89
   },
   {
-    "commitId": "HEAD",
+    "commitId": "71b4ec9025d7dd232f71bb2ec60f07f9c899dd27",
     "commitName": "refact: Cambio de message a mensaje espanol",
     "commitTimestamp": 1794319019195,
     "testId": 89
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794491945544,
+    "success": true,
+    "testId": 90
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794491968156,
+    "success": true,
+    "testId": 90
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: Cambiar validacion de hora",
+    "commitTimestamp": 1794492005499,
+    "testId": 90
   }
 ]

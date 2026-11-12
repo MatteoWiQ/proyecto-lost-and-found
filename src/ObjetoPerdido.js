@@ -18,7 +18,6 @@ class ObjetoPerdido{
         }
         return this.nombre;
     }
-
     validarNombre(){
         if(this.nombre === ""){
             return "nombre obligatorio";
@@ -55,7 +54,6 @@ class ObjetoPerdido{
         }
         return "";
     }
-    
     validarDia(){
         let fecha = new Date(this.fecha);
         let hoy = new Date();
@@ -120,17 +118,19 @@ class ObjetoPerdido{
         }
         return this.foto;
     }
-    validarFoto(){
-        const nombreFoto = typeof this.foto === "string" ? this.foto : this.foto?.name;
+    ValidarFotoNombre(nombreFoto){
         if (typeof nombreFoto !== "string") {
             return "Formato de imagen no permitido";
         }
-
-        const extension = nombreFoto.split(".").pop().toLowerCase();
+        return "";
+    }
+    ValidarFotoExtension(extension){
         if (!extensionesImagenPermitidas.includes(extension)) {
             return "Formato de imagen no permitido";
         }
-
+        return "";
+    }
+    ValidarFotoTipo(extension){
         if (typeof this.foto === "object" && this.foto.type) {
             const tiposPorFormato = {
                 jpg: ["image/jpeg", "image/jpg"],
@@ -146,7 +146,23 @@ class ObjetoPerdido{
                 return "Formato de imagen no permitido";
             }
         }
-
+        return "";
+    }
+    validarFoto(){
+        const nombreFoto = typeof this.foto === "string" ? this.foto : this.foto?.name;
+        const mensajeValidarFotoNombre = this.ValidarFotoNombre(nombreFoto);
+        if (mensajeValidarFotoNombre !== "") {
+            return mensajeValidarFotoNombre;
+        }
+        const extension = nombreFoto.split(".").pop().toLowerCase();
+        const mensajeValidarFotoExtension = this.ValidarFotoExtension(extension);
+        if (mensajeValidarFotoExtension !== "") {
+            return mensajeValidarFotoExtension;
+        }
+        const mensajeValidarFotoTipo = this.ValidarFotoTipo(extension);
+        if (mensajeValidarFotoTipo !== "") {
+            return mensajeValidarFotoTipo;
+        }
         return "";
     }
     obtenerInformacion(){

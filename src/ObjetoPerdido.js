@@ -1,6 +1,6 @@
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
-const formatos = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg"];
+const extensionesImagenPermitidas = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg"];
 class ObjetoPerdido{
     constructor(nombre,categoria,fecha, hora, lugar, commentario, foto){
         this.nombre = nombre;
@@ -127,7 +127,7 @@ class ObjetoPerdido{
         }
 
         const extension = nombreFoto.split(".").pop().toLowerCase();
-        if (!formatos.includes(extension)) {
+        if (!extensionesImagenPermitidas.includes(extension)) {
             return "Formato de imagen no permitido";
         }
 

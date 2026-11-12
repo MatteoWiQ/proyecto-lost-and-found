@@ -1710,6 +1710,7 @@
     "conclusion": "success"
   },
   {
+<<<<<<< HEAD
     "sha": "HEAD",
     "author": "Alvaro Nina",
     "commit": {
@@ -1724,6 +1725,60 @@
       "date": "2026-11-12"
     },
     "coverage": 91.84,
+=======
+    "sha": "be7bbff805e88c2677206c6c8688ae0b21ed5c15",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-10T14:21:32.000Z",
+      "message": "refactor: renombrar formatos a extensionesImagenPermitidas",
+      "url": "/commit/be7bbff805e88c2677206c6c8688ae0b21ed5c15"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
+      "date": "2026-11-10"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6b1e142dadae8df05eb89cbc2a41ac24a57be564",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-10T15:30:12.000Z",
+      "message": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
+      "url": "/commit/6b1e142dadae8df05eb89cbc2a41ac24a57be564"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-11-10"
+    },
+    "coverage": 91.78,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-10T15:33:34.000Z",
+      "message": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 208,
+      "additions": 106,
+      "deletions": 102,
+      "date": "2026-11-10"
+    },
+    "coverage": 91.78,
+>>>>>>> 7bba22352132667ded41655cfe038fac81de2525
     "test_count": 56,
     "failed_tests": 0,
     "conclusion": "success"

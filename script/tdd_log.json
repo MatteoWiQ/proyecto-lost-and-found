@@ -2276,17 +2276,24 @@
     "testId": 89
   },
   {
+<<<<<<< HEAD
     "numPassedTests": 56,
     "failedTests": 0,
     "numTotalTests": 56,
     "timestamp": 1794491945544,
     "success": true,
+=======
+    "commitId": "be7bbff805e88c2677206c6c8688ae0b21ed5c15",
+    "commitName": "refactor: renombrar formatos a extensionesImagenPermitidas",
+    "commitTimestamp": 1794320494023,
+>>>>>>> 7bba22352132667ded41655cfe038fac81de2525
     "testId": 90
   },
   {
     "numPassedTests": 56,
     "failedTests": 0,
     "numTotalTests": 56,
+<<<<<<< HEAD
     "timestamp": 1794491968156,
     "success": true,
     "testId": 90
@@ -2296,5 +2303,30 @@
     "commitName": "refact: Cambiar validacion de hora",
     "commitTimestamp": 1794492005499,
     "testId": 90
+=======
+    "timestamp": 1794324580216,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "commitId": "6b1e142dadae8df05eb89cbc2a41ac24a57be564",
+    "commitName": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
+    "commitTimestamp": 1794324612762,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794324807004,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: Traducir variables a español y ajustar nombres descriptivos en presenter",
+    "commitTimestamp": 1794324814467,
+    "testId": 92
+>>>>>>> 7bba22352132667ded41655cfe038fac81de2525
   }
 ]

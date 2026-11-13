@@ -17,6 +17,7 @@ import {
 
 import { renderizarGaleriaObjetos } from "./vistas/GaleriaObjetosVista.js";
 import { crearVistaFicha } from "./vistas/FichaObjetoVista.js";
+import { renderizarPublicacionesPendientes } from "./vistas/PublicacionesPendientesVista.js";
 
 import {
   obtenerVista,
@@ -186,37 +187,11 @@ function actualizarPendientesUI() {
   const pendientes = obtenerPendientes(galeria.obtenerGaleriaObjects());
   const mensaje = obtenerMensajePendientes(pendientes);
 
-  if (mensaje) {
-    listaPendientes.innerHTML = `<p class="galeria-vacia">${mensaje}</p>`;
-    return;
-  }
-
-  listaPendientes.innerHTML = "";
-
-  pendientes.forEach((objeto) => {
-    const item = document.createElement("div");
-    item.className = "pendiente-item";
-
-    const datos = objeto.obtenerDatosTarjeta();
-    const urlFotoPendiente = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
-
-    item.innerHTML = `
-      <img src="${urlFotoPendiente}" alt="${datos.nombre}" class="tarjeta-img" />
-      <p><strong>${datos.nombre}</strong></p>
-      <p><strong>Categoría:</strong> ${datos.categoria}</p>
-      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
-      <p><strong>Fecha:</strong> ${datos.fecha}</p>
-      <button class="boton-aprobar">Aprobar</button>
-    `;
-
-    item.querySelector(".boton-aprobar").addEventListener("click", () => {
-      aprobarPublicacion(objeto);
-      actualizarPendientesUI();
-      actualizarResultadosCatalogo();
-      actualizarGaleriaAdmin();
-    });
-
-    listaPendientes.appendChild(item);
+  renderizarPublicacionesPendientes(listaPendientes, pendientes, mensaje, (objeto) => {
+    aprobarPublicacion(objeto);
+    actualizarPendientesUI();
+    actualizarResultadosCatalogo();
+    actualizarGaleriaAdmin();
   });
 }
 

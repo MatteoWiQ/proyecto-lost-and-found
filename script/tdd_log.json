@@ -2380,9 +2380,15 @@
     "testId": 93
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7241f0f767fe9dbd4831309f882e85ce1bd1dccb",
     "commitName": "refactor: extraer renderizado compartido de galerias",
     "commitTimestamp": 1794535454411,
     "testId": 94
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: separar vista de publicaciones pendientes",
+    "commitTimestamp": 1794535475695,
+    "testId": 95
   }
 ]

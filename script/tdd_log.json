@@ -2374,9 +2374,15 @@
     "testId": 92
   },
   {
-    "commitId": "HEAD",
+    "commitId": "399cee71f952ec89b580d09fd234e2a319366dee",
     "commitName": "refactor: separar vista de ficha tecnica de la galeria",
     "commitTimestamp": 1794535431057,
     "testId": 93
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer renderizado compartido de galerias",
+    "commitTimestamp": 1794535454411,
+    "testId": 94
   }
 ]

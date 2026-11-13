@@ -38,17 +38,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "399cee71f952ec89b580d09fd234e2a319366dee",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-13T02:03:50.000Z",
       "message": "refactor: separar vista de ficha tecnica de la galeria",
-      "url": "/commit/HEAD"
+      "url": "/commit/399cee71f952ec89b580d09fd234e2a319366dee"
     },
     "stats": {
       "total": 58,
       "additions": 34,
       "deletions": 24,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:04:13.000Z",
+      "message": "refactor: extraer renderizado compartido de galerias",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 55,
+      "additions": 25,
+      "deletions": 30,
       "date": "2026-11-13"
     },
     "coverage": 91.07,

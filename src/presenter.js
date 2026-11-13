@@ -15,7 +15,7 @@ import {
   obtenerObjetosParaCatalogo
 } from "./Aprobacion.js";
 
-import { crearTarjetaObjeto } from "./vistas/TarjetaObjetoVista.js";
+import { renderizarGaleriaObjetos } from "./vistas/GaleriaObjetosVista.js";
 import { crearVistaFicha } from "./vistas/FichaObjetoVista.js";
 
 import {
@@ -130,38 +130,13 @@ botonVistaUsuario.addEventListener("click", () => mostrarVista("usuario"));
 botonVistaAdmin.addEventListener("click", () => mostrarVista("administrador"));
 
 function actualizarGaleriaUI(objetos = galeria.obtenerGaleriaObjects()) {
-  const contenedorGaleria = document.querySelector("#galeria-container");
-  if (!contenedorGaleria) return;
-  contenedorGaleria.innerHTML = "";
-
-  if (objetos.length === 0) {
-    const mensajeVacio = galeria.obtenerMensajeGaleriaVacia();
-    contenedorGaleria.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
-    return;
-  }
-
-  objetos.forEach((obj) => {
-    const tarjeta = crearTarjetaObjeto(obj, { alSeleccionar: () => vistaFicha.mostrar(obj) });
-    contenedorGaleria.appendChild(tarjeta);
-  });
-
+  renderizarGaleriaObjetos(document.querySelector("#galeria-container"), objetos,
+    galeria.obtenerMensajeGaleriaVacia(), { alSeleccionar: (objeto) => vistaFicha.mostrar(objeto) });
 }
 
 function actualizarGaleriaAdmin(objetos = galeria.obtenerGaleriaObjects()) {
-  const contenedorGaleriaAdmin = document.querySelector("#galeria-admin-container");
-  if (!contenedorGaleriaAdmin) return;
-  contenedorGaleriaAdmin.innerHTML = "";
-
-  if (objetos.length === 0) {
-    const mensajeVacio = galeria.obtenerMensajeGaleriaVacia();
-    contenedorGaleriaAdmin.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
-    return;
-  }
-
-  objetos.forEach((obj) => {
-    const tarjeta = crearTarjetaObjeto(obj, { mostrarBotonAprobar: true });
-    contenedorGaleriaAdmin.appendChild(tarjeta);
-  });
+  renderizarGaleriaObjetos(document.querySelector("#galeria-admin-container"), objetos,
+    galeria.obtenerMensajeGaleriaVacia(), { mostrarBotonAprobar: true });
 }
 
 function actualizarResultadosCatalogo() {

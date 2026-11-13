@@ -15,8 +15,8 @@ import {
   obtenerObjetosParaCatalogo
 } from "./Aprobacion.js";
 
-import { obtenerCamposFicha } from "./FichaTecnica.js";
 import { crearTarjetaObjeto } from "./vistas/TarjetaObjetoVista.js";
+import { crearVistaFicha } from "./vistas/FichaObjetoVista.js";
 
 import {
   obtenerVista,
@@ -48,6 +48,11 @@ const botonVistaUsuario = document.querySelector("#btn-vista-usuario");
 const botonVistaAdmin = document.querySelector("#btn-vista-admin");
 const seccionVistaUsuario = document.querySelector("#vista-usuario");
 const seccionVistaAdmin = document.querySelector("#vista-admin");
+const vistaFicha = crearVistaFicha(
+  document.querySelector("#detalle-container"),
+  document.querySelector("#detalle-info"),
+  document.querySelector("#cerrar-detalle")
+);
 
 entradaFoto.addEventListener("change", () => {
   const foto = entradaFoto.files[0];
@@ -136,32 +141,10 @@ function actualizarGaleriaUI(objetos = galeria.obtenerGaleriaObjects()) {
   }
 
   objetos.forEach((obj) => {
-    const tarjeta = crearTarjetaObjeto(obj, { alSeleccionar: () => {
-      const ficha = obj.obtenerFichaTecnica ? obj.obtenerFichaTecnica() : obj.obtenerDetalleCompleto();
-      const campos = obtenerCamposFicha(ficha);
-      const informacionDetalle = document.querySelector("#detalle-info");
-      const contenedorDetalle = document.querySelector("#detalle-container");
-      const urlDetalleFoto = typeof ficha.foto === "string" ? ficha.foto : URL.createObjectURL(ficha.foto);
-      
-      informacionDetalle.innerHTML = `
-        <img src="${urlDetalleFoto}" alt="${ficha.nombre}" style="max-width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" />
-        ${campos.map((campo) => `<p><strong>${campo.etiqueta}:</strong> ${campo.valor}</p>`).join("")}
-      `;
-      const botonCerrar = document.querySelector("#cerrar-detalle");
-      if (botonCerrar) {
-        botonCerrar.textContent = "Volver al catálogo";
-      }
-      contenedorDetalle.style.display = "block";
-    }});
+    const tarjeta = crearTarjetaObjeto(obj, { alSeleccionar: () => vistaFicha.mostrar(obj) });
     contenedorGaleria.appendChild(tarjeta);
   });
 
-  const botonCerrar = document.querySelector("#cerrar-detalle");
-  if (botonCerrar) {
-    botonCerrar.onclick = () => {
-      document.querySelector("#detalle-container").style.display = "none";
-    };
-  }
 }
 
 function actualizarGaleriaAdmin(objetos = galeria.obtenerGaleriaObjects()) {

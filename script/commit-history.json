@@ -19,17 +19,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0794a200320cd05a3ae0232bc58dcdf9d40c4d85",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-13T02:03:20.000Z",
       "message": "refactor: reutilizar componente de tarjeta en ambas galerias",
-      "url": "/commit/HEAD"
+      "url": "/commit/0794a200320cd05a3ae0232bc58dcdf9d40c4d85"
     },
     "stats": {
       "total": 78,
       "additions": 46,
       "deletions": 32,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:03:50.000Z",
+      "message": "refactor: separar vista de ficha tecnica de la galeria",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 34,
+      "deletions": 24,
       "date": "2026-11-13"
     },
     "coverage": 91.07,

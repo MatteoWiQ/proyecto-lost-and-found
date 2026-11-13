@@ -2368,9 +2368,15 @@
     "testId": 91
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0794a200320cd05a3ae0232bc58dcdf9d40c4d85",
     "commitName": "refactor: reutilizar componente de tarjeta en ambas galerias",
     "commitTimestamp": 1794535401615,
     "testId": 92
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: separar vista de ficha tecnica de la galeria",
+    "commitTimestamp": 1794535431057,
+    "testId": 93
   }
 ]

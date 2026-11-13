@@ -16,6 +16,7 @@ import {
 } from "./Aprobacion.js";
 
 import { obtenerCamposFicha } from "./FichaTecnica.js";
+import { crearTarjetaObjeto } from "./vistas/TarjetaObjetoVista.js";
 
 import {
   obtenerVista,
@@ -135,22 +136,7 @@ function actualizarGaleriaUI(objetos = galeria.obtenerGaleriaObjects()) {
   }
 
   objetos.forEach((obj) => {
-    const tarjeta = document.createElement("div");
-    tarjeta.className = "objeto-tarjeta";
-    tarjeta.style.cursor = "pointer";
-    const datos = obj.obtenerDatosTarjeta();
-    const urlFotoTarjeta = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
-
-   tarjeta.innerHTML = `
-      <img src="${urlFotoTarjeta}" alt="${datos.nombre}" class="tarjeta-img" />
-      <h3>${datos.nombre}</h3>
-      <p><strong>Categoría:</strong> ${datos.categoria}</p>
-      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
-      <p><strong>Fecha:</strong> ${datos.fecha}</p>
-      <p class="${obj.obtenerEstado() === "Publicado" ? "badge-publicado" : "badge-oculto"}">${obj.obtenerEstado()}</p>
-    `;
-
-    tarjeta.addEventListener("click", () => {
+    const tarjeta = crearTarjetaObjeto(obj, { alSeleccionar: () => {
       const ficha = obj.obtenerFichaTecnica ? obj.obtenerFichaTecnica() : obj.obtenerDetalleCompleto();
       const campos = obtenerCamposFicha(ficha);
       const informacionDetalle = document.querySelector("#detalle-info");
@@ -166,7 +152,7 @@ function actualizarGaleriaUI(objetos = galeria.obtenerGaleriaObjects()) {
         botonCerrar.textContent = "Volver al catálogo";
       }
       contenedorDetalle.style.display = "block";
-    });
+    }});
     contenedorGaleria.appendChild(tarjeta);
   });
 
@@ -190,21 +176,7 @@ function actualizarGaleriaAdmin(objetos = galeria.obtenerGaleriaObjects()) {
   }
 
   objetos.forEach((obj) => {
-    const tarjeta = document.createElement("div");
-    tarjeta.className = "objeto-tarjeta";
-    tarjeta.style.cursor = "pointer";
-    const datos = obj.obtenerDatosTarjeta();
-    const urlFotoTarjeta = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
-
-    tarjeta.innerHTML = `
-      <button class="boton-aprobar">Aprobar</button>
-      <img src="${urlFotoTarjeta}" alt="${datos.nombre}" class="tarjeta-img" />
-      <h3>${datos.nombre}</h3>
-      <p><strong>Categoría:</strong> ${datos.categoria}</p>
-      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
-      <p><strong>Fecha:</strong> ${datos.fecha}</p>
-      <p class="${obj.obtenerEstado() === "Publicado" ? "badge-publicado" : "badge-oculto"}">${obj.obtenerEstado()}</p>
-    `;
+    const tarjeta = crearTarjetaObjeto(obj, { mostrarBotonAprobar: true });
     contenedorGaleriaAdmin.appendChild(tarjeta);
   });
 }

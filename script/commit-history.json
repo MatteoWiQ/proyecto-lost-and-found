@@ -1,17 +1,36 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-12T15:01:45.000Z",
       "message": "refact: validar hora separado",
-      "url": "/commit/HEAD"
+      "url": "/commit/ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe"
     },
     "stats": {
       "total": 21,
       "additions": 17,
       "deletions": 4,
       "date": "2026-11-12"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:03:20.000Z",
+      "message": "refactor: reutilizar componente de tarjeta en ambas galerias",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 78,
+      "additions": 46,
+      "deletions": 32,
+      "date": "2026-11-13"
     },
     "coverage": 91.07,
     "test_count": 55,

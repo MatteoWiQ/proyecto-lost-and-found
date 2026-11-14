@@ -2400,9 +2400,23 @@
     "testId": 96
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e11ab4578ba92433e22ac409f57c05725411ebe9",
     "commitName": "refactor: extraer logica del formulario a formularioPresenter.js",
     "commitTimestamp": 1794631992439,
     "testId": 96
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794632463108,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer logica de catalogo, filtros y vistas a catalogoPresenter.js",
+    "commitTimestamp": 1794632697541,
+    "testId": 97
   }
 ]

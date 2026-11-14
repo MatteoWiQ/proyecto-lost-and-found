@@ -95,17 +95,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e11ab4578ba92433e22ac409f57c05725411ebe9",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-14T04:53:12.000Z",
       "message": "refactor: extraer logica del formulario a formularioPresenter.js",
-      "url": "/commit/HEAD"
+      "url": "/commit/e11ab4578ba92433e22ac409f57c05725411ebe9"
     },
     "stats": {
       "total": 150,
       "additions": 80,
       "deletions": 70,
+      "date": "2026-11-14"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-14T05:04:57.000Z",
+      "message": "refactor: extraer logica de catalogo, filtros y vistas a catalogoPresenter.js",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 221,
+      "additions": 117,
+      "deletions": 104,
       "date": "2026-11-14"
     },
     "coverage": 91.07,

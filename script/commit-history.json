@@ -1,17 +1,169 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-12T15:01:45.000Z",
       "message": "refact: validar hora separado",
-      "url": "/commit/HEAD"
+      "url": "/commit/ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe"
     },
     "stats": {
       "total": 21,
       "additions": 17,
       "deletions": 4,
       "date": "2026-11-12"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0794a200320cd05a3ae0232bc58dcdf9d40c4d85",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:03:20.000Z",
+      "message": "refactor: reutilizar componente de tarjeta en ambas galerias",
+      "url": "/commit/0794a200320cd05a3ae0232bc58dcdf9d40c4d85"
+    },
+    "stats": {
+      "total": 78,
+      "additions": 46,
+      "deletions": 32,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "399cee71f952ec89b580d09fd234e2a319366dee",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:03:50.000Z",
+      "message": "refactor: separar vista de ficha tecnica de la galeria",
+      "url": "/commit/399cee71f952ec89b580d09fd234e2a319366dee"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 34,
+      "deletions": 24,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7241f0f767fe9dbd4831309f882e85ce1bd1dccb",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:04:13.000Z",
+      "message": "refactor: extraer renderizado compartido de galerias",
+      "url": "/commit/7241f0f767fe9dbd4831309f882e85ce1bd1dccb"
+    },
+    "stats": {
+      "total": 55,
+      "additions": 25,
+      "deletions": 30,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bb1ff6fb764c74f06d1d01ab92f6c02fb23ad52a",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:04:34.000Z",
+      "message": "refactor: separar vista de publicaciones pendientes",
+      "url": "/commit/bb1ff6fb764c74f06d1d01ab92f6c02fb23ad52a"
+    },
+    "stats": {
+      "total": 76,
+      "additions": 45,
+      "deletions": 31,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e11ab4578ba92433e22ac409f57c05725411ebe9",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-14T04:53:12.000Z",
+      "message": "refactor: extraer logica del formulario a formularioPresenter.js",
+      "url": "/commit/e11ab4578ba92433e22ac409f57c05725411ebe9"
+    },
+    "stats": {
+      "total": 150,
+      "additions": 80,
+      "deletions": 70,
+      "date": "2026-11-14"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "15ecc95fc8fc2f12f685878910e9cff1dd13e08e",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-14T05:04:57.000Z",
+      "message": "refactor: extraer logica de catalogo, filtros y vistas a catalogoPresenter.js",
+      "url": "/commit/15ecc95fc8fc2f12f685878910e9cff1dd13e08e"
+    },
+    "stats": {
+      "total": 221,
+      "additions": 117,
+      "deletions": 104,
+      "date": "2026-11-14"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6fee4bd831dedbab25f53d10628fc820dfe39b33",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-14T05:09:39.000Z",
+      "message": "refactor: extraer logica de administracion a adminPresenter.js y limpiar presenter principal",
+      "url": "/commit/6fee4bd831dedbab25f53d10628fc820dfe39b33"
+    },
+    "stats": {
+      "total": 85,
+      "additions": 49,
+      "deletions": 36,
+      "date": "2026-11-14"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-14T05:34:52.000Z",
+      "message": "refactor: organizar los presenters en la carpeta presenters",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 12,
+      "deletions": 12,
+      "date": "2026-11-14"
     },
     "coverage": 91.07,
     "test_count": 55,

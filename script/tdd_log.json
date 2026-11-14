@@ -2362,9 +2362,105 @@
     "testId": 91
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe",
     "commitName": "refact: validar hora separado",
     "commitTimestamp": 1794495707145,
     "testId": 91
+  },
+  {
+    "commitId": "0794a200320cd05a3ae0232bc58dcdf9d40c4d85",
+    "commitName": "refactor: reutilizar componente de tarjeta en ambas galerias",
+    "commitTimestamp": 1794535401615,
+    "testId": 92
+  },
+  {
+    "commitId": "399cee71f952ec89b580d09fd234e2a319366dee",
+    "commitName": "refactor: separar vista de ficha tecnica de la galeria",
+    "commitTimestamp": 1794535431057,
+    "testId": 93
+  },
+  {
+    "commitId": "7241f0f767fe9dbd4831309f882e85ce1bd1dccb",
+    "commitName": "refactor: extraer renderizado compartido de galerias",
+    "commitTimestamp": 1794535454411,
+    "testId": 94
+  },
+  {
+    "commitId": "bb1ff6fb764c74f06d1d01ab92f6c02fb23ad52a",
+    "commitName": "refactor: separar vista de publicaciones pendientes",
+    "commitTimestamp": 1794535475695,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794631862750,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "e11ab4578ba92433e22ac409f57c05725411ebe9",
+    "commitName": "refactor: extraer logica del formulario a formularioPresenter.js",
+    "commitTimestamp": 1794631992439,
+    "testId": 96
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794632463108,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "commitId": "15ecc95fc8fc2f12f685878910e9cff1dd13e08e",
+    "commitName": "refactor: extraer logica de catalogo, filtros y vistas a catalogoPresenter.js",
+    "commitTimestamp": 1794632697541,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794632938395,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "6fee4bd831dedbab25f53d10628fc820dfe39b33",
+    "commitName": "refactor: extraer logica de administracion a adminPresenter.js y limpiar presenter principal",
+    "commitTimestamp": 1794632979250,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794633973085,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794634084738,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794634254107,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: organizar los presenters en la carpeta presenters",
+    "commitTimestamp": 1794634492996,
+    "testId": 99
   }
 ]

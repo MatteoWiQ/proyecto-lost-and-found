@@ -2414,9 +2414,23 @@
     "testId": 97
   },
   {
-    "commitId": "HEAD",
+    "commitId": "15ecc95fc8fc2f12f685878910e9cff1dd13e08e",
     "commitName": "refactor: extraer logica de catalogo, filtros y vistas a catalogoPresenter.js",
     "commitTimestamp": 1794632697541,
     "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794632938395,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer logica de administracion a adminPresenter.js y limpiar presenter principal",
+    "commitTimestamp": 1794632979250,
+    "testId": 98
   }
 ]

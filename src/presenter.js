@@ -1,21 +1,11 @@
 import Galeria from "./Galeria.js";
 import { inicializarFormulario } from "./FormularioPresenter.js";
 import { inicializarCatalogo } from "./CatalogoPresenter.js";
-
-import {
-  obtenerPendientes,
-  aprobarPublicacion,
-  obtenerMensajePendientes
-} from "./Aprobacion.js";
-
-import { renderizarGaleriaObjetos } from "./vistas/GaleriaObjetosVista.js";
+import { inicializarAdmin } from "./AdminPresenter.js";
 import { crearVistaFicha } from "./vistas/FichaObjetoVista.js";
-import { renderizarPublicacionesPendientes } from "./vistas/PublicacionesPendientesVista.js";
-
 import { obtenerVista } from "./Vista.js";
 
 const galeria = new Galeria();
-const listaPendientes = document.querySelector("#pendientes-lista");
 
 const vistaFicha = crearVistaFicha(
   document.querySelector("#detalle-container"),
@@ -25,38 +15,19 @@ const vistaFicha = crearVistaFicha(
 
 const catalogoControlador = inicializarCatalogo(galeria, vistaFicha);
 
-function actualizarGaleriaAdmin(objetos = galeria.obtenerGaleriaObjects()) {
-  renderizarGaleriaObjetos(
-    document.querySelector("#galeria-admin-container"),
-    objetos,
-    galeria.obtenerMensajeGaleriaVacia(),
-    { mostrarBotonAprobar: true }
-  );
-}
-
-function actualizarPendientesUI() {
-  const pendientes = obtenerPendientes(galeria.obtenerGaleriaObjects());
-  const mensaje = obtenerMensajePendientes(pendientes);
-
-  renderizarPublicacionesPendientes(listaPendientes, pendientes, mensaje, (objeto) => {
-    aprobarPublicacion(objeto);
-    actualizarPendientesUI();
-    catalogoControlador.actualizarResultadosCatalogo();
-    actualizarGaleriaAdmin();
-  });
-}
+const adminControlador = inicializarAdmin(galeria, catalogoControlador);
 
 inicializarFormulario(galeria, () => {
-  actualizarPendientesUI();
+  adminControlador.actualizarPendientesUI();
   catalogoControlador.actualizarResultadosCatalogo();
-  actualizarGaleriaAdmin();
+  adminControlador.actualizarGaleriaAdmin();
 });
 
 const entradaMostrarOcultos = document.querySelector("#mostrar-ocultos");
 if (entradaMostrarOcultos) {
   entradaMostrarOcultos.addEventListener("change", () => {
     catalogoControlador.actualizarResultadosCatalogo();
-    actualizarGaleriaAdmin();
+    adminControlador.actualizarGaleriaAdmin();
   });
 }
 
@@ -68,5 +39,11 @@ function crearContenedorGaleria() {
   return contenedor;
 }
 
-actualizarPendientesUI();
-actualizarGaleriaAdmin();
+mostrarVistaInicial();
+
+function mostrarVistaInicial() {
+  const vista = obtenerVista();
+  if (catalogoControlador.mostrarVista) {
+    catalogoControlador.mostrarVista(vista);
+  }
+}

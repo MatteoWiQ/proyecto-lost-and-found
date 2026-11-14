@@ -148,7 +148,7 @@ describe("ObjetoPerdido", () => {
       fecha: "2026-10-14",
       hora: "20:30",
       lugar: "Bloque A",
-      commentario: "Comentario adicional",
+      Comentario: "Comentario adicional",
       foto: foto
     });
   });

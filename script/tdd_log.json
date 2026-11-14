@@ -2448,9 +2448,23 @@
     "testId": 92
   },
   {
-    "commitId": "HEAD",
+    "commitId": "92f4b09c6916d316896fcfa655a028ef95cce341",
     "commitName": "refact: Mejora de llamadas a funciones",
     "commitTimestamp": 1794695004096,
     "testId": 92
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794695579759,
+    "success": true,
+    "testId": 93
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: Reducir codigo duplicado",
+    "commitTimestamp": 1794695615927,
+    "testId": 93
   }
 ]

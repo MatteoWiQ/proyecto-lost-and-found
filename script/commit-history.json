@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "92f4b09c6916d316896fcfa655a028ef95cce341",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-14T22:23:22.000Z",
       "message": "refact: Mejora de llamadas a funciones",
-      "url": "/commit/HEAD"
+      "url": "/commit/92f4b09c6916d316896fcfa655a028ef95cce341"
     },
     "stats": {
       "total": 97,
@@ -33,6 +33,25 @@
       "date": "2026-11-14"
     },
     "coverage": 91.48,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-14T22:33:34.000Z",
+      "message": "refact: Reducir codigo duplicado",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 111,
+      "additions": 46,
+      "deletions": 65,
+      "date": "2026-11-14"
+    },
+    "coverage": 93.14,
     "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"

@@ -2362,9 +2362,33 @@
     "testId": 91
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe",
     "commitName": "refact: validar hora separado",
     "commitTimestamp": 1794495707145,
     "testId": 91
+  },
+  {
+    "commitId": "0794a200320cd05a3ae0232bc58dcdf9d40c4d85",
+    "commitName": "refactor: reutilizar componente de tarjeta en ambas galerias",
+    "commitTimestamp": 1794535401615,
+    "testId": 92
+  },
+  {
+    "commitId": "399cee71f952ec89b580d09fd234e2a319366dee",
+    "commitName": "refactor: separar vista de ficha tecnica de la galeria",
+    "commitTimestamp": 1794535431057,
+    "testId": 93
+  },
+  {
+    "commitId": "7241f0f767fe9dbd4831309f882e85ce1bd1dccb",
+    "commitName": "refactor: extraer renderizado compartido de galerias",
+    "commitTimestamp": 1794535454411,
+    "testId": 94
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: separar vista de publicaciones pendientes",
+    "commitTimestamp": 1794535475695,
+    "testId": 95
   }
 ]

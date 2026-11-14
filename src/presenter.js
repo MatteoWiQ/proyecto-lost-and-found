@@ -15,7 +15,9 @@ import {
   obtenerObjetosParaCatalogo
 } from "./Aprobacion.js";
 
-import { obtenerCamposFicha } from "./FichaTecnica.js";
+import { renderizarGaleriaObjetos } from "./vistas/GaleriaObjetosVista.js";
+import { crearVistaFicha } from "./vistas/FichaObjetoVista.js";
+import { renderizarPublicacionesPendientes } from "./vistas/PublicacionesPendientesVista.js";
 
 import {
   obtenerVista,
@@ -47,6 +49,11 @@ const botonVistaUsuario = document.querySelector("#btn-vista-usuario");
 const botonVistaAdmin = document.querySelector("#btn-vista-admin");
 const seccionVistaUsuario = document.querySelector("#vista-usuario");
 const seccionVistaAdmin = document.querySelector("#vista-admin");
+const vistaFicha = crearVistaFicha(
+  document.querySelector("#detalle-container"),
+  document.querySelector("#detalle-info"),
+  document.querySelector("#cerrar-detalle")
+);
 
 entradaFoto.addEventListener("change", () => {
   const foto = entradaFoto.files[0];
@@ -124,89 +131,13 @@ botonVistaUsuario.addEventListener("click", () => mostrarVista("usuario"));
 botonVistaAdmin.addEventListener("click", () => mostrarVista("administrador"));
 
 function actualizarGaleriaUI(objetos = galeria.obtenerGaleriaObjects()) {
-  const contenedorGaleria = document.querySelector("#galeria-container");
-  if (!contenedorGaleria) return;
-  contenedorGaleria.innerHTML = "";
-
-  if (objetos.length === 0) {
-    const mensajeVacio = galeria.obtenerMensajeGaleriaVacia();
-    contenedorGaleria.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
-    return;
-  }
-
-  objetos.forEach((obj) => {
-    const tarjeta = document.createElement("div");
-    tarjeta.className = "objeto-tarjeta";
-    tarjeta.style.cursor = "pointer";
-    const datos = obj.obtenerDatosTarjeta();
-    const urlFotoTarjeta = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
-
-   tarjeta.innerHTML = `
-      <img src="${urlFotoTarjeta}" alt="${datos.nombre}" class="tarjeta-img" />
-      <h3>${datos.nombre}</h3>
-      <p><strong>Categoría:</strong> ${datos.categoria}</p>
-      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
-      <p><strong>Fecha:</strong> ${datos.fecha}</p>
-      <p class="${obj.obtenerEstado() === "Publicado" ? "badge-publicado" : "badge-oculto"}">${obj.obtenerEstado()}</p>
-    `;
-
-    tarjeta.addEventListener("click", () => {
-      const ficha = obj.obtenerFichaTecnica ? obj.obtenerFichaTecnica() : obj.obtenerDetalleCompleto();
-      const campos = obtenerCamposFicha(ficha);
-      const informacionDetalle = document.querySelector("#detalle-info");
-      const contenedorDetalle = document.querySelector("#detalle-container");
-      const urlDetalleFoto = typeof ficha.foto === "string" ? ficha.foto : URL.createObjectURL(ficha.foto);
-      
-      informacionDetalle.innerHTML = `
-        <img src="${urlDetalleFoto}" alt="${ficha.nombre}" style="max-width: 100%; height: 150px; object-fit: cover; border-radius: 8px;" />
-        ${campos.map((campo) => `<p><strong>${campo.etiqueta}:</strong> ${campo.valor}</p>`).join("")}
-      `;
-      const botonCerrar = document.querySelector("#cerrar-detalle");
-      if (botonCerrar) {
-        botonCerrar.textContent = "Volver al catálogo";
-      }
-      contenedorDetalle.style.display = "block";
-    });
-    contenedorGaleria.appendChild(tarjeta);
-  });
-
-  const botonCerrar = document.querySelector("#cerrar-detalle");
-  if (botonCerrar) {
-    botonCerrar.onclick = () => {
-      document.querySelector("#detalle-container").style.display = "none";
-    };
-  }
+  renderizarGaleriaObjetos(document.querySelector("#galeria-container"), objetos,
+    galeria.obtenerMensajeGaleriaVacia(), { alSeleccionar: (objeto) => vistaFicha.mostrar(objeto) });
 }
 
 function actualizarGaleriaAdmin(objetos = galeria.obtenerGaleriaObjects()) {
-  const contenedorGaleriaAdmin = document.querySelector("#galeria-admin-container");
-  if (!contenedorGaleriaAdmin) return;
-  contenedorGaleriaAdmin.innerHTML = "";
-
-  if (objetos.length === 0) {
-    const mensajeVacio = galeria.obtenerMensajeGaleriaVacia();
-    contenedorGaleriaAdmin.innerHTML = `<p class="galeria-vacia">${mensajeVacio}</p>`;
-    return;
-  }
-
-  objetos.forEach((obj) => {
-    const tarjeta = document.createElement("div");
-    tarjeta.className = "objeto-tarjeta";
-    tarjeta.style.cursor = "pointer";
-    const datos = obj.obtenerDatosTarjeta();
-    const urlFotoTarjeta = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
-
-    tarjeta.innerHTML = `
-      <button class="boton-aprobar">Aprobar</button>
-      <img src="${urlFotoTarjeta}" alt="${datos.nombre}" class="tarjeta-img" />
-      <h3>${datos.nombre}</h3>
-      <p><strong>Categoría:</strong> ${datos.categoria}</p>
-      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
-      <p><strong>Fecha:</strong> ${datos.fecha}</p>
-      <p class="${obj.obtenerEstado() === "Publicado" ? "badge-publicado" : "badge-oculto"}">${obj.obtenerEstado()}</p>
-    `;
-    contenedorGaleriaAdmin.appendChild(tarjeta);
-  });
+  renderizarGaleriaObjetos(document.querySelector("#galeria-admin-container"), objetos,
+    galeria.obtenerMensajeGaleriaVacia(), { mostrarBotonAprobar: true });
 }
 
 function actualizarResultadosCatalogo() {
@@ -256,37 +187,11 @@ function actualizarPendientesUI() {
   const pendientes = obtenerPendientes(galeria.obtenerGaleriaObjects());
   const mensaje = obtenerMensajePendientes(pendientes);
 
-  if (mensaje) {
-    listaPendientes.innerHTML = `<p class="galeria-vacia">${mensaje}</p>`;
-    return;
-  }
-
-  listaPendientes.innerHTML = "";
-
-  pendientes.forEach((objeto) => {
-    const item = document.createElement("div");
-    item.className = "pendiente-item";
-
-    const datos = objeto.obtenerDatosTarjeta();
-    const urlFotoPendiente = typeof datos.foto === "string" ? datos.foto : URL.createObjectURL(datos.foto);
-
-    item.innerHTML = `
-      <img src="${urlFotoPendiente}" alt="${datos.nombre}" class="tarjeta-img" />
-      <p><strong>${datos.nombre}</strong></p>
-      <p><strong>Categoría:</strong> ${datos.categoria}</p>
-      <p><strong>Ubicación:</strong> ${datos.lugar}</p>
-      <p><strong>Fecha:</strong> ${datos.fecha}</p>
-      <button class="boton-aprobar">Aprobar</button>
-    `;
-
-    item.querySelector(".boton-aprobar").addEventListener("click", () => {
-      aprobarPublicacion(objeto);
-      actualizarPendientesUI();
-      actualizarResultadosCatalogo();
-      actualizarGaleriaAdmin();
-    });
-
-    listaPendientes.appendChild(item);
+  renderizarPublicacionesPendientes(listaPendientes, pendientes, mensaje, (objeto) => {
+    aprobarPublicacion(objeto);
+    actualizarPendientesUI();
+    actualizarResultadosCatalogo();
+    actualizarGaleriaAdmin();
   });
 }
 

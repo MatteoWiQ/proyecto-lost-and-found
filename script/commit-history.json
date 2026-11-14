@@ -1,17 +1,93 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-12T15:01:45.000Z",
       "message": "refact: validar hora separado",
-      "url": "/commit/HEAD"
+      "url": "/commit/ebe79b43ec43b14764b3fd6a6f7a913f9c51d1fe"
     },
     "stats": {
       "total": 21,
       "additions": 17,
       "deletions": 4,
       "date": "2026-11-12"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0794a200320cd05a3ae0232bc58dcdf9d40c4d85",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:03:20.000Z",
+      "message": "refactor: reutilizar componente de tarjeta en ambas galerias",
+      "url": "/commit/0794a200320cd05a3ae0232bc58dcdf9d40c4d85"
+    },
+    "stats": {
+      "total": 78,
+      "additions": 46,
+      "deletions": 32,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "399cee71f952ec89b580d09fd234e2a319366dee",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:03:50.000Z",
+      "message": "refactor: separar vista de ficha tecnica de la galeria",
+      "url": "/commit/399cee71f952ec89b580d09fd234e2a319366dee"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 34,
+      "deletions": 24,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7241f0f767fe9dbd4831309f882e85ce1bd1dccb",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:04:13.000Z",
+      "message": "refactor: extraer renderizado compartido de galerias",
+      "url": "/commit/7241f0f767fe9dbd4831309f882e85ce1bd1dccb"
+    },
+    "stats": {
+      "total": 55,
+      "additions": 25,
+      "deletions": 30,
+      "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-13T02:04:34.000Z",
+      "message": "refactor: separar vista de publicaciones pendientes",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 76,
+      "additions": 45,
+      "deletions": 31,
+      "date": "2026-11-13"
     },
     "coverage": 91.07,
     "test_count": 55,

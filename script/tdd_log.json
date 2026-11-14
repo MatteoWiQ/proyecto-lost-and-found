@@ -2428,9 +2428,39 @@
     "testId": 98
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6fee4bd831dedbab25f53d10628fc820dfe39b33",
     "commitName": "refactor: extraer logica de administracion a adminPresenter.js y limpiar presenter principal",
     "commitTimestamp": 1794632979250,
     "testId": 98
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794633973085,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794634084738,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794634254107,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: organizar los presenters en la carpeta presenters",
+    "commitTimestamp": 1794634492996,
+    "testId": 99
   }
 ]

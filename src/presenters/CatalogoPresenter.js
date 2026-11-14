@@ -3,10 +3,10 @@ import {
   obtenerMensajeBusqueda,
   filtrarObjetos,
   obtenerMensajeFiltros
-} from "./Catalogo.js";
-import { obtenerObjetosParaCatalogo } from "./Aprobacion.js";
-import { renderizarGaleriaObjetos } from "./vistas/GaleriaObjetosVista.js";
-import { obtenerVista, cambiarVista, debeMostrarOcultos } from "./Vista.js";
+} from "../Catalogo.js";
+import { obtenerObjetosParaCatalogo } from "../Aprobacion.js";
+import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
+import { obtenerVista, cambiarVista, debeMostrarOcultos } from "../Vista.js";
 
 export function inicializarCatalogo(galeria, vistaFicha) {
   const entradaBusqueda = document.querySelector("#busqueda");

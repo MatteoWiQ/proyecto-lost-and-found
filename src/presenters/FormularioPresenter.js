@@ -1,4 +1,4 @@
-import ObjetoPerdido from "./ObjetoPerdido.js";
+import ObjetoPerdido from "../ObjetoPerdido.js";
 
 export function inicializarFormulario(galeria, actualizarCallbacks) {
   const entradaNombre = document.querySelector("#nombre");

@@ -1,9 +1,9 @@
-import Galeria from "./Galeria.js";
+import Galeria from "../Galeria.js";
 import { inicializarFormulario } from "./FormularioPresenter.js";
 import { inicializarCatalogo } from "./CatalogoPresenter.js";
 import { inicializarAdmin } from "./AdminPresenter.js";
-import { crearVistaFicha } from "./vistas/FichaObjetoVista.js";
-import { obtenerVista } from "./Vista.js";
+import { crearVistaFicha } from "../vistas/FichaObjetoVista.js";
+import { obtenerVista } from "../Vista.js";
 
 const galeria = new Galeria();
 

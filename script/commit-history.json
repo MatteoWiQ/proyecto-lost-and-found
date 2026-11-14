@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6fee4bd831dedbab25f53d10628fc820dfe39b33",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-14T05:09:39.000Z",
       "message": "refactor: extraer logica de administracion a adminPresenter.js y limpiar presenter principal",
-      "url": "/commit/HEAD"
+      "url": "/commit/6fee4bd831dedbab25f53d10628fc820dfe39b33"
     },
     "stats": {
       "total": 85,
       "additions": 49,
       "deletions": 36,
+      "date": "2026-11-14"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-14T05:34:52.000Z",
+      "message": "refactor: organizar los presenters en la carpeta presenters",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 12,
+      "deletions": 12,
       "date": "2026-11-14"
     },
     "coverage": 91.07,

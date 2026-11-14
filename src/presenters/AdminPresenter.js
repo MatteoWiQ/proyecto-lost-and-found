@@ -1,6 +1,6 @@
-import { aprobarPublicacion, obtenerMensajePendientes, obtenerPendientes } from "./Aprobacion.js";
-import { renderizarGaleriaObjetos } from "./vistas/GaleriaObjetosVista.js";
-import { renderizarPublicacionesPendientes } from "./vistas/PublicacionesPendientesVista.js";
+import { aprobarPublicacion, obtenerMensajePendientes, obtenerPendientes } from "../Aprobacion.js";
+import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
+import { renderizarPublicacionesPendientes } from "../vistas/PublicacionesPendientesVista.js";
 
 export function inicializarAdmin(galeria, catalogoControlador) {
   const listaPendientes = document.querySelector("#pendientes-lista");

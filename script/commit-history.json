@@ -76,18 +76,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bb1ff6fb764c74f06d1d01ab92f6c02fb23ad52a",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-13T02:04:34.000Z",
       "message": "refactor: separar vista de publicaciones pendientes",
-      "url": "/commit/HEAD"
+      "url": "/commit/bb1ff6fb764c74f06d1d01ab92f6c02fb23ad52a"
     },
     "stats": {
       "total": 76,
       "additions": 45,
       "deletions": 31,
       "date": "2026-11-13"
+    },
+    "coverage": 91.07,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-14T04:53:12.000Z",
+      "message": "refactor: extraer logica del formulario a formularioPresenter.js",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 150,
+      "additions": 80,
+      "deletions": 70,
+      "date": "2026-11-14"
     },
     "coverage": 91.07,
     "test_count": 55,

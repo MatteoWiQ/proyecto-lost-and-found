@@ -2386,9 +2386,23 @@
     "testId": 94
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bb1ff6fb764c74f06d1d01ab92f6c02fb23ad52a",
     "commitName": "refactor: separar vista de publicaciones pendientes",
     "commitTimestamp": 1794535475695,
     "testId": 95
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794631862750,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: extraer logica del formulario a formularioPresenter.js",
+    "commitTimestamp": 1794631992439,
+    "testId": 96
   }
 ]

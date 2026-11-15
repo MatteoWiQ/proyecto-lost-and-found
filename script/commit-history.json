@@ -133,20 +133,6 @@
     "conclusion": "success"
   },
   {
-    "sha": "6fee4bd831dedbab25f53d10628fc820dfe39b33",
-    "author": "Santiago Lazcano Quiroga",
-    "commit": {
-      "date": "2026-11-14T05:09:39.000Z",
-      "message": "refactor: extraer logica de administracion a adminPresenter.js y limpiar presenter principal",
-      "url": "/commit/6fee4bd831dedbab25f53d10628fc820dfe39b33"
-    },
-    "stats": {
-      "total": 85,
-      "additions": 49,
-      "deletions": 36,
-      "date": "2026-11-14"
-    },
-    "coverage": 91.07,
     "sha": "92f4b09c6916d316896fcfa655a028ef95cce341",
     "author": "Alvaro Nina",
     "commit": {
@@ -166,31 +152,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
-    "author": "Santiago Lazcano Quiroga",
-    "commit": {
-      "date": "2026-11-14T05:34:52.000Z",
-      "message": "refactor: organizar los presenters en la carpeta presenters",
-      "url": "/commit/HEAD"
-    },
-    "stats": {
-      "total": 24,
-      "additions": 12,
-      "deletions": 12,
-      "date": "2026-11-14"
-    },
-    "coverage": 91.07,
+    "sha": "bed96a904e8843e13fd05856de54bd8a9faa2b6f",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-14T22:33:34.000Z",
       "message": "refact: Reducir codigo duplicado",
-      "url": "/commit/HEAD"
+      "url": "/commit/bed96a904e8843e13fd05856de54bd8a9faa2b6f"
     },
     "stats": {
       "total": 111,
       "additions": 46,
       "deletions": 65,
       "date": "2026-11-14"
+    },
+    "coverage": 93.14,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:12:43.000Z",
+      "message": "fix: reconstruir tdd_log.json corrompido en el merge de main",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-11-15"
     },
     "coverage": 93.14,
     "test_count": 55,

@@ -2842,7 +2842,7 @@
     "testId": 101
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4dfa6f8a212db74c9af2e019822bda06a98e68b9",
     "commitName": "Merge branch 'feature/LAF-33-catalogo' into feature/LAF-34-ficha-tecnica\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
     "commitTimestamp": 1794719461464,
     "testId": 101
@@ -2948,5 +2948,27 @@
     "commitName": "refactor: crear clase Administrador y agregar visibilidad del catalogo a Usuario",
     "commitTimestamp": 1794720075475,
     "testId": 106
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720085930,
+    "success": true,
+    "testId": 107
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720091201,
+    "success": true,
+    "testId": 107
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: usar las clases Administrador y Usuario en los presenters",
+    "commitTimestamp": 1794720148800,
+    "testId": 107
   }
 ]

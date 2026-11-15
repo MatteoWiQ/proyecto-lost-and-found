@@ -437,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4dfa6f8a212db74c9af2e019822bda06a98e68b9",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:16:20.000Z",
       "message": "fix: mover la logica de la ficha tecnica a Usuario y eliminar FichaTecnica.js",
-      "url": "/commit/HEAD"
+      "url": "/commit/4dfa6f8a212db74c9af2e019822bda06a98e68b9"
     },
     "stats": {
       "total": 73,
@@ -486,6 +486,25 @@
       "total": 89,
       "additions": 89,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 61,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:22:27.000Z",
+      "message": "fix: usar las clases Administrador y Usuario en los presenters",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 6,
+      "deletions": 6,
       "date": "2026-11-15"
     },
     "coverage": 93.48,

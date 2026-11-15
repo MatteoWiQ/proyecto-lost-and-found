@@ -2522,9 +2522,31 @@
     "testId": 95
   },
   {
-    "commitId": "HEAD",
+    "commitId": "92604d93b013d3122f3ea44c60a4c980afecf2fd",
     "commitName": "feat: Validar correo de la ucb",
     "commitTimestamp": 1794783077480,
     "testId": 95
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 1,
+    "numTotalTests": 58,
+    "timestamp": 1794783182778,
+    "success": false,
+    "testId": 96
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 0,
+    "numTotalTests": 58,
+    "timestamp": 1794783269758,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar correo vacio",
+    "commitTimestamp": 1794783301225,
+    "testId": 96
   }
 ]

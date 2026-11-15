@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "92604d93b013d3122f3ea44c60a4c980afecf2fd",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-15T22:51:14.000Z",
       "message": "feat: Validar correo de la ucb",
-      "url": "/commit/HEAD"
+      "url": "/commit/92604d93b013d3122f3ea44c60a4c980afecf2fd"
     },
     "stats": {
       "total": 14,
@@ -91,6 +91,25 @@
     },
     "coverage": 93.44,
     "test_count": 57,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-15T22:54:58.000Z",
+      "message": "feat: validar correo vacio",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 19,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.65,
+    "test_count": 58,
     "failed_tests": 0,
     "conclusion": "success"
   }

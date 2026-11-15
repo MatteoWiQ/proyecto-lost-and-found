@@ -12,4 +12,10 @@ describe("Crear cuenta", () => {
 
     expect(cuenta.obtenerCorreo()).toBe("No es un correo de la UCB");
   });
+  it("Validar no vacios", () => {
+    const cuenta = new Cuenta("");
+
+    expect(cuenta.obtenerCorreo()).toBe("El correo es obligatorio");
+  });
+
 });

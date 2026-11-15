@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0bcd811e5c2349e9b347d99537b8c6b316306e1b",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:23:15.000Z",
       "message": "refactor: extraer tieneValor para reemplazar comparaciones con texto vacio en catalogo",
-      "url": "/commit/HEAD"
+      "url": "/commit/0bcd811e5c2349e9b347d99537b8c6b316306e1b"
     },
     "stats": {
       "total": 20,
@@ -204,6 +204,25 @@
       "date": "2026-11-15"
     },
     "coverage": 93.18,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:30:54.000Z",
+      "message": "refactor: reemplazar ternarios encadenados por condicionales en filtrarObjetos",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 9,
+      "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
     "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"

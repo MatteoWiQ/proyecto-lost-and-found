@@ -27,13 +27,16 @@ function filtrarPorUbicacion(objetos, ubicacion) {
   return filtrarPorCampo(objetos, "lugar", ubicacion);
 }
 function filtrarObjetos(objetos, categoria, ubicacion) {
-  const objetosPorCategoria = tieneValor(categoria)
-    ? filtrarPorCategoria(objetos, categoria)
-    : objetos;
+  let objetosFiltrados = objetos;
 
-  return tieneValor(ubicacion)
-    ? filtrarPorUbicacion(objetosPorCategoria, ubicacion)
-    : objetosPorCategoria;
+  if (tieneValor(categoria)) {
+    objetosFiltrados = filtrarPorCategoria(objetosFiltrados, categoria);
+  }
+  if (tieneValor(ubicacion)) {
+    objetosFiltrados = filtrarPorUbicacion(objetosFiltrados, ubicacion);
+  }
+
+  return objetosFiltrados;
 }
 function obtenerMensajeFiltros(resultados, categoria, ubicacion) {
   const hayFiltrosActivos = tieneValor(categoria) || tieneValor(ubicacion);

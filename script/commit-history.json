@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bbb1b51ffe3a8e4be680cc4d23b4e7c187df4201",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-15T22:48:14.000Z",
       "message": "feat: Crear cuenta con correo",
-      "url": "/commit/HEAD"
+      "url": "/commit/bbb1b51ffe3a8e4be680cc4d23b4e7c187df4201"
     },
     "stats": {
       "total": 25,
@@ -72,6 +72,25 @@
     },
     "coverage": 93.22,
     "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-15T22:51:14.000Z",
+      "message": "feat: Validar correo de la ucb",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.44,
+    "test_count": 57,
     "failed_tests": 0,
     "conclusion": "success"
   }

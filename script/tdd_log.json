@@ -2500,9 +2500,31 @@
     "testId": 94
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bbb1b51ffe3a8e4be680cc4d23b4e7c187df4201",
     "commitName": "feat: Crear cuenta con correo",
     "commitTimestamp": 1794782897404,
     "testId": 94
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 1,
+    "numTotalTests": 57,
+    "timestamp": 1794782989251,
+    "success": false,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794783043766,
+    "success": true,
+    "testId": 95
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Validar correo de la ucb",
+    "commitTimestamp": 1794783077480,
+    "testId": 95
   }
 ]

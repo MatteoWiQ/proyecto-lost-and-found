@@ -7,5 +7,9 @@ describe("Crear cuenta", () => {
 
     expect(cuenta.obtenerCorreo()).toBe("juan@ucb.edu.bo");
   });
+  it("Validar correo de la ucb", () => {
+    const cuenta = new Cuenta("juan@ugmail.com");
 
+    expect(cuenta.obtenerCorreo()).toBe("No es un correo de la UCB");
+  });
 });

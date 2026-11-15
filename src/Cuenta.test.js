@@ -17,5 +17,15 @@ describe("Crear cuenta", () => {
 
     expect(cuenta.obtenerCorreo()).toBe("El correo es obligatorio");
   });
+  it("Validar no vacios", () => {
+    const cuenta = new Cuenta("");
+
+    expect(cuenta.obtenerCorreo()).toBe("El correo es obligatorio");
+  });
+  it("Crear cuenta con contrasena", () => {
+    const cuenta = new Cuenta("juan@ucb.edu.bo","123456");
+
+    expect(cuenta.ValidarCuenta()).toBe("Cuenta creada con exito");
+  });
 
 });

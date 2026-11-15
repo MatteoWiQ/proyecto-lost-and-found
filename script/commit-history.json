@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "949c3ab8b3324ccab01d57d41845fd8bc9cbdb7a",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-15T22:54:58.000Z",
       "message": "feat: validar correo vacio",
-      "url": "/commit/HEAD"
+      "url": "/commit/949c3ab8b3324ccab01d57d41845fd8bc9cbdb7a"
     },
     "stats": {
       "total": 20,
@@ -110,6 +110,25 @@
     },
     "coverage": 93.65,
     "test_count": 58,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-15T23:03:00.000Z",
+      "message": "feat: crear cuenta con contrasena",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 17,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.75,
+    "test_count": 60,
     "failed_tests": 0,
     "conclusion": "success"
   }

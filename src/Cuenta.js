@@ -1,8 +1,9 @@
 
 
 class Cuenta {
-  constructor(correo) {
+  constructor(correo,contrasena) {
     this.correo = correo;
+    this.contrasena = contrasena;
   }
   validarCorreoVacio(){
     if (this.correo === "") {
@@ -28,6 +29,11 @@ class Cuenta {
       return error;
     }
     return this.correo;
+  }
+  ValidarCuenta(){
+    if (this.obtenerCorreo() !== "" && this.contrasena !== "") {
+      return "Cuenta creada con exito";
+    }
   }
   
 }

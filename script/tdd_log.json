@@ -2544,9 +2544,31 @@
     "testId": 96
   },
   {
-    "commitId": "HEAD",
+    "commitId": "949c3ab8b3324ccab01d57d41845fd8bc9cbdb7a",
     "commitName": "feat: validar correo vacio",
     "commitTimestamp": 1794783301225,
     "testId": 96
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 1,
+    "numTotalTests": 60,
+    "timestamp": 1794783614189,
+    "success": false,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 60,
+    "failedTests": 0,
+    "numTotalTests": 60,
+    "timestamp": 1794783756361,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: crear cuenta con contrasena",
+    "commitTimestamp": 1794783783511,
+    "testId": 97
   }
 ]

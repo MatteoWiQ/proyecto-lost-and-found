@@ -2670,7 +2670,7 @@
     "testId": 97
   },
   {
-    "commitId": "HEAD",
+    "commitId": "831d780a9272e717c20a2a1aa0674a4793de8364",
     "commitName": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
     "commitTimestamp": 1794717518718,
     "testId": 97
@@ -2704,5 +2704,19 @@
     "commitName": "fix: mostrar el comentario en la ficha tecnica tras el renombre a Comentario",
     "commitTimestamp": 1794718044876,
     "testId": 98
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794718065958,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
+    "commitTimestamp": 1794718117556,
+    "testId": 99
   }
 ]

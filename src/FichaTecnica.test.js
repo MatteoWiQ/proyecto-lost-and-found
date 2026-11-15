@@ -2,17 +2,15 @@ import { obtenerCamposFicha } from "./FichaTecnica.js";
 import ObjetoPerdido from "./ObjetoPerdido.js";
 
 describe("FichaTecnica", () => {
-  it("Deberia construir los campos de la ficha incluyendo el estado", () => {
-    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", Comentario: "Rayada", foto: "laptop.png", estado: "Publicado" };
+  const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", Comentario: "Rayada", foto: "laptop.png", estado: "Publicado" };
 
+  it("Deberia construir los campos de la ficha incluyendo el estado", () => {
     const campos = obtenerCamposFicha(ficha);
 
     expect(campos).toContainEqual({ etiqueta: "Estado", valor: "Publicado" });
   });
 
   it("Deberia incluir nombre, categoria, fecha, hora y lugar en la ficha", () => {
-    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", Comentario: "Rayada", foto: "laptop.png", estado: "Publicado" };
-
     const campos = obtenerCamposFicha(ficha);
 
     expect(campos).toEqual(expect.arrayContaining([
@@ -25,9 +23,9 @@ describe("FichaTecnica", () => {
   });
 
   it("Deberia indicar Ninguno cuando no hay comentario", () => {
-    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", Comentario: "", foto: "laptop.png", estado: "Pendiente de validación" };
+    const fichaSinComentario = { ...ficha, Comentario: "" };
 
-    const campos = obtenerCamposFicha(ficha);
+    const campos = obtenerCamposFicha(fichaSinComentario);
 
     expect(campos).toContainEqual({ etiqueta: "Comentario", valor: "Ninguno" });
   });

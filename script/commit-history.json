@@ -247,17 +247,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "831d780a9272e717c20a2a1aa0674a4793de8364",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:47:23.000Z",
       "message": "fix: mostrar el comentario en la ficha tecnica tras el renombre a Comentario",
-      "url": "/commit/HEAD"
+      "url": "/commit/831d780a9272e717c20a2a1aa0674a4793de8364"
     },
     "stats": {
       "total": 17,
       "additions": 13,
       "deletions": 4,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:48:36.000Z",
+      "message": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 4,
+      "deletions": 6,
       "date": "2026-11-15"
     },
     "coverage": 93.33,

@@ -2624,7 +2624,7 @@
     "testId": 96
   },
   {
-    "commitId": "HEAD",
+    "commitId": "982878d81344443ce537e58a53fefca195b66a10",
     "commitName": "refactor: reemplazar ternarios encadenados por condicionales en filtrarObjetos",
     "commitTimestamp": 1794717055379,
     "testId": 96
@@ -2674,5 +2674,35 @@
     "commitName": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
     "commitTimestamp": 1794717518718,
     "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717838566,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 1,
+    "numTotalTests": 56,
+    "timestamp": 1794717857587,
+    "success": false,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794717869113,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: mostrar el comentario en la ficha tecnica tras el renombre a Comentario",
+    "commitTimestamp": 1794718044876,
+    "testId": 98
   }
 ]

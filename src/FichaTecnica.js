@@ -5,7 +5,7 @@ export function obtenerCamposFicha(ficha) {
     { etiqueta: "Fecha", valor: ficha.fecha },
     { etiqueta: "Hora", valor: ficha.hora },
     { etiqueta: "Ubicación", valor: ficha.lugar },
-    { etiqueta: "Comentario", valor: ficha.commentario || "Ninguno" },
+    { etiqueta: "Comentario", valor: ficha.Comentario || "Ninguno" },
     { etiqueta: "Estado", valor: ficha.estado }
   ];
 }

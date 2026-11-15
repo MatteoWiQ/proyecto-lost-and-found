@@ -1,8 +1,9 @@
 import { obtenerCamposFicha } from "./FichaTecnica.js";
+import ObjetoPerdido from "./ObjetoPerdido.js";
 
 describe("FichaTecnica", () => {
   it("Deberia construir los campos de la ficha incluyendo el estado", () => {
-    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", commentario: "Rayada", foto: "laptop.png", estado: "Publicado" };
+    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", Comentario: "Rayada", foto: "laptop.png", estado: "Publicado" };
 
     const campos = obtenerCamposFicha(ficha);
 
@@ -10,7 +11,7 @@ describe("FichaTecnica", () => {
   });
 
   it("Deberia incluir nombre, categoria, fecha, hora y lugar en la ficha", () => {
-    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", commentario: "Rayada", foto: "laptop.png", estado: "Publicado" };
+    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", Comentario: "Rayada", foto: "laptop.png", estado: "Publicado" };
 
     const campos = obtenerCamposFicha(ficha);
 
@@ -24,10 +25,18 @@ describe("FichaTecnica", () => {
   });
 
   it("Deberia indicar Ninguno cuando no hay comentario", () => {
-    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", commentario: "", foto: "laptop.png", estado: "Pendiente de validación" };
+    const ficha = { nombre: "Laptop", categoria: "Tecnologia", fecha: "2026-10-15", hora: "10:30", lugar: "Biblioteca", Comentario: "", foto: "laptop.png", estado: "Pendiente de validación" };
 
     const campos = obtenerCamposFicha(ficha);
 
     expect(campos).toContainEqual({ etiqueta: "Comentario", valor: "Ninguno" });
+  });
+
+  it("Deberia mostrar el comentario que el usuario escribio en el reporte", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-15", "10:30", "Biblioteca", "Pantalla rayada", "laptop.png");
+
+    const campos = obtenerCamposFicha(objeto.obtenerFichaTecnica());
+
+    expect(campos).toContainEqual({ etiqueta: "Comentario", valor: "Pantalla rayada" });
   });
 });

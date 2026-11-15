@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "982878d81344443ce537e58a53fefca195b66a10",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:38:37.000Z",
       "message": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
-      "url": "/commit/HEAD"
+      "url": "/commit/982878d81344443ce537e58a53fefca195b66a10"
     },
     "stats": {
       "total": 114,
@@ -243,6 +243,25 @@
     },
     "coverage": 93.33,
     "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:47:23.000Z",
+      "message": "fix: mostrar el comentario en la ficha tecnica tras el renombre a Comentario",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 13,
+      "deletions": 4,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 56,
     "failed_tests": 0,
     "conclusion": "success"
   }

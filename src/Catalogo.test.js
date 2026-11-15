@@ -7,103 +7,57 @@ import {
   obtenerMensajeFiltros
 } from "./Catalogo.js";
 
-describe('Catalogo', () => {
-  it('Deberia buscar un objeto por su nombre completo', () => {
-    const laptop = { nombre: 'Laptop' };
-    const mochila = { nombre: 'Mochila' };
-    const objetos = [laptop, mochila];
+describe("Catalogo", () => {
+  const laptop = { nombre: "Laptop Lenovo", categoria: "Tecnologia", lugar: "Biblioteca" };
+  const celular = { nombre: "Celular Samsung", categoria: "Tecnologia", lugar: "Bloque A" };
+  const polera = { nombre: "Polera azul", categoria: "Ropa", lugar: "Biblioteca" };
+  const objetos = [laptop, celular, polera];
 
-    const resultados = buscarObjetos(objetos, 'Laptop');
+  it("Deberia buscar un objeto por su nombre completo", () => {
+    const resultados = buscarObjetos(objetos, "Laptop Lenovo");
 
     expect(resultados).toEqual([laptop]);
   });
-  it('Deberia buscar un objeto por una parte de su nombre', () => {
-  const laptop = { nombre: 'Laptop Lenovo' };
-  const mochila = { nombre: 'Mochila azul' };
-  const objetos = [laptop, mochila];
 
-  const resultados = buscarObjetos(objetos, 'Laptop');
-
-  expect(resultados).toEqual([laptop]);
-});
-    it('Deberia buscar sin distinguir mayusculas y minusculas', () => {
-    const laptop = { nombre: 'Laptop Lenovo' };
-    const mochila = { nombre: 'Mochila azul' };
-    const objetos = [laptop, mochila];
-
-    const resultados = buscarObjetos(objetos, 'laptop');
+  it("Deberia buscar un objeto por una parte de su nombre", () => {
+    const resultados = buscarObjetos(objetos, "Laptop");
 
     expect(resultados).toEqual([laptop]);
-    });
+  });
 
-    it('Deberia mostrar un mensaje cuando no existen coincidencias', () => {
-  const resultados = [];
-  const textoBuscado = 'Tablet';
+  it("Deberia buscar sin distinguir mayusculas y minusculas", () => {
+    const resultados = buscarObjetos(objetos, "laptop");
 
-  const mensaje = obtenerMensajeBusqueda(resultados, textoBuscado);
+    expect(resultados).toEqual([laptop]);
+  });
 
-  expect(mensaje).toBe('No se encontraron objetos');
-});
-it("Deberia filtrar los objetos por categoria", () => {
-  const laptop = { nombre: "Laptop", categoria: "Tecnologia" };
-  const polera = { nombre: "Polera", categoria: "Ropa" };
-  const objetos = [laptop, polera];
+  it("Deberia mostrar un mensaje cuando no existen coincidencias", () => {
+    const mensaje = obtenerMensajeBusqueda([], "Tablet");
 
-  const resultados = filtrarPorCategoria(objetos, "Tecnologia");
+    expect(mensaje).toBe("No se encontraron objetos");
+  });
 
-  expect(resultados).toEqual([laptop]);
-});
+  it("Deberia filtrar los objetos por categoria", () => {
+    const resultados = filtrarPorCategoria(objetos, "Ropa");
 
-it("Deberia filtrar los objetos por ubicacion", () => {
-  const laptop = { nombre: "Laptop", lugar: "Biblioteca" };
-  const polera = { nombre: "Polera", lugar: "Bloque A" };
-  const objetos = [laptop, polera];
+    expect(resultados).toEqual([polera]);
+  });
 
-  const resultados = filtrarPorUbicacion(objetos, "Biblioteca");
+  it("Deberia filtrar los objetos por ubicacion", () => {
+    const resultados = filtrarPorUbicacion(objetos, "Bloque A");
 
-  expect(resultados).toEqual([laptop]);
-});
+    expect(resultados).toEqual([celular]);
+  });
 
-it("Deberia combinar los filtros de categoria y ubicacion", () => {
-  const laptop = {
-    nombre: "Laptop",
-    categoria: "Tecnologia",
-    lugar: "Biblioteca"
-  };
+  it("Deberia combinar los filtros de categoria y ubicacion", () => {
+    const resultados = filtrarObjetos(objetos, "Tecnologia", "Biblioteca");
 
-  const celular = {
-    nombre: "Celular",
-    categoria: "Tecnologia",
-    lugar: "Bloque A"
-  };
+    expect(resultados).toEqual([laptop]);
+  });
 
-  const polera = {
-    nombre: "Polera",
-    categoria: "Ropa",
-    lugar: "Biblioteca"
-  };
+  it("Deberia mostrar un mensaje cuando los filtros no tienen resultados", () => {
+    const mensaje = obtenerMensajeFiltros([], "Ropa", "Biblioteca");
 
-  const objetos = [laptop, celular, polera];
-
-  const resultados = filtrarObjetos(
-    objetos,
-    "Tecnologia",
-    "Biblioteca"
-  );
-
-  expect(resultados).toEqual([laptop]);
-});
-it("Deberia mostrar un mensaje cuando los filtros no tienen resultados", () => {
-  const resultados = [];
-  const categoria = "Ropa";
-  const ubicacion = "Biblioteca";
-
-  const mensaje = obtenerMensajeFiltros(
-    resultados,
-    categoria,
-    ubicacion
-  );
-
-  expect(mensaje).toBe("No se encontraron resultados");
-});
+    expect(mensaje).toBe("No se encontraron resultados");
+  });
 });

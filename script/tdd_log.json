@@ -2602,7 +2602,7 @@
     "testId": 95
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e178b4c2a32d7cab217073199958d7fa4b392b73",
     "commitName": "refactor: extraer tieneValor para reemplazar comparaciones con texto vacio en catalogo",
     "commitTimestamp": 1794716596941,
     "testId": 95
@@ -2628,5 +2628,51 @@
     "commitName": "refactor: reemplazar ternarios encadenados por condicionales en filtrarObjetos",
     "commitTimestamp": 1794717055379,
     "testId": 96
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717073822,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717088525,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717246979,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717276963,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717506324,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
+    "commitTimestamp": 1794717518718,
+    "testId": 97
   }
 ]

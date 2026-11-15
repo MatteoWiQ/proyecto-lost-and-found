@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e178b4c2a32d7cab217073199958d7fa4b392b73",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:30:54.000Z",
       "message": "refactor: reemplazar ternarios encadenados por condicionales en filtrarObjetos",
-      "url": "/commit/HEAD"
+      "url": "/commit/e178b4c2a32d7cab217073199958d7fa4b392b73"
     },
     "stats": {
       "total": 15,
       "additions": 9,
       "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:38:37.000Z",
+      "message": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 114,
+      "additions": 34,
+      "deletions": 80,
       "date": "2026-11-15"
     },
     "coverage": 93.33,

@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ea4d261edcdc383212364411753f6ddd4f1a8d01",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:12:31.000Z",
       "message": "refactor: agregar consultarFicha a la clase Usuario delegando en FichaTecnica",
-      "url": "/commit/HEAD"
+      "url": "/commit/ea4d261edcdc383212364411753f6ddd4f1a8d01"
     },
     "stats": {
       "total": 23,
@@ -395,6 +395,25 @@
     },
     "coverage": 93.3,
     "test_count": 57,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:16:20.000Z",
+      "message": "fix: mover la logica de la ficha tecnica a Usuario y eliminar FichaTecnica.js",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 73,
+      "additions": 19,
+      "deletions": 54,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.3,
+    "test_count": 54,
     "failed_tests": 0,
     "conclusion": "success"
   }

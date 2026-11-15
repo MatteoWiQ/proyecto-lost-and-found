@@ -1,5 +1,3 @@
-import { obtenerCamposFicha } from "./FichaTecnica.js";
-
 function tieneValor(texto) {
   return texto !== "";
 }
@@ -49,7 +47,17 @@ class Usuario {
   }
 
   consultarFicha(objeto) {
-    return obtenerCamposFicha(objeto.obtenerFichaTecnica());
+    const ficha = objeto.obtenerFichaTecnica();
+
+    return [
+      { etiqueta: "Nombre", valor: ficha.nombre },
+      { etiqueta: "Categoría", valor: ficha.categoria },
+      { etiqueta: "Fecha", valor: ficha.fecha },
+      { etiqueta: "Hora", valor: ficha.hora },
+      { etiqueta: "Ubicación", valor: ficha.lugar },
+      { etiqueta: "Comentario", valor: ficha.Comentario || "Ninguno" },
+      { etiqueta: "Estado", valor: ficha.estado }
+    ];
   }
 }
 

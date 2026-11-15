@@ -2778,7 +2778,7 @@
     "testId": 100
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ea4d261edcdc383212364411753f6ddd4f1a8d01",
     "commitName": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
     "commitTimestamp": 1794719282555,
     "testId": 100
@@ -2840,5 +2840,27 @@
     "commitName": "refactor: usar consultarFicha de Usuario en FichaObjetoVista",
     "commitTimestamp": 1794719697020,
     "testId": 103
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719722530,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1794719728111,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: mover la logica de la ficha tecnica a Usuario y eliminar FichaTecnica.js",
+    "commitTimestamp": 1794719781780,
+    "testId": 104
   }
 ]

@@ -71,4 +71,12 @@ describe("Usuario", () => {
       { etiqueta: "Estado", valor: "Pendiente de validación" }
     ]);
   });
+
+  it("Deberia indicar Ninguno en la ficha cuando no hay comentario", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-15", "10:30", "Biblioteca", "", "laptop.png");
+
+    const campos = usuario.consultarFicha(objeto);
+
+    expect(campos).toContainEqual({ etiqueta: "Comentario", valor: "Ninguno" });
+  });
 });

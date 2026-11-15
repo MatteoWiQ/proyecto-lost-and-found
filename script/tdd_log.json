@@ -2566,9 +2566,31 @@
     "testId": 97
   },
   {
-    "commitId": "HEAD",
+    "commitId": "311e51a7840fb5bd548d1f4029918da1b0057f0c",
     "commitName": "feat: crear cuenta con contrasena",
     "commitTimestamp": 1794783783511,
     "testId": 97
+  },
+  {
+    "numPassedTests": 60,
+    "failedTests": 1,
+    "numTotalTests": 61,
+    "timestamp": 1794783831540,
+    "success": false,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794784012800,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar contrasena vacia",
+    "commitTimestamp": 1794784095502,
+    "testId": 98
   }
 ]

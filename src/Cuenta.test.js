@@ -27,5 +27,10 @@ describe("Crear cuenta", () => {
 
     expect(cuenta.ValidarCuenta()).toBe("Cuenta creada con exito");
   });
+  it("Validar contrasena no vacia", () => {
+    const cuenta = new Cuenta("juan@ucb.edu.bo","");
+
+    expect(cuenta.ValidarCuenta()).toBe("Contraseña es obligatoria");
+  });
 
 });

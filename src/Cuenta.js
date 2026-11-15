@@ -30,10 +30,25 @@ class Cuenta {
     }
     return this.correo;
   }
-  ValidarCuenta(){
-    if (this.obtenerCorreo() !== "" && this.contrasena !== "") {
-      return "Cuenta creada con exito";
+  obtenerContrasena() {
+    return this.contrasena;
+  }
+  validarContrasena() {
+    if (this.contrasena === "") {
+      return "Contraseña es obligatoria";
     }
+    return "";
+  }
+  ValidarCuenta(){
+    const errores = [
+      this.validarCorreo(),
+      this.validarContrasena()
+    ];
+    const error = errores.find((e) => !!e);
+    if (error) {
+      return error;
+    }
+    return "Cuenta creada con exito";
   }
   
 }

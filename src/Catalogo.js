@@ -13,11 +13,14 @@ function obtenerMensajeBusqueda(resultados, textoBuscado) {
 
   return "";
 }
+function filtrarPorCampo(objetos, campo, valor) {
+  return objetos.filter((objeto) => objeto[campo] === valor);
+}
 function filtrarPorCategoria(objetos, categoria) {
-  return objetos.filter((objeto) => objeto.categoria === categoria);
+  return filtrarPorCampo(objetos, "categoria", categoria);
 }
 function filtrarPorUbicacion(objetos, ubicacion) {
-  return objetos.filter((objeto) => objeto.lugar === ubicacion);
+  return filtrarPorCampo(objetos, "lugar", ubicacion);
 }
 function filtrarObjetos(objetos, categoria, ubicacion) {
   const objetosPorCategoria = categoria === ""

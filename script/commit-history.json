@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3363c7b776d867e395c19d7aad4482beab4c2eb0",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:08:01.000Z",
       "message": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
-      "url": "/commit/HEAD"
+      "url": "/commit/3363c7b776d867e395c19d7aad4482beab4c2eb0"
     },
     "stats": {
       "total": 194,
@@ -357,6 +357,25 @@
     },
     "coverage": 93.26,
     "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:12:31.000Z",
+      "message": "refactor: agregar consultarFicha a la clase Usuario delegando en FichaTecnica",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 23,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.3,
+    "test_count": 57,
     "failed_tests": 0,
     "conclusion": "success"
   }

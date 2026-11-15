@@ -1,4 +1,5 @@
 import Usuario from "./Usuario.js";
+import ObjetoPerdido from "./ObjetoPerdido.js";
 
 describe("Usuario", () => {
   const laptop = { nombre: "Laptop Lenovo", categoria: "Tecnologia", lugar: "Biblioteca" };
@@ -53,5 +54,21 @@ describe("Usuario", () => {
     const mensaje = usuario.obtenerMensajeFiltros([], "Ropa", "Biblioteca");
 
     expect(mensaje).toBe("No se encontraron resultados");
+  });
+
+  it("Deberia consultar la ficha tecnica de un objeto con todos sus datos", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia", "2026-10-15", "10:30", "Biblioteca", "Pantalla rayada", "laptop.png");
+
+    const campos = usuario.consultarFicha(objeto);
+
+    expect(campos).toEqual([
+      { etiqueta: "Nombre", valor: "Laptop" },
+      { etiqueta: "Categoría", valor: "Tecnologia" },
+      { etiqueta: "Fecha", valor: "2026-10-15" },
+      { etiqueta: "Hora", valor: "10:30" },
+      { etiqueta: "Ubicación", valor: "Biblioteca" },
+      { etiqueta: "Comentario", valor: "Pantalla rayada" },
+      { etiqueta: "Estado", valor: "Pendiente de validación" }
+    ]);
   });
 });

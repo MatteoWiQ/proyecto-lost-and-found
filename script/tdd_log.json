@@ -2720,7 +2720,7 @@
     "testId": 99
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3363c7b776d867e395c19d7aad4482beab4c2eb0",
     "commitName": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
     "commitTimestamp": 1794718117556,
     "testId": 99
@@ -2796,5 +2796,27 @@
     "commitName": "Merge branch 'feature/LAF-33-catalogo' into feature/LAF-34-ficha-tecnica\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
     "commitTimestamp": 1794719461464,
     "testId": 101
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794719486826,
+    "success": true,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719500921,
+    "success": true,
+    "testId": 102
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: agregar consultarFicha a la clase Usuario delegando en FichaTecnica",
+    "commitTimestamp": 1794719552821,
+    "testId": 102
   }
 ]

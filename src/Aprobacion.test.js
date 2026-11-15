@@ -2,32 +2,33 @@ import ObjetoPerdido from "./ObjetoPerdido.js";
 import { obtenerPendientes, obtenerPublicados, aprobarPublicacion, obtenerMensajePendientes, obtenerObjetosParaCatalogo } from "./Aprobacion.js";
 
 describe("Aprobacion", () => {
-  it("Deberia listar solo las publicaciones pendientes de validacion", () => {
-    const pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
-    const publicado = new ObjetoPerdido("Chaqueta", "Ropa");
-    publicado.aprobar();
+  let pendiente;
+  let publicado;
+  let objetos;
 
-    const pendientes = obtenerPendientes([pendiente, publicado]);
+  beforeEach(() => {
+    pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
+    publicado = new ObjetoPerdido("Chaqueta", "Ropa");
+    publicado.aprobar();
+    objetos = [pendiente, publicado];
+  });
+
+  it("Deberia listar solo las publicaciones pendientes de validacion", () => {
+    const pendientes = obtenerPendientes(objetos);
 
     expect(pendientes).toEqual([pendiente]);
   });
 
   it("Deberia listar solo las publicaciones aprobadas visibles en el catalogo", () => {
-    const pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
-    const publicado = new ObjetoPerdido("Chaqueta", "Ropa");
-    publicado.aprobar();
-
-    const publicados = obtenerPublicados([pendiente, publicado]);
+    const publicados = obtenerPublicados(objetos);
 
     expect(publicados).toEqual([publicado]);
   });
 
   it("Deberia aprobar una publicacion y dejarla en estado Publicado", () => {
-    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    aprobarPublicacion(pendiente);
 
-    aprobarPublicacion(objeto);
-
-    expect(objeto.obtenerEstado()).toEqual("Publicado");
+    expect(pendiente.obtenerEstado()).toEqual("Publicado");
   });
 
   it("Deberia mostrar un mensaje cuando no hay publicaciones pendientes", () => {
@@ -35,21 +36,13 @@ describe("Aprobacion", () => {
   });
 
   it("Deberia incluir los reportes ocultos cuando el filtro esta activo", () => {
-    const pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
-    const publicado = new ObjetoPerdido("Chaqueta", "Ropa");
-    publicado.aprobar();
-
-    const visibles = obtenerObjetosParaCatalogo([pendiente, publicado], true);
+    const visibles = obtenerObjetosParaCatalogo(objetos, true);
 
     expect(visibles).toEqual([pendiente, publicado]);
   });
 
   it("Deberia mostrar solo los publicados cuando el filtro esta inactivo", () => {
-    const pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
-    const publicado = new ObjetoPerdido("Chaqueta", "Ropa");
-    publicado.aprobar();
-
-    const visibles = obtenerObjetosParaCatalogo([pendiente, publicado], false);
+    const visibles = obtenerObjetosParaCatalogo(objetos, false);
 
     expect(visibles).toEqual([publicado]);
   });

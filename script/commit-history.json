@@ -285,17 +285,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "accf1eee1bd23263fd06346172dc220afafab7ad",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:52:11.000Z",
       "message": "refactor: extraer filtrarPorEstado para eliminar duplicacion en aprobacion",
-      "url": "/commit/HEAD"
+      "url": "/commit/accf1eee1bd23263fd06346172dc220afafab7ad"
     },
     "stats": {
       "total": 8,
       "additions": 6,
       "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:53:25.000Z",
+      "message": "refactor: centralizar creacion de objetos de prueba en pruebas de aprobacion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 16,
+      "deletions": 23,
       "date": "2026-11-15"
     },
     "coverage": 93.33,

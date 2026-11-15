@@ -2714,7 +2714,7 @@
     "testId": 99
   },
   {
-    "commitId": "HEAD",
+    "commitId": "accf1eee1bd23263fd06346172dc220afafab7ad",
     "commitName": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
     "commitTimestamp": 1794718117556,
     "testId": 99
@@ -2740,5 +2740,27 @@
     "commitName": "refactor: extraer filtrarPorEstado para eliminar duplicacion en aprobacion",
     "commitTimestamp": 1794718332783,
     "testId": 100
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794718343712,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794718358501,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: centralizar creacion de objetos de prueba en pruebas de aprobacion",
+    "commitTimestamp": 1794718406874,
+    "testId": 101
   }
 ]

@@ -2670,7 +2670,7 @@
     "testId": 97
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22f8947cc01e30265ff670c53f7fab002d3637bc",
     "commitName": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
     "commitTimestamp": 1794717518718,
     "testId": 97
@@ -2696,5 +2696,19 @@
     "commitName": "refactor: crear clase Usuario que delega en las funciones del catalogo",
     "commitTimestamp": 1794719112373,
     "testId": 98
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794719134609,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: usar la clase Usuario en CatalogoPresenter",
+    "commitTimestamp": 1794719186291,
+    "testId": 99
   }
 ]

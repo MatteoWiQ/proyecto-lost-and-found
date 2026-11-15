@@ -247,17 +247,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "22f8947cc01e30265ff670c53f7fab002d3637bc",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:05:11.000Z",
       "message": "refactor: crear clase Usuario que delega en las funciones del catalogo",
-      "url": "/commit/HEAD"
+      "url": "/commit/22f8947cc01e30265ff670c53f7fab002d3637bc"
     },
     "stats": {
       "total": 59,
       "additions": 59,
       "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:06:25.000Z",
+      "message": "refactor: usar la clase Usuario en CatalogoPresenter",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 6,
+      "deletions": 10,
       "date": "2026-11-15"
     },
     "coverage": 93.48,

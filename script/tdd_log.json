@@ -2404,6 +2404,36 @@
     "commitName": "refactor: extraer logica del formulario a formularioPresenter.js",
     "commitTimestamp": 1794631992439,
     "testId": 96
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794694071168,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794694095753,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 9,
+    "numTotalTests": 55,
+    "timestamp": 1794694105971,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 9,
+    "numTotalTests": 55,
+    "timestamp": 1794694245923,
+    "success": false,
+    "testId": 92
   },
   {
     "numPassedTests": 55,
@@ -2440,6 +2470,41 @@
     "timestamp": 1794633973085,
     "success": true,
     "testId": 99
+    "timestamp": 1794694456965,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 52,
+    "failedTests": 3,
+    "numTotalTests": 55,
+    "timestamp": 1794694558713,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1794694680967,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1794694761989,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1794694895213,
+    "success": false,
+    "testId": 92
   },
   {
     "numPassedTests": 55,
@@ -2448,6 +2513,15 @@
     "timestamp": 1794634084738,
     "success": true,
     "testId": 99
+    "timestamp": 1794694975455,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "commitId": "92f4b09c6916d316896fcfa655a028ef95cce341",
+    "commitName": "refact: Mejora de llamadas a funciones",
+    "commitTimestamp": 1794695004096,
+    "testId": 92
   },
   {
     "numPassedTests": 55,
@@ -2462,5 +2536,14 @@
     "commitName": "refactor: organizar los presenters en la carpeta presenters",
     "commitTimestamp": 1794634492996,
     "testId": 99
+    "timestamp": 1794695579759,
+    "success": true,
+    "testId": 93
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: Reducir codigo duplicado",
+    "commitTimestamp": 1794695615927,
+    "testId": 93
   }
 ]

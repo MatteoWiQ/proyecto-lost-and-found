@@ -1,22 +1,29 @@
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
 const extensionesImagenPermitidas = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg"];
+const tiposPorFormato = {
+    jpg: ["image/jpeg", "image/jpg"],
+    jpeg: ["image/jpeg", "image/jpg"],
+    png: ["image/png"],
+    gif: ["image/gif"],
+    bmp: ["image/bmp"],
+    tiff: ["image/tiff"],
+    svg: ["image/svg+xml"],
+};
 class ObjetoPerdido{
-    constructor(nombre,categoria,fecha, hora, lugar, commentario, foto){
+    constructor(nombre,categoria,fecha, hora, lugar, Comentario, foto){
         this.nombre = nombre;
         this.categoria = categoria;
         this.fecha = fecha;
         this.hora = hora;
         this.lugar = lugar;
-        this.commentario = commentario;
+        this.Comentario = Comentario;
         this.foto = foto;
         this.estado = "Pendiente de validación";
     }
     obtenerNombre(){
-        if (this.validarNombre()!=""){
-            return this.validarNombre();
-        }
-        return this.nombre;
+        const error = this.validarNombre();
+        return error !== "" ? error : this.nombre;
     }
     validarNombre(){
         if(this.nombre === ""){
@@ -28,10 +35,8 @@ class ObjetoPerdido{
         return "";
     }
     obtenerCategoria(){
-        if(this.validarCategoria()!=""){
-            return this.validarCategoria();
-        }
-        return this.categoria;
+        const error = this.validarCategoria();
+        return error !== "" ? error : this.categoria;
     }
     validarCategoria(){
         if(!categorias.includes(this.categoria)){
@@ -40,17 +45,16 @@ class ObjetoPerdido{
         return "";
     }
     obtenerFecha(){
-        if(this.validarFecha()!=""){
-            return this.validarFecha();
-        }
-        return this.fecha;
+        const error = this.validarFecha();
+        return error !== "" ? error : this.fecha;
     }
     validarFecha(){
         if (this.fecha === "") {
             return "La fecha es obligatoria";
         }
-        else if (this.validarDia() != "") {
-            return this.validarDia();
+        const errorDia = this.validarDia();
+        if (errorDia !== "") {
+            return errorDia;
         }
         return "";
     }
@@ -77,26 +81,41 @@ class ObjetoPerdido{
         return isNaN(fecha.getTime())
     }
     obtenerHora(){
-        if(this.validarHora()!=""){
-            return this.validarHora();
+        const error = this.validarHora();
+        return error !== "" ? error : this.hora;
+    }
+    validarFormatoHora(hora){
+        return /^(\d{2}):(\d{2})$/.exec(hora);
+    }
+    validarMinuto(minuto){
+        if (minuto > 59) {
+            return "La hora no esta en formato correcto";
         }
-        return this.hora;
+        return "";
+    }
+    validarHoraHora(hora){
+        if(hora<6 || hora>22){
+            return "La hora esta fuera de rango";
+        }
+        return "";
     }
     validarHora(){
         if (this.hora === "") {
             return "La hora es obligatoria";
         }
-        const formatoHora = /^(\d{2}):(\d{2})$/.exec(this.hora);
+        const formatoHora = this.validarFormatoHora(this.hora);
         if (!formatoHora) {
             return "La hora no esta en formato correcto";
         }
         const hora = Number(formatoHora[1]);
         const minuto = Number(formatoHora[2]);
-        if (minuto > 59) {
-            return "La hora no esta en formato correcto";
+        const errorMinuto = this.validarMinuto(minuto);
+        if (errorMinuto !== "") {
+            return errorMinuto;
         }
-        if (hora < 6 || hora > 22) {
-            return "La hora esta fuera de rango";
+        const errorHora = this.validarHoraHora(hora);
+        if (errorHora !== "") {
+            return errorHora;
         }
         const fechaHora = new Date(`${this.fecha}T${this.hora}`);
         const ahora = new Date();
@@ -107,10 +126,8 @@ class ObjetoPerdido{
     }
 
     obtenerLugar(){
-        if(this.validarLugar()!=""){
-            return this.validarLugar();
-        }
-        return this.lugar;
+        const error = this.validarLugar();
+        return error !== "" ? error : this.lugar;
     }
     validarLugar(){
         if (this.lugar === "") {
@@ -121,15 +138,13 @@ class ObjetoPerdido{
         }
         return "";
     }
-    obtenerCommentario(){
-        return this.commentario;
+    obtenerComentario(){
+        return this.Comentario;
     }
 
     obtenerFoto(){
-        if(this.validarFoto()!=""){
-            return this.validarFoto();
-        }
-        return this.foto;
+        const error = this.validarFoto();
+        return error !== "" ? error : this.foto;
     }
     ValidarFotoNombre(nombreFoto){
         if (typeof nombreFoto !== "string") {
@@ -145,16 +160,6 @@ class ObjetoPerdido{
     }
     ValidarFotoTipo(extension){
         if (typeof this.foto === "object" && this.foto.type) {
-            const tiposPorFormato = {
-                jpg: ["image/jpeg", "image/jpg"],
-                jpeg: ["image/jpeg", "image/jpg"],
-                png: ["image/png"],
-                gif: ["image/gif"],
-                bmp: ["image/bmp"],
-                tiff: ["image/tiff"],
-                svg: ["image/svg+xml"],
-            };
-
             if (!tiposPorFormato[extension]?.includes(this.foto.type.toLowerCase())) {
                 return "Formato de imagen no permitido";
             }
@@ -178,45 +183,36 @@ class ObjetoPerdido{
         }
         return "";
     }
-    obtenerInformacion(){
-        let mensaje="";
-        if (this.validarNombre()!=""){
-            mensaje += this.validarNombre();
+    validarInformacion() {
+        const validadores = [
+            () => this.validarNombre(),
+            () => this.validarCategoria(),
+            () => this.validarFecha(),
+            () => this.validarHora(),
+            () => this.validarLugar(),
+            () => this.validarFoto()
+        ];
+        for (const validador of validadores) {
+            const mensaje = validador();
+            if (mensaje !== "") {
+                return mensaje;
+            }
         }
-        else if (this.validarCategoria()!=""){
-            mensaje += this.validarCategoria();
+        return "";
+    }
+    obtenerInformacion() {
+        const error = this.validarInformacion();
+        if (error !== "") {
+            return error;
         }
-        else if (this.validarFecha()!=""){
-            mensaje += this.validarFecha();
-        }
-        else if (this.validarHora()!=""){
-            mensaje += this.validarHora();
-        }
-        else if (this.validarLugar()!=""){
-            mensaje += this.validarLugar();
-        }
-        else if (this.validarFoto()!=""){
-            mensaje += this.validarFoto();
-        }
-        return mensaje === "" ? this.obtenerNombre()
-         + ", " + this.obtenerCategoria() 
-         + ", " + this.obtenerFecha() 
-         + ", " + this.obtenerHora()
-         + ", " + this.obtenerLugar()
-         + ", " + this.obtenerCommentario()
-          : mensaje;
+        return `${this.nombre}, ${this.categoria}, ${this.fecha}, ${this.hora}, ${this.lugar}, ${this.Comentario}`;
     }
     ValidacionFinal(){
-        if(this.obtenerInformacion() === this.obtenerNombre()
-         + ", " + this.obtenerCategoria() 
-         + ", " + this.obtenerFecha() 
-         + ", " + this.obtenerHora()
-         + ", " + this.obtenerLugar()
-         + ", " + this.obtenerCommentario()
-         && this.validarFoto() === ""){
-            return "Registro exitoso. ¡Guardado correctamente!";
+        const error = this.validarInformacion();
+        if (error !== "") {
+            return `Registro fallido: ${error}`;
         }
-        return "Registro fallido: "+ this.obtenerInformacion();
+        return "Registro exitoso. ¡Guardado correctamente!";
     }
 
     obtenerEstado() {
@@ -230,7 +226,7 @@ class ObjetoPerdido{
             fecha: this.fecha,
             hora: this.hora,
             lugar: this.lugar,
-            commentario: this.commentario,
+            Comentario: this.Comentario,
             foto: this.foto,
             estado: this.estado
         };
@@ -272,7 +268,7 @@ class ObjetoPerdido{
             fecha: this.fecha,
             hora: this.hora,
             lugar: this.lugar,
-            commentario: this.commentario,
+            Comentario: this.Comentario,
             foto: this.foto
         };
     }

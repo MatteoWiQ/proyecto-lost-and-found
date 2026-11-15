@@ -79,4 +79,27 @@ describe("Usuario", () => {
 
     expect(campos).toContainEqual({ etiqueta: "Comentario", valor: "Ninguno" });
   });
+
+  describe("visibilidad en el catalogo", () => {
+    let pendiente;
+    let publicado;
+
+    beforeEach(() => {
+      pendiente = new ObjetoPerdido("Laptop", "Tecnologia");
+      publicado = new ObjetoPerdido("Chaqueta", "Ropa");
+      publicado.aprobar();
+    });
+
+    it("Deberia listar solo las publicaciones aprobadas visibles en el catalogo", () => {
+      expect(usuario.obtenerPublicados([pendiente, publicado])).toEqual([publicado]);
+    });
+
+    it("Deberia incluir los reportes ocultos cuando el filtro esta activo", () => {
+      expect(usuario.obtenerObjetosParaCatalogo([pendiente, publicado], true)).toEqual([pendiente, publicado]);
+    });
+
+    it("Deberia mostrar solo los publicados cuando el filtro esta inactivo", () => {
+      expect(usuario.obtenerObjetosParaCatalogo([pendiente, publicado], false)).toEqual([publicado]);
+    });
+  });
 });

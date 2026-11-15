@@ -2770,7 +2770,7 @@
     "testId": 101
   },
   {
-    "commitId": "HEAD",
+    "commitId": "260b4becb8d51a79077afc8dafbf85192678c877",
     "commitName": "refactor: centralizar creacion de objetos de prueba en pruebas de aprobacion",
     "commitTimestamp": 1794718406874,
     "testId": 101
@@ -2926,5 +2926,27 @@
     "commitName": "Merge branch 'feature/LAF-34-ficha-tecnica' into feature/LAF-32-aprobacion\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
     "commitTimestamp": 1794719973364,
     "testId": 105
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1794719983139,
+    "success": true,
+    "testId": 106
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720006020,
+    "success": true,
+    "testId": 106
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: crear clase Administrador y agregar visibilidad del catalogo a Usuario",
+    "commitTimestamp": 1794720075475,
+    "testId": 106
   }
 ]

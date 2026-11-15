@@ -1,3 +1,5 @@
+import { obtenerPublicados, obtenerObjetosParaCatalogo } from "./Aprobacion.js";
+
 function tieneValor(texto) {
   return texto !== "";
 }
@@ -58,6 +60,14 @@ class Usuario {
       { etiqueta: "Comentario", valor: ficha.Comentario || "Ninguno" },
       { etiqueta: "Estado", valor: ficha.estado }
     ];
+  }
+
+  obtenerPublicados(objetos) {
+    return obtenerPublicados(objetos);
+  }
+
+  obtenerObjetosParaCatalogo(objetos, mostrarOcultos) {
+    return obtenerObjetosParaCatalogo(objetos, mostrarOcultos);
   }
 }
 

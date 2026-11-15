@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "260b4becb8d51a79077afc8dafbf85192678c877",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:14:55.000Z",
       "message": "refactor: usar consultarFicha de Usuario en FichaObjetoVista",
-      "url": "/commit/HEAD"
+      "url": "/commit/260b4becb8d51a79077afc8dafbf85192678c877"
     },
     "stats": {
       "total": 5,
@@ -471,6 +471,25 @@
     },
     "coverage": 93.3,
     "test_count": 54,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:21:14.000Z",
+      "message": "refactor: crear clase Administrador y agregar visibilidad del catalogo a Usuario",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 89,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 61,
     "failed_tests": 0,
     "conclusion": "success"
   }

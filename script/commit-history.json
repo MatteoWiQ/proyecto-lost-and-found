@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6ebfb137673569612a4651c715aa6e53ef1c2221",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:48:36.000Z",
       "message": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
-      "url": "/commit/HEAD"
+      "url": "/commit/6ebfb137673569612a4651c715aa6e53ef1c2221"
     },
     "stats": {
       "total": 10,
@@ -280,6 +280,82 @@
       "date": "2026-11-15"
     },
     "coverage": 93.33,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "22f8947cc01e30265ff670c53f7fab002d3637bc",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:05:11.000Z",
+      "message": "refactor: crear clase Usuario que delega en las funciones del catalogo",
+      "url": "/commit/22f8947cc01e30265ff670c53f7fab002d3637bc"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 59,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ea8fa1057bc964d49cbc388fd61a377223152a33",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:06:25.000Z",
+      "message": "refactor: usar la clase Usuario en CatalogoPresenter",
+      "url": "/commit/ea8fa1057bc964d49cbc388fd61a377223152a33"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 6,
+      "deletions": 10,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:08:01.000Z",
+      "message": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 194,
+      "additions": 64,
+      "deletions": 130,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.26,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:11:00.000Z",
+      "message": "Merge branch 'feature/LAF-33-catalogo' into feature/LAF-34-ficha-tecnica\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 147,
+      "additions": 68,
+      "deletions": 79,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.26,
     "test_count": 56,
     "failed_tests": 0,
     "conclusion": "success"

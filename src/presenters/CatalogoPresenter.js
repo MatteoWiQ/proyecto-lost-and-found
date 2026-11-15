@@ -1,14 +1,10 @@
-import {
-  buscarObjetos,
-  obtenerMensajeBusqueda,
-  filtrarObjetos,
-  obtenerMensajeFiltros
-} from "../Catalogo.js";
+import Usuario from "../Usuario.js";
 import { obtenerObjetosParaCatalogo } from "../Aprobacion.js";
 import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
 import { obtenerVista, cambiarVista, debeMostrarOcultos } from "../Vista.js";
 
 export function inicializarCatalogo(galeria, vistaFicha) {
+  const usuario = new Usuario();
   const entradaBusqueda = document.querySelector("#busqueda");
   const entradaFiltroCategoria = document.querySelector("#filtro-categoria");
   const entradaFiltroUbicacion = document.querySelector("#filtro-ubicacion");
@@ -52,15 +48,15 @@ export function inicializarCatalogo(galeria, vistaFicha) {
       galeria.obtenerGaleriaObjects(),
       debeMostrarOcultos(vista)
     );
-    const objetosFiltrados = filtrarObjetos(
+    const objetosFiltrados = usuario.filtrarObjetos(
       objetos,
       entradaFiltroCategoria.value,
       entradaFiltroUbicacion.value
     );
 
-    const resultados = buscarObjetos(objetosFiltrados, entradaBusqueda.value);
-    const mensajeBusqueda = obtenerMensajeBusqueda(resultados, entradaBusqueda.value);
-    const mensajeFiltros = obtenerMensajeFiltros(
+    const resultados = usuario.buscarObjetos(objetosFiltrados, entradaBusqueda.value);
+    const mensajeBusqueda = usuario.obtenerMensajeBusqueda(resultados, entradaBusqueda.value);
+    const mensajeFiltros = usuario.obtenerMensajeFiltros(
       resultados,
       entradaFiltroCategoria.value,
       entradaFiltroUbicacion.value

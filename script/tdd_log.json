@@ -2756,7 +2756,7 @@
     "testId": 99
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9428bfcfbbac9b12c14c0dbe5618d88f63fa0ead",
     "commitName": "refactor: usar la clase Usuario en CatalogoPresenter",
     "commitTimestamp": 1794719186291,
     "testId": 99
@@ -2818,5 +2818,27 @@
     "commitName": "refactor: agregar consultarFicha a la clase Usuario delegando en FichaTecnica",
     "commitTimestamp": 1794719552821,
     "testId": 102
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719563049,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719576426,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: usar consultarFicha de Usuario en FichaObjetoVista",
+    "commitTimestamp": 1794719697020,
+    "testId": 103
   }
 ]

@@ -29,7 +29,7 @@ class Cuenta {
     if (error) {
       return error;
     }
-    return this.correo;
+    return this.correo.toLowerCase();
   }
   validarContrasenaVacio() {
     if (this.contrasena === "") {

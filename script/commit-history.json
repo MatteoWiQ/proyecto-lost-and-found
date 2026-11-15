@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "602ec35f57be0a2658a0029329117efdf608eb83",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-15T23:28:17.000Z",
       "message": "feat: Confirmacion de contrasena",
-      "url": "/commit/HEAD"
+      "url": "/commit/602ec35f57be0a2658a0029329117efdf608eb83"
     },
     "stats": {
       "total": 22,
@@ -186,6 +186,25 @@
     },
     "coverage": 93.81,
     "test_count": 63,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-15T23:35:07.000Z",
+      "message": "feat: validar mayusculas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.81,
+    "test_count": 64,
     "failed_tests": 0,
     "conclusion": "success"
   }

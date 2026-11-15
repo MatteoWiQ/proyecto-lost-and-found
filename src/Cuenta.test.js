@@ -12,6 +12,11 @@ describe("Crear cuenta", () => {
 
     expect(cuenta.obtenerCorreo()).toBe("No es un correo de la UCB");
   });
+  it("Validar correo sin mayusculas", () => {
+    const cuenta = new Cuenta("JUAN@ucb.edu.bo");
+
+    expect(cuenta.obtenerCorreo()).toBe("juan@ucb.edu.bo");
+  });
   it("Validar no vacios", () => {
     const cuenta = new Cuenta("");
 

@@ -2656,9 +2656,31 @@
     "testId": 100
   },
   {
-    "commitId": "HEAD",
+    "commitId": "602ec35f57be0a2658a0029329117efdf608eb83",
     "commitName": "feat: Confirmacion de contrasena",
     "commitTimestamp": 1794785300067,
     "testId": 100
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 1,
+    "numTotalTests": 64,
+    "timestamp": 1794785530403,
+    "success": false,
+    "testId": 101
+  },
+  {
+    "numPassedTests": 64,
+    "failedTests": 0,
+    "numTotalTests": 64,
+    "timestamp": 1794785625604,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar mayusculas",
+    "commitTimestamp": 1794785710735,
+    "testId": 101
   }
 ]

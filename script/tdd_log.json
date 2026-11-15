@@ -2462,9 +2462,47 @@
     "testId": 93
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6db2289b517bfee4dd62552a0603cf800863f6a2",
     "commitName": "refact: Reducir codigo duplicado",
     "commitTimestamp": 1794695615927,
     "testId": 93
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 1,
+    "numTotalTests": 56,
+    "timestamp": 1794782698145,
+    "success": false,
+    "testId": 94
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794782776972,
+    "success": true,
+    "testId": 94
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 1,
+    "numTotalTests": 56,
+    "timestamp": 1794782842418,
+    "success": false,
+    "testId": 94
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794782865617,
+    "success": true,
+    "testId": 94
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Crear cuenta con correo",
+    "commitTimestamp": 1794782897404,
+    "testId": 94
   }
 ]

@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6db2289b517bfee4dd62552a0603cf800863f6a2",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-14T22:33:34.000Z",
       "message": "refact: Reducir codigo duplicado",
-      "url": "/commit/HEAD"
+      "url": "/commit/6db2289b517bfee4dd62552a0603cf800863f6a2"
     },
     "stats": {
       "total": 111,
@@ -53,6 +53,25 @@
     },
     "coverage": 93.14,
     "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-15T22:48:14.000Z",
+      "message": "feat: Crear cuenta con correo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 25,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.22,
+    "test_count": 56,
     "failed_tests": 0,
     "conclusion": "success"
   }

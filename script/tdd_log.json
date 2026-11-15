@@ -2678,9 +2678,31 @@
     "testId": 101
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f372182f91549e6635a1ae737949cca84119b37b",
     "commitName": "feat: validar mayusculas",
     "commitTimestamp": 1794785710735,
     "testId": 101
+  },
+  {
+    "numPassedTests": 64,
+    "failedTests": 1,
+    "numTotalTests": 65,
+    "timestamp": 1794786073394,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 65,
+    "failedTests": 0,
+    "numTotalTests": 65,
+    "timestamp": 1794786203652,
+    "success": true,
+    "testId": 102
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: repositorio de cuentas",
+    "commitTimestamp": 1794786299460,
+    "testId": 102
   }
 ]

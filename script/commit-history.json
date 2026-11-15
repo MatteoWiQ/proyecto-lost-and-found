@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f372182f91549e6635a1ae737949cca84119b37b",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-15T23:35:07.000Z",
       "message": "feat: validar mayusculas",
-      "url": "/commit/HEAD"
+      "url": "/commit/f372182f91549e6635a1ae737949cca84119b37b"
     },
     "stats": {
       "total": 7,
@@ -205,6 +205,25 @@
     },
     "coverage": 93.81,
     "test_count": 64,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-15T23:44:56.000Z",
+      "message": "feat: repositorio de cuentas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.84,
+    "test_count": 65,
     "failed_tests": 0,
     "conclusion": "success"
   }

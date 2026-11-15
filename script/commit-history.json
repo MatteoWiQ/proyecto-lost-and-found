@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9a01e00493f5300d35aa26cb732460d4f656919c",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:12:43.000Z",
       "message": "fix: reconstruir tdd_log.json corrompido en el merge de main",
-      "url": "/commit/HEAD"
+      "url": "/commit/9a01e00493f5300d35aa26cb732460d4f656919c"
     },
     "stats": {
       "total": 0,
@@ -185,6 +185,25 @@
       "date": "2026-11-15"
     },
     "coverage": 93.14,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:23:15.000Z",
+      "message": "refactor: extraer tieneValor para reemplazar comparaciones con texto vacio en catalogo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 12,
+      "deletions": 8,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.18,
     "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"

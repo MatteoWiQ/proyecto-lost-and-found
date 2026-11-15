@@ -1,3 +1,7 @@
+function tieneValor(texto) {
+  return texto !== "";
+}
+
 function buscarObjetos(objetos, texto) {
   const textoNormalizado = texto.toLowerCase();
 
@@ -7,7 +11,7 @@ function buscarObjetos(objetos, texto) {
 }
 
 function obtenerMensajeBusqueda(resultados, textoBuscado) {
-  if (textoBuscado !== "" && resultados.length === 0) {
+  if (tieneValor(textoBuscado) && resultados.length === 0) {
     return "No se encontraron objetos";
   }
 
@@ -23,16 +27,16 @@ function filtrarPorUbicacion(objetos, ubicacion) {
   return filtrarPorCampo(objetos, "lugar", ubicacion);
 }
 function filtrarObjetos(objetos, categoria, ubicacion) {
-  const objetosPorCategoria = categoria === ""
-    ? objetos
-    : filtrarPorCategoria(objetos, categoria);
+  const objetosPorCategoria = tieneValor(categoria)
+    ? filtrarPorCategoria(objetos, categoria)
+    : objetos;
 
-  return ubicacion === ""
-    ? objetosPorCategoria
-    : filtrarPorUbicacion(objetosPorCategoria, ubicacion);
+  return tieneValor(ubicacion)
+    ? filtrarPorUbicacion(objetosPorCategoria, ubicacion)
+    : objetosPorCategoria;
 }
 function obtenerMensajeFiltros(resultados, categoria, ubicacion) {
-  const hayFiltrosActivos = categoria !== "" || ubicacion !== "";
+  const hayFiltrosActivos = tieneValor(categoria) || tieneValor(ubicacion);
 
   if (hayFiltrosActivos && resultados.length === 0) {
     return "No se encontraron resultados";

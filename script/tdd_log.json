@@ -2610,9 +2610,55 @@
     "testId": 99
   },
   {
-    "commitId": "HEAD",
+    "commitId": "317ac6deaa73e3755ddf7f5927c9857dcac294f7",
     "commitName": "feat: validar longitud de la contrasena",
     "commitTimestamp": 1794784692853,
     "testId": 99
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1794784862166,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1794784906069,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 62,
+    "failedTests": 1,
+    "numTotalTests": 63,
+    "timestamp": 1794784971371,
+    "success": false,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 62,
+    "failedTests": 1,
+    "numTotalTests": 63,
+    "timestamp": 1794785108511,
+    "success": false,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1794785206966,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Confirmacion de contrasena",
+    "commitTimestamp": 1794785300067,
+    "testId": 100
   }
 ]

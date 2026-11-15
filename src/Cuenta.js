@@ -1,9 +1,10 @@
 
 
 class Cuenta {
-  constructor(correo,contrasena) {
+  constructor(correo,contrasena, confirmarContrasena) {
     this.correo = correo;
     this.contrasena = contrasena;
+    this.confirmarContrasena = confirmarContrasena;
   }
   validarCorreoVacio(){
     if (this.correo === "") {
@@ -42,13 +43,20 @@ class Cuenta {
     }
     return "";
   }
+  validarContrasenaConfirmacion() {
+    if (this.contrasena !== this.confirmarContrasena) {
+      return "Las contraseñas no coinciden";
+    }
+    return "";
+  }
   obtenerContrasena() {
     return this.contrasena;
   }
   validarContrasena() {
     const errores = [
       this.validarContrasenaVacio(),
-      this.validarContrasenaLongitud()
+      this.validarContrasenaLongitud(),
+      this.validarContrasenaConfirmacion()
     ];
     return errores.find((e) => !!e) || ""; 
   }

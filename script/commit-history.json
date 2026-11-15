@@ -266,17 +266,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6ebfb137673569612a4651c715aa6e53ef1c2221",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T04:48:36.000Z",
       "message": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
-      "url": "/commit/HEAD"
+      "url": "/commit/6ebfb137673569612a4651c715aa6e53ef1c2221"
     },
     "stats": {
       "total": 10,
       "additions": 4,
       "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:52:11.000Z",
+      "message": "refactor: extraer filtrarPorEstado para eliminar duplicacion en aprobacion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 6,
+      "deletions": 2,
       "date": "2026-11-15"
     },
     "coverage": 93.33,

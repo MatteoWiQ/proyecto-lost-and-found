@@ -1,9 +1,13 @@
+function filtrarPorEstado(objetos, estado) {
+  return objetos.filter((objeto) => objeto.obtenerEstado() === estado);
+}
+
 export function obtenerPendientes(objetos) {
-  return objetos.filter((objeto) => objeto.obtenerEstado() === "Pendiente de validación");
+  return filtrarPorEstado(objetos, "Pendiente de validación");
 }
 
 export function obtenerPublicados(objetos) {
-  return objetos.filter((objeto) => objeto.obtenerEstado() === "Publicado");
+  return filtrarPorEstado(objetos, "Publicado");
 }
 
 export function aprobarPublicacion(objeto) {

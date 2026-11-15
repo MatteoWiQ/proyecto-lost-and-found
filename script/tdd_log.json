@@ -2676,6 +2676,12 @@
     "testId": 97
   },
   {
+    "commitId": "22f8947cc01e30265ff670c53f7fab002d3637bc",
+    "commitName": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
+    "commitTimestamp": 1794717518718,
+    "testId": 97
+  },
+  {
     "numPassedTests": 55,
     "failedTests": 0,
     "numTotalTests": 55,
@@ -2720,6 +2726,12 @@
     "testId": 99
   },
   {
+    "commitId": "3363c7b776d867e395c19d7aad4482beab4c2eb0",
+    "commitName": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
+    "commitTimestamp": 1794718117556,
+    "testId": 99
+  },
+  {
     "numPassedTests": 56,
     "failedTests": 0,
     "numTotalTests": 56,
@@ -2736,7 +2748,7 @@
     "testId": 100
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3340f5abeffe9bfaa328093dc8607f5c6ba56eb0",
     "commitName": "refactor: extraer filtrarPorEstado para eliminar duplicacion en aprobacion",
     "commitTimestamp": 1794718332783,
     "testId": 100
@@ -2762,5 +2774,157 @@
     "commitName": "refactor: centralizar creacion de objetos de prueba en pruebas de aprobacion",
     "commitTimestamp": 1794718406874,
     "testId": 101
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794718585538,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794718605314,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "ea8fa1057bc964d49cbc388fd61a377223152a33",
+    "commitName": "refactor: crear clase Usuario que delega en las funciones del catalogo",
+    "commitTimestamp": 1794719112373,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794719134609,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "9428bfcfbbac9b12c14c0dbe5618d88f63fa0ead",
+    "commitName": "refactor: usar la clase Usuario en CatalogoPresenter",
+    "commitTimestamp": 1794719186291,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794719206744,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794719228485,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "ea4d261edcdc383212364411753f6ddd4f1a8d01",
+    "commitName": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
+    "commitTimestamp": 1794719282555,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794719343751,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Merge branch 'feature/LAF-33-catalogo' into feature/LAF-34-ficha-tecnica\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
+    "commitTimestamp": 1794719461464,
+    "testId": 101
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794719486826,
+    "success": true,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719500921,
+    "success": true,
+    "testId": 102
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: agregar consultarFicha a la clase Usuario delegando en FichaTecnica",
+    "commitTimestamp": 1794719552821,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719563049,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719576426,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: usar consultarFicha de Usuario en FichaObjetoVista",
+    "commitTimestamp": 1794719697020,
+    "testId": 103
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1794719722530,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1794719728111,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: mover la logica de la ficha tecnica a Usuario y eliminar FichaTecnica.js",
+    "commitTimestamp": 1794719781780,
+    "testId": 104
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1794719801986,
+    "success": true,
+    "testId": 105
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Merge branch 'feature/LAF-34-ficha-tecnica' into feature/LAF-32-aprobacion\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
+    "commitTimestamp": 1794719973364,
+    "testId": 105
   }
 ]

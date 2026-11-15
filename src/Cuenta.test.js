@@ -23,7 +23,7 @@ describe("Crear cuenta", () => {
     expect(cuenta.obtenerCorreo()).toBe("El correo es obligatorio");
   });
   it("Crear cuenta con contrasena", () => {
-    const cuenta = new Cuenta("juan@ucb.edu.bo","123456");
+    const cuenta = new Cuenta("juan@ucb.edu.bo","123456abc!2");
 
     expect(cuenta.ValidarCuenta()).toBe("Cuenta creada con exito");
   });
@@ -32,5 +32,11 @@ describe("Crear cuenta", () => {
 
     expect(cuenta.ValidarCuenta()).toBe("Contraseña es obligatoria");
   });
+  it("Validar contrasena caracteres", () => {
+    const cuenta = new Cuenta("juan@ucb.edu.bo","123456");
+
+    expect(cuenta.ValidarCuenta()).toBe("La contraseña debe tener al menos 8 caracteres");
+  });
+
 
 });

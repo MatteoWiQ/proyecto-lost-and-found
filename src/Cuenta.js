@@ -30,14 +30,27 @@ class Cuenta {
     }
     return this.correo;
   }
-  obtenerContrasena() {
-    return this.contrasena;
-  }
-  validarContrasena() {
+  validarContrasenaVacio() {
     if (this.contrasena === "") {
       return "Contraseña es obligatoria";
     }
     return "";
+  }
+  validarContrasenaLongitud() {
+    if (this.contrasena.length < 8) {
+      return "La contraseña debe tener al menos 8 caracteres";
+    }
+    return "";
+  }
+  obtenerContrasena() {
+    return this.contrasena;
+  }
+  validarContrasena() {
+    const errores = [
+      this.validarContrasenaVacio(),
+      this.validarContrasenaLongitud()
+    ];
+    return errores.find((e) => !!e) || ""; 
   }
   ValidarCuenta(){
     const errores = [

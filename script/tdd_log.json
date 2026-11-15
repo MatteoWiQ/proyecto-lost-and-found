@@ -2588,9 +2588,31 @@
     "testId": 98
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d67824881c56c48cff3c56dc420b05b8d723b7fe",
     "commitName": "feat: validar contrasena vacia",
     "commitTimestamp": 1794784095502,
     "testId": 98
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 1,
+    "numTotalTests": 62,
+    "timestamp": 1794784201043,
+    "success": false,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 62,
+    "failedTests": 0,
+    "numTotalTests": 62,
+    "timestamp": 1794784658818,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar longitud de la contrasena",
+    "commitTimestamp": 1794784692853,
+    "testId": 99
   }
 ]

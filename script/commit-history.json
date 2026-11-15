@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d67824881c56c48cff3c56dc420b05b8d723b7fe",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-15T23:08:12.000Z",
       "message": "feat: validar contrasena vacia",
-      "url": "/commit/HEAD"
+      "url": "/commit/d67824881c56c48cff3c56dc420b05b8d723b7fe"
     },
     "stats": {
       "total": 24,
@@ -148,6 +148,25 @@
     },
     "coverage": 93.5,
     "test_count": 61,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-15T23:18:10.000Z",
+      "message": "feat: validar longitud de la contrasena",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 24,
+      "deletions": 5,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.69,
+    "test_count": 62,
     "failed_tests": 0,
     "conclusion": "success"
   }

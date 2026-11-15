@@ -2864,7 +2864,7 @@
     "testId": 102
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5e01066fd359b13788e5fc649e881fbd71821d77",
     "commitName": "refactor: agregar consultarFicha a la clase Usuario delegando en FichaTecnica",
     "commitTimestamp": 1794719552821,
     "testId": 102
@@ -2970,5 +2970,27 @@
     "commitName": "fix: usar las clases Administrador y Usuario en los presenters",
     "commitTimestamp": 1794720148800,
     "testId": 107
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720175031,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794720180625,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: mover la logica de aprobacion a Administrador y Usuario y eliminar Aprobacion.js",
+    "commitTimestamp": 1794720246249,
+    "testId": 108
   }
 ]

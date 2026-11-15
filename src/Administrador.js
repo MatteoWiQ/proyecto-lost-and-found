@@ -1,21 +1,20 @@
 import Usuario from "./Usuario.js";
-import {
-  obtenerPendientes,
-  aprobarPublicacion,
-  obtenerMensajePendientes
-} from "./Aprobacion.js";
 
 class Administrador extends Usuario {
   obtenerPendientes(objetos) {
-    return obtenerPendientes(objetos);
+    return this.filtrarPorEstado(objetos, "Pendiente de validación");
   }
 
   aprobarPublicacion(objeto) {
-    return aprobarPublicacion(objeto);
+    objeto.aprobar();
+    return objeto;
   }
 
   obtenerMensajePendientes(pendientes) {
-    return obtenerMensajePendientes(pendientes);
+    if (pendientes.length === 0) {
+      return "No hay publicaciones pendientes";
+    }
+    return "";
   }
 }
 

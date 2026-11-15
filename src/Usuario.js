@@ -1,5 +1,3 @@
-import { obtenerPublicados, obtenerObjetosParaCatalogo } from "./Aprobacion.js";
-
 function tieneValor(texto) {
   return texto !== "";
 }
@@ -62,12 +60,19 @@ class Usuario {
     ];
   }
 
+  filtrarPorEstado(objetos, estado) {
+    return objetos.filter((objeto) => objeto.obtenerEstado() === estado);
+  }
+
   obtenerPublicados(objetos) {
-    return obtenerPublicados(objetos);
+    return this.filtrarPorEstado(objetos, "Publicado");
   }
 
   obtenerObjetosParaCatalogo(objetos, mostrarOcultos) {
-    return obtenerObjetosParaCatalogo(objetos, mostrarOcultos);
+    if (mostrarOcultos) {
+      return objetos;
+    }
+    return this.obtenerPublicados(objetos);
   }
 }
 

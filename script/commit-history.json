@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ea8fa1057bc964d49cbc388fd61a377223152a33",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:06:25.000Z",
       "message": "refactor: usar la clase Usuario en CatalogoPresenter",
-      "url": "/commit/HEAD"
+      "url": "/commit/ea8fa1057bc964d49cbc388fd61a377223152a33"
     },
     "stats": {
       "total": 16,
@@ -281,6 +281,25 @@
     },
     "coverage": 93.48,
     "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:08:01.000Z",
+      "message": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 194,
+      "additions": 64,
+      "deletions": 130,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.26,
+    "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"
   }

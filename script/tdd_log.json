@@ -2692,7 +2692,7 @@
     "testId": 98
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ea8fa1057bc964d49cbc388fd61a377223152a33",
     "commitName": "refactor: crear clase Usuario que delega en las funciones del catalogo",
     "commitTimestamp": 1794719112373,
     "testId": 98
@@ -2710,5 +2710,27 @@
     "commitName": "refactor: usar la clase Usuario en CatalogoPresenter",
     "commitTimestamp": 1794719186291,
     "testId": 99
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794719206744,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794719228485,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
+    "commitTimestamp": 1794719282555,
+    "testId": 100
   }
 ]

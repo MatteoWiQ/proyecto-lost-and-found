@@ -7,6 +7,7 @@ export function inicializarCatalogo(galeria, vistaFicha) {
   const entradaBusqueda = document.querySelector("#busqueda");
   const entradaFiltroCategoria = document.querySelector("#filtro-categoria");
   const entradaFiltroUbicacion = document.querySelector("#filtro-ubicacion");
+  const botonRestablecerFiltros = document.querySelector("#restablecer-filtros");
   const entradaMostrarOcultos = document.querySelector("#mostrar-ocultos");
 
   const botonVistaUsuario = document.querySelector("#btn-vista-usuario");
@@ -92,6 +93,12 @@ export function inicializarCatalogo(galeria, vistaFicha) {
   entradaBusqueda.addEventListener("input", actualizarResultadosCatalogo);
   entradaFiltroCategoria.addEventListener("change", actualizarResultadosCatalogo);
   entradaFiltroUbicacion.addEventListener("change", actualizarResultadosCatalogo);
+  botonRestablecerFiltros.addEventListener("click", () => {
+    entradaBusqueda.value = "";
+    entradaFiltroCategoria.value = "";
+    entradaFiltroUbicacion.value = "";
+    actualizarResultadosCatalogo();
+  });
 
   mostrarVista(obtenerVista());
   actualizarGaleriaUI();

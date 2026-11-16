@@ -2988,7 +2988,7 @@
     "testId": 108
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b12c0da6b6d1322026ea00ffccb0ccca857deec6",
     "commitName": "fix: mover la logica de aprobacion a Administrador y Usuario y eliminar Aprobacion.js",
     "commitTimestamp": 1794720246249,
     "testId": 108
@@ -3070,5 +3070,11 @@
     "commitName": "feat: pantalla de crear cuenta",
     "commitTimestamp": 1794858519503,
     "testId": 113
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: boton para reestablecer filtros de busqueda",
+    "commitTimestamp": 1794858933413,
+    "testId": 114
   }
 ]

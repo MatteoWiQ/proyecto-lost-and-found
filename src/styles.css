@@ -273,6 +273,24 @@ body {
   padding: 0;
 }
 
+.boton-restablecer {
+  display: block;
+  margin: 0 0 16px auto;
+  padding: 10px 16px;
+  color: #174b87;
+  background-color: #ffffff;
+  border: 1px solid #174b87;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-restablecer:hover {
+  color: #ffffff;
+  background-color: #174b87;
+}
+
 @media (max-width: 700px) {
   .catalogo-controles {
     grid-template-columns: 1fr;

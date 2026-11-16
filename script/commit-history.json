@@ -513,12 +513,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b945abf1820eb8bf9e2c2b0cd56f42bc931c0907",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:24:05.000Z",
       "message": "fix: mover la logica de aprobacion a Administrador y Usuario y eliminar Aprobacion.js",
-      "url": "/commit/HEAD"
+      "url": "/commit/b945abf1820eb8bf9e2c2b0cd56f42bc931c0907"
     },
     "stats": {
       "total": 107,
@@ -566,6 +566,25 @@
     },
     "coverage": 93.3,
     "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T19:10:57.000Z",
+      "message": "Merge branch 'feat/CuentaCorreo'",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 170,
+      "additions": 170,
+      "deletions": 0,
+      "date": "2026-11-16"
+    },
+    "coverage": 94.12,
+    "test_count": 67,
     "failed_tests": 0,
     "conclusion": "success"
   }

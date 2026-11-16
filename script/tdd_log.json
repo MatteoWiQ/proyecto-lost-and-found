@@ -2944,7 +2944,7 @@
     "testId": 106
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a868766d64608acea0e275a713d3ce0d31bb0357",
     "commitName": "refactor: crear clase Administrador y agregar visibilidad del catalogo a Usuario",
     "commitTimestamp": 1794720075475,
     "testId": 106
@@ -3026,5 +3026,19 @@
     "commitName": "Merge branch 'feat/CuentaCorreo'",
     "commitTimestamp": 1794856261236,
     "testId": 111
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 0,
+    "numTotalTests": 67,
+    "timestamp": 1794856335803,
+    "success": true,
+    "testId": 112
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "merge cuentas con correo",
+    "commitTimestamp": 1794856362028,
+    "testId": 112
   }
 ]

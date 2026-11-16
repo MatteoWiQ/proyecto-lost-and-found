@@ -213,7 +213,6 @@ class ObjetoPerdido{
             return `Registro fallido: ${error}`;
         }
         return "Registro exitoso. ¡Guardado correctamente!";
-
     }
 
     obtenerEstado() {

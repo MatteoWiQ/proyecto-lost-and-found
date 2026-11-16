@@ -532,12 +532,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a868766d64608acea0e275a713d3ce0d31bb0357",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T18:58:56.000Z",
       "message": "merge refactorizacion presenter, y vistas",
-      "url": "/commit/HEAD"
+      "url": "/commit/a868766d64608acea0e275a713d3ce0d31bb0357"
     },
     "stats": {
       "total": 0,
@@ -581,6 +581,25 @@
       "total": 170,
       "additions": 170,
       "deletions": 0,
+      "date": "2026-11-16"
+    },
+    "coverage": 94.12,
+    "test_count": 67,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T19:12:39.000Z",
+      "message": "merge cuentas con correo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 0,
+      "deletions": 1,
       "date": "2026-11-16"
     },
     "coverage": 94.12,

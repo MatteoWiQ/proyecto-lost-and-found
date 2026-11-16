@@ -494,12 +494,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cd4623b3e1f7c85fcc4f7d7ce8dcaa8320ce5f23",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:22:27.000Z",
       "message": "fix: usar las clases Administrador y Usuario en los presenters",
-      "url": "/commit/HEAD"
+      "url": "/commit/cd4623b3e1f7c85fcc4f7d7ce8dcaa8320ce5f23"
     },
     "stats": {
       "total": 12,
@@ -537,6 +537,25 @@
     "commit": {
       "date": "2026-11-16T18:58:56.000Z",
       "message": "merge refactorizacion presenter, y vistas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-11-16"
+    },
+    "coverage": 93.3,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T19:02:35.000Z",
+      "message": "merge cuentas por correo",
       "url": "/commit/HEAD"
     },
     "stats": {

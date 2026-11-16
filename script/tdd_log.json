@@ -2908,7 +2908,7 @@
     "testId": 104
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cd4623b3e1f7c85fcc4f7d7ce8dcaa8320ce5f23",
     "commitName": "fix: mover la logica de la ficha tecnica a Usuario y eliminar FichaTecnica.js",
     "commitTimestamp": 1794719781780,
     "testId": 104
@@ -3006,5 +3006,19 @@
     "commitName": "merge refactorizacion presenter, y vistas",
     "commitTimestamp": 1794855539160,
     "testId": 109
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794855678231,
+    "success": true,
+    "testId": 110
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "merge cuentas por correo",
+    "commitTimestamp": 1794855757829,
+    "testId": 110
   }
 ]

@@ -13,18 +13,29 @@ export function inicializarCatalogo(galeria, vistaFicha) {
   const botonVistaAdmin = document.querySelector("#btn-vista-admin");
   const seccionVistaUsuario = document.querySelector("#vista-usuario");
   const seccionVistaAdmin = document.querySelector("#vista-admin");
+  const seccionCrearCuenta = document.querySelector("#vista-crear-cuenta");
+  const navegacionVistas = document.querySelector(".switch-vista");
 
   function mostrarVista(vista) {
     if (vista === "usuario") {
       seccionVistaUsuario.hidden = false;
       seccionVistaAdmin.hidden = true;
+      seccionCrearCuenta.hidden = true;
+      navegacionVistas.hidden = false;
       botonVistaUsuario.classList.add("activo");
       botonVistaAdmin.classList.remove("activo");
     } else if (vista === "administrador") {
       seccionVistaUsuario.hidden = true;
       seccionVistaAdmin.hidden = false;
+      seccionCrearCuenta.hidden = true;
+      navegacionVistas.hidden = false;
       botonVistaAdmin.classList.add("activo");
       botonVistaUsuario.classList.remove("activo");
+    } else if (vista === "crear-cuenta") {
+      seccionVistaUsuario.hidden = true;
+      seccionVistaAdmin.hidden = true;
+      seccionCrearCuenta.hidden = false;
+      navegacionVistas.hidden = true;
     }
     cambiarVista(vista);
   }

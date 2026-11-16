@@ -551,12 +551,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d18c5b921b74467524bf1f5f53973b6dad482b0a",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T19:02:35.000Z",
       "message": "merge cuentas por correo",
-      "url": "/commit/HEAD"
+      "url": "/commit/d18c5b921b74467524bf1f5f53973b6dad482b0a"
     },
     "stats": {
       "total": 0,
@@ -604,6 +604,25 @@
     },
     "coverage": 94.12,
     "test_count": 67,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T19:48:37.000Z",
+      "message": "feat: pantalla de crear cuenta",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 209,
+      "additions": 183,
+      "deletions": 26,
+      "date": "2026-11-16"
+    },
+    "coverage": 94.25,
+    "test_count": 70,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -2966,7 +2966,7 @@
     "testId": 107
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d18c5b921b74467524bf1f5f53973b6dad482b0a",
     "commitName": "fix: usar las clases Administrador y Usuario en los presenters",
     "commitTimestamp": 1794720148800,
     "testId": 107
@@ -3040,5 +3040,35 @@
     "commitName": "merge cuentas con correo",
     "commitTimestamp": 1794856362028,
     "testId": 112
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 0,
+    "numTotalTests": 67,
+    "timestamp": 1794856872414,
+    "success": true,
+    "testId": 113
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 0,
+    "numTotalTests": 67,
+    "timestamp": 1794858000877,
+    "success": true,
+    "testId": 113
+  },
+  {
+    "numPassedTests": 70,
+    "failedTests": 0,
+    "numTotalTests": 70,
+    "timestamp": 1794858426306,
+    "success": true,
+    "testId": 113
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: pantalla de crear cuenta",
+    "commitTimestamp": 1794858519503,
+    "testId": 113
   }
 ]

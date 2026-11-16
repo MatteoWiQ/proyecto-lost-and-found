@@ -1,10 +1,11 @@
 
 
 class Cuenta {
-  constructor(correo,contrasena, confirmarContrasena) {
+  constructor(correo,contrasena, confirmarContrasena,rol="miembro de la comunidad") {
     this.correo = correo;
     this.contrasena = contrasena;
     this.confirmarContrasena = confirmarContrasena;
+    this.rol = rol;
   }
   validarCorreoVacio(){
     if (this.correo === "") {

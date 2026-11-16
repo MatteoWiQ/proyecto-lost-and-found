@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6bae893b1c6b7f4fc82f7ef28635336cd9520e64",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T00:36:54.000Z",
       "message": "fear: validar cuentas duplicadas",
-      "url": "/commit/HEAD"
+      "url": "/commit/6bae893b1c6b7f4fc82f7ef28635336cd9520e64"
     },
     "stats": {
       "total": 15,
@@ -261,6 +261,25 @@
       "date": "2026-11-16"
     },
     "coverage": 93.98,
+    "test_count": 67,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T00:46:36.000Z",
+      "message": "feat: Rol asignado",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-11-16"
+    },
+    "coverage": 94.01,
     "test_count": 67,
     "failed_tests": 0,
     "conclusion": "success"

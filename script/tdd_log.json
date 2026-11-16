@@ -2752,9 +2752,15 @@
     "testId": 104
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6bae893b1c6b7f4fc82f7ef28635336cd9520e64",
     "commitName": "fear: validar cuentas duplicadas",
     "commitTimestamp": 1794789415663,
     "testId": 104
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Rol asignado",
+    "commitTimestamp": 1794789997923,
+    "testId": 105
   }
 ]

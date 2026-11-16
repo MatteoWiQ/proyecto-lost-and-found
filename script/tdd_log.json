@@ -2886,7 +2886,7 @@
     "testId": 103
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cfc8b990ceb8f6963a906fb7fd8ad346001f46ab",
     "commitName": "refactor: usar consultarFicha de Usuario en FichaObjetoVista",
     "commitTimestamp": 1794719697020,
     "testId": 103
@@ -2992,5 +2992,19 @@
     "commitName": "fix: mover la logica de aprobacion a Administrador y Usuario y eliminar Aprobacion.js",
     "commitTimestamp": 1794720246249,
     "testId": 108
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794855457971,
+    "success": true,
+    "testId": 109
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "merge refactorizacion presenter, y vistas",
+    "commitTimestamp": 1794855539160,
+    "testId": 109
   }
 ]

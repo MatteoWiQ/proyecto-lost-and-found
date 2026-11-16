@@ -475,12 +475,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cfc8b990ceb8f6963a906fb7fd8ad346001f46ab",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:21:14.000Z",
       "message": "refactor: crear clase Administrador y agregar visibilidad del catalogo a Usuario",
-      "url": "/commit/HEAD"
+      "url": "/commit/cfc8b990ceb8f6963a906fb7fd8ad346001f46ab"
     },
     "stats": {
       "total": 89,
@@ -525,6 +525,25 @@
       "additions": 16,
       "deletions": 91,
       "date": "2026-11-15"
+    },
+    "coverage": 93.3,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T18:58:56.000Z",
+      "message": "merge refactorizacion presenter, y vistas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-11-16"
     },
     "coverage": 93.3,
     "test_count": 55,

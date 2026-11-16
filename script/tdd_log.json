@@ -2722,9 +2722,39 @@
     "testId": 103
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5ed4f49629235385f0f2b689d4e1407c13d9be9f",
     "commitName": "feat: agregar cuenta a lista",
     "commitTimestamp": 1794788327114,
     "testId": 103
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 1,
+    "numTotalTests": 67,
+    "timestamp": 1794788517623,
+    "success": false,
+    "testId": 104
+  },
+  {
+    "numPassedTests": 64,
+    "failedTests": 0,
+    "numTotalTests": 64,
+    "timestamp": 1794788653011,
+    "success": false,
+    "testId": 104
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 0,
+    "numTotalTests": 67,
+    "timestamp": 1794788795358,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fear: validar cuentas duplicadas",
+    "commitTimestamp": 1794789415663,
+    "testId": 104
   }
 ]

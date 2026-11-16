@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5ed4f49629235385f0f2b689d4e1407c13d9be9f",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T00:18:45.000Z",
       "message": "feat: agregar cuenta a lista",
-      "url": "/commit/HEAD"
+      "url": "/commit/5ed4f49629235385f0f2b689d4e1407c13d9be9f"
     },
     "stats": {
       "total": 20,
@@ -243,6 +243,25 @@
     },
     "coverage": 93.87,
     "test_count": 66,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T00:36:54.000Z",
+      "message": "fear: validar cuentas duplicadas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-16"
+    },
+    "coverage": 93.98,
+    "test_count": 67,
     "failed_tests": 0,
     "conclusion": "success"
   }

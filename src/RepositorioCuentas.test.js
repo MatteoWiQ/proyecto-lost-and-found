@@ -11,5 +11,13 @@ describe('RepositorioCuentas', () => {
     repositorio.agregarCuenta(cuenta);
     expect(repositorio.cuentas).toContain(cuenta);
   });
+  it('Invalidar cuentas repetidas', () => {
+    const repositorio = new RepositorioCuentas();
+    const cuenta = new Cuenta('john.doe@example.com', '123456789', '123456789');
+    const cuentaRepetida = new Cuenta('john.doe@example.com', '123456789', '123456789');
+    repositorio.agregarCuenta(cuenta);
+    repositorio.agregarCuenta(cuentaRepetida);
+    expect(repositorio.agregarCuenta(cuentaRepetida)).toBe("Error, la cuenta ya existe");
+  });
 
 })

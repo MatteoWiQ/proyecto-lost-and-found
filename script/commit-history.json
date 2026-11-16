@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0857c53dda24263b94d1052287524060238af290",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-15T23:44:56.000Z",
       "message": "feat: repositorio de cuentas",
-      "url": "/commit/HEAD"
+      "url": "/commit/0857c53dda24263b94d1052287524060238af290"
     },
     "stats": {
       "total": 16,
@@ -224,6 +224,25 @@
     },
     "coverage": 93.84,
     "test_count": 65,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Alvaro Nina",
+    "commit": {
+      "date": "2026-11-16T00:18:45.000Z",
+      "message": "feat: agregar cuenta a lista",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 15,
+      "deletions": 5,
+      "date": "2026-11-16"
+    },
+    "coverage": 93.87,
+    "test_count": 66,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -2700,9 +2700,31 @@
     "testId": 102
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0857c53dda24263b94d1052287524060238af290",
     "commitName": "feat: repositorio de cuentas",
     "commitTimestamp": 1794786299460,
     "testId": 102
+  },
+  {
+    "numPassedTests": 65,
+    "failedTests": 1,
+    "numTotalTests": 66,
+    "timestamp": 1794786774418,
+    "success": false,
+    "testId": 103
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 0,
+    "numTotalTests": 66,
+    "timestamp": 1794787182603,
+    "success": true,
+    "testId": 103
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar cuenta a lista",
+    "commitTimestamp": 1794788327114,
+    "testId": 103
   }
 ]

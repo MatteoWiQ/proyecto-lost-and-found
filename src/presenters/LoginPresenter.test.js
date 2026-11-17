@@ -1,4 +1,8 @@
-import { puedeEnviarFormulario, obtenerMensajeLogin } from "./LoginPresenter";
+import {
+  puedeEnviarFormulario,
+  obtenerMensajeLogin,
+  obtenerVistaPorRol
+} from "./LoginPresenter";
 
 describe("Formulario de inicio de sesion", () => {
   it("deberia estar deshabilitado si falta el correo", () => {
@@ -10,5 +14,9 @@ describe("Formulario de inicio de sesion", () => {
       exito: false,
       mensaje: "Correo o contraseña incorrectos"
     })).toBe("Correo o contraseña incorrectos");
+  });
+
+  it("deberia enviar al administrador a su vista", () => {
+    expect(obtenerVistaPorRol("administrador")).toBe("administrador");
   });
 });

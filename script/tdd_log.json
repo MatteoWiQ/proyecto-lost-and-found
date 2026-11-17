@@ -3218,7 +3218,7 @@
     "testId": 121
   },
   {
-    "commitId": "HEAD",
+    "commitId": "11498b28637d19c3327d729b37ab9832d3f5ba0b",
     "commitName": "feat: eliminar la sesion al cerrar sesion",
     "commitTimestamp": 1794943364078,
     "testId": 121
@@ -3340,5 +3340,27 @@
     "commitName": "feat: traducir resultado del inicio de sesion a mensaje",
     "commitTimestamp": 1794943600703,
     "testId": 126
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 1,
+    "numTotalTests": 83,
+    "timestamp": 1794943625548,
+    "success": false,
+    "testId": 127
+  },
+  {
+    "numPassedTests": 83,
+    "failedTests": 0,
+    "numTotalTests": 83,
+    "timestamp": 1794943639346,
+    "success": true,
+    "testId": 127
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: seleccionar vista segun el rol autenticado",
+    "commitTimestamp": 1794943645376,
+    "testId": 127
   }
 ]

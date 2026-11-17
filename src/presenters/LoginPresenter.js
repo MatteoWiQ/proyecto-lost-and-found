@@ -5,3 +5,7 @@ export function puedeEnviarFormulario(correo, contrasena) {
 export function obtenerMensajeLogin(resultado) {
   return resultado.mensaje || "";
 }
+
+export function obtenerVistaPorRol(rol) {
+  return rol === "administrador" ? "administrador" : "usuario";
+}

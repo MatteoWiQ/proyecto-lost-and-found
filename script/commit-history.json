@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8204cadc601ccb10af1ac8f4523b3c3097095f86",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T19:12:39.000Z",
       "message": "merge cuentas con correo",
-      "url": "/commit/HEAD"
+      "url": "/commit/8204cadc601ccb10af1ac8f4523b3c3097095f86"
     },
     "stats": {
       "total": 1,
@@ -642,6 +642,25 @@
     },
     "coverage": 94.25,
     "test_count": 70,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:17:55.000Z",
+      "message": "feat: buscar cuentas por correo y contrasena",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 17,
+      "deletions": 4,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.3,
+    "test_count": 71,
     "failed_tests": 0,
     "conclusion": "success"
   }

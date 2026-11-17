@@ -7,11 +7,16 @@ class RepositorioCuentas {
         this.cuentas = [];
     }
     agregarCuenta(cuenta) {
-        if (mapaCuentas.has(cuenta.email)) {
+        if (this.cuentas.some((cuentaExistente) => cuentaExistente.correo === cuenta.correo)) {
             return "Error, la cuenta ya existe";
         }
-        mapaCuentas.set(cuenta.email, cuenta);
         this.cuentas.push(cuenta);
+    }
+
+    buscarCuenta(correo, contrasena) {
+        return this.cuentas.find((cuenta) =>
+            cuenta.correo === correo && cuenta.contrasena === contrasena
+        );
     }
 
 }

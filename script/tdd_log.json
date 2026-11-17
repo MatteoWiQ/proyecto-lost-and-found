@@ -3002,7 +3002,7 @@
     "testId": 109
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8204cadc601ccb10af1ac8f4523b3c3097095f86",
     "commitName": "merge refactorizacion presenter, y vistas",
     "commitTimestamp": 1794855539160,
     "testId": 109
@@ -3076,5 +3076,19 @@
     "commitName": "feat: boton para reestablecer filtros de busqueda",
     "commitTimestamp": 1794858933413,
     "testId": 114
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 0,
+    "numTotalTests": 71,
+    "timestamp": 1794943063679,
+    "success": true,
+    "testId": 115
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: buscar cuentas por correo y contrasena",
+    "commitTimestamp": 1794943076383,
+    "testId": 115
   }
 ]

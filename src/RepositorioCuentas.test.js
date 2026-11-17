@@ -20,4 +20,12 @@ describe('RepositorioCuentas', () => {
     expect(repositorio.agregarCuenta(cuentaRepetida)).toBe("Error, la cuenta ya existe");
   });
 
+  it('Deberia encontrar una cuenta por correo y contrasena', () => {
+    const repositorio = new RepositorioCuentas();
+    const cuenta = new Cuenta('juan@ucb.edu.bo', '123456789', '123456789', 'Juan');
+    repositorio.agregarCuenta(cuenta);
+
+    expect(repositorio.buscarCuenta('juan@ucb.edu.bo', '123456789')).toBe(cuenta);
+  });
+
 })

@@ -3108,7 +3108,7 @@
     "testId": 116
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b5f17ba6f05afcdca398fb3487de6cb3cdf4d68a",
     "commitName": "feat: iniciar sesion con credenciales validas",
     "commitTimestamp": 1794943142335,
     "testId": 116
@@ -3222,5 +3222,27 @@
     "commitName": "feat: eliminar la sesion al cerrar sesion",
     "commitTimestamp": 1794943364078,
     "testId": 121
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 1,
+    "numTotalTests": 78,
+    "timestamp": 1794943384770,
+    "success": false,
+    "testId": 122
+  },
+  {
+    "numPassedTests": 78,
+    "failedTests": 0,
+    "numTotalTests": 78,
+    "timestamp": 1794943420166,
+    "success": true,
+    "testId": 122
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: persistir cuentas en almacenamiento local",
+    "commitTimestamp": 1794943425758,
+    "testId": 122
   }
 ]

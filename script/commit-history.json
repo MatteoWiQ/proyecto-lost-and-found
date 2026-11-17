@@ -722,12 +722,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b5f17ba6f05afcdca398fb3487de6cb3cdf4d68a",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:21:13.000Z",
       "message": "feat: guardar sesion sin contrasena",
-      "url": "/commit/HEAD"
+      "url": "/commit/b5f17ba6f05afcdca398fb3487de6cb3cdf4d68a"
     },
     "stats": {
       "total": 32,
@@ -775,6 +775,25 @@
     },
     "coverage": 94.61,
     "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:23:44.000Z",
+      "message": "feat: persistir cuentas en almacenamiento local",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 42,
+      "deletions": 6,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.78,
+    "test_count": 78,
     "failed_tests": 0,
     "conclusion": "success"
   }

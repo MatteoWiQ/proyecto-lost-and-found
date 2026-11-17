@@ -3086,7 +3086,7 @@
     "testId": 115
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9b08c4ed5cbc5607bb735f327fb15c324d06cf98",
     "commitName": "feat: buscar cuentas por correo y contrasena",
     "commitTimestamp": 1794943076383,
     "testId": 115
@@ -3200,5 +3200,27 @@
     "commitName": "feat: recuperar la sesion almacenada",
     "commitTimestamp": 1794943318813,
     "testId": 120
+  },
+  {
+    "numPassedTests": 76,
+    "failedTests": 1,
+    "numTotalTests": 77,
+    "timestamp": 1794943341673,
+    "success": false,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1794943356990,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: eliminar la sesion al cerrar sesion",
+    "commitTimestamp": 1794943364078,
+    "testId": 121
   }
 ]

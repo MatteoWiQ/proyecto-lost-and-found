@@ -6,7 +6,8 @@ function crearAlmacenamiento() {
   const datos = new Map();
   return {
     setItem: (clave, valor) => datos.set(clave, valor),
-    getItem: (clave) => datos.get(clave) || null
+    getItem: (clave) => datos.get(clave) || null,
+    removeItem: (clave) => datos.delete(clave)
   };
 }
 
@@ -68,5 +69,15 @@ describe("Autenticacion", () => {
       nombre: "Juan",
       rol: "miembro de la comunidad"
     });
+  });
+
+  it("deberia eliminar la sesion al cerrar sesion", () => {
+    const almacenamiento = crearAlmacenamiento();
+    almacenamiento.setItem("sesion", JSON.stringify({ correo: "juan@ucb.edu.bo" }));
+    const autenticacion = new Autenticacion(new RepositorioCuentas(), almacenamiento);
+
+    autenticacion.cerrarSesion();
+
+    expect(autenticacion.obtenerSesion()).toBeNull();
   });
 });

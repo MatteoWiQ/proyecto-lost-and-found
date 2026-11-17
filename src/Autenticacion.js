@@ -32,6 +32,10 @@ class Autenticacion {
     const sesion = this.almacenamiento?.getItem("sesion");
     return sesion ? JSON.parse(sesion) : null;
   }
+
+  cerrarSesion() {
+    this.almacenamiento?.removeItem("sesion");
+  }
 }
 
 export default Autenticacion;

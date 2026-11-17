@@ -703,12 +703,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9b08c4ed5cbc5607bb735f327fb15c324d06cf98",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:20:27.000Z",
       "message": "feat: validar dominio institucional al iniciar sesion",
-      "url": "/commit/HEAD"
+      "url": "/commit/9b08c4ed5cbc5607bb735f327fb15c324d06cf98"
     },
     "stats": {
       "total": 15,
@@ -756,6 +756,25 @@
     },
     "coverage": 94.58,
     "test_count": 76,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:22:42.000Z",
+      "message": "feat: eliminar la sesion al cerrar sesion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 16,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.61,
+    "test_count": 77,
     "failed_tests": 0,
     "conclusion": "success"
   }

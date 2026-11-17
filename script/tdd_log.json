@@ -3174,7 +3174,7 @@
     "testId": 119
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6621d3f842b5740c3916dba61e361afd500681d3",
     "commitName": "feat: guardar sesion sin contrasena",
     "commitTimestamp": 1794943274843,
     "testId": 119
@@ -3288,5 +3288,27 @@
     "commitName": "feat: iniciar la aplicacion en login",
     "commitTimestamp": 1794943509296,
     "testId": 124
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 0,
+    "numTotalTests": 80,
+    "timestamp": 1794943528606,
+    "success": false,
+    "testId": 125
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 0,
+    "numTotalTests": 81,
+    "timestamp": 1794943542068,
+    "success": true,
+    "testId": 125
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar campos obligatorios del login",
+    "commitTimestamp": 1794943548003,
+    "testId": 125
   }
 ]

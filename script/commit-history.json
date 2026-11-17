@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6621d3f842b5740c3916dba61e361afd500681d3",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:23:44.000Z",
       "message": "feat: persistir cuentas en almacenamiento local",
-      "url": "/commit/HEAD"
+      "url": "/commit/6621d3f842b5740c3916dba61e361afd500681d3"
     },
     "stats": {
       "total": 48,
@@ -832,6 +832,25 @@
     },
     "coverage": 94.78,
     "test_count": 80,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:25:46.000Z",
+      "message": "feat: validar campos obligatorios del login",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.8,
+    "test_count": 81,
     "failed_tests": 0,
     "conclusion": "success"
   }

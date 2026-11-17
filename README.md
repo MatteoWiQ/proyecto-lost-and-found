@@ -138,12 +138,35 @@
 
 ---
 
+## Sprint 2
+
+| Key | HU | Descripción | Estado en Jira |
+|-----|----|-------------|----------------|
+| LAF-14 | HU-09 | Crear cuenta con correo académico | En curso |
+| LAF-15 | HU-10 | Limpiar filtros y restablecer catálogo | En curso |
+| LAF-16 | HU-11 | Iniciar sesión | En curso |
+| LAF-17 | HU-12 | Cerrar sesión | En curso |
+
+### LAF-14 · HU-09 Crear cuenta con correo académico (3.1.1)
+
+Permite registrar cuentas usando el correo institucional y una contraseña válida.
+
+### LAF-15 · HU-10 Limpiar filtros y restablecer catálogo (3.1.10)
+
+Permite eliminar los filtros y la búsqueda activa para volver a mostrar el catálogo completo.
+
+### LAF-16 · HU-11 Iniciar sesión (3.1.2)
+
+Permite iniciar sesión con correo institucional y contraseña, conservar la sesión y acceder al área correspondiente al rol.
+
+### LAF-17 · HU-12 Cerrar sesión (3.1.3)
+
+Permite cerrar la sesión desde las áreas privadas, eliminar el estado autenticado y volver al login.
+
+---
+
 ## Fuera del Sprint 1 (van al Sprint 2)
 
-- 3.1.1 Crear cuenta con correo académico
-- 3.1.2 Iniciar sesión
-- 3.1.3 Cerrar sesión
-- 3.1.10 Limpiar filtros y restablecer catálogo
 - 3.1.12 Visualizador de fotografía con zoom
 - 3.1.13 Ver ubicación y referencias de Bienestar
 - 3.1.14 Ver instrucciones y requisitos de reclamo

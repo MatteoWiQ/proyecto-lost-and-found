@@ -874,12 +874,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2fffedacc177beeadbc4bf5619a08fdff5fe5277",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:27:24.000Z",
       "message": "feat: seleccionar vista segun el rol autenticado",
-      "url": "/commit/HEAD"
+      "url": "/commit/2fffedacc177beeadbc4bf5619a08fdff5fe5277"
     },
     "stats": {
       "total": 14,
@@ -923,6 +923,25 @@
       "total": 23,
       "additions": 22,
       "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 87.55,
+    "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:30:53.000Z",
+      "message": "docs: documentar tareas del sprint 2",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 27,
+      "deletions": 4,
       "date": "2026-11-17"
     },
     "coverage": 87.55,

@@ -3284,7 +3284,7 @@
     "testId": 124
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2fffedacc177beeadbc4bf5619a08fdff5fe5277",
     "commitName": "feat: iniciar la aplicacion en login",
     "commitTimestamp": 1794943509296,
     "testId": 124
@@ -3390,5 +3390,19 @@
     "commitName": "feat: conectar cierre de sesion con las vistas",
     "commitTimestamp": 1794943812506,
     "testId": 129
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1794943839390,
+    "success": true,
+    "testId": 130
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "docs: documentar tareas del sprint 2",
+    "commitTimestamp": 1794943854481,
+    "testId": 130
   }
 ]

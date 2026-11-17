@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5f1b950e5db74a56b771d9bc89883ee677b9d541",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:19:01.000Z",
       "message": "feat: iniciar sesion con credenciales validas",
-      "url": "/commit/HEAD"
+      "url": "/commit/5f1b950e5db74a56b771d9bc89883ee677b9d541"
     },
     "stats": {
       "total": 27,
@@ -718,6 +718,25 @@
     },
     "coverage": 94.47,
     "test_count": 74,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:21:13.000Z",
+      "message": "feat: guardar sesion sin contrasena",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 31,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.54,
+    "test_count": 75,
     "failed_tests": 0,
     "conclusion": "success"
   }

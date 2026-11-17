@@ -3066,7 +3066,7 @@
     "testId": 113
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5f1b950e5db74a56b771d9bc89883ee677b9d541",
     "commitName": "feat: pantalla de crear cuenta",
     "commitTimestamp": 1794858519503,
     "testId": 113
@@ -3156,5 +3156,27 @@
     "commitName": "feat: validar dominio institucional al iniciar sesion",
     "commitTimestamp": 1794943228923,
     "testId": 118
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 1,
+    "numTotalTests": 75,
+    "timestamp": 1794943251822,
+    "success": false,
+    "testId": 119
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 0,
+    "numTotalTests": 75,
+    "timestamp": 1794943268294,
+    "success": true,
+    "testId": 119
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guardar sesion sin contrasena",
+    "commitTimestamp": 1794943274843,
+    "testId": 119
   }
 ]

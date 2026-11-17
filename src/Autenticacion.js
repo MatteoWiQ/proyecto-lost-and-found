@@ -1,6 +1,7 @@
 class Autenticacion {
-  constructor(repositorio) {
+  constructor(repositorio, almacenamiento = null) {
     this.repositorio = repositorio;
+    this.almacenamiento = almacenamiento;
   }
 
   iniciarSesion(correo, contrasena) {
@@ -16,6 +17,13 @@ class Autenticacion {
         exito: false,
         mensaje: "Correo o contraseña incorrectos"
       };
+    }
+    if (this.almacenamiento) {
+      this.almacenamiento.setItem("sesion", JSON.stringify({
+        correo: cuenta.correo,
+        nombre: cuenta.nombre,
+        rol: cuenta.rol
+      }));
     }
     return cuenta;
   }

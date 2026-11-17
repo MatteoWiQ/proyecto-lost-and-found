@@ -3196,7 +3196,7 @@
     "testId": 120
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5748c3da8b85c489f1c6f192937cf6c2f6d5c3df",
     "commitName": "feat: recuperar la sesion almacenada",
     "commitTimestamp": 1794943318813,
     "testId": 120
@@ -3310,5 +3310,35 @@
     "commitName": "feat: validar campos obligatorios del login",
     "commitTimestamp": 1794943548003,
     "testId": 125
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 1,
+    "numTotalTests": 82,
+    "timestamp": 1794943568661,
+    "success": false,
+    "testId": 126
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 1,
+    "numTotalTests": 82,
+    "timestamp": 1794943582339,
+    "success": false,
+    "testId": 126
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 0,
+    "numTotalTests": 82,
+    "timestamp": 1794943595586,
+    "success": true,
+    "testId": 126
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: traducir resultado del inicio de sesion a mensaje",
+    "commitTimestamp": 1794943600703,
+    "testId": 126
   }
 ]

@@ -798,12 +798,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5748c3da8b85c489f1c6f192937cf6c2f6d5c3df",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:24:25.000Z",
       "message": "feat: reconocer la vista de inicio de sesion",
-      "url": "/commit/HEAD"
+      "url": "/commit/5748c3da8b85c489f1c6f192937cf6c2f6d5c3df"
     },
     "stats": {
       "total": 11,
@@ -851,6 +851,25 @@
     },
     "coverage": 94.8,
     "test_count": 81,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:26:39.000Z",
+      "message": "feat: traducir resultado del inicio de sesion a mensaje",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.82,
+    "test_count": 82,
     "failed_tests": 0,
     "conclusion": "success"
   }

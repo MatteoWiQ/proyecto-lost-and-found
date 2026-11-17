@@ -7,24 +7,36 @@ export function inicializarCatalogo(galeria, vistaFicha) {
   const entradaBusqueda = document.querySelector("#busqueda");
   const entradaFiltroCategoria = document.querySelector("#filtro-categoria");
   const entradaFiltroUbicacion = document.querySelector("#filtro-ubicacion");
+  const botonRestablecerFiltros = document.querySelector("#restablecer-filtros");
   const entradaMostrarOcultos = document.querySelector("#mostrar-ocultos");
 
   const botonVistaUsuario = document.querySelector("#btn-vista-usuario");
   const botonVistaAdmin = document.querySelector("#btn-vista-admin");
   const seccionVistaUsuario = document.querySelector("#vista-usuario");
   const seccionVistaAdmin = document.querySelector("#vista-admin");
+  const seccionCrearCuenta = document.querySelector("#vista-crear-cuenta");
+  const navegacionVistas = document.querySelector(".switch-vista");
 
   function mostrarVista(vista) {
     if (vista === "usuario") {
       seccionVistaUsuario.hidden = false;
       seccionVistaAdmin.hidden = true;
+      seccionCrearCuenta.hidden = true;
+      navegacionVistas.hidden = false;
       botonVistaUsuario.classList.add("activo");
       botonVistaAdmin.classList.remove("activo");
     } else if (vista === "administrador") {
       seccionVistaUsuario.hidden = true;
       seccionVistaAdmin.hidden = false;
+      seccionCrearCuenta.hidden = true;
+      navegacionVistas.hidden = false;
       botonVistaAdmin.classList.add("activo");
       botonVistaUsuario.classList.remove("activo");
+    } else if (vista === "crear-cuenta") {
+      seccionVistaUsuario.hidden = true;
+      seccionVistaAdmin.hidden = true;
+      seccionCrearCuenta.hidden = false;
+      navegacionVistas.hidden = true;
     }
     cambiarVista(vista);
   }
@@ -81,6 +93,12 @@ export function inicializarCatalogo(galeria, vistaFicha) {
   entradaBusqueda.addEventListener("input", actualizarResultadosCatalogo);
   entradaFiltroCategoria.addEventListener("change", actualizarResultadosCatalogo);
   entradaFiltroUbicacion.addEventListener("change", actualizarResultadosCatalogo);
+  botonRestablecerFiltros.addEventListener("click", () => {
+    entradaBusqueda.value = "";
+    entradaFiltroCategoria.value = "";
+    entradaFiltroUbicacion.value = "";
+    actualizarResultadosCatalogo();
+  });
 
   mostrarVista(obtenerVista());
   actualizarGaleriaUI();

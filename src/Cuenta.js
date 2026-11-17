@@ -1,28 +1,39 @@
 
 
 class Cuenta {
-  constructor(correo,contrasena, confirmarContrasena,rol="miembro de la comunidad") {
-    this.correo = correo;
+  constructor(correo, contrasena, confirmarContrasena, nombre = "", rol = "miembro de la comunidad") {
+    this.correo = correo.trim();
     this.contrasena = contrasena;
     this.confirmarContrasena = confirmarContrasena;
+    this.nombre = nombre.trim();
     this.rol = rol;
   }
-  validarCorreoVacio(){
-    if (this.correo === "") {
+  validarNombre() {
+    if (!this.nombre) {
+      return "El nombre es obligatorio";
+    }
+    return "";
+  }
+  obtenerNombre() {
+    return this.nombre;
+  }
+  validarCorreoVacio() {
+    if (!this.correo) {
       return "El correo es obligatorio";
     }
     return "";
   }
   validarCorreoFormato() {
-    if (!this.correo.endsWith("@ucb.edu.bo")) {
+    if (!this.correo.toLowerCase().endsWith("@ucb.edu.bo")) {
       return "No es un correo de la UCB";
     }
     return "";
   }
   validarCorreo() {
-    const errores=[
+    const errores = [
       this.validarCorreoVacio(),
-      this.validarCorreoFormato()]
+      this.validarCorreoFormato()
+    ];
     return errores.find((e) => !!e) || "";
   }
   obtenerCorreo() {
@@ -59,10 +70,11 @@ class Cuenta {
       this.validarContrasenaLongitud(),
       this.validarContrasenaConfirmacion()
     ];
-    return errores.find((e) => !!e) || ""; 
+    return errores.find((e) => !!e) || "";
   }
-  ValidarCuenta(){
+  ValidarCuenta() {
     const errores = [
+      this.validarNombre(),
       this.validarCorreo(),
       this.validarContrasena()
     ];
@@ -72,6 +84,5 @@ class Cuenta {
     }
     return "Cuenta creada con exito";
   }
-  
 }
 export default Cuenta;

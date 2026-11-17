@@ -1,12 +1,12 @@
 import { vistaInicial, obtenerVista, cambiarVista, debeMostrarOcultos } from "./Vista.js";
 
 describe("Vista - estado inicial", () => {
-  it("Deberia iniciar en vista usuario por defecto", () => {
-    expect(vistaInicial()).toEqual("usuario");
+  it("Deberia iniciar en la vista de crear cuenta", () => {
+    expect(vistaInicial()).toEqual("crear-cuenta");
   });
 
-  it("obtenerVista deberia devolver usuario al inicio", () => {
-    expect(obtenerVista()).toEqual("usuario");
+  it("obtenerVista deberia devolver crear cuenta al inicio", () => {
+    expect(obtenerVista()).toEqual("crear-cuenta");
   });
 });
 
@@ -17,6 +17,9 @@ describe("Vista - cambiarVista round-trip", () => {
 
     cambiarVista("usuario");
     expect(obtenerVista()).toEqual("usuario");
+
+    cambiarVista("crear-cuenta");
+    expect(obtenerVista()).toEqual("crear-cuenta");
   });
 });
 

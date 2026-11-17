@@ -11,13 +11,36 @@
 <body>
   <header class="barra-superior">
     <h1>Lost and Found</h1>
-    <nav class="switch-vista" aria-label="Cambiar vista">
-      <button type="button" id="btn-vista-usuario" class="activo" data-vista="usuario">Usuarioss</button>
+    <nav class="switch-vista" aria-label="Cambiar vista" hidden>
+      <button type="button" id="btn-vista-usuario" class="activo" data-vista="usuario">Usuario</button>
       <button type="button" id="btn-vista-admin" data-vista="administrador">Administrador</button>
     </nav>
   </header>
 
-  <main id="vista-usuario" class="vista activa">
+  <main id="vista-crear-cuenta" class="vista">
+    <section class="crear-cuenta-section">
+      <h2>Crear cuenta</h2>
+      <p>Regístrate para acceder al catálogo de objetos perdidos.</p>
+      <form id="crear-cuenta-form">
+        <label for="cuenta-nombre">Nombre completo</label>
+        <input type="text" id="cuenta-nombre" name="nombre" autocomplete="name" required>
+
+        <label for="cuenta-correo">Correo electrónico</label>
+        <input type="email" id="cuenta-correo" name="correo" autocomplete="email" required>
+
+        <label for="cuenta-contrasena">Contraseña</label>
+        <input type="password" id="cuenta-contrasena" name="contrasena" autocomplete="new-password" minlength="8" required>
+
+        <label for="cuenta-confirmar-contrasena">Confirmar contraseña</label>
+        <input type="password" id="cuenta-confirmar-contrasena" name="confirmar-contrasena" autocomplete="new-password" minlength="8" required>
+
+        <p id="crear-cuenta-mensaje" class="crear-cuenta-mensaje" aria-live="polite"></p>
+        <button type="submit" id="crear-cuenta-button">Crear cuenta</button>
+      </form>
+    </section>
+  </main>
+
+  <main id="vista-usuario" class="vista" hidden>
     <section class="formulario-section">
       <h2>Registrar objeto perdido</h2>
       <form id="lost-object-form">
@@ -93,6 +116,7 @@
           </select>
         </div>
       </div>
+      <button type="button" id="restablecer-filtros" class="boton-restablecer">Restablecer filtros</button>
 
       <div id="galeria-container" class="galeria-grid"></div>
     </section>

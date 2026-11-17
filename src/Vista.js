@@ -1,8 +1,8 @@
-const VISTAS_VALIDAS = ["usuario", "administrador"];
-let vistaActual = "usuario";
+const VISTAS_VALIDAS = ["crear-cuenta", "usuario", "administrador"];
+let vistaActual = vistaInicial();
 
 export function vistaInicial() {
-  return "usuario";
+  return "crear-cuenta";
 }
 
 export function obtenerVista() {

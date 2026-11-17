@@ -2,6 +2,7 @@ import Galeria from "../Galeria.js";
 import { inicializarFormulario } from "./FormularioPresenter.js";
 import { inicializarCatalogo } from "./CatalogoPresenter.js";
 import { inicializarAdmin } from "./AdminPresenter.js";
+import { inicializarCrearCuenta } from "./CuentaPresenter.js";
 import { crearVistaFicha } from "../vistas/FichaObjetoVista.js";
 import { obtenerVista } from "../Vista.js";
 
@@ -22,6 +23,8 @@ inicializarFormulario(galeria, () => {
   catalogoControlador.actualizarResultadosCatalogo();
   adminControlador.actualizarGaleriaAdmin();
 });
+
+inicializarCrearCuenta(() => catalogoControlador.mostrarVista("usuario"));
 
 const entradaMostrarOcultos = document.querySelector("#mostrar-ocultos");
 if (entradaMostrarOcultos) {

@@ -13,4 +13,13 @@ describe("Autenticacion", () => {
 
     expect(autenticacion.iniciarSesion("juan@ucb.edu.bo", "123456789")).toEqual(cuenta);
   });
+
+  it("deberia ocultar cual credencial es incorrecta", () => {
+    const autenticacion = new Autenticacion(new RepositorioCuentas());
+
+    expect(autenticacion.iniciarSesion("juan@ucb.edu.bo", "incorrecta")).toEqual({
+      exito: false,
+      mensaje: "Correo o contraseña incorrectos"
+    });
+  });
 });

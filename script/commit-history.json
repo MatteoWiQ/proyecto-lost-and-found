@@ -627,12 +627,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a9a4e2542e3bd0bdcb3e0710cd7b8be315a91e4d",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T19:55:30.000Z",
       "message": "feat: boton para reestablecer filtros de busqueda",
-      "url": "/commit/HEAD"
+      "url": "/commit/a9a4e2542e3bd0bdcb3e0710cd7b8be315a91e4d"
     },
     "stats": {
       "total": 26,
@@ -680,6 +680,25 @@
     },
     "coverage": 94.35,
     "test_count": 72,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:19:46.000Z",
+      "message": "feat: mostrar mensaje generico al fallar el login",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 17,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.42,
+    "test_count": 73,
     "failed_tests": 0,
     "conclusion": "success"
   }

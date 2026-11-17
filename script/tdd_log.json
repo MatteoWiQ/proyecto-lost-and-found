@@ -3022,7 +3022,7 @@
     "testId": 110
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a9a4e2542e3bd0bdcb3e0710cd7b8be315a91e4d",
     "commitName": "Merge branch 'feat/CuentaCorreo'",
     "commitTimestamp": 1794856261236,
     "testId": 111
@@ -3112,5 +3112,27 @@
     "commitName": "feat: iniciar sesion con credenciales validas",
     "commitTimestamp": 1794943142335,
     "testId": 116
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 1,
+    "numTotalTests": 73,
+    "timestamp": 1794943165385,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 0,
+    "numTotalTests": 73,
+    "timestamp": 1794943182810,
+    "success": true,
+    "testId": 117
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar mensaje generico al fallar el login",
+    "commitTimestamp": 1794943187840,
+    "testId": 117
   }
 ]

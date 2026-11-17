@@ -4,7 +4,14 @@ class Autenticacion {
   }
 
   iniciarSesion(correo, contrasena) {
-    return this.repositorio.buscarCuenta(correo, contrasena);
+    const cuenta = this.repositorio.buscarCuenta(correo, contrasena);
+    if (!cuenta) {
+      return {
+        exito: false,
+        mensaje: "Correo o contraseña incorrectos"
+      };
+    }
+    return cuenta;
   }
 }
 

@@ -285,6 +285,44 @@
     "conclusion": "success"
   },
   {
+    "sha": "accf1eee1bd23263fd06346172dc220afafab7ad",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:52:11.000Z",
+      "message": "refactor: extraer filtrarPorEstado para eliminar duplicacion en aprobacion",
+      "url": "/commit/accf1eee1bd23263fd06346172dc220afafab7ad"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 6,
+      "deletions": 2,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3340f5abeffe9bfaa328093dc8607f5c6ba56eb0",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:53:25.000Z",
+      "message": "refactor: centralizar creacion de objetos de prueba en pruebas de aprobacion",
+      "url": "/commit/3340f5abeffe9bfaa328093dc8607f5c6ba56eb0"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 16,
+      "deletions": 23,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
     "sha": "22f8947cc01e30265ff670c53f7fab002d3637bc",
     "author": "Soria",
     "commit": {
@@ -380,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "260b4becb8d51a79077afc8dafbf85192678c877",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:14:55.000Z",
       "message": "refactor: usar consultarFicha de Usuario en FichaObjetoVista",
-      "url": "/commit/HEAD"
+      "url": "/commit/260b4becb8d51a79077afc8dafbf85192678c877"
     },
     "stats": {
       "total": 5,
@@ -399,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4dfa6f8a212db74c9af2e019822bda06a98e68b9",
     "author": "Soria",
     "commit": {
       "date": "2026-11-15T05:16:20.000Z",
       "message": "fix: mover la logica de la ficha tecnica a Usuario y eliminar FichaTecnica.js",
-      "url": "/commit/HEAD"
+      "url": "/commit/4dfa6f8a212db74c9af2e019822bda06a98e68b9"
     },
     "stats": {
       "total": 73,
@@ -414,6 +452,82 @@
     },
     "coverage": 93.3,
     "test_count": 54,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5e01066fd359b13788e5fc649e881fbd71821d77",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:19:32.000Z",
+      "message": "Merge branch 'feature/LAF-34-ficha-tecnica' into feature/LAF-32-aprobacion\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
+      "url": "/commit/5e01066fd359b13788e5fc649e881fbd71821d77"
+    },
+    "stats": {
+      "total": 332,
+      "additions": 155,
+      "deletions": 177,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.3,
+    "test_count": 54,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:21:14.000Z",
+      "message": "refactor: crear clase Administrador y agregar visibilidad del catalogo a Usuario",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 89,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 61,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:22:27.000Z",
+      "message": "fix: usar las clases Administrador y Usuario en los presenters",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 6,
+      "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 61,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:24:05.000Z",
+      "message": "fix: mover la logica de aprobacion a Administrador y Usuario y eliminar Aprobacion.js",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 107,
+      "additions": 16,
+      "deletions": 91,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.3,
+    "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"
   }

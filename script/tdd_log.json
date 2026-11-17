@@ -2720,10 +2720,60 @@
     "testId": 99
   },
   {
+    "commitId": "accf1eee1bd23263fd06346172dc220afafab7ad",
+    "commitName": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
+    "commitTimestamp": 1794718117556,
+    "testId": 99
+  },
+  {
     "commitId": "3363c7b776d867e395c19d7aad4482beab4c2eb0",
     "commitName": "refactor: eliminar duplicacion de datos de prueba en pruebas de ficha tecnica",
     "commitTimestamp": 1794718117556,
     "testId": 99
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794718134214,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794718293674,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "3340f5abeffe9bfaa328093dc8607f5c6ba56eb0",
+    "commitName": "refactor: extraer filtrarPorEstado para eliminar duplicacion en aprobacion",
+    "commitTimestamp": 1794718332783,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794718343712,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1794718358501,
+    "success": true,
+    "testId": 101
+  },
+  {
+    "commitId": "260b4becb8d51a79077afc8dafbf85192678c877",
+    "commitName": "refactor: centralizar creacion de objetos de prueba en pruebas de aprobacion",
+    "commitTimestamp": 1794718406874,
+    "testId": 101
   },
   {
     "numPassedTests": 55,
@@ -2792,7 +2842,7 @@
     "testId": 101
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4dfa6f8a212db74c9af2e019822bda06a98e68b9",
     "commitName": "Merge branch 'feature/LAF-33-catalogo' into feature/LAF-34-ficha-tecnica\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
     "commitTimestamp": 1794719461464,
     "testId": 101
@@ -2814,7 +2864,7 @@
     "testId": 102
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5e01066fd359b13788e5fc649e881fbd71821d77",
     "commitName": "refactor: agregar consultarFicha a la clase Usuario delegando en FichaTecnica",
     "commitTimestamp": 1794719552821,
     "testId": 102
@@ -2862,5 +2912,85 @@
     "commitName": "fix: mover la logica de la ficha tecnica a Usuario y eliminar FichaTecnica.js",
     "commitTimestamp": 1794719781780,
     "testId": 104
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1794719801986,
+    "success": true,
+    "testId": 105
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Merge branch 'feature/LAF-34-ficha-tecnica' into feature/LAF-32-aprobacion\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
+    "commitTimestamp": 1794719973364,
+    "testId": 105
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1794719983139,
+    "success": true,
+    "testId": 106
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720006020,
+    "success": true,
+    "testId": 106
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: crear clase Administrador y agregar visibilidad del catalogo a Usuario",
+    "commitTimestamp": 1794720075475,
+    "testId": 106
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720085930,
+    "success": true,
+    "testId": 107
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720091201,
+    "success": true,
+    "testId": 107
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: usar las clases Administrador y Usuario en los presenters",
+    "commitTimestamp": 1794720148800,
+    "testId": 107
+  },
+  {
+    "numPassedTests": 61,
+    "failedTests": 0,
+    "numTotalTests": 61,
+    "timestamp": 1794720175031,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794720180625,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: mover la logica de aprobacion a Administrador y Usuario y eliminar Aprobacion.js",
+    "commitTimestamp": 1794720246249,
+    "testId": 108
   }
 ]

@@ -59,6 +59,21 @@ class Usuario {
       { etiqueta: "Estado", valor: ficha.estado }
     ];
   }
+
+  filtrarPorEstado(objetos, estado) {
+    return objetos.filter((objeto) => objeto.obtenerEstado() === estado);
+  }
+
+  obtenerPublicados(objetos) {
+    return this.filtrarPorEstado(objetos, "Publicado");
+  }
+
+  obtenerObjetosParaCatalogo(objetos, mostrarOcultos) {
+    if (mostrarOcultos) {
+      return objetos;
+    }
+    return this.obtenerPublicados(objetos);
+  }
 }
 
 export default Usuario;

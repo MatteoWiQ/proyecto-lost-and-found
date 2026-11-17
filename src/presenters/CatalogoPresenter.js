@@ -1,5 +1,4 @@
 import Usuario from "../Usuario.js";
-import { obtenerObjetosParaCatalogo } from "../Aprobacion.js";
 import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
 import { obtenerVista, cambiarVista, debeMostrarOcultos } from "../Vista.js";
 
@@ -44,7 +43,7 @@ export function inicializarCatalogo(galeria, vistaFicha) {
 
   function actualizarResultadosCatalogo() {
     const vista = obtenerVista();
-    const objetos = obtenerObjetosParaCatalogo(
+    const objetos = usuario.obtenerObjetosParaCatalogo(
       galeria.obtenerGaleriaObjects(),
       debeMostrarOcultos(vista)
     );

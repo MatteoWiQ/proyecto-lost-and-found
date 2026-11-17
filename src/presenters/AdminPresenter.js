@@ -1,8 +1,9 @@
-import { aprobarPublicacion, obtenerMensajePendientes, obtenerPendientes } from "../Aprobacion.js";
+import Administrador from "../Administrador.js";
 import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
 import { renderizarPublicacionesPendientes } from "../vistas/PublicacionesPendientesVista.js";
 
 export function inicializarAdmin(galeria, catalogoControlador) {
+  const administrador = new Administrador();
   const listaPendientes = document.querySelector("#pendientes-lista");
 
   function actualizarGaleriaAdmin(objetos = galeria.obtenerGaleriaObjects()) {
@@ -15,11 +16,11 @@ export function inicializarAdmin(galeria, catalogoControlador) {
   }
 
   function actualizarPendientesUI() {
-    const pendientes = obtenerPendientes(galeria.obtenerGaleriaObjects());
-    const mensaje = obtenerMensajePendientes(pendientes);
+    const pendientes = administrador.obtenerPendientes(galeria.obtenerGaleriaObjects());
+    const mensaje = administrador.obtenerMensajePendientes(pendientes);
 
     renderizarPublicacionesPendientes(listaPendientes, pendientes, mensaje, (objeto) => {
-      aprobarPublicacion(objeto);
+      administrador.aprobarPublicacion(objeto);
       actualizarPendientesUI();
       catalogoControlador.actualizarResultadosCatalogo();
       actualizarGaleriaAdmin();

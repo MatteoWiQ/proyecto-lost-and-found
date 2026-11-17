@@ -3240,7 +3240,7 @@
     "testId": 122
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d1a6de91c332bda25e799dff393283425c3b36c6",
     "commitName": "feat: persistir cuentas en almacenamiento local",
     "commitTimestamp": 1794943425758,
     "testId": 122
@@ -3362,5 +3362,11 @@
     "commitName": "feat: seleccionar vista segun el rol autenticado",
     "commitTimestamp": 1794943645376,
     "testId": 127
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar formulario de login con la aplicacion",
+    "commitTimestamp": 1794943753724,
+    "testId": 128
   }
 ]

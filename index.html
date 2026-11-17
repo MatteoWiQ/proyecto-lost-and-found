@@ -17,6 +17,21 @@
     </nav>
   </header>
 
+  <main id="vista-iniciar-sesion" class="vista">
+    <section class="crear-cuenta-section">
+      <h2>Iniciar sesión</h2>
+      <form id="iniciar-sesion-form">
+        <label for="login-correo">Correo institucional</label>
+        <input type="email" id="login-correo" autocomplete="email" required>
+        <label for="login-contrasena">Contraseña</label>
+        <input type="password" id="login-contrasena" autocomplete="current-password" required>
+        <p id="login-mensaje" class="crear-cuenta-mensaje" aria-live="polite"></p>
+        <button type="submit" id="login-button" disabled>Iniciar sesión</button>
+      </form>
+      <button type="button" id="ir-a-crear-cuenta">Crear cuenta</button>
+    </section>
+  </main>
+
   <main id="vista-crear-cuenta" class="vista">
     <section class="crear-cuenta-section">
       <h2>Crear cuenta</h2>

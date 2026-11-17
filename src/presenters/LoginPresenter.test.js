@@ -1,7 +1,8 @@
 import {
   puedeEnviarFormulario,
   obtenerMensajeLogin,
-  obtenerVistaPorRol
+  obtenerVistaPorRol,
+  inicializarLogin
 } from "./LoginPresenter";
 
 describe("Formulario de inicio de sesion", () => {
@@ -18,5 +19,9 @@ describe("Formulario de inicio de sesion", () => {
 
   it("deberia enviar al administrador a su vista", () => {
     expect(obtenerVistaPorRol("administrador")).toBe("administrador");
+  });
+
+  it("deberia exponer un inicializador para el formulario", () => {
+    expect(typeof inicializarLogin).toBe("function");
   });
 });

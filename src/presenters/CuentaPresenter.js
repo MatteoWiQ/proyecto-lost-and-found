@@ -1,6 +1,6 @@
 import Cuenta from "../Cuenta.js";
 
-export function inicializarCrearCuenta(alMostrarUsuario) {
+export function inicializarCrearCuenta(repositorio, alMostrarLogin) {
   const formulario = document.querySelector("#crear-cuenta-form");
   const entradaNombre = document.querySelector("#cuenta-nombre");
   const entradaCorreo = document.querySelector("#cuenta-correo");
@@ -25,8 +25,9 @@ export function inicializarCrearCuenta(alMostrarUsuario) {
       return;
     }
 
+    repositorio.agregarCuenta(cuenta);
     mensaje.textContent = "";
     mensaje.classList.remove("error");
-    alMostrarUsuario();
+    alMostrarLogin();
   });
 }

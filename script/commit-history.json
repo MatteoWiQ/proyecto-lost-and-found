@@ -836,12 +836,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d1a6de91c332bda25e799dff393283425c3b36c6",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:25:46.000Z",
       "message": "feat: validar campos obligatorios del login",
-      "url": "/commit/HEAD"
+      "url": "/commit/d1a6de91c332bda25e799dff393283425c3b36c6"
     },
     "stats": {
       "total": 10,
@@ -889,6 +889,25 @@
     },
     "coverage": 94.84,
     "test_count": 83,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:29:12.000Z",
+      "message": "feat: conectar formulario de login con la aplicacion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 101,
+      "additions": 91,
+      "deletions": 10,
+      "date": "2026-11-17"
+    },
+    "coverage": 88.52,
+    "test_count": 84,
     "failed_tests": 0,
     "conclusion": "success"
   }

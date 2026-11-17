@@ -2,7 +2,7 @@ import Usuario from "../Usuario.js";
 import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
 import { obtenerVista, cambiarVista, debeMostrarOcultos } from "../Vista.js";
 
-export function inicializarCatalogo(galeria, vistaFicha) {
+export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
   const usuario = new Usuario();
   const entradaBusqueda = document.querySelector("#busqueda");
   const entradaFiltroCategoria = document.querySelector("#filtro-categoria");
@@ -15,13 +15,22 @@ export function inicializarCatalogo(galeria, vistaFicha) {
   const seccionVistaUsuario = document.querySelector("#vista-usuario");
   const seccionVistaAdmin = document.querySelector("#vista-admin");
   const seccionCrearCuenta = document.querySelector("#vista-crear-cuenta");
+  const seccionIniciarSesion = document.querySelector("#vista-iniciar-sesion");
   const navegacionVistas = document.querySelector(".switch-vista");
 
   function mostrarVista(vista) {
+    const sesion = obtenerSesion();
+    if ((vista === "usuario" || vista === "administrador") && !sesion) {
+      vista = "iniciar-sesion";
+    }
+    if (vista === "administrador" && sesion?.rol !== "administrador") {
+      vista = "usuario";
+    }
     if (vista === "usuario") {
       seccionVistaUsuario.hidden = false;
       seccionVistaAdmin.hidden = true;
       seccionCrearCuenta.hidden = true;
+      seccionIniciarSesion.hidden = true;
       navegacionVistas.hidden = false;
       botonVistaUsuario.classList.add("activo");
       botonVistaAdmin.classList.remove("activo");
@@ -29,6 +38,7 @@ export function inicializarCatalogo(galeria, vistaFicha) {
       seccionVistaUsuario.hidden = true;
       seccionVistaAdmin.hidden = false;
       seccionCrearCuenta.hidden = true;
+      seccionIniciarSesion.hidden = true;
       navegacionVistas.hidden = false;
       botonVistaAdmin.classList.add("activo");
       botonVistaUsuario.classList.remove("activo");
@@ -36,6 +46,13 @@ export function inicializarCatalogo(galeria, vistaFicha) {
       seccionVistaUsuario.hidden = true;
       seccionVistaAdmin.hidden = true;
       seccionCrearCuenta.hidden = false;
+      seccionIniciarSesion.hidden = true;
+      navegacionVistas.hidden = true;
+    } else if (vista === "iniciar-sesion") {
+      seccionVistaUsuario.hidden = true;
+      seccionVistaAdmin.hidden = true;
+      seccionCrearCuenta.hidden = true;
+      seccionIniciarSesion.hidden = false;
       navegacionVistas.hidden = true;
     }
     cambiarVista(vista);

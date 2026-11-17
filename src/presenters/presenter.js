@@ -4,6 +4,7 @@ import { inicializarCatalogo } from "./CatalogoPresenter.js";
 import { inicializarAdmin } from "./AdminPresenter.js";
 import { inicializarCrearCuenta } from "./CuentaPresenter.js";
 import { inicializarLogin, obtenerVistaPorRol } from "./LoginPresenter.js";
+import { inicializarCerrarSesion } from "./LogoutPresenter.js";
 import Autenticacion from "../Autenticacion.js";
 import RepositorioCuentas from "../RepositorioCuentas.js";
 import { crearVistaFicha } from "../vistas/FichaObjetoVista.js";
@@ -40,6 +41,7 @@ inicializarLogin(
   (sesion) => catalogoControlador.mostrarVista(obtenerVistaPorRol(sesion.rol)),
   () => catalogoControlador.mostrarVista("crear-cuenta")
 );
+inicializarCerrarSesion(autenticacion, () => catalogoControlador.mostrarVista("iniciar-sesion"));
 
 const entradaMostrarOcultos = document.querySelector("#mostrar-ocultos");
 if (entradaMostrarOcultos) {

@@ -3262,7 +3262,7 @@
     "testId": 123
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6fee1eb5866dc248f69d7f305f61993d0ba4d528",
     "commitName": "feat: reconocer la vista de inicio de sesion",
     "commitTimestamp": 1794943466276,
     "testId": 123
@@ -3368,5 +3368,27 @@
     "commitName": "feat: conectar formulario de login con la aplicacion",
     "commitTimestamp": 1794943753724,
     "testId": 128
+  },
+  {
+    "numPassedTests": 84,
+    "failedTests": 0,
+    "numTotalTests": 84,
+    "timestamp": 1794943772655,
+    "success": false,
+    "testId": 129
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1794943797267,
+    "success": true,
+    "testId": 129
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar cierre de sesion con las vistas",
+    "commitTimestamp": 1794943812506,
+    "testId": 129
   }
 ]

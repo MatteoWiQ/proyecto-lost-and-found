@@ -17,6 +17,7 @@ export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
   const seccionCrearCuenta = document.querySelector("#vista-crear-cuenta");
   const seccionIniciarSesion = document.querySelector("#vista-iniciar-sesion");
   const navegacionVistas = document.querySelector(".switch-vista");
+  const botonCerrarSesion = document.querySelector("#cerrar-sesion");
 
   function mostrarVista(vista) {
     const sesion = obtenerSesion();
@@ -27,6 +28,7 @@ export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
       vista = "usuario";
     }
     if (vista === "usuario") {
+      botonCerrarSesion.hidden = false;
       seccionVistaUsuario.hidden = false;
       seccionVistaAdmin.hidden = true;
       seccionCrearCuenta.hidden = true;
@@ -35,6 +37,7 @@ export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
       botonVistaUsuario.classList.add("activo");
       botonVistaAdmin.classList.remove("activo");
     } else if (vista === "administrador") {
+      botonCerrarSesion.hidden = false;
       seccionVistaUsuario.hidden = true;
       seccionVistaAdmin.hidden = false;
       seccionCrearCuenta.hidden = true;
@@ -43,12 +46,14 @@ export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
       botonVistaAdmin.classList.add("activo");
       botonVistaUsuario.classList.remove("activo");
     } else if (vista === "crear-cuenta") {
+      botonCerrarSesion.hidden = true;
       seccionVistaUsuario.hidden = true;
       seccionVistaAdmin.hidden = true;
       seccionCrearCuenta.hidden = false;
       seccionIniciarSesion.hidden = true;
       navegacionVistas.hidden = true;
     } else if (vista === "iniciar-sesion") {
+      botonCerrarSesion.hidden = true;
       seccionVistaUsuario.hidden = true;
       seccionVistaAdmin.hidden = true;
       seccionCrearCuenta.hidden = true;

@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6fee1eb5866dc248f69d7f305f61993d0ba4d528",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:26:39.000Z",
       "message": "feat: traducir resultado del inicio de sesion a mensaje",
-      "url": "/commit/HEAD"
+      "url": "/commit/6fee1eb5866dc248f69d7f305f61993d0ba4d528"
     },
     "stats": {
       "total": 13,
@@ -908,6 +908,25 @@
     },
     "coverage": 88.52,
     "test_count": 84,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:30:11.000Z",
+      "message": "feat: conectar cierre de sesion con las vistas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 22,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 87.55,
+    "test_count": 85,
     "failed_tests": 0,
     "conclusion": "success"
   }

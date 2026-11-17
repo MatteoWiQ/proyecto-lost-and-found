@@ -3130,7 +3130,7 @@
     "testId": 117
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1bb1c872511b759a7646c25918b7111be9b59c04",
     "commitName": "feat: mostrar mensaje generico al fallar el login",
     "commitTimestamp": 1794943187840,
     "testId": 117
@@ -3244,5 +3244,27 @@
     "commitName": "feat: persistir cuentas en almacenamiento local",
     "commitTimestamp": 1794943425758,
     "testId": 122
+  },
+  {
+    "numPassedTests": 78,
+    "failedTests": 1,
+    "numTotalTests": 79,
+    "timestamp": 1794943448411,
+    "success": false,
+    "testId": 123
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 0,
+    "numTotalTests": 79,
+    "timestamp": 1794943461507,
+    "success": true,
+    "testId": 123
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: reconocer la vista de inicio de sesion",
+    "commitTimestamp": 1794943466276,
+    "testId": 123
   }
 ]

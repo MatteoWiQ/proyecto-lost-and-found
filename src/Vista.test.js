@@ -21,6 +21,11 @@ describe("Vista - cambiarVista round-trip", () => {
     cambiarVista("crear-cuenta");
     expect(obtenerVista()).toEqual("crear-cuenta");
   });
+
+  it("Deberia cambiar a la vista de iniciar sesion", () => {
+    cambiarVista("iniciar-sesion");
+    expect(obtenerVista()).toEqual("iniciar-sesion");
+  });
 });
 
 describe("Vista - cambiarVista ignora invalida", () => {

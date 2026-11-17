@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1bb1c872511b759a7646c25918b7111be9b59c04",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:21:57.000Z",
       "message": "feat: recuperar la sesion almacenada",
-      "url": "/commit/HEAD"
+      "url": "/commit/1bb1c872511b759a7646c25918b7111be9b59c04"
     },
     "stats": {
       "total": 21,
@@ -794,6 +794,25 @@
     },
     "coverage": 94.78,
     "test_count": 78,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:24:25.000Z",
+      "message": "feat: reconocer la vista de inicio de sesion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 8,
+      "deletions": 3,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.78,
+    "test_count": 79,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -1,4 +1,4 @@
-const VISTAS_VALIDAS = ["crear-cuenta", "usuario", "administrador"];
+const VISTAS_VALIDAS = ["iniciar-sesion", "crear-cuenta", "usuario", "administrador"];
 let vistaActual = vistaInicial();
 
 export function vistaInicial() {

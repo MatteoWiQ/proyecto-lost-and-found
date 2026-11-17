@@ -53,4 +53,20 @@ describe("Autenticacion", () => {
     expect(almacenamiento.getItem("sesion")).toContain("juan@ucb.edu.bo");
     expect(almacenamiento.getItem("sesion")).not.toContain("123456789");
   });
+
+  it("deberia recuperar la sesion guardada", () => {
+    const almacenamiento = crearAlmacenamiento();
+    almacenamiento.setItem("sesion", JSON.stringify({
+      correo: "juan@ucb.edu.bo",
+      nombre: "Juan",
+      rol: "miembro de la comunidad"
+    }));
+    const autenticacion = new Autenticacion(new RepositorioCuentas(), almacenamiento);
+
+    expect(autenticacion.obtenerSesion()).toEqual({
+      correo: "juan@ucb.edu.bo",
+      nombre: "Juan",
+      rol: "miembro de la comunidad"
+    });
+  });
 });

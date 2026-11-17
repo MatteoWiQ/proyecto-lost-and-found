@@ -3072,7 +3072,7 @@
     "testId": 113
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5959ae827ae9cb00bc62e4d266df0f9bd89c1ead",
     "commitName": "feat: boton para reestablecer filtros de busqueda",
     "commitTimestamp": 1794858933413,
     "testId": 114
@@ -3178,5 +3178,27 @@
     "commitName": "feat: guardar sesion sin contrasena",
     "commitTimestamp": 1794943274843,
     "testId": 119
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 1,
+    "numTotalTests": 76,
+    "timestamp": 1794943296310,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 76,
+    "failedTests": 0,
+    "numTotalTests": 76,
+    "timestamp": 1794943310990,
+    "success": true,
+    "testId": 120
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: recuperar la sesion almacenada",
+    "commitTimestamp": 1794943318813,
+    "testId": 120
   }
 ]

@@ -27,6 +27,11 @@ class Autenticacion {
     }
     return cuenta;
   }
+
+  obtenerSesion() {
+    const sesion = this.almacenamiento?.getItem("sesion");
+    return sesion ? JSON.parse(sesion) : null;
+  }
 }
 
 export default Autenticacion;

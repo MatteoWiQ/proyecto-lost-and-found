@@ -608,12 +608,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6455bac1c4093fb2478ec95a7033af9addf2126f",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T19:48:37.000Z",
       "message": "feat: pantalla de crear cuenta",
-      "url": "/commit/HEAD"
+      "url": "/commit/6455bac1c4093fb2478ec95a7033af9addf2126f"
     },
     "stats": {
       "total": 209,
@@ -661,6 +661,25 @@
     },
     "coverage": 94.3,
     "test_count": 71,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:19:01.000Z",
+      "message": "feat: iniciar sesion con credenciales validas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.35,
+    "test_count": 72,
     "failed_tests": 0,
     "conclusion": "success"
   }

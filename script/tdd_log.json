@@ -3016,7 +3016,7 @@
     "testId": 110
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6455bac1c4093fb2478ec95a7033af9addf2126f",
     "commitName": "merge cuentas por correo",
     "commitTimestamp": 1794855757829,
     "testId": 110
@@ -3090,5 +3090,27 @@
     "commitName": "feat: buscar cuentas por correo y contrasena",
     "commitTimestamp": 1794943076383,
     "testId": 115
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 0,
+    "numTotalTests": 71,
+    "timestamp": 1794943116830,
+    "success": false,
+    "testId": 116
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 0,
+    "numTotalTests": 72,
+    "timestamp": 1794943130322,
+    "success": true,
+    "testId": 116
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: iniciar sesion con credenciales validas",
+    "commitTimestamp": 1794943142335,
+    "testId": 116
   }
 ]

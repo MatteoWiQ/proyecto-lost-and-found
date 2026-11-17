@@ -2404,36 +2404,6 @@
     "commitName": "refactor: extraer logica del formulario a formularioPresenter.js",
     "commitTimestamp": 1794631992439,
     "testId": 96
-    "numPassedTests": 55,
-    "failedTests": 0,
-    "numTotalTests": 55,
-    "timestamp": 1794694071168,
-    "success": true,
-    "testId": 92
-  },
-  {
-    "numPassedTests": 55,
-    "failedTests": 0,
-    "numTotalTests": 55,
-    "timestamp": 1794694095753,
-    "success": true,
-    "testId": 92
-  },
-  {
-    "numPassedTests": 46,
-    "failedTests": 9,
-    "numTotalTests": 55,
-    "timestamp": 1794694105971,
-    "success": false,
-    "testId": 92
-  },
-  {
-    "numPassedTests": 46,
-    "failedTests": 9,
-    "numTotalTests": 55,
-    "timestamp": 1794694245923,
-    "success": false,
-    "testId": 92
   },
   {
     "numPassedTests": 55,
@@ -2470,6 +2440,65 @@
     "timestamp": 1794633973085,
     "success": true,
     "testId": 99
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794634084738,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794634254107,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "bed96a904e8843e13fd05856de54bd8a9faa2b6f",
+    "commitName": "refactor: organizar los presenters en la carpeta presenters",
+    "commitTimestamp": 1794634492996,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794694071168,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794694095753,
+    "success": true,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 9,
+    "numTotalTests": 55,
+    "timestamp": 1794694105971,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 9,
+    "numTotalTests": 55,
+    "timestamp": 1794694245923,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
     "timestamp": 1794694456965,
     "success": true,
     "testId": 92
@@ -2510,9 +2539,6 @@
     "numPassedTests": 55,
     "failedTests": 0,
     "numTotalTests": 55,
-    "timestamp": 1794634084738,
-    "success": true,
-    "testId": 99
     "timestamp": 1794694975455,
     "success": true,
     "testId": 92
@@ -2527,23 +2553,184 @@
     "numPassedTests": 55,
     "failedTests": 0,
     "numTotalTests": 55,
-    "timestamp": 1794634254107,
-    "success": true,
-    "testId": 99
-  },
-  {
-    "commitId": "HEAD",
-    "commitName": "refactor: organizar los presenters en la carpeta presenters",
-    "commitTimestamp": 1794634492996,
-    "testId": 99
     "timestamp": 1794695579759,
     "success": true,
     "testId": 93
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9a01e00493f5300d35aa26cb732460d4f656919c",
     "commitName": "refact: Reducir codigo duplicado",
     "commitTimestamp": 1794695615927,
     "testId": 93
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794715810463,
+    "success": true,
+    "testId": 94
+  },
+  {
+    "commitId": "0bcd811e5c2349e9b347d99537b8c6b316306e1b",
+    "commitName": "fix: reconstruir tdd_log.json corrompido en el merge de main",
+    "commitTimestamp": 1794715964724,
+    "testId": 94
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794716202028,
+    "success": true,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794716216841,
+    "success": true,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794716339126,
+    "success": true,
+    "testId": 95
+  },
+  {
+    "commitId": "e178b4c2a32d7cab217073199958d7fa4b392b73",
+    "commitName": "refactor: extraer tieneValor para reemplazar comparaciones con texto vacio en catalogo",
+    "commitTimestamp": 1794716596941,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794716822566,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794716834963,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "982878d81344443ce537e58a53fefca195b66a10",
+    "commitName": "refactor: reemplazar ternarios encadenados por condicionales en filtrarObjetos",
+    "commitTimestamp": 1794717055379,
+    "testId": 96
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717073822,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717088525,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717246979,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717276963,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794717506324,
+    "success": true,
+    "testId": 97
+  },
+  {
+    "commitId": "22f8947cc01e30265ff670c53f7fab002d3637bc",
+    "commitName": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
+    "commitTimestamp": 1794717518718,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794718585538,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794718605314,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "ea8fa1057bc964d49cbc388fd61a377223152a33",
+    "commitName": "refactor: crear clase Usuario que delega en las funciones del catalogo",
+    "commitTimestamp": 1794719112373,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794719134609,
+    "success": true,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: usar la clase Usuario en CatalogoPresenter",
+    "commitTimestamp": 1794719186291,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1794719206744,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1794719228485,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
+    "commitTimestamp": 1794719282555,
+    "testId": 100
   }
 ]

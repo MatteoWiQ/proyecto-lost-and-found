@@ -133,20 +133,6 @@
     "conclusion": "success"
   },
   {
-    "sha": "6fee4bd831dedbab25f53d10628fc820dfe39b33",
-    "author": "Santiago Lazcano Quiroga",
-    "commit": {
-      "date": "2026-11-14T05:09:39.000Z",
-      "message": "refactor: extraer logica de administracion a adminPresenter.js y limpiar presenter principal",
-      "url": "/commit/6fee4bd831dedbab25f53d10628fc820dfe39b33"
-    },
-    "stats": {
-      "total": 85,
-      "additions": 49,
-      "deletions": 36,
-      "date": "2026-11-14"
-    },
-    "coverage": 91.07,
     "sha": "92f4b09c6916d316896fcfa655a028ef95cce341",
     "author": "Alvaro Nina",
     "commit": {
@@ -166,25 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
-    "author": "Santiago Lazcano Quiroga",
-    "commit": {
-      "date": "2026-11-14T05:34:52.000Z",
-      "message": "refactor: organizar los presenters en la carpeta presenters",
-      "url": "/commit/HEAD"
-    },
-    "stats": {
-      "total": 24,
-      "additions": 12,
-      "deletions": 12,
-      "date": "2026-11-14"
-    },
-    "coverage": 91.07,
+    "sha": "bed96a904e8843e13fd05856de54bd8a9faa2b6f",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-14T22:33:34.000Z",
       "message": "refact: Reducir codigo duplicado",
-      "url": "/commit/HEAD"
+      "url": "/commit/bed96a904e8843e13fd05856de54bd8a9faa2b6f"
     },
     "stats": {
       "total": 111,
@@ -193,6 +166,139 @@
       "date": "2026-11-14"
     },
     "coverage": 93.14,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9a01e00493f5300d35aa26cb732460d4f656919c",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:12:43.000Z",
+      "message": "fix: reconstruir tdd_log.json corrompido en el merge de main",
+      "url": "/commit/9a01e00493f5300d35aa26cb732460d4f656919c"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.14,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0bcd811e5c2349e9b347d99537b8c6b316306e1b",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:23:15.000Z",
+      "message": "refactor: extraer tieneValor para reemplazar comparaciones con texto vacio en catalogo",
+      "url": "/commit/0bcd811e5c2349e9b347d99537b8c6b316306e1b"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 12,
+      "deletions": 8,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.18,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e178b4c2a32d7cab217073199958d7fa4b392b73",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:30:54.000Z",
+      "message": "refactor: reemplazar ternarios encadenados por condicionales en filtrarObjetos",
+      "url": "/commit/e178b4c2a32d7cab217073199958d7fa4b392b73"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 9,
+      "deletions": 6,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "982878d81344443ce537e58a53fefca195b66a10",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T04:38:37.000Z",
+      "message": "refactor: unificar datos de prueba e indentacion en pruebas del catalogo",
+      "url": "/commit/982878d81344443ce537e58a53fefca195b66a10"
+    },
+    "stats": {
+      "total": 114,
+      "additions": 34,
+      "deletions": 80,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.33,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "22f8947cc01e30265ff670c53f7fab002d3637bc",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:05:11.000Z",
+      "message": "refactor: crear clase Usuario que delega en las funciones del catalogo",
+      "url": "/commit/22f8947cc01e30265ff670c53f7fab002d3637bc"
+    },
+    "stats": {
+      "total": 59,
+      "additions": 59,
+      "deletions": 0,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ea8fa1057bc964d49cbc388fd61a377223152a33",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:06:25.000Z",
+      "message": "refactor: usar la clase Usuario en CatalogoPresenter",
+      "url": "/commit/ea8fa1057bc964d49cbc388fd61a377223152a33"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 6,
+      "deletions": 10,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.48,
+    "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-15T05:08:01.000Z",
+      "message": "refactor: mover la logica del catalogo a la clase Usuario y eliminar Catalogo.js",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 194,
+      "additions": 64,
+      "deletions": 130,
+      "date": "2026-11-15"
+    },
+    "coverage": 93.26,
     "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"

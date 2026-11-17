@@ -2,7 +2,7 @@ const VISTAS_VALIDAS = ["iniciar-sesion", "crear-cuenta", "usuario", "administra
 let vistaActual = vistaInicial();
 
 export function vistaInicial() {
-  return "crear-cuenta";
+  return "iniciar-sesion";
 }
 
 export function obtenerVista() {

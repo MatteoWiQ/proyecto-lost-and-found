@@ -760,12 +760,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0aa13e15f9ad45cdd745512eb231fd7f48429689",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:22:42.000Z",
       "message": "feat: eliminar la sesion al cerrar sesion",
-      "url": "/commit/HEAD"
+      "url": "/commit/0aa13e15f9ad45cdd745512eb231fd7f48429689"
     },
     "stats": {
       "total": 17,
@@ -813,6 +813,25 @@
     },
     "coverage": 94.78,
     "test_count": 79,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:25:08.000Z",
+      "message": "feat: iniciar la aplicacion en login",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 9,
+      "deletions": 5,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.78,
+    "test_count": 80,
     "failed_tests": 0,
     "conclusion": "success"
   }

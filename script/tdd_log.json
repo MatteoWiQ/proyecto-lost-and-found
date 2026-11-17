@@ -3152,7 +3152,7 @@
     "testId": 118
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0aa13e15f9ad45cdd745512eb231fd7f48429689",
     "commitName": "feat: validar dominio institucional al iniciar sesion",
     "commitTimestamp": 1794943228923,
     "testId": 118
@@ -3266,5 +3266,27 @@
     "commitName": "feat: reconocer la vista de inicio de sesion",
     "commitTimestamp": 1794943466276,
     "testId": 123
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 1,
+    "numTotalTests": 80,
+    "timestamp": 1794943484693,
+    "success": false,
+    "testId": 124
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 0,
+    "numTotalTests": 80,
+    "timestamp": 1794943503816,
+    "success": true,
+    "testId": 124
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: iniciar la aplicacion en login",
+    "commitTimestamp": 1794943509296,
+    "testId": 124
   }
 ]

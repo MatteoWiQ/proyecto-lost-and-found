@@ -646,12 +646,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "201361ce23c0d7f2143d834d3c68ecd70456702d",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:17:55.000Z",
       "message": "feat: buscar cuentas por correo y contrasena",
-      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/HEAD"
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/201361ce23c0d7f2143d834d3c68ecd70456702d"
     },
     "stats": {
       "total": 21,
@@ -699,6 +699,25 @@
     },
     "coverage": 94.42,
     "test_count": 73,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:20:27.000Z",
+      "message": "feat: validar dominio institucional al iniciar sesion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.47,
+    "test_count": 74,
     "failed_tests": 0,
     "conclusion": "success"
   }

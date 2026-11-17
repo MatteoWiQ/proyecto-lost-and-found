@@ -22,4 +22,13 @@ describe("Autenticacion", () => {
       mensaje: "Correo o contraseña incorrectos"
     });
   });
+
+  it("deberia rechazar correos fuera del dominio institucional", () => {
+    const autenticacion = new Autenticacion(new RepositorioCuentas());
+
+    expect(autenticacion.iniciarSesion("juan@gmail.com", "123456789")).toEqual({
+      exito: false,
+      mensaje: "Debe usar su correo institucional"
+    });
+  });
 });

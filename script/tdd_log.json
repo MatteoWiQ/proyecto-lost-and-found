@@ -3036,7 +3036,7 @@
     "testId": 112
   },
   {
-    "commitId": "HEAD",
+    "commitId": "201361ce23c0d7f2143d834d3c68ecd70456702d",
     "commitName": "merge cuentas con correo",
     "commitTimestamp": 1794856362028,
     "testId": 112
@@ -3134,5 +3134,27 @@
     "commitName": "feat: mostrar mensaje generico al fallar el login",
     "commitTimestamp": 1794943187840,
     "testId": 117
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 1,
+    "numTotalTests": 74,
+    "timestamp": 1794943209019,
+    "success": false,
+    "testId": 118
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 0,
+    "numTotalTests": 74,
+    "timestamp": 1794943222315,
+    "success": true,
+    "testId": 118
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar dominio institucional al iniciar sesion",
+    "commitTimestamp": 1794943228923,
+    "testId": 118
   }
 ]

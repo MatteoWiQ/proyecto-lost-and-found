@@ -1,6 +1,7 @@
-import { obtenerCamposFicha } from "../FichaTecnica.js";
+import Usuario from "../Usuario.js";
 
 export function crearVistaFicha(contenedor, informacion, botonCerrar) {
+  const usuario = new Usuario();
   botonCerrar.onclick = () => { contenedor.style.display = "none"; };
 
   return {
@@ -12,7 +13,7 @@ export function crearVistaFicha(contenedor, informacion, botonCerrar) {
       Object.assign(imagen.style, { maxWidth: "100%", height: "150px", objectFit: "cover", borderRadius: "8px" });
       informacion.replaceChildren(imagen);
 
-      obtenerCamposFicha(ficha).forEach((campo) => {
+      usuario.consultarFicha(objeto).forEach((campo) => {
         const parrafo = document.createElement("p");
         const etiqueta = document.createElement("strong");
         etiqueta.textContent = `${campo.etiqueta}:`;

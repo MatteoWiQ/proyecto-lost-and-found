@@ -162,17 +162,3 @@ Permite iniciar sesión con correo institucional y contraseña, conservar la ses
 ### LAF-17 · HU-12 Cerrar sesión (3.1.3)
 
 Permite cerrar la sesión desde las áreas privadas, eliminar el estado autenticado y volver al login.
-
----
-
-## Fuera del Sprint 1 (van al Sprint 2)
-
-- 3.1.12 Visualizador de fotografía con zoom
-- 3.1.13 Ver ubicación y referencias de Bienestar
-- 3.1.14 Ver instrucciones y requisitos de reclamo
-- 3.1.16 Rechazar publicaciones
-- 3.1.17 Registrar entrega al propietario
-- 3.1.18 Cambiar estado del objeto a "Entregado"
-- 3.1.19 Confirmación de registro de devolución
-- 3.1.20 Ver contadores y métricas básicas
-- 3.1.21 Actualización de estadísticas en tiempo real

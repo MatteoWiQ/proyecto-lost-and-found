@@ -893,12 +893,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4c151be19d76f406a712e9f59e3abd9655f4c507",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:29:12.000Z",
       "message": "feat: conectar formulario de login con la aplicacion",
-      "url": "/commit/HEAD"
+      "url": "/commit/4c151be19d76f406a712e9f59e3abd9655f4c507"
     },
     "stats": {
       "total": 101,
@@ -943,6 +943,25 @@
       "additions": 27,
       "deletions": 4,
       "date": "2026-11-17"
+    },
+    "coverage": 87.55,
+    "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-18T14:59:33.000Z",
+      "message": "docs: retirar tareas pendientes del sprint 1",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 0,
+      "deletions": 14,
+      "date": "2026-11-18"
     },
     "coverage": 87.55,
     "test_count": 85,

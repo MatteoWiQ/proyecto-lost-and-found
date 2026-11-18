@@ -3306,7 +3306,7 @@
     "testId": 125
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4c151be19d76f406a712e9f59e3abd9655f4c507",
     "commitName": "feat: validar campos obligatorios del login",
     "commitTimestamp": 1794943548003,
     "testId": 125
@@ -3404,5 +3404,19 @@
     "commitName": "docs: documentar tareas del sprint 2",
     "commitTimestamp": 1794943854481,
     "testId": 130
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1795013955372,
+    "success": true,
+    "testId": 131
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "docs: retirar tareas pendientes del sprint 1",
+    "commitTimestamp": 1795013974548,
+    "testId": 131
   }
 ]

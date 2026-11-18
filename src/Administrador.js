@@ -10,6 +10,11 @@ class Administrador extends Usuario {
     return objeto;
   }
 
+  rechazarPublicacion(objeto, motivo) {
+    objeto.rechazar(motivo);
+    return objeto;
+  }
+
   obtenerMensajePendientes(pendientes) {
     if (pendientes.length === 0) {
       return "No hay publicaciones pendientes";

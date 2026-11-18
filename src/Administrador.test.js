@@ -31,4 +31,12 @@ describe("Administrador", () => {
   it("Deberia poder hacer lo mismo que un usuario, como buscar objetos", () => {
     expect(administrador.buscarObjetos(objetos, "chaqueta")).toEqual([publicado]);
   });
+
+  it("Deberia rechazar una publicacion y eliminarla de los pendientes", () => {
+    administrador.rechazarPublicacion(pendiente, "Reporte duplicado");
+
+    expect(pendiente.obtenerEstado()).toEqual("Rechazado");
+    expect(pendiente.obtenerMotivoRechazo()).toEqual("Reporte duplicado");
+    expect(administrador.obtenerPendientes(objetos)).toEqual([]);
+  });
 });

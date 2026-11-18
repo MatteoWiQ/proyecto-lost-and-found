@@ -3400,7 +3400,7 @@
     "testId": 130
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a6d96c1664ec89667add2b31e6403fab441590dd",
     "commitName": "docs: documentar tareas del sprint 2",
     "commitTimestamp": 1794943854481,
     "testId": 130
@@ -3530,5 +3530,59 @@
     "commitName": "feat: Solicitar confirmacion de rechazo identificando el objeto",
     "commitTimestamp": 1795027811712,
     "testId": 135
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 1,
+    "numTotalTests": 91,
+    "timestamp": 1795028291955,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 1,
+    "numTotalTests": 91,
+    "timestamp": 1795028371696,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 1,
+    "numTotalTests": 91,
+    "timestamp": 1795028386068,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 0,
+    "numTotalTests": 91,
+    "timestamp": 1795028766376,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 0,
+    "numTotalTests": 91,
+    "timestamp": 1795028881158,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 93,
+    "failedTests": 0,
+    "numTotalTests": 93,
+    "timestamp": 1795028949456,
+    "success": true,
+    "testId": 136
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
+    "commitTimestamp": 1795028997034,
+    "testId": 136
   }
 ]

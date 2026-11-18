@@ -988,12 +988,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a6d96c1664ec89667add2b31e6403fab441590dd",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T16:58:50.000Z",
       "message": "feat: Incluir motivo de rechazo en ficha tecnica",
-      "url": "/commit/HEAD"
+      "url": "/commit/a6d96c1664ec89667add2b31e6403fab441590dd"
     },
     "stats": {
       "total": 10,
@@ -1041,6 +1041,25 @@
     },
     "coverage": 87.84,
     "test_count": 90,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T19:09:56.000Z",
+      "message": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 82,
+      "additions": 81,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 77.78,
+    "test_count": 93,
     "failed_tests": 0,
     "conclusion": "success"
   }

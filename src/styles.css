@@ -511,3 +511,71 @@ body {
     padding: 16px;
   }
 }
+
+.boton-aprobar,
+.boton-rechazar,
+.boton-confirmar-rechazo {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-aprobar {
+  background-color: #174b87;
+  color: #ffffff;
+}
+
+.boton-aprobar:hover {
+  background-color: #102544;
+}
+
+.boton-rechazar {
+  background-color: #ffffff;
+  color: #842029;
+  border: 1px solid #842029;
+}
+
+.boton-rechazar:hover {
+  background-color: #f8d7da;
+}
+
+.boton-confirmar-rechazo {
+  background-color: #842029;
+  color: #ffffff;
+}
+
+.boton-confirmar-rechazo:hover {
+  background-color: #641820;
+}
+
+.motivo-rechazo {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  font: inherit;
+  color: #102544;
+  background-color: #ffffff;
+  border: 1px solid #c7d5e8;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.motivo-rechazo:focus {
+  border-color: #3979c6;
+  outline: none;
+}
+
+.badge-rechazado {
+  align-self: flex-start;
+  margin: 4px 16px 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}

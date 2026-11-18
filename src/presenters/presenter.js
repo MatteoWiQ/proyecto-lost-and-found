@@ -30,7 +30,8 @@ const catalogoControlador = inicializarCatalogo(
 const adminControlador = inicializarAdmin(
   galeria,
   catalogoControlador,
-  () => autenticacion.obtenerSesion()
+  () => autenticacion.obtenerSesion(),
+  vistaFicha
 );
 
 inicializarFormulario(galeria, () => {

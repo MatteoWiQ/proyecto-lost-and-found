@@ -39,9 +39,10 @@ export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, al
     motivo.placeholder = "Motivo de rechazo (opcional)";
     motivo.required = false;
     motivo.hidden = true;
-    
+
     const botonConfirmar = document.createElement("button");
-    botonConfirmar.textContent = "Confirmar rechazo";
+    botonConfirmar.className = "boton-confirmar-rechazo";
+    botonConfirmar.textContent = "Confirmar rechazo"; 
     botonConfirmar.hidden = true;
     botonConfirmar.addEventListener("click", () => {
       const mensaje = `¿Estás seguro de rechazar el reporte de ${datos.nombre}?`;

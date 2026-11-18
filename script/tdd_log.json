@@ -3474,7 +3474,7 @@
     "testId": 133
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3a6344ca5e9a906c0c1ca12b86f9479a725d4f03",
     "commitName": "feat: Incluir motivo de rechazo en ficha tecnica",
     "commitTimestamp": 1795021130958,
     "testId": 133
@@ -3628,5 +3628,67 @@
     "commitName": "feat: Manejar errores durante el rechazo de publicaciones",
     "commitTimestamp": 1795031101752,
     "testId": 138
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 5,
+    "numTotalTests": 96,
+    "timestamp": 1795034547992,
+    "success": false,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 5,
+    "numTotalTests": 96,
+    "timestamp": 1795034622996,
+    "success": false,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795034644317,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 5,
+    "numTotalTests": 96,
+    "timestamp": 1795034721915,
+    "success": false,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795034735614,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795038065450,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795038858069,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: Arreglo de errores en los archivos",
+    "commitTimestamp": 1795039422468,
+    "testId": 139
   }
 ]

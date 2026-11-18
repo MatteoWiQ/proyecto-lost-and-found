@@ -49,7 +49,7 @@ class Usuario {
   consultarFicha(objeto) {
     const ficha = objeto.obtenerFichaTecnica();
 
-    return [
+    const campos = [
       { etiqueta: "Nombre", valor: ficha.nombre },
       { etiqueta: "Categoría", valor: ficha.categoria },
       { etiqueta: "Fecha", valor: ficha.fecha },
@@ -58,6 +58,15 @@ class Usuario {
       { etiqueta: "Comentario", valor: ficha.Comentario || "Ninguno" },
       { etiqueta: "Estado", valor: ficha.estado }
     ];
+
+    if (ficha.estado === "Rechazado") {
+      campos.push({
+        etiqueta: "Motivo de rechazo",
+        valor: ficha.motivoRechazo || "Ninguno"
+      });
+    }
+
+    return campos;
   }
 
   filtrarPorEstado(objetos, estado) {

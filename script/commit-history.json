@@ -1045,12 +1045,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3a6344ca5e9a906c0c1ca12b86f9479a725d4f03",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T19:09:56.000Z",
       "message": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
-      "url": "/commit/HEAD"
+      "url": "/commit/3a6344ca5e9a906c0c1ca12b86f9479a725d4f03"
     },
     "stats": {
       "total": 82,
@@ -1097,6 +1097,25 @@
       "date": "2026-11-18"
     },
     "coverage": 78.05,
+    "test_count": 96,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T22:03:42.000Z",
+      "message": "refactor: Arreglo de errores en los archivos",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 159,
+      "additions": 129,
+      "deletions": 30,
+      "date": "2026-11-18"
+    },
+    "coverage": 78.08,
     "test_count": 96,
     "failed_tests": 0,
     "conclusion": "success"

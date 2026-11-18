@@ -3,6 +3,7 @@ import ObjetoPerdido from "../ObjetoPerdido.js";
 import { inicializarAdmin } from "../presenters/AdminPresenter.js";
 import { renderizarPublicacionesPendientes } from "../vistas/PublicacionesPendientesVista.js";
 import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
+import Administrador from "../Administrador.js";
 
 jest.mock("../vistas/PublicacionesPendientesVista.js");
 jest.mock("../vistas/GaleriaObjetosVista.js");
@@ -19,7 +20,8 @@ describe("AdminPresenter", () => {
       querySelector: jest.fn()
     };
     global.window = {
-      confirm: jest.fn()
+      confirm: jest.fn(),
+      alert: jest.fn()
     };
     galeria = new Galeria();
     objeto = new ObjetoPerdido("Laptop", "Tecnologia");
@@ -35,6 +37,7 @@ describe("AdminPresenter", () => {
   });
 
   afterEach(() => {
+    jest.restoreAllMocks();
     delete global.document;
     delete global.window;
   });
@@ -93,5 +96,24 @@ describe("AdminPresenter", () => {
     expect(objeto.obtenerEstado()).toEqual("Pendiente de validación");
     expect(window.confirm).not.toHaveBeenCalled();
     expect(catalogoControlador.actualizarResultadosCatalogo).not.toHaveBeenCalled();
+  });
+
+  it("Deberia informar un error y conservar el estado si falla el rechazo", () => {
+    window.confirm.mockReturnValue(true);
+    jest.spyOn(Administrador.prototype, "rechazarPublicacion")
+        .mockImplementation(() => {
+        throw new Error("Error al rechazar la publicacion");
+        });
+    const alConfirmarRechazo = renderizarPublicacionesPendientes.mock.calls[0][4];
+    alConfirmarRechazo(objeto, "Reporte duplicado",
+        "¿Estás seguro de rechazar el reporte de Laptop?");
+
+    expect(window.alert).toHaveBeenCalledWith(
+        "No se pudo rechazar la publicación. Inténtalo nuevamente."
+    );
+    expect(objeto.obtenerEstado()).toEqual("Pendiente de validación");
+    expect(objeto.obtenerMotivoRechazo()).toBeUndefined();
+    expect(catalogoControlador.actualizarResultadosCatalogo).not.toHaveBeenCalled();
+    expect(renderizarPublicacionesPendientes).toHaveBeenCalledTimes(1);
   });
 }); 

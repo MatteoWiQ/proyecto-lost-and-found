@@ -28,7 +28,13 @@ export function inicializarAdmin(galeria, catalogoControlador, obtenerSesion) {
       if (obtenerSesion()?.rol !== "administrador") return;
       if (!window.confirm(mensaje)) return;
 
-      administrador.rechazarPublicacion(objeto, motivo);
+      try {
+        administrador.rechazarPublicacion(objeto, motivo);
+      } catch (error) {
+        window.alert("No se pudo rechazar la publicación. Inténtalo nuevamente.");
+        return;
+      }
+
       actualizarPendientesUI();
       catalogoControlador.actualizarResultadosCatalogo();
       actualizarGaleriaAdmin();

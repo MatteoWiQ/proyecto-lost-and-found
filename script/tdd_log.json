@@ -3452,7 +3452,7 @@
     "testId": 132
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8808b4256d69dfa12c44b505adfb645288d9030a",
     "commitName": "feat: Registrar motivo de rechazo del objeto",
     "commitTimestamp": 1795018736594,
     "testId": 132
@@ -3606,5 +3606,27 @@
     "commitName": "feat: Validar permisos administrativos para rechazar publicaciones",
     "commitTimestamp": 1795030172146,
     "testId": 137
+  },
+  {
+    "numPassedTests": 95,
+    "failedTests": 1,
+    "numTotalTests": 96,
+    "timestamp": 1795030646404,
+    "success": false,
+    "testId": 138
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795031083595,
+    "success": true,
+    "testId": 138
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Manejar errores durante el rechazo de publicaciones",
+    "commitTimestamp": 1795031101752,
+    "testId": 138
   }
 ]

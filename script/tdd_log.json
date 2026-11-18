@@ -3336,7 +3336,7 @@
     "testId": 126
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e6205fcf2326254638131177ae1ade6bb44f0bf2",
     "commitName": "feat: traducir resultado del inicio de sesion a mensaje",
     "commitTimestamp": 1794943600703,
     "testId": 126
@@ -3410,5 +3410,19 @@
     "commitName": "style: personalizar formulario de inicio de sesion",
     "commitTimestamp": 1795036303018,
     "testId": 131
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1795036900457,
+    "success": true,
+    "testId": 132
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: ocultar acceso administrativo para usuarios",
+    "commitTimestamp": 1795036915099,
+    "testId": 132
   }
 ]

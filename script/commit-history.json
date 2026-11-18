@@ -912,12 +912,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e6205fcf2326254638131177ae1ade6bb44f0bf2",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:30:11.000Z",
       "message": "feat: conectar cierre de sesion con las vistas",
-      "url": "/commit/HEAD"
+      "url": "/commit/e6205fcf2326254638131177ae1ade6bb44f0bf2"
     },
     "stats": {
       "total": 23,
@@ -961,6 +961,25 @@
       "total": 132,
       "additions": 129,
       "deletions": 3,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.55,
+    "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-18T21:21:54.000Z",
+      "message": "fix: ocultar acceso administrativo para usuarios",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 2,
+      "deletions": 0,
       "date": "2026-11-18"
     },
     "coverage": 87.55,

@@ -21,6 +21,8 @@ export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
 
   function mostrarVista(vista) {
     const sesion = obtenerSesion();
+    botonVistaUsuario.hidden = !sesion;
+    botonVistaAdmin.hidden = sesion?.rol !== "administrador";
     if ((vista === "usuario" || vista === "administrador") && !sesion) {
       vista = "iniciar-sesion";
     }

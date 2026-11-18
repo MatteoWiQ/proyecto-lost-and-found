@@ -893,12 +893,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "45aefe4335372abb256b52ec33a91cd933c6fcc9",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:29:12.000Z",
       "message": "feat: conectar formulario de login con la aplicacion",
-      "url": "/commit/HEAD"
+      "url": "/commit/45aefe4335372abb256b52ec33a91cd933c6fcc9"
     },
     "stats": {
       "total": 101,
@@ -943,6 +943,25 @@
       "additions": 27,
       "deletions": 4,
       "date": "2026-11-17"
+    },
+    "coverage": 87.55,
+    "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-18T21:11:42.000Z",
+      "message": "style: personalizar formulario de inicio de sesion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 132,
+      "additions": 129,
+      "deletions": 3,
+      "date": "2026-11-18"
     },
     "coverage": 87.55,
     "test_count": 85,

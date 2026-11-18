@@ -3306,7 +3306,7 @@
     "testId": 125
   },
   {
-    "commitId": "HEAD",
+    "commitId": "45aefe4335372abb256b52ec33a91cd933c6fcc9",
     "commitName": "feat: validar campos obligatorios del login",
     "commitTimestamp": 1794943548003,
     "testId": 125
@@ -3404,5 +3404,11 @@
     "commitName": "docs: documentar tareas del sprint 2",
     "commitTimestamp": 1794943854481,
     "testId": 130
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: personalizar formulario de inicio de sesion",
+    "commitTimestamp": 1795036303018,
+    "testId": 131
   }
 ]

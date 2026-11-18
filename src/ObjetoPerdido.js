@@ -228,7 +228,8 @@ class ObjetoPerdido{
             lugar: this.lugar,
             Comentario: this.Comentario,
             foto: this.foto,
-            estado: this.estado
+            estado: this.estado,
+            motivoRechazo: this.motivoRechazo
         };
     }
 

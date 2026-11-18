@@ -184,4 +184,11 @@ describe("ObjetoPerdido", () => {
     objeto.rechazar("Reporte duplicado");
     expect(objeto.obtenerMotivoRechazo()).toEqual("Reporte duplicado");
   });
+
+  it("Deberia retornar el motivo de rechazo en la ficha tecnica", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.rechazar("Reporte duplicado");
+    const ficha = objeto.obtenerFichaTecnica();
+    expect(ficha.motivoRechazo).toEqual("Reporte duplicado");
+  });
 });

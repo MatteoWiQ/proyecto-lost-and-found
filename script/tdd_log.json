@@ -3358,7 +3358,7 @@
     "testId": 127
   },
   {
-    "commitId": "HEAD",
+    "commitId": "72ec2f1e971ef3a2d94f1e202eb2d6a0b2a31145",
     "commitName": "feat: seleccionar vista segun el rol autenticado",
     "commitTimestamp": 1794943645376,
     "testId": 127
@@ -3456,5 +3456,27 @@
     "commitName": "feat: Registrar motivo de rechazo del objeto",
     "commitTimestamp": 1795018736594,
     "testId": 132
+  },
+  {
+    "numPassedTests": 87,
+    "failedTests": 1,
+    "numTotalTests": 88,
+    "timestamp": 1795021022116,
+    "success": false,
+    "testId": 133
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 0,
+    "numTotalTests": 88,
+    "timestamp": 1795021090970,
+    "success": true,
+    "testId": 133
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Incluir motivo de rechazo en ficha tecnica",
+    "commitTimestamp": 1795021130958,
+    "testId": 133
   }
 ]

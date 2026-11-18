@@ -931,12 +931,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "72ec2f1e971ef3a2d94f1e202eb2d6a0b2a31145",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:30:53.000Z",
       "message": "docs: documentar tareas del sprint 2",
-      "url": "/commit/HEAD"
+      "url": "/commit/72ec2f1e971ef3a2d94f1e202eb2d6a0b2a31145"
     },
     "stats": {
       "total": 31,
@@ -984,6 +984,25 @@
     },
     "coverage": 87.68,
     "test_count": 87,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T16:58:50.000Z",
+      "message": "feat: Incluir motivo de rechazo en ficha tecnica",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.68,
+    "test_count": 88,
     "failed_tests": 0,
     "conclusion": "success"
   }

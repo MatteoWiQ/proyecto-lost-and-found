@@ -236,8 +236,13 @@ class ObjetoPerdido{
         this.estado = "Publicado";
     }
 
-    rechazar() {
+    rechazar(motivo = "") {
         this.estado = "Rechazado";
+        this.motivoRechazo = motivo;
+    }
+
+    obtenerMotivoRechazo() {
+        return this.motivoRechazo;
     }
 
     obtenerEstadoValidacion() {

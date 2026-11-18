@@ -178,4 +178,10 @@ describe("ObjetoPerdido", () => {
     objeto.rechazar();
     expect(objeto.obtenerEstado()).toEqual("Rechazado");
   });
+
+  it("Deberia registrar el motivo de rechazo del objeto", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.rechazar("Reporte duplicado");
+    expect(objeto.obtenerMotivoRechazo()).toEqual("Reporte duplicado");
+  });
 });

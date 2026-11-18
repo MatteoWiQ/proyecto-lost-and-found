@@ -3336,7 +3336,7 @@
     "testId": 126
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6706d650e4c2436f29dca1d2efda43513c9317b0",
     "commitName": "feat: traducir resultado del inicio de sesion a mensaje",
     "commitTimestamp": 1794943600703,
     "testId": 126
@@ -3434,5 +3434,27 @@
     "commitName": "feat: Cambiar estado del objeto a rechazado",
     "commitTimestamp": 1795018054773,
     "testId": 131
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 1,
+    "numTotalTests": 87,
+    "timestamp": 1795018367410,
+    "success": false,
+    "testId": 132
+  },
+  {
+    "numPassedTests": 87,
+    "failedTests": 0,
+    "numTotalTests": 87,
+    "timestamp": 1795018716709,
+    "success": true,
+    "testId": 132
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Registrar motivo de rechazo del objeto",
+    "commitTimestamp": 1795018736594,
+    "testId": 132
   }
 ]

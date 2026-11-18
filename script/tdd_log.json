@@ -3002,7 +3002,7 @@
     "testId": 109
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8204cadc601ccb10af1ac8f4523b3c3097095f86",
     "commitName": "merge refactorizacion presenter, y vistas",
     "commitTimestamp": 1794855539160,
     "testId": 109
@@ -3016,13 +3016,13 @@
     "testId": 110
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6455bac1c4093fb2478ec95a7033af9addf2126f",
     "commitName": "merge cuentas por correo",
     "commitTimestamp": 1794855757829,
     "testId": 110
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a9a4e2542e3bd0bdcb3e0710cd7b8be315a91e4d",
     "commitName": "Merge branch 'feat/CuentaCorreo'",
     "commitTimestamp": 1794856261236,
     "testId": 111
@@ -3036,7 +3036,7 @@
     "testId": 112
   },
   {
-    "commitId": "HEAD",
+    "commitId": "201361ce23c0d7f2143d834d3c68ecd70456702d",
     "commitName": "merge cuentas con correo",
     "commitTimestamp": 1794856362028,
     "testId": 112
@@ -3066,15 +3066,343 @@
     "testId": 113
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5f1b950e5db74a56b771d9bc89883ee677b9d541",
     "commitName": "feat: pantalla de crear cuenta",
     "commitTimestamp": 1794858519503,
     "testId": 113
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5959ae827ae9cb00bc62e4d266df0f9bd89c1ead",
     "commitName": "feat: boton para reestablecer filtros de busqueda",
     "commitTimestamp": 1794858933413,
     "testId": 114
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 0,
+    "numTotalTests": 71,
+    "timestamp": 1794943063679,
+    "success": true,
+    "testId": 115
+  },
+  {
+    "commitId": "9b08c4ed5cbc5607bb735f327fb15c324d06cf98",
+    "commitName": "feat: buscar cuentas por correo y contrasena",
+    "commitTimestamp": 1794943076383,
+    "testId": 115
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 0,
+    "numTotalTests": 71,
+    "timestamp": 1794943116830,
+    "success": false,
+    "testId": 116
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 0,
+    "numTotalTests": 72,
+    "timestamp": 1794943130322,
+    "success": true,
+    "testId": 116
+  },
+  {
+    "commitId": "b5f17ba6f05afcdca398fb3487de6cb3cdf4d68a",
+    "commitName": "feat: iniciar sesion con credenciales validas",
+    "commitTimestamp": 1794943142335,
+    "testId": 116
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 1,
+    "numTotalTests": 73,
+    "timestamp": 1794943165385,
+    "success": false,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 0,
+    "numTotalTests": 73,
+    "timestamp": 1794943182810,
+    "success": true,
+    "testId": 117
+  },
+  {
+    "commitId": "1bb1c872511b759a7646c25918b7111be9b59c04",
+    "commitName": "feat: mostrar mensaje generico al fallar el login",
+    "commitTimestamp": 1794943187840,
+    "testId": 117
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 1,
+    "numTotalTests": 74,
+    "timestamp": 1794943209019,
+    "success": false,
+    "testId": 118
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 0,
+    "numTotalTests": 74,
+    "timestamp": 1794943222315,
+    "success": true,
+    "testId": 118
+  },
+  {
+    "commitId": "0aa13e15f9ad45cdd745512eb231fd7f48429689",
+    "commitName": "feat: validar dominio institucional al iniciar sesion",
+    "commitTimestamp": 1794943228923,
+    "testId": 118
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 1,
+    "numTotalTests": 75,
+    "timestamp": 1794943251822,
+    "success": false,
+    "testId": 119
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 0,
+    "numTotalTests": 75,
+    "timestamp": 1794943268294,
+    "success": true,
+    "testId": 119
+  },
+  {
+    "commitId": "6621d3f842b5740c3916dba61e361afd500681d3",
+    "commitName": "feat: guardar sesion sin contrasena",
+    "commitTimestamp": 1794943274843,
+    "testId": 119
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 1,
+    "numTotalTests": 76,
+    "timestamp": 1794943296310,
+    "success": false,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 76,
+    "failedTests": 0,
+    "numTotalTests": 76,
+    "timestamp": 1794943310990,
+    "success": true,
+    "testId": 120
+  },
+  {
+    "commitId": "5748c3da8b85c489f1c6f192937cf6c2f6d5c3df",
+    "commitName": "feat: recuperar la sesion almacenada",
+    "commitTimestamp": 1794943318813,
+    "testId": 120
+  },
+  {
+    "numPassedTests": 76,
+    "failedTests": 1,
+    "numTotalTests": 77,
+    "timestamp": 1794943341673,
+    "success": false,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1794943356990,
+    "success": true,
+    "testId": 121
+  },
+  {
+    "commitId": "11498b28637d19c3327d729b37ab9832d3f5ba0b",
+    "commitName": "feat: eliminar la sesion al cerrar sesion",
+    "commitTimestamp": 1794943364078,
+    "testId": 121
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 1,
+    "numTotalTests": 78,
+    "timestamp": 1794943384770,
+    "success": false,
+    "testId": 122
+  },
+  {
+    "numPassedTests": 78,
+    "failedTests": 0,
+    "numTotalTests": 78,
+    "timestamp": 1794943420166,
+    "success": true,
+    "testId": 122
+  },
+  {
+    "commitId": "d1a6de91c332bda25e799dff393283425c3b36c6",
+    "commitName": "feat: persistir cuentas en almacenamiento local",
+    "commitTimestamp": 1794943425758,
+    "testId": 122
+  },
+  {
+    "numPassedTests": 78,
+    "failedTests": 1,
+    "numTotalTests": 79,
+    "timestamp": 1794943448411,
+    "success": false,
+    "testId": 123
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 0,
+    "numTotalTests": 79,
+    "timestamp": 1794943461507,
+    "success": true,
+    "testId": 123
+  },
+  {
+    "commitId": "6fee1eb5866dc248f69d7f305f61993d0ba4d528",
+    "commitName": "feat: reconocer la vista de inicio de sesion",
+    "commitTimestamp": 1794943466276,
+    "testId": 123
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 1,
+    "numTotalTests": 80,
+    "timestamp": 1794943484693,
+    "success": false,
+    "testId": 124
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 0,
+    "numTotalTests": 80,
+    "timestamp": 1794943503816,
+    "success": true,
+    "testId": 124
+  },
+  {
+    "commitId": "2fffedacc177beeadbc4bf5619a08fdff5fe5277",
+    "commitName": "feat: iniciar la aplicacion en login",
+    "commitTimestamp": 1794943509296,
+    "testId": 124
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 0,
+    "numTotalTests": 80,
+    "timestamp": 1794943528606,
+    "success": false,
+    "testId": 125
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 0,
+    "numTotalTests": 81,
+    "timestamp": 1794943542068,
+    "success": true,
+    "testId": 125
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar campos obligatorios del login",
+    "commitTimestamp": 1794943548003,
+    "testId": 125
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 1,
+    "numTotalTests": 82,
+    "timestamp": 1794943568661,
+    "success": false,
+    "testId": 126
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 1,
+    "numTotalTests": 82,
+    "timestamp": 1794943582339,
+    "success": false,
+    "testId": 126
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 0,
+    "numTotalTests": 82,
+    "timestamp": 1794943595586,
+    "success": true,
+    "testId": 126
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: traducir resultado del inicio de sesion a mensaje",
+    "commitTimestamp": 1794943600703,
+    "testId": 126
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 1,
+    "numTotalTests": 83,
+    "timestamp": 1794943625548,
+    "success": false,
+    "testId": 127
+  },
+  {
+    "numPassedTests": 83,
+    "failedTests": 0,
+    "numTotalTests": 83,
+    "timestamp": 1794943639346,
+    "success": true,
+    "testId": 127
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: seleccionar vista segun el rol autenticado",
+    "commitTimestamp": 1794943645376,
+    "testId": 127
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar formulario de login con la aplicacion",
+    "commitTimestamp": 1794943753724,
+    "testId": 128
+  },
+  {
+    "numPassedTests": 84,
+    "failedTests": 0,
+    "numTotalTests": 84,
+    "timestamp": 1794943772655,
+    "success": false,
+    "testId": 129
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1794943797267,
+    "success": true,
+    "testId": 129
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar cierre de sesion con las vistas",
+    "commitTimestamp": 1794943812506,
+    "testId": 129
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1794943839390,
+    "success": true,
+    "testId": 130
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "docs: documentar tareas del sprint 2",
+    "commitTimestamp": 1794943854481,
+    "testId": 130
   }
 ]

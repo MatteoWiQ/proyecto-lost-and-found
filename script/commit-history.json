@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8204cadc601ccb10af1ac8f4523b3c3097095f86",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T19:12:39.000Z",
       "message": "merge cuentas con correo",
-      "url": "/commit/HEAD"
+      "url": "/commit/8204cadc601ccb10af1ac8f4523b3c3097095f86"
     },
     "stats": {
       "total": 1,
@@ -608,12 +608,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6455bac1c4093fb2478ec95a7033af9addf2126f",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T19:48:37.000Z",
       "message": "feat: pantalla de crear cuenta",
-      "url": "/commit/HEAD"
+      "url": "/commit/6455bac1c4093fb2478ec95a7033af9addf2126f"
     },
     "stats": {
       "total": 209,
@@ -627,12 +627,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a9a4e2542e3bd0bdcb3e0710cd7b8be315a91e4d",
     "author": "Alvaro Nina",
     "commit": {
       "date": "2026-11-16T19:55:30.000Z",
       "message": "feat: boton para reestablecer filtros de busqueda",
-      "url": "/commit/HEAD"
+      "url": "/commit/a9a4e2542e3bd0bdcb3e0710cd7b8be315a91e4d"
     },
     "stats": {
       "total": 26,
@@ -642,6 +642,310 @@
     },
     "coverage": 94.25,
     "test_count": 70,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "201361ce23c0d7f2143d834d3c68ecd70456702d",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:17:55.000Z",
+      "message": "feat: buscar cuentas por correo y contrasena",
+      "url": "https://github.com/MatteoWiQ/proyecto-lost-and-found/commit/201361ce23c0d7f2143d834d3c68ecd70456702d"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 17,
+      "deletions": 4,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.3,
+    "test_count": 71,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5f1b950e5db74a56b771d9bc89883ee677b9d541",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:19:01.000Z",
+      "message": "feat: iniciar sesion con credenciales validas",
+      "url": "/commit/5f1b950e5db74a56b771d9bc89883ee677b9d541"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.35,
+    "test_count": 72,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5959ae827ae9cb00bc62e4d266df0f9bd89c1ead",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:19:46.000Z",
+      "message": "feat: mostrar mensaje generico al fallar el login",
+      "url": "/commit/5959ae827ae9cb00bc62e4d266df0f9bd89c1ead"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 17,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.42,
+    "test_count": 73,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9b08c4ed5cbc5607bb735f327fb15c324d06cf98",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:20:27.000Z",
+      "message": "feat: validar dominio institucional al iniciar sesion",
+      "url": "/commit/9b08c4ed5cbc5607bb735f327fb15c324d06cf98"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.47,
+    "test_count": 74,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b5f17ba6f05afcdca398fb3487de6cb3cdf4d68a",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:21:13.000Z",
+      "message": "feat: guardar sesion sin contrasena",
+      "url": "/commit/b5f17ba6f05afcdca398fb3487de6cb3cdf4d68a"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 31,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.54,
+    "test_count": 75,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1bb1c872511b759a7646c25918b7111be9b59c04",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:21:57.000Z",
+      "message": "feat: recuperar la sesion almacenada",
+      "url": "/commit/1bb1c872511b759a7646c25918b7111be9b59c04"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.58,
+    "test_count": 76,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0aa13e15f9ad45cdd745512eb231fd7f48429689",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:22:42.000Z",
+      "message": "feat: eliminar la sesion al cerrar sesion",
+      "url": "/commit/0aa13e15f9ad45cdd745512eb231fd7f48429689"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 16,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.61,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6621d3f842b5740c3916dba61e361afd500681d3",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:23:44.000Z",
+      "message": "feat: persistir cuentas en almacenamiento local",
+      "url": "/commit/6621d3f842b5740c3916dba61e361afd500681d3"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 42,
+      "deletions": 6,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.78,
+    "test_count": 78,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5748c3da8b85c489f1c6f192937cf6c2f6d5c3df",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:24:25.000Z",
+      "message": "feat: reconocer la vista de inicio de sesion",
+      "url": "/commit/5748c3da8b85c489f1c6f192937cf6c2f6d5c3df"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 8,
+      "deletions": 3,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.78,
+    "test_count": 79,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "11498b28637d19c3327d729b37ab9832d3f5ba0b",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:25:08.000Z",
+      "message": "feat: iniciar la aplicacion en login",
+      "url": "/commit/11498b28637d19c3327d729b37ab9832d3f5ba0b"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 9,
+      "deletions": 5,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.78,
+    "test_count": 80,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d1a6de91c332bda25e799dff393283425c3b36c6",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:25:46.000Z",
+      "message": "feat: validar campos obligatorios del login",
+      "url": "/commit/d1a6de91c332bda25e799dff393283425c3b36c6"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.8,
+    "test_count": 81,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6fee1eb5866dc248f69d7f305f61993d0ba4d528",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:26:39.000Z",
+      "message": "feat: traducir resultado del inicio de sesion a mensaje",
+      "url": "/commit/6fee1eb5866dc248f69d7f305f61993d0ba4d528"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.82,
+    "test_count": 82,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2fffedacc177beeadbc4bf5619a08fdff5fe5277",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:27:24.000Z",
+      "message": "feat: seleccionar vista segun el rol autenticado",
+      "url": "/commit/2fffedacc177beeadbc4bf5619a08fdff5fe5277"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 94.84,
+    "test_count": 83,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:29:12.000Z",
+      "message": "feat: conectar formulario de login con la aplicacion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 101,
+      "additions": 91,
+      "deletions": 10,
+      "date": "2026-11-17"
+    },
+    "coverage": 88.52,
+    "test_count": 84,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:30:11.000Z",
+      "message": "feat: conectar cierre de sesion con las vistas",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 22,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 87.55,
+    "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-17T19:30:53.000Z",
+      "message": "docs: documentar tareas del sprint 2",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 27,
+      "deletions": 4,
+      "date": "2026-11-17"
+    },
+    "coverage": 87.55,
+    "test_count": 85,
     "failed_tests": 0,
     "conclusion": "success"
   }

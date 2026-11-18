@@ -20,4 +20,30 @@ describe('RepositorioCuentas', () => {
     expect(repositorio.agregarCuenta(cuentaRepetida)).toBe("Error, la cuenta ya existe");
   });
 
+  it('Deberia encontrar una cuenta por correo y contrasena', () => {
+    const repositorio = new RepositorioCuentas();
+    const cuenta = new Cuenta('juan@ucb.edu.bo', '123456789', '123456789', 'Juan');
+    repositorio.agregarCuenta(cuenta);
+
+    expect(repositorio.buscarCuenta('juan@ucb.edu.bo', '123456789')).toBe(cuenta);
+  });
+
+  it('Deberia recuperar cuentas desde el almacenamiento', () => {
+    const datos = new Map();
+    const almacenamiento = {
+      setItem: (clave, valor) => datos.set(clave, valor),
+      getItem: (clave) => datos.get(clave) || null
+    };
+    const repositorio = new RepositorioCuentas(almacenamiento);
+    repositorio.agregarCuenta(new Cuenta(
+      'juan@ucb.edu.bo', '123456789', '123456789', 'Juan'
+    ));
+
+    const repositorioRecargado = new RepositorioCuentas(almacenamiento);
+
+    expect(repositorioRecargado.buscarCuenta('juan@ucb.edu.bo', '123456789')).toEqual(
+      expect.objectContaining({ correo: 'juan@ucb.edu.bo', nombre: 'Juan' })
+    );
+  });
+
 })

@@ -1,12 +1,16 @@
 import { vistaInicial, obtenerVista, cambiarVista, debeMostrarOcultos } from "./Vista.js";
 
 describe("Vista - estado inicial", () => {
-  it("Deberia iniciar en la vista de crear cuenta", () => {
-    expect(vistaInicial()).toEqual("crear-cuenta");
+  it("Deberia iniciar en la vista de iniciar sesion", () => {
+    expect(vistaInicial()).toEqual("iniciar-sesion");
   });
 
-  it("obtenerVista deberia devolver crear cuenta al inicio", () => {
-    expect(obtenerVista()).toEqual("crear-cuenta");
+  it("obtenerVista deberia devolver iniciar sesion al inicio", () => {
+    expect(obtenerVista()).toEqual("iniciar-sesion");
+  });
+
+  it("Deberia iniciar en login para proteger las vistas privadas", () => {
+    expect(vistaInicial()).toEqual("iniciar-sesion");
   });
 });
 
@@ -20,6 +24,11 @@ describe("Vista - cambiarVista round-trip", () => {
 
     cambiarVista("crear-cuenta");
     expect(obtenerVista()).toEqual("crear-cuenta");
+  });
+
+  it("Deberia cambiar a la vista de iniciar sesion", () => {
+    cambiarVista("iniciar-sesion");
+    expect(obtenerVista()).toEqual("iniciar-sesion");
   });
 });
 

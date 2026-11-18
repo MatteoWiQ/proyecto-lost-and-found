@@ -7,7 +7,7 @@ function agregarDato(contenedor, etiqueta, valor) {
   contenedor.appendChild(parrafo);
 }
 
-export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, alAprobar) {
+export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, alAprobar, alConfirmarRechazo) {
   lista.replaceChildren();
   if (mensaje) {
     const aviso = document.createElement("p");
@@ -39,14 +39,26 @@ export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, al
     motivo.placeholder = "Motivo de rechazo (opcional)";
     motivo.required = false;
     motivo.hidden = true;
+    
+    const botonConfirmar = document.createElement("button");
+    botonConfirmar.textContent = "Confirmar rechazo";
+    botonConfirmar.hidden = true;
+    botonConfirmar.addEventListener("click", () => {
+      const mensaje = `¿Estás seguro de rechazar el reporte de ${datos.nombre}?`;
+      alConfirmarRechazo(objeto, motivo.value, mensaje);
+    });
+
     const botonRechazar = document.createElement("button");
     botonRechazar.className = "boton-rechazar";
     botonRechazar.textContent = "Rechazar";
     botonRechazar.addEventListener("click", () => {
       motivo.hidden = false;
+      botonConfirmar.hidden = false;
     });
+
     elemento.appendChild(botonRechazar);
     elemento.appendChild(motivo);
+    elemento.appendChild(botonConfirmar);
     lista.appendChild(elemento);
   });
 }

@@ -969,12 +969,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2a8b8c3c7bec7fb72ab3f8b7241435112a00b86d",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T16:18:56.000Z",
       "message": "feat: Registrar motivo de rechazo del objeto",
-      "url": "/commit/HEAD"
+      "url": "/commit/2a8b8c3c7bec7fb72ab3f8b7241435112a00b86d"
     },
     "stats": {
       "total": 13,
@@ -1022,6 +1022,25 @@
     },
     "coverage": 87.54,
     "test_count": 89,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T18:50:11.000Z",
+      "message": "feat: Solicitar confirmacion de rechazo identificando el objeto",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 46,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.84,
+    "test_count": 90,
     "failed_tests": 0,
     "conclusion": "success"
   }

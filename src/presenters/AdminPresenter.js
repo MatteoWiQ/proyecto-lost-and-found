@@ -24,6 +24,8 @@ export function inicializarAdmin(galeria, catalogoControlador) {
       actualizarPendientesUI();
       catalogoControlador.actualizarResultadosCatalogo();
       actualizarGaleriaAdmin();
+    }, (objeto, motivo, mensaje) => {
+      window.confirm(mensaje);
     });
   }
 

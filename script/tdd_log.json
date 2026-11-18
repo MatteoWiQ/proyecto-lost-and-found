@@ -3386,7 +3386,7 @@
     "testId": 129
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2a8b8c3c7bec7fb72ab3f8b7241435112a00b86d",
     "commitName": "feat: conectar cierre de sesion con las vistas",
     "commitTimestamp": 1794943812506,
     "testId": 129
@@ -3508,5 +3508,27 @@
     "commitName": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
     "commitTimestamp": 1795022653900,
     "testId": 134
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 1,
+    "numTotalTests": 90,
+    "timestamp": 1795026800899,
+    "success": false,
+    "testId": 135
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 0,
+    "numTotalTests": 90,
+    "timestamp": 1795027650105,
+    "success": true,
+    "testId": 135
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Solicitar confirmacion de rechazo identificando el objeto",
+    "commitTimestamp": 1795027811712,
+    "testId": 135
   }
 ]

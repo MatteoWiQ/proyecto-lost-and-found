@@ -236,7 +236,10 @@ class ObjetoPerdido{
         this.estado = "Publicado";
     }
 
-    //Santiago
+    rechazar() {
+        this.estado = "Rechazado";
+    }
+
     obtenerEstadoValidacion() {
         return "Pendiente de validación";
     }

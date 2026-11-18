@@ -3306,7 +3306,7 @@
     "testId": 125
   },
   {
-    "commitId": "HEAD",
+    "commitId": "45aefe4335372abb256b52ec33a91cd933c6fcc9",
     "commitName": "feat: validar campos obligatorios del login",
     "commitTimestamp": 1794943548003,
     "testId": 125
@@ -3404,5 +3404,35 @@
     "commitName": "docs: documentar tareas del sprint 2",
     "commitTimestamp": 1794943854481,
     "testId": 130
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1795017192954,
+    "success": true,
+    "testId": 131
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 1,
+    "numTotalTests": 86,
+    "timestamp": 1795017300517,
+    "success": false,
+    "testId": 131
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 0,
+    "numTotalTests": 86,
+    "timestamp": 1795017964290,
+    "success": true,
+    "testId": 131
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Cambiar estado del objeto a rechazado",
+    "commitTimestamp": 1795018054773,
+    "testId": 131
   }
 ]

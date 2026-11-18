@@ -172,4 +172,10 @@ describe("ObjetoPerdido", () => {
 
     expect(ficha.estado).toEqual("Pendiente de validación");
   });
+
+  it("Deberia cambiar a estado Rechazado al rechazarse", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.rechazar();
+    expect(objeto.obtenerEstado()).toEqual("Rechazado");
+  });
 });

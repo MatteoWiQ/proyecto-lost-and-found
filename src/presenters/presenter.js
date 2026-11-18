@@ -27,7 +27,11 @@ const catalogoControlador = inicializarCatalogo(
   () => autenticacion.obtenerSesion()
 );
 
-const adminControlador = inicializarAdmin(galeria, catalogoControlador);
+const adminControlador = inicializarAdmin(
+  galeria,
+  catalogoControlador,
+  () => autenticacion.obtenerSesion()
+);
 
 inicializarFormulario(galeria, () => {
   adminControlador.actualizarPendientesUI();

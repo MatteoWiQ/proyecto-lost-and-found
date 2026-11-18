@@ -3430,7 +3430,7 @@
     "testId": 131
   },
   {
-    "commitId": "HEAD",
+    "commitId": "caa187537a76e65c0391a3dfac13361287defa4c",
     "commitName": "feat: Cambiar estado del objeto a rechazado",
     "commitTimestamp": 1795018054773,
     "testId": 131
@@ -3584,5 +3584,27 @@
     "commitName": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
     "commitTimestamp": 1795028997034,
     "testId": 136
+  },
+  {
+    "numPassedTests": 93,
+    "failedTests": 2,
+    "numTotalTests": 95,
+    "timestamp": 1795029763668,
+    "success": false,
+    "testId": 137
+  },
+  {
+    "numPassedTests": 95,
+    "failedTests": 0,
+    "numTotalTests": 95,
+    "timestamp": 1795030147824,
+    "success": true,
+    "testId": 137
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Validar permisos administrativos para rechazar publicaciones",
+    "commitTimestamp": 1795030172146,
+    "testId": 137
   }
 ]

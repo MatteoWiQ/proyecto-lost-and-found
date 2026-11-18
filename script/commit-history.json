@@ -1007,12 +1007,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "caa187537a76e65c0391a3dfac13361287defa4c",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T17:24:13.000Z",
       "message": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
-      "url": "/commit/HEAD"
+      "url": "/commit/caa187537a76e65c0391a3dfac13361287defa4c"
     },
     "stats": {
       "total": 64,
@@ -1060,6 +1060,25 @@
     },
     "coverage": 77.78,
     "test_count": 93,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T19:29:32.000Z",
+      "message": "feat: Validar permisos administrativos para rechazar publicaciones",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 44,
+      "deletions": 4,
+      "date": "2026-11-18"
+    },
+    "coverage": 77.89,
+    "test_count": 95,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -2,7 +2,7 @@ import Administrador from "../Administrador.js";
 import { renderizarGaleriaObjetos } from "../vistas/GaleriaObjetosVista.js";
 import { renderizarPublicacionesPendientes } from "../vistas/PublicacionesPendientesVista.js";
 
-export function inicializarAdmin(galeria, catalogoControlador) {
+export function inicializarAdmin(galeria, catalogoControlador, obtenerSesion) {
   const administrador = new Administrador();
   const listaPendientes = document.querySelector("#pendientes-lista");
 
@@ -25,6 +25,7 @@ export function inicializarAdmin(galeria, catalogoControlador) {
       catalogoControlador.actualizarResultadosCatalogo();
       actualizarGaleriaAdmin();
     }, (objeto, motivo, mensaje) => {
+      if (obtenerSesion()?.rol !== "administrador") return;
       if (!window.confirm(mensaje)) return;
 
       administrador.rechazarPublicacion(objeto, motivo);

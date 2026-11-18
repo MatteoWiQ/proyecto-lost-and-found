@@ -11,6 +11,7 @@ describe("AdminPresenter", () => {
   let galeria;
   let objeto;
   let catalogoControlador;
+  let obtenerSesion;
 
   beforeEach(() => {
     jest.clearAllMocks();
@@ -27,7 +28,10 @@ describe("AdminPresenter", () => {
     catalogoControlador = {
       actualizarResultadosCatalogo: jest.fn()
     };
-    inicializarAdmin(galeria, catalogoControlador);
+    obtenerSesion = jest.fn(() => ({
+      rol: "administrador"
+    }));
+    inicializarAdmin(galeria, catalogoControlador, obtenerSesion);
   });
 
   afterEach(() => {
@@ -59,4 +63,35 @@ describe("AdminPresenter", () => {
     expect(catalogoControlador.actualizarResultadosCatalogo).not.toHaveBeenCalled();
     expect(renderizarPublicacionesPendientes).toHaveBeenCalledTimes(1);
   });
-});
+
+  it("No deberia permitir rechazar publicaciones a un usuario sin permisos", () => {
+    obtenerSesion.mockReturnValue({ rol: "usuario" });
+    window.confirm.mockReturnValue(true);
+
+    const alConfirmarRechazo =
+        renderizarPublicacionesPendientes.mock.calls[0][4];
+
+    alConfirmarRechazo(objeto, "Reporte duplicado",
+        "¿Estás seguro de rechazar el reporte de Laptop?");
+
+    expect(objeto.obtenerEstado()).toEqual("Pendiente de validación");
+    expect(objeto.obtenerMotivoRechazo()).toBeUndefined();
+    expect(window.confirm).not.toHaveBeenCalled();
+    expect(catalogoControlador.actualizarResultadosCatalogo).not.toHaveBeenCalled();
+  });
+
+  it("No deberia permitir rechazar publicaciones sin una sesion activa", () => {
+    obtenerSesion.mockReturnValue(null);
+    window.confirm.mockReturnValue(true);
+
+    const alConfirmarRechazo =
+        renderizarPublicacionesPendientes.mock.calls[0][4];
+
+    alConfirmarRechazo(objeto, "Reporte duplicado",
+        "¿Estás seguro de rechazar el reporte de Laptop?");
+
+    expect(objeto.obtenerEstado()).toEqual("Pendiente de validación");
+    expect(window.confirm).not.toHaveBeenCalled();
+    expect(catalogoControlador.actualizarResultadosCatalogo).not.toHaveBeenCalled();
+  });
+}); 

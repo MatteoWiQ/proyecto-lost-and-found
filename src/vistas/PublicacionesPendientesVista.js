@@ -34,6 +34,19 @@ export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, al
     boton.textContent = "Aprobar";
     boton.addEventListener("click", () => alAprobar(objeto));
     elemento.appendChild(boton);
+    const motivo = document.createElement("textarea");
+    motivo.className = "motivo-rechazo";
+    motivo.placeholder = "Motivo de rechazo (opcional)";
+    motivo.required = false;
+    motivo.hidden = true;
+    const botonRechazar = document.createElement("button");
+    botonRechazar.className = "boton-rechazar";
+    botonRechazar.textContent = "Rechazar";
+    botonRechazar.addEventListener("click", () => {
+      motivo.hidden = false;
+    });
+    elemento.appendChild(botonRechazar);
+    elemento.appendChild(motivo);
     lista.appendChild(elemento);
   });
 }

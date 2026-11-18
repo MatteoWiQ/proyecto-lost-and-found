@@ -950,12 +950,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ea9010c7c9b4b6c88dbbcd06a69cf73655a47f28",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T16:07:34.000Z",
       "message": "feat: Cambiar estado del objeto a rechazado",
-      "url": "/commit/HEAD"
+      "url": "/commit/ea9010c7c9b4b6c88dbbcd06a69cf73655a47f28"
     },
     "stats": {
       "total": 11,
@@ -1003,6 +1003,25 @@
     },
     "coverage": 87.68,
     "test_count": 88,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T17:24:13.000Z",
+      "message": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 64,
+      "additions": 64,
+      "deletions": 0,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.54,
+    "test_count": 89,
     "failed_tests": 0,
     "conclusion": "success"
   }

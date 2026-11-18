@@ -3364,7 +3364,7 @@
     "testId": 127
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ea9010c7c9b4b6c88dbbcd06a69cf73655a47f28",
     "commitName": "feat: conectar formulario de login con la aplicacion",
     "commitTimestamp": 1794943753724,
     "testId": 128
@@ -3478,5 +3478,35 @@
     "commitName": "feat: Incluir motivo de rechazo en ficha tecnica",
     "commitTimestamp": 1795021130958,
     "testId": 133
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 0,
+    "numTotalTests": 88,
+    "timestamp": 1795022315778,
+    "success": false,
+    "testId": 134
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 0,
+    "numTotalTests": 88,
+    "timestamp": 1795022587842,
+    "success": false,
+    "testId": 134
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 0,
+    "numTotalTests": 89,
+    "timestamp": 1795022631067,
+    "success": true,
+    "testId": 134
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
+    "commitTimestamp": 1795022653900,
+    "testId": 134
   }
 ]

@@ -13,7 +13,7 @@ export function crearTarjetaObjeto(objeto, opciones = {}) {
   tarjeta.style.cursor = "pointer";
   const datos = objeto.obtenerDatosTarjeta();
 
-  if (opciones.mostrarBotonAprobar) {
+  if (opciones.mostrarBotonAprobar && objeto.obtenerEstado() === "Pendiente de validación") {
     const boton = document.createElement("button");
     boton.className = "boton-aprobar";
     boton.textContent = "Aprobar";
@@ -34,7 +34,12 @@ export function crearTarjetaObjeto(objeto, opciones = {}) {
   agregarCampo(tarjeta, "Fecha", datos.fecha);
 
   const estado = document.createElement("p");
-  estado.className = objeto.obtenerEstado() === "Publicado" ? "badge-publicado" : "badge-oculto";
+  const clasesPorEstado = {
+    "Publicado": "badge-publicado",
+    "Rechazado": "badge-rechazado",
+    "Pendiente de validación": "badge-oculto"
+  };
+  estado.className = clasesPorEstado[objeto.obtenerEstado()];
   estado.textContent = objeto.obtenerEstado();
   tarjeta.appendChild(estado);
   if (opciones.alSeleccionar) tarjeta.addEventListener("click", opciones.alSeleccionar);

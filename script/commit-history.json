@@ -931,12 +931,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "72ec2f1e971ef3a2d94f1e202eb2d6a0b2a31145",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-17T19:30:53.000Z",
       "message": "docs: documentar tareas del sprint 2",
-      "url": "/commit/HEAD"
+      "url": "/commit/72ec2f1e971ef3a2d94f1e202eb2d6a0b2a31145"
     },
     "stats": {
       "total": 31,
@@ -946,6 +946,158 @@
     },
     "coverage": 87.55,
     "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ea9010c7c9b4b6c88dbbcd06a69cf73655a47f28",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T16:07:34.000Z",
+      "message": "feat: Cambiar estado del objeto a rechazado",
+      "url": "/commit/ea9010c7c9b4b6c88dbbcd06a69cf73655a47f28"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 10,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.59,
+    "test_count": 86,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2a8b8c3c7bec7fb72ab3f8b7241435112a00b86d",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T16:18:56.000Z",
+      "message": "feat: Registrar motivo de rechazo del objeto",
+      "url": "/commit/2a8b8c3c7bec7fb72ab3f8b7241435112a00b86d"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.68,
+    "test_count": 87,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a6d96c1664ec89667add2b31e6403fab441590dd",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T16:58:50.000Z",
+      "message": "feat: Incluir motivo de rechazo en ficha tecnica",
+      "url": "/commit/a6d96c1664ec89667add2b31e6403fab441590dd"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.68,
+    "test_count": 88,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "caa187537a76e65c0391a3dfac13361287defa4c",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T17:24:13.000Z",
+      "message": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
+      "url": "/commit/caa187537a76e65c0391a3dfac13361287defa4c"
+    },
+    "stats": {
+      "total": 64,
+      "additions": 64,
+      "deletions": 0,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.54,
+    "test_count": 89,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8808b4256d69dfa12c44b505adfb645288d9030a",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T18:50:11.000Z",
+      "message": "feat: Solicitar confirmacion de rechazo identificando el objeto",
+      "url": "/commit/8808b4256d69dfa12c44b505adfb645288d9030a"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 46,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 87.84,
+    "test_count": 90,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3a6344ca5e9a906c0c1ca12b86f9479a725d4f03",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T19:09:56.000Z",
+      "message": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
+      "url": "/commit/3a6344ca5e9a906c0c1ca12b86f9479a725d4f03"
+    },
+    "stats": {
+      "total": 82,
+      "additions": 81,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 77.78,
+    "test_count": 93,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T19:29:32.000Z",
+      "message": "feat: Validar permisos administrativos para rechazar publicaciones",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 44,
+      "deletions": 4,
+      "date": "2026-11-18"
+    },
+    "coverage": 77.89,
+    "test_count": 95,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T19:45:01.000Z",
+      "message": "feat: Manejar errores durante el rechazo de publicaciones",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 30,
+      "deletions": 2,
+      "date": "2026-11-18"
+    },
+    "coverage": 78.05,
+    "test_count": 96,
     "failed_tests": 0,
     "conclusion": "success"
   },
@@ -984,6 +1136,25 @@
     },
     "coverage": 87.55,
     "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Santiago Lazcano Quiroga",
+    "commit": {
+      "date": "2026-11-18T22:03:42.000Z",
+      "message": "refactor: Arreglo de errores en los archivos",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 159,
+      "additions": 129,
+      "deletions": 30,
+      "date": "2026-11-18"
+    },
+    "coverage": 78.08,
+    "test_count": 96,
     "failed_tests": 0,
     "conclusion": "success"
   }

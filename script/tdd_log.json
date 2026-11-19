@@ -3358,13 +3358,13 @@
     "testId": 127
   },
   {
-    "commitId": "HEAD",
+    "commitId": "72ec2f1e971ef3a2d94f1e202eb2d6a0b2a31145",
     "commitName": "feat: seleccionar vista segun el rol autenticado",
     "commitTimestamp": 1794943645376,
     "testId": 127
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ea9010c7c9b4b6c88dbbcd06a69cf73655a47f28",
     "commitName": "feat: conectar formulario de login con la aplicacion",
     "commitTimestamp": 1794943753724,
     "testId": 128
@@ -3386,7 +3386,7 @@
     "testId": 129
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2a8b8c3c7bec7fb72ab3f8b7241435112a00b86d",
     "commitName": "feat: conectar cierre de sesion con las vistas",
     "commitTimestamp": 1794943812506,
     "testId": 129
@@ -3400,10 +3400,296 @@
     "testId": 130
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a6d96c1664ec89667add2b31e6403fab441590dd",
     "commitName": "docs: documentar tareas del sprint 2",
     "commitTimestamp": 1794943854481,
     "testId": 130
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1795017192954,
+    "success": true,
+    "testId": 131
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 1,
+    "numTotalTests": 86,
+    "timestamp": 1795017300517,
+    "success": false,
+    "testId": 131
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 0,
+    "numTotalTests": 86,
+    "timestamp": 1795017964290,
+    "success": true,
+    "testId": 131
+  },
+  {
+    "commitId": "caa187537a76e65c0391a3dfac13361287defa4c",
+    "commitName": "feat: Cambiar estado del objeto a rechazado",
+    "commitTimestamp": 1795018054773,
+    "testId": 131
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 1,
+    "numTotalTests": 87,
+    "timestamp": 1795018367410,
+    "success": false,
+    "testId": 132
+  },
+  {
+    "numPassedTests": 87,
+    "failedTests": 0,
+    "numTotalTests": 87,
+    "timestamp": 1795018716709,
+    "success": true,
+    "testId": 132
+  },
+  {
+    "commitId": "8808b4256d69dfa12c44b505adfb645288d9030a",
+    "commitName": "feat: Registrar motivo de rechazo del objeto",
+    "commitTimestamp": 1795018736594,
+    "testId": 132
+  },
+  {
+    "numPassedTests": 87,
+    "failedTests": 1,
+    "numTotalTests": 88,
+    "timestamp": 1795021022116,
+    "success": false,
+    "testId": 133
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 0,
+    "numTotalTests": 88,
+    "timestamp": 1795021090970,
+    "success": true,
+    "testId": 133
+  },
+  {
+    "commitId": "3a6344ca5e9a906c0c1ca12b86f9479a725d4f03",
+    "commitName": "feat: Incluir motivo de rechazo en ficha tecnica",
+    "commitTimestamp": 1795021130958,
+    "testId": 133
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 0,
+    "numTotalTests": 88,
+    "timestamp": 1795022315778,
+    "success": false,
+    "testId": 134
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 0,
+    "numTotalTests": 88,
+    "timestamp": 1795022587842,
+    "success": false,
+    "testId": 134
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 0,
+    "numTotalTests": 89,
+    "timestamp": 1795022631067,
+    "success": true,
+    "testId": 134
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
+    "commitTimestamp": 1795022653900,
+    "testId": 134
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 1,
+    "numTotalTests": 90,
+    "timestamp": 1795026800899,
+    "success": false,
+    "testId": 135
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 0,
+    "numTotalTests": 90,
+    "timestamp": 1795027650105,
+    "success": true,
+    "testId": 135
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Solicitar confirmacion de rechazo identificando el objeto",
+    "commitTimestamp": 1795027811712,
+    "testId": 135
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 1,
+    "numTotalTests": 91,
+    "timestamp": 1795028291955,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 1,
+    "numTotalTests": 91,
+    "timestamp": 1795028371696,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 1,
+    "numTotalTests": 91,
+    "timestamp": 1795028386068,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 0,
+    "numTotalTests": 91,
+    "timestamp": 1795028766376,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 0,
+    "numTotalTests": 91,
+    "timestamp": 1795028881158,
+    "success": false,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 93,
+    "failedTests": 0,
+    "numTotalTests": 93,
+    "timestamp": 1795028949456,
+    "success": true,
+    "testId": 136
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
+    "commitTimestamp": 1795028997034,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 93,
+    "failedTests": 2,
+    "numTotalTests": 95,
+    "timestamp": 1795029763668,
+    "success": false,
+    "testId": 137
+  },
+  {
+    "numPassedTests": 95,
+    "failedTests": 0,
+    "numTotalTests": 95,
+    "timestamp": 1795030147824,
+    "success": true,
+    "testId": 137
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Validar permisos administrativos para rechazar publicaciones",
+    "commitTimestamp": 1795030172146,
+    "testId": 137
+  },
+  {
+    "numPassedTests": 95,
+    "failedTests": 1,
+    "numTotalTests": 96,
+    "timestamp": 1795030646404,
+    "success": false,
+    "testId": 138
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795031083595,
+    "success": true,
+    "testId": 138
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Manejar errores durante el rechazo de publicaciones",
+    "commitTimestamp": 1795031101752,
+    "testId": 138
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 5,
+    "numTotalTests": 96,
+    "timestamp": 1795034547992,
+    "success": false,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 5,
+    "numTotalTests": 96,
+    "timestamp": 1795034622996,
+    "success": false,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795034644317,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 91,
+    "failedTests": 5,
+    "numTotalTests": 96,
+    "timestamp": 1795034721915,
+    "success": false,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795034735614,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795038065450,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 96,
+    "failedTests": 0,
+    "numTotalTests": 96,
+    "timestamp": 1795038858069,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: Arreglo de errores en los archivos",
+    "commitTimestamp": 1795039422468,
+    "testId": 139
   },
   {
     "commitId": "HEAD",

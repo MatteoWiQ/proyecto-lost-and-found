@@ -228,7 +228,8 @@ class ObjetoPerdido{
             lugar: this.lugar,
             Comentario: this.Comentario,
             foto: this.foto,
-            estado: this.estado
+            estado: this.estado,
+            motivoRechazo: this.motivoRechazo
         };
     }
 
@@ -236,7 +237,15 @@ class ObjetoPerdido{
         this.estado = "Publicado";
     }
 
-    //Santiago
+    rechazar(motivo = "") {
+        this.estado = "Rechazado";
+        this.motivoRechazo = motivo;
+    }
+
+    obtenerMotivoRechazo() {
+        return this.motivoRechazo;
+    }
+
     obtenerEstadoValidacion() {
         return "Pendiente de validación";
     }

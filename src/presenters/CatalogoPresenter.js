@@ -63,12 +63,13 @@ export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
       navegacionVistas.hidden = true;
     }
     cambiarVista(vista);
+    actualizarResultadosCatalogo();
   }
 
   botonVistaUsuario.addEventListener("click", () => mostrarVista("usuario"));
   botonVistaAdmin.addEventListener("click", () => mostrarVista("administrador"));
 
-  function actualizarGaleriaUI(objetos = galeria.obtenerGaleriaObjects()) {
+  function actualizarGaleriaUI(objetos = usuario.obtenerObjetosParaCatalogo(galeria.obtenerGaleriaObjects(),debeMostrarOcultos(obtenerVista()))) {
     renderizarGaleriaObjetos(
       document.querySelector("#galeria-container"),
       objetos,
@@ -125,7 +126,6 @@ export function inicializarCatalogo(galeria, vistaFicha, obtenerSesion) {
   });
 
   mostrarVista(obtenerVista());
-  actualizarGaleriaUI();
 
   return {
     actualizarResultadosCatalogo,

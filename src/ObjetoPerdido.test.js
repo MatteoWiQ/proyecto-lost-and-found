@@ -172,4 +172,23 @@ describe("ObjetoPerdido", () => {
 
     expect(ficha.estado).toEqual("Pendiente de validación");
   });
+
+  it("Deberia cambiar a estado Rechazado al rechazarse", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.rechazar();
+    expect(objeto.obtenerEstado()).toEqual("Rechazado");
+  });
+
+  it("Deberia registrar el motivo de rechazo del objeto", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.rechazar("Reporte duplicado");
+    expect(objeto.obtenerMotivoRechazo()).toEqual("Reporte duplicado");
+  });
+
+  it("Deberia retornar el motivo de rechazo en la ficha tecnica", () => {
+    const objeto = new ObjetoPerdido("Laptop", "Tecnologia");
+    objeto.rechazar("Reporte duplicado");
+    const ficha = objeto.obtenerFichaTecnica();
+    expect(ficha.motivoRechazo).toEqual("Reporte duplicado");
+  });
 });

@@ -7,7 +7,7 @@ function agregarDato(contenedor, etiqueta, valor) {
   contenedor.appendChild(parrafo);
 }
 
-export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, alAprobar) {
+export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, alAprobar, alConfirmarRechazo) {
   lista.replaceChildren();
   if (mensaje) {
     const aviso = document.createElement("p");
@@ -34,6 +34,32 @@ export function renderizarPublicacionesPendientes(lista, pendientes, mensaje, al
     boton.textContent = "Aprobar";
     boton.addEventListener("click", () => alAprobar(objeto));
     elemento.appendChild(boton);
+    const motivo = document.createElement("textarea");
+    motivo.className = "motivo-rechazo";
+    motivo.placeholder = "Motivo de rechazo (opcional)";
+    motivo.required = false;
+    motivo.hidden = true;
+
+    const botonConfirmar = document.createElement("button");
+    botonConfirmar.className = "boton-confirmar-rechazo";
+    botonConfirmar.textContent = "Confirmar rechazo"; 
+    botonConfirmar.hidden = true;
+    botonConfirmar.addEventListener("click", () => {
+      const mensaje = `¿Estás seguro de rechazar el reporte de ${datos.nombre}?`;
+      alConfirmarRechazo(objeto, motivo.value, mensaje);
+    });
+
+    const botonRechazar = document.createElement("button");
+    botonRechazar.className = "boton-rechazar";
+    botonRechazar.textContent = "Rechazar";
+    botonRechazar.addEventListener("click", () => {
+      motivo.hidden = false;
+      botonConfirmar.hidden = false;
+    });
+
+    elemento.appendChild(botonRechazar);
+    elemento.appendChild(motivo);
+    elemento.appendChild(botonConfirmar);
     lista.appendChild(elemento);
   });
 }

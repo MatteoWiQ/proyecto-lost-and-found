@@ -46,4 +46,20 @@ describe('RepositorioCuentas', () => {
     );
   });
 
+  it('Deberia incluir una cuenta administrativa de demostracion', () => {
+    const almacenamiento = {
+      getItem: () => null,
+      setItem: () => {}
+    };
+    const repositorio = new RepositorioCuentas(almacenamiento);
+
+    expect(repositorio.buscarCuenta(
+      'admin.demo@ucb.edu.bo',
+      'AdminDemo123!'
+    )).toEqual(expect.objectContaining({
+      correo: 'admin.demo@ucb.edu.bo',
+      rol: 'administrador'
+    }));
+  });
+
 })

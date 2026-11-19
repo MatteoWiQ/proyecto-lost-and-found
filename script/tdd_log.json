@@ -3790,7 +3790,7 @@
     "testId": 138
   },
   {
-    "commitId": "HEAD",
+    "commitId": "17e853e4987dc733b25069d74ed48702b43cd54c",
     "commitName": "feat: mostrar instrucciones de reclamo en la ficha de objetos publicados",
     "commitTimestamp": 1795056409999,
     "testId": 138
@@ -3892,5 +3892,11 @@
     "commitName": "refactor: quitar estilos de imagen duplicados de la ficha",
     "commitTimestamp": 1795058056623,
     "testId": 145
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar cuenta administrativa de demostracion",
+    "commitTimestamp": 1795058893718,
+    "testId": 146
   }
 ]

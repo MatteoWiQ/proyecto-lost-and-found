@@ -1,4 +1,11 @@
 
+const CUENTA_ADMIN_DEMO = {
+    correo: "admin.demo@ucb.edu.bo",
+    contrasena: "AdminDemo123!",
+    nombre: "Administrador Demo",
+    rol: "administrador"
+};
+
 class RepositorioCuentas {
     constructor(almacenamiento = null) {
         this.almacenamiento = almacenamiento;
@@ -8,7 +15,12 @@ class RepositorioCuentas {
     cargarCuentas() {
         if (!this.almacenamiento) return [];
         const cuentasGuardadas = this.almacenamiento.getItem("cuentas");
-        return cuentasGuardadas ? JSON.parse(cuentasGuardadas) : [];
+        const cuentas = cuentasGuardadas ? JSON.parse(cuentasGuardadas) : [];
+        if (!cuentas.some((cuenta) => cuenta.correo === CUENTA_ADMIN_DEMO.correo)) {
+            cuentas.push(CUENTA_ADMIN_DEMO);
+            this.almacenamiento.setItem("cuentas", JSON.stringify(cuentas));
+        }
+        return cuentas;
     }
 
     guardarCuentas() {

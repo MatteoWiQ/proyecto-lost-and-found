@@ -1292,12 +1292,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "17e853e4987dc733b25069d74ed48702b43cd54c",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:51:01.000Z",
       "message": "feat: incluir campus en la ubicacion del mensaje de registro",
-      "url": "/commit/HEAD"
+      "url": "/commit/17e853e4987dc733b25069d74ed48702b43cd54c"
     },
     "stats": {
       "total": 4,
@@ -1383,6 +1383,25 @@
     },
     "coverage": 81.01,
     "test_count": 110,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mateo Wilson",
+    "commit": {
+      "date": "2026-11-19T03:28:12.000Z",
+      "message": "feat: agregar cuenta administrativa de demostracion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 29,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.25,
+    "test_count": 111,
     "failed_tests": 0,
     "conclusion": "success"
   }

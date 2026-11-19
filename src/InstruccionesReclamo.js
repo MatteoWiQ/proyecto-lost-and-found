@@ -35,6 +35,10 @@ class InstruccionesReclamo {
   obtenerAclaracion() {
     return 'Consultar esta ficha o estas instrucciones no constituye una reserva del objeto ni una confirmación de propiedad.';
   }
+
+  aplicaA(objeto) {
+    return objeto.obtenerEstado() === 'Publicado';
+  }
 }
 
 export default InstruccionesReclamo;

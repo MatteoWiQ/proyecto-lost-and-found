@@ -3624,7 +3624,7 @@
     "testId": 138
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dab398c708e61d8a3cc594bf504d6ff3f23bb4c1",
     "commitName": "feat: Manejar errores durante el rechazo de publicaciones",
     "commitTimestamp": 1795031101752,
     "testId": 138
@@ -3766,5 +3766,19 @@
     "commitName": "feat: aclarar que consultar instrucciones no es reserva ni confirmacion",
     "commitTimestamp": 1795056135343,
     "testId": 136
+  },
+  {
+    "numPassedTests": 106,
+    "failedTests": 0,
+    "numTotalTests": 106,
+    "timestamp": 1795056226343,
+    "success": true,
+    "testId": 137
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aplicar instrucciones de reclamo solo a objetos publicados",
+    "commitTimestamp": 1795056232032,
+    "testId": 137
   }
 ]

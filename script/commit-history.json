@@ -1140,12 +1140,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dab398c708e61d8a3cc594bf504d6ff3f23bb4c1",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T22:03:42.000Z",
       "message": "refactor: Arreglo de errores en los archivos",
-      "url": "/commit/HEAD"
+      "url": "/commit/dab398c708e61d8a3cc594bf504d6ff3f23bb4c1"
     },
     "stats": {
       "total": 159,
@@ -1231,6 +1231,25 @@
     },
     "coverage": 78.55,
     "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:43:50.000Z",
+      "message": "feat: aplicar instrucciones de reclamo solo a objetos publicados",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.61,
+    "test_count": 106,
     "failed_tests": 0,
     "conclusion": "success"
   }

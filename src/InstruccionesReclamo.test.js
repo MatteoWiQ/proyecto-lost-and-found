@@ -1,4 +1,9 @@
 import InstruccionesReclamo from './InstruccionesReclamo.js';
+import ObjetoPerdido from './ObjetoPerdido.js';
+
+function crearObjeto() {
+  return new ObjetoPerdido('Mochila azul', 'Varios', '2026-11-10', '10:00', 'Biblioteca', '', 'mochila.jpg');
+}
 
 describe('Instrucciones de reclamo', () => {
   it('Deberia identificar la seccion como instrucciones de reclamo', () => {
@@ -46,5 +51,28 @@ describe('Instrucciones de reclamo', () => {
     expect(instrucciones.obtenerAclaracion()).toEqual(
       'Consultar esta ficha o estas instrucciones no constituye una reserva del objeto ni una confirmación de propiedad.'
     );
+  });
+
+  it('Deberia aplicar a objetos publicados sin cambiar su estado', () => {
+    const instrucciones = new InstruccionesReclamo();
+    const objeto = crearObjeto();
+    objeto.aprobar();
+    expect(instrucciones.aplicaA(objeto)).toBe(true);
+    expect(objeto.obtenerEstado()).toEqual('Publicado');
+  });
+
+  it('No deberia aplicar a objetos pendientes de validacion', () => {
+    const instrucciones = new InstruccionesReclamo();
+    const objeto = crearObjeto();
+    expect(instrucciones.aplicaA(objeto)).toBe(false);
+    expect(objeto.obtenerEstado()).toEqual('Pendiente de validación');
+  });
+
+  it('No deberia aplicar a objetos rechazados', () => {
+    const instrucciones = new InstruccionesReclamo();
+    const objeto = crearObjeto();
+    objeto.rechazar('Foto poco clara');
+    expect(instrucciones.aplicaA(objeto)).toBe(false);
+    expect(objeto.obtenerEstado()).toEqual('Rechazado');
   });
 });

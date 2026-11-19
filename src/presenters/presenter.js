@@ -9,21 +9,29 @@ import Autenticacion from "../Autenticacion.js";
 import RepositorioCuentas from "../RepositorioCuentas.js";
 import { crearVistaFicha } from "../vistas/FichaObjetoVista.js";
 import { obtenerVista } from "../Vista.js";
+import InstruccionesReclamo from "../InstruccionesReclamo.js";
 
 const galeria = new Galeria();
 const almacenamiento = window.localStorage;
 const repositorioCuentas = new RepositorioCuentas(almacenamiento);
 const autenticacion = new Autenticacion(repositorioCuentas, almacenamiento);
 
-const vistaFicha = crearVistaFicha(
-  document.querySelector("#detalle-container"),
-  document.querySelector("#detalle-info"),
-  document.querySelector("#cerrar-detalle")
+const contenedorDetalle = document.querySelector("#detalle-container");
+const informacionDetalle = document.querySelector("#detalle-info");
+const botonCerrarDetalle = document.querySelector("#cerrar-detalle");
+
+const vistaFichaCatalogo = crearVistaFicha(
+  contenedorDetalle,
+  informacionDetalle,
+  botonCerrarDetalle,
+  new InstruccionesReclamo()
 );
+
+const vistaFichaAdmin = crearVistaFicha(contenedorDetalle, informacionDetalle, botonCerrarDetalle);
 
 const catalogoControlador = inicializarCatalogo(
   galeria,
-  vistaFicha,
+  vistaFichaCatalogo,
   () => autenticacion.obtenerSesion()
 );
 
@@ -31,7 +39,7 @@ const adminControlador = inicializarAdmin(
   galeria,
   catalogoControlador,
   () => autenticacion.obtenerSesion(),
-  vistaFicha
+  vistaFichaAdmin
 );
 
 inicializarFormulario(galeria, () => {

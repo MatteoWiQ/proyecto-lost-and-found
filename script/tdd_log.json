@@ -3692,7 +3692,7 @@
     "testId": 139
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7052751009a43c44c1a4ddcb358f89c6ce316a21",
     "commitName": "style: personalizar formulario de inicio de sesion",
     "commitTimestamp": 1795036303018,
     "testId": 131
@@ -3794,5 +3794,19 @@
     "commitName": "feat: mostrar instrucciones de reclamo en la ficha de objetos publicados",
     "commitTimestamp": 1795056409999,
     "testId": 138
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056511002,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar instrucciones de reclamo a la ficha del catalogo",
+    "commitTimestamp": 1795056516701,
+    "testId": 139
   }
 ]

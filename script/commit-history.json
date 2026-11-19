@@ -1178,12 +1178,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7052751009a43c44c1a4ddcb358f89c6ce316a21",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:24:08.000Z",
       "message": "feat: mostrar requisitos y aviso de verificacion de reclamo",
-      "url": "/commit/HEAD"
+      "url": "/commit/7052751009a43c44c1a4ddcb358f89c6ce316a21"
     },
     "stats": {
       "total": 33,
@@ -1265,6 +1265,25 @@
       "total": 140,
       "additions": 139,
       "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:48:35.000Z",
+      "message": "feat: conectar instrucciones de reclamo a la ficha del catalogo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 14,
+      "deletions": 6,
       "date": "2026-11-19"
     },
     "coverage": 81.05,

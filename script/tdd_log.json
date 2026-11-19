@@ -3762,7 +3762,7 @@
     "testId": 136
   },
   {
-    "commitId": "HEAD",
+    "commitId": "81476bf618ecdde8ca2390058808142deedd7b90",
     "commitName": "feat: aclarar que consultar instrucciones no es reserva ni confirmacion",
     "commitTimestamp": 1795056135343,
     "testId": 136
@@ -3864,5 +3864,19 @@
     "commitName": "feat: mostrar instrucciones de reclamo como seccion desplegable",
     "commitTimestamp": 1795057827267,
     "testId": 143
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1795057843045,
+    "success": true,
+    "testId": 144
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: dar estilo a la seccion de instrucciones de reclamo",
+    "commitTimestamp": 1795057848442,
+    "testId": 144
   }
 ]

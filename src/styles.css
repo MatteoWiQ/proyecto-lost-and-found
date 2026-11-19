@@ -623,6 +623,197 @@ body {
   background-color: #102544;
 }
 
+/* seccion 7: instrucciones de reclamo (ficha del catalogo) */
+.detalle-contenido {
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.detalle-contenido:has(.instrucciones-reclamo) {
+  max-width: 760px;
+}
+
+.instrucciones-reclamo {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #dce5f0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instrucciones-reclamo summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #eef4fb;
+  color: #174b87;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.instrucciones-reclamo summary::-webkit-details-marker {
+  display: none;
+}
+
+.instrucciones-reclamo summary::before {
+  content: "▸";
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.instrucciones-reclamo[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.instrucciones-reclamo summary::after {
+  content: "Ver";
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5d78;
+}
+
+.instrucciones-reclamo[open] summary::after {
+  content: "Ocultar";
+}
+
+.instrucciones-reclamo summary:hover {
+  background-color: #dce8f6;
+}
+
+.instrucciones-reclamo summary:focus {
+  outline: none;
+}
+
+.instrucciones-reclamo summary:focus-visible {
+  outline: 2px solid #174b87;
+  outline-offset: 2px;
+}
+
+.instrucciones-reclamo h4 {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #183153;
+}
+
+.reclamo-pasos {
+  list-style: none;
+  counter-reset: paso;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reclamo-pasos li {
+  counter-increment: paso;
+  position: relative;
+  padding-left: 36px;
+  min-height: 26px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.reclamo-pasos li::before {
+  content: counter(paso);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #174b87;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reclamo-pasos li span {
+  color: #4a5d78;
+  font-size: 13px;
+}
+
+.reclamo-requisitos {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.reclamo-oficina {
+  padding: 12px;
+  border: 1px solid #dce5f0;
+  border-radius: 8px;
+  background: #f9fbfe;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.reclamo-aviso {
+  padding: 12px;
+  border-left: 4px solid #174b87;
+  border-radius: 6px;
+  background-color: #eef4fb;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.detalle-contenido .reclamo-aviso p {
+  color: #183153;
+}
+
+@media (min-width: 700px) {
+  .detalle-contenido:has(.instrucciones-reclamo) > h3 {
+    font-size: 22px;
+  }
+
+  #detalle-info:has(.instrucciones-reclamo) {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    column-gap: 24px;
+    align-items: center;
+  }
+
+  #detalle-info:has(.instrucciones-reclamo) > img {
+    grid-column: 1;
+    grid-row: 1 / span 8;
+    width: 100%;
+    height: 220px !important;
+  }
+
+  #detalle-info:has(.instrucciones-reclamo) > p {
+    grid-column: 2;
+    font-size: 16px;
+  }
+
+  #detalle-info:has(.instrucciones-reclamo) > .instrucciones-reclamo {
+    grid-column: 1 / -1;
+  }
+
+  .reclamo-pasos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+  }
+}
+
 /* responsive */
 @media (max-width: 700px) {
   .barra-superior {

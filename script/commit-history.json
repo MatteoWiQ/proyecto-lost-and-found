@@ -1254,12 +1254,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "81476bf618ecdde8ca2390058808142deedd7b90",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:46:48.000Z",
       "message": "feat: mostrar instrucciones de reclamo en la ficha de objetos publicados",
-      "url": "/commit/HEAD"
+      "url": "/commit/81476bf618ecdde8ca2390058808142deedd7b90"
     },
     "stats": {
       "total": 140,
@@ -1341,6 +1341,25 @@
       "total": 16,
       "additions": 13,
       "deletions": 3,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 110,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T03:10:47.000Z",
+      "message": "style: dar estilo a la seccion de instrucciones de reclamo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 191,
+      "additions": 191,
+      "deletions": 0,
       "date": "2026-11-19"
     },
     "coverage": 81.05,

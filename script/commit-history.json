@@ -1102,12 +1102,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2dcdfe91323ce9263c1402c2b2267d01a6ef5474",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-18T21:11:42.000Z",
       "message": "style: personalizar formulario de inicio de sesion",
-      "url": "/commit/HEAD"
+      "url": "/commit/2dcdfe91323ce9263c1402c2b2267d01a6ef5474"
     },
     "stats": {
       "total": 132,
@@ -1193,6 +1193,25 @@
     },
     "coverage": 78.4,
     "test_count": 100,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:40:45.000Z",
+      "message": "feat: mostrar ubicacion y horario de atencion para reclamo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 37,
+      "deletions": 16,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.5,
+    "test_count": 102,
     "failed_tests": 0,
     "conclusion": "success"
   }

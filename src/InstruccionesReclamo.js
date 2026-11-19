@@ -1,3 +1,5 @@
+import configuracionBienestar from './configuracionBienestar.js';
+
 const PASOS_RECLAMO = [
   { titulo: 'Busca en el catálogo', descripcion: 'Usa los filtros para encontrar tu pertenencia entre los objetos en custodia.' },
   { titulo: 'Revisa el detalle', descripcion: 'Confirma que las características coinciden con tu objeto.' },
@@ -6,10 +8,6 @@ const PASOS_RECLAMO = [
 ];
 
 class InstruccionesReclamo {
-  constructor(configuracion) {
-    this.configuracion = configuracion;
-  }
-
   obtenerTitulo() {
     return 'Instrucciones de reclamo';
   }
@@ -19,11 +17,19 @@ class InstruccionesReclamo {
   }
 
   obtenerRequisitos() {
-    return this.configuracion.requisitos;
+    return configuracionBienestar.requisitos;
   }
 
   obtenerAvisoVerificacion() {
     return 'Bienestar Estudiantil verificará que el objeto pertenece a quien lo reclama.';
+  }
+
+  obtenerUbicacion() {
+    return configuracionBienestar.ubicacion;
+  }
+
+  obtenerHorario() {
+    return configuracionBienestar.horario;
   }
 }
 

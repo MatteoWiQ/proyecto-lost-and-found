@@ -3580,7 +3580,7 @@
     "testId": 136
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2dcdfe91323ce9263c1402c2b2267d01a6ef5474",
     "commitName": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
     "commitTimestamp": 1795028997034,
     "testId": 136
@@ -3738,5 +3738,19 @@
     "commitName": "feat: mostrar requisitos y aviso de verificacion de reclamo",
     "commitTimestamp": 1795055049901,
     "testId": 134
+  },
+  {
+    "numPassedTests": 102,
+    "failedTests": 0,
+    "numTotalTests": 102,
+    "timestamp": 1795056041490,
+    "success": true,
+    "testId": 135
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar ubicacion y horario de atencion para reclamo",
+    "commitTimestamp": 1795056047037,
+    "testId": 135
   }
 ]

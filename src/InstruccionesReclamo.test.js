@@ -1,13 +1,5 @@
 import InstruccionesReclamo from './InstruccionesReclamo.js';
 
-const configuracion = {
-  requisitos: [
-    'Presentar Carnet Universitario o Cédula de Identidad vigente.',
-    'Proporcionar información que permita comprobar que la pertenencia es suya.',
-    'Firmar el registro de entrega al momento de recibir el objeto.'
-  ]
-};
-
 describe('Instrucciones de reclamo', () => {
   it('Deberia identificar la seccion como instrucciones de reclamo', () => {
     const instrucciones = new InstruccionesReclamo();
@@ -25,15 +17,27 @@ describe('Instrucciones de reclamo', () => {
   });
 
   it('Deberia pedir presentar carnet universitario o CI entre los requisitos', () => {
-    const instrucciones = new InstruccionesReclamo(configuracion);
-    expect(instrucciones.obtenerRequisitos()).toEqual(configuracion.requisitos);
+    const instrucciones = new InstruccionesReclamo();
+    expect(instrucciones.obtenerRequisitos()).toHaveLength(3);
     expect(instrucciones.obtenerRequisitos()[0]).toContain('Carnet Universitario o Cédula de Identidad');
   });
 
   it('Deberia informar que Bienestar verificara que el objeto pertenece a quien lo reclama', () => {
-    const instrucciones = new InstruccionesReclamo(configuracion);
+    const instrucciones = new InstruccionesReclamo();
     expect(instrucciones.obtenerAvisoVerificacion()).toEqual(
       'Bienestar Estudiantil verificará que el objeto pertenece a quien lo reclama.'
     );
+  });
+
+  it('Deberia mostrar la ubicacion de la oficina de Bienestar', () => {
+    const instrucciones = new InstruccionesReclamo();
+    expect(instrucciones.obtenerUbicacion()).toEqual(
+      'Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal, Campus Tupuraya 1'
+    );
+  });
+
+  it('Deberia mostrar los dias y horarios de atencion', () => {
+    const instrucciones = new InstruccionesReclamo();
+    expect(instrucciones.obtenerHorario()).toEqual('lunes a viernes de 08:30 a 16:00');
   });
 });

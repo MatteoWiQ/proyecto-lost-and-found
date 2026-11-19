@@ -256,7 +256,7 @@ class ObjetoPerdido{
         return "Debes entregar el objeto físico en Bienestar Estudiantil para su custodia y devolución.";
     }
     obtenerUbicacionYPautasEntrega() {
-        return "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema.";
+        return "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal, Campus Tupuraya 1. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema.";
     }
 
     

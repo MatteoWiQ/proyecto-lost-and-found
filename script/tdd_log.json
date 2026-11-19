@@ -3706,7 +3706,7 @@
     "testId": 132
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ab3d8c10b432b82dc72e09f14aa827449997abf3",
     "commitName": "fix: ocultar acceso administrativo para usuarios",
     "commitTimestamp": 1795036915099,
     "testId": 132
@@ -3808,5 +3808,19 @@
     "commitName": "feat: conectar instrucciones de reclamo a la ficha del catalogo",
     "commitTimestamp": 1795056516701,
     "testId": 139
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056657208,
+    "success": true,
+    "testId": 140
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: incluir campus en la ubicacion del mensaje de registro",
+    "commitTimestamp": 1795056663105,
+    "testId": 140
   }
 ]

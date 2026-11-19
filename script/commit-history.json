@@ -1197,12 +1197,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ab3d8c10b432b82dc72e09f14aa827449997abf3",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:40:45.000Z",
       "message": "feat: mostrar ubicacion y horario de atencion para reclamo",
-      "url": "/commit/HEAD"
+      "url": "/commit/ab3d8c10b432b82dc72e09f14aa827449997abf3"
     },
     "stats": {
       "total": 53,
@@ -1284,6 +1284,25 @@
       "total": 20,
       "additions": 14,
       "deletions": 6,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:51:01.000Z",
+      "message": "feat: incluir campus en la ubicacion del mensaje de registro",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
       "date": "2026-11-19"
     },
     "coverage": 81.05,

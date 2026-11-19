@@ -3504,7 +3504,7 @@
     "testId": 134
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e31fee5473c257532c66e99cef8eaf4da2fced02",
     "commitName": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
     "commitTimestamp": 1795022653900,
     "testId": 134
@@ -3526,7 +3526,7 @@
     "testId": 135
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3328ade75cef7f79ef9e74afceaff5b5fde23f1d",
     "commitName": "feat: Solicitar confirmacion de rechazo identificando el objeto",
     "commitTimestamp": 1795027811712,
     "testId": 135
@@ -3580,7 +3580,7 @@
     "testId": 136
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2dcdfe91323ce9263c1402c2b2267d01a6ef5474",
     "commitName": "feat: Guardar rechazo confirmado y actualizar publicaciones pendientes",
     "commitTimestamp": 1795028997034,
     "testId": 136
@@ -3602,7 +3602,7 @@
     "testId": 137
   },
   {
-    "commitId": "HEAD",
+    "commitId": "13172ade29081900c0e9eacae04567ab8909a803",
     "commitName": "feat: Validar permisos administrativos para rechazar publicaciones",
     "commitTimestamp": 1795030172146,
     "testId": 137
@@ -3624,7 +3624,7 @@
     "testId": 138
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dab398c708e61d8a3cc594bf504d6ff3f23bb4c1",
     "commitName": "feat: Manejar errores durante el rechazo de publicaciones",
     "commitTimestamp": 1795031101752,
     "testId": 138
@@ -3686,13 +3686,13 @@
     "testId": 139
   },
   {
-    "commitId": "HEAD",
+    "commitId": "44a7f097d461d1f1aa1d352befb0d2e113400f2c",
     "commitName": "refactor: Arreglo de errores en los archivos",
     "commitTimestamp": 1795039422468,
     "testId": 139
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7052751009a43c44c1a4ddcb358f89c6ce316a21",
     "commitName": "style: personalizar formulario de inicio de sesion",
     "commitTimestamp": 1795036303018,
     "testId": 131
@@ -3706,9 +3706,191 @@
     "testId": 132
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ab3d8c10b432b82dc72e09f14aa827449997abf3",
     "commitName": "fix: ocultar acceso administrativo para usuarios",
     "commitTimestamp": 1795036915099,
     "testId": 132
+  },
+  {
+    "numPassedTests": 98,
+    "failedTests": 0,
+    "numTotalTests": 98,
+    "timestamp": 1795054871222,
+    "success": true,
+    "testId": 133
+  },
+  {
+    "commitId": "ed88153a5fe248cc1bfe38a7f26a77351163a306",
+    "commitName": "feat: mostrar titulo y pasos de las instrucciones de reclamo",
+    "commitTimestamp": 1795054877999,
+    "testId": 133
+  },
+  {
+    "numPassedTests": 100,
+    "failedTests": 0,
+    "numTotalTests": 100,
+    "timestamp": 1795055044328,
+    "success": true,
+    "testId": 134
+  },
+  {
+    "commitId": "1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf",
+    "commitName": "feat: mostrar requisitos y aviso de verificacion de reclamo",
+    "commitTimestamp": 1795055049901,
+    "testId": 134
+  },
+  {
+    "numPassedTests": 102,
+    "failedTests": 0,
+    "numTotalTests": 102,
+    "timestamp": 1795056041490,
+    "success": true,
+    "testId": 135
+  },
+  {
+    "commitId": "1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf",
+    "commitName": "feat: mostrar ubicacion y horario de atencion para reclamo",
+    "commitTimestamp": 1795056047037,
+    "testId": 135
+  },
+  {
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1795056129973,
+    "success": true,
+    "testId": 136
+  },
+  {
+    "commitId": "81476bf618ecdde8ca2390058808142deedd7b90",
+    "commitName": "feat: aclarar que consultar instrucciones no es reserva ni confirmacion",
+    "commitTimestamp": 1795056135343,
+    "testId": 136
+  },
+  {
+    "numPassedTests": 106,
+    "failedTests": 0,
+    "numTotalTests": 106,
+    "timestamp": 1795056226343,
+    "success": true,
+    "testId": 137
+  },
+  {
+    "commitId": "60342f78df20f29d51879195709724674fd1741b",
+    "commitName": "feat: aplicar instrucciones de reclamo solo a objetos publicados",
+    "commitTimestamp": 1795056232032,
+    "testId": 137
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056403776,
+    "success": true,
+    "testId": 138
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar instrucciones de reclamo en la ficha de objetos publicados",
+    "commitTimestamp": 1795056409999,
+    "testId": 138
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056511002,
+    "success": true,
+    "testId": 139
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar instrucciones de reclamo a la ficha del catalogo",
+    "commitTimestamp": 1795056516701,
+    "testId": 139
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056657208,
+    "success": true,
+    "testId": 140
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: incluir campus en la ubicacion del mensaje de registro",
+    "commitTimestamp": 1795056663105,
+    "testId": 140
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056790361,
+    "success": true,
+    "testId": 141
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: leer ubicacion y horario de Bienestar desde la configuracion",
+    "commitTimestamp": 1795056796699,
+    "testId": 141
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056877948,
+    "success": true,
+    "testId": 142
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: dar estilo a la seccion de instrucciones de reclamo",
+    "commitTimestamp": 1795056885166,
+    "testId": 142
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1795057821734,
+    "success": true,
+    "testId": 143
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar instrucciones de reclamo como seccion desplegable",
+    "commitTimestamp": 1795057827267,
+    "testId": 143
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1795057843045,
+    "success": true,
+    "testId": 144
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: dar estilo a la seccion de instrucciones de reclamo",
+    "commitTimestamp": 1795057848442,
+    "testId": 144
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1795058051137,
+    "success": true,
+    "testId": 145
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: quitar estilos de imagen duplicados de la ficha",
+    "commitTimestamp": 1795058056623,
+    "testId": 145
   }
 ]

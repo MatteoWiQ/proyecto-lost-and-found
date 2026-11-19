@@ -1,3 +1,5 @@
+import configuracionBienestar from "./configuracionBienestar.js";
+
 const categorias = ["Tecnologia", "Ropa", "Documentos", "Cuadernos", "Varios"];
 const lugares = ["Bloque A", "Bloque B", "Biblioteca", "Canchas", "Cafetería", "Facultad de Tecnología"];
 const extensionesImagenPermitidas = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg"];
@@ -256,7 +258,7 @@ class ObjetoPerdido{
         return "Debes entregar el objeto físico en Bienestar Estudiantil para su custodia y devolución.";
     }
     obtenerUbicacionYPautasEntrega() {
-        return "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema.";
+        return "Ubicación: " + configuracionBienestar.ubicacion + ". Pautas: Acercarse de " + configuracionBienestar.horario + " con el objeto físico y el comprobante del sistema.";
     }
 
     

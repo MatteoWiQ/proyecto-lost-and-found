@@ -122,7 +122,7 @@ describe("ObjetoPerdido", () => {
     const foto = { name: "objeto.jpg", type: "image/jpg" };
     const objeto = new ObjetoPerdido("Documento", "Tecnologia", "2026-10-14", "20:30", "Bloque A", "Comentario adicional", foto);
     expect(objeto.obtenerUbicacionYPautasEntrega()).toEqual(
-      "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema."
+      "Ubicación: Oficina de Bienestar Estudiantil, Planta Baja del Edificio Principal, Campus Tupuraya 1. Pautas: Acercarse de lunes a viernes de 08:30 a 16:00 con el objeto físico y el comprobante del sistema."
     );
   });
 

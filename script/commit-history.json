@@ -1064,12 +1064,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e31fee5473c257532c66e99cef8eaf4da2fced02",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T19:29:32.000Z",
       "message": "feat: Validar permisos administrativos para rechazar publicaciones",
-      "url": "/commit/HEAD"
+      "url": "/commit/e31fee5473c257532c66e99cef8eaf4da2fced02"
     },
     "stats": {
       "total": 48,
@@ -1083,12 +1083,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3328ade75cef7f79ef9e74afceaff5b5fde23f1d",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T19:45:01.000Z",
       "message": "feat: Manejar errores durante el rechazo de publicaciones",
-      "url": "/commit/HEAD"
+      "url": "/commit/3328ade75cef7f79ef9e74afceaff5b5fde23f1d"
     },
     "stats": {
       "total": 32,
@@ -1102,12 +1102,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2dcdfe91323ce9263c1402c2b2267d01a6ef5474",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-18T21:11:42.000Z",
       "message": "style: personalizar formulario de inicio de sesion",
-      "url": "/commit/HEAD"
+      "url": "/commit/2dcdfe91323ce9263c1402c2b2267d01a6ef5474"
     },
     "stats": {
       "total": 132,
@@ -1121,12 +1121,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "13172ade29081900c0e9eacae04567ab8909a803",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-18T21:21:54.000Z",
       "message": "fix: ocultar acceso administrativo para usuarios",
-      "url": "/commit/HEAD"
+      "url": "/commit/13172ade29081900c0e9eacae04567ab8909a803"
     },
     "stats": {
       "total": 2,
@@ -1140,12 +1140,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dab398c708e61d8a3cc594bf504d6ff3f23bb4c1",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T22:03:42.000Z",
       "message": "refactor: Arreglo de errores en los archivos",
-      "url": "/commit/HEAD"
+      "url": "/commit/dab398c708e61d8a3cc594bf504d6ff3f23bb4c1"
     },
     "stats": {
       "total": 159,
@@ -1155,6 +1155,234 @@
     },
     "coverage": 78.08,
     "test_count": 96,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "44a7f097d461d1f1aa1d352befb0d2e113400f2c",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:21:16.000Z",
+      "message": "feat: mostrar titulo y pasos de las instrucciones de reclamo",
+      "url": "/commit/44a7f097d461d1f1aa1d352befb0d2e113400f2c"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 36,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.24,
+    "test_count": 98,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7052751009a43c44c1a4ddcb358f89c6ce316a21",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:24:08.000Z",
+      "message": "feat: mostrar requisitos y aviso de verificacion de reclamo",
+      "url": "/commit/7052751009a43c44c1a4ddcb358f89c6ce316a21"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 33,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.4,
+    "test_count": 100,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ab3d8c10b432b82dc72e09f14aa827449997abf3",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:40:45.000Z",
+      "message": "feat: mostrar ubicacion y horario de atencion para reclamo",
+      "url": "/commit/ab3d8c10b432b82dc72e09f14aa827449997abf3"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 37,
+      "deletions": 16,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.5,
+    "test_count": 102,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ed88153a5fe248cc1bfe38a7f26a77351163a306",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:42:14.000Z",
+      "message": "feat: aclarar que consultar instrucciones no es reserva ni confirmacion",
+      "url": "/commit/ed88153a5fe248cc1bfe38a7f26a77351163a306"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.55,
+    "test_count": 103,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:43:50.000Z",
+      "message": "feat: aplicar instrucciones de reclamo solo a objetos publicados",
+      "url": "/commit/1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.61,
+    "test_count": 106,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "81476bf618ecdde8ca2390058808142deedd7b90",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:46:48.000Z",
+      "message": "feat: mostrar instrucciones de reclamo en la ficha de objetos publicados",
+      "url": "/commit/81476bf618ecdde8ca2390058808142deedd7b90"
+    },
+    "stats": {
+      "total": 140,
+      "additions": 139,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "60342f78df20f29d51879195709724674fd1741b",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:48:35.000Z",
+      "message": "feat: conectar instrucciones de reclamo a la ficha del catalogo",
+      "url": "/commit/60342f78df20f29d51879195709724674fd1741b"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 14,
+      "deletions": 6,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:51:01.000Z",
+      "message": "feat: incluir campus en la ubicacion del mensaje de registro",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:53:15.000Z",
+      "message": "refactor: leer ubicacion y horario de Bienestar desde la configuracion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T03:10:26.000Z",
+      "message": "feat: mostrar instrucciones de reclamo como seccion desplegable",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 13,
+      "deletions": 3,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 110,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T03:10:47.000Z",
+      "message": "style: dar estilo a la seccion de instrucciones de reclamo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 191,
+      "additions": 191,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 110,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T03:14:15.000Z",
+      "message": "refactor: quitar estilos de imagen duplicados de la ficha",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 1,
+      "deletions": 2,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.01,
+    "test_count": 110,
     "failed_tests": 0,
     "conclusion": "success"
   }

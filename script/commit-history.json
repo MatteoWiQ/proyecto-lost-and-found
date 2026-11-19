@@ -1216,12 +1216,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ed88153a5fe248cc1bfe38a7f26a77351163a306",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:42:14.000Z",
       "message": "feat: aclarar que consultar instrucciones no es reserva ni confirmacion",
-      "url": "/commit/HEAD"
+      "url": "/commit/ed88153a5fe248cc1bfe38a7f26a77351163a306"
     },
     "stats": {
       "total": 11,
@@ -1303,6 +1303,25 @@
       "total": 4,
       "additions": 2,
       "deletions": 2,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:53:15.000Z",
+      "message": "refactor: leer ubicacion y horario de Bienestar desde la configuracion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
       "date": "2026-11-19"
     },
     "coverage": 81.05,

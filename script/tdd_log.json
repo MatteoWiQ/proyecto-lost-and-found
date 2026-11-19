@@ -3720,7 +3720,7 @@
     "testId": 133
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ed88153a5fe248cc1bfe38a7f26a77351163a306",
     "commitName": "feat: mostrar titulo y pasos de las instrucciones de reclamo",
     "commitTimestamp": 1795054877999,
     "testId": 133
@@ -3822,5 +3822,19 @@
     "commitName": "feat: incluir campus en la ubicacion del mensaje de registro",
     "commitTimestamp": 1795056663105,
     "testId": 140
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056790361,
+    "success": true,
+    "testId": 141
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: leer ubicacion y horario de Bienestar desde la configuracion",
+    "commitTimestamp": 1795056796699,
+    "testId": 141
   }
 ]

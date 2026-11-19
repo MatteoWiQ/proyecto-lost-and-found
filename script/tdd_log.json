@@ -3734,7 +3734,7 @@
     "testId": 134
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf",
     "commitName": "feat: mostrar requisitos y aviso de verificacion de reclamo",
     "commitTimestamp": 1795055049901,
     "testId": 134
@@ -3748,7 +3748,7 @@
     "testId": 135
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf",
     "commitName": "feat: mostrar ubicacion y horario de atencion para reclamo",
     "commitTimestamp": 1795056047037,
     "testId": 135
@@ -3836,5 +3836,33 @@
     "commitName": "refactor: leer ubicacion y horario de Bienestar desde la configuracion",
     "commitTimestamp": 1795056796699,
     "testId": 141
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056877948,
+    "success": true,
+    "testId": 142
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: dar estilo a la seccion de instrucciones de reclamo",
+    "commitTimestamp": 1795056885166,
+    "testId": 142
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1795057821734,
+    "success": true,
+    "testId": 143
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar instrucciones de reclamo como seccion desplegable",
+    "commitTimestamp": 1795057827267,
+    "testId": 143
   }
 ]

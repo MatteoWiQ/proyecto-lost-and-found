@@ -36,7 +36,7 @@ function abrirFicha(objeto, instrucciones) {
 describe('FichaObjetoVista', () => {
   beforeEach(() => {
     global.document = {
-      createElement: jest.fn(() => crearElemento()),
+      createElement: jest.fn((etiqueta) => ({ ...crearElemento(), tagName: etiqueta.toUpperCase() })),
       createTextNode: jest.fn((texto) => texto)
     };
   });
@@ -58,6 +58,16 @@ describe('FichaObjetoVista', () => {
     expect(textos).toContain(instrucciones.obtenerUbicacion());
     expect(textos).toContain(instrucciones.obtenerHorario());
     expect(textos).toContain(instrucciones.obtenerAclaracion());
+  });
+
+  it('Deberia mostrar las instrucciones de reclamo plegadas con su titulo para desplegarlas', () => {
+    const objeto = crearObjeto();
+    objeto.aprobar();
+    const seccion = abrirFicha(objeto, new InstruccionesReclamo());
+    const titulo = seccion.children[0];
+    expect(seccion.tagName).toEqual('DETAILS');
+    expect(titulo.tagName).toEqual('SUMMARY');
+    expect(titulo.textContent).toEqual('Instrucciones de reclamo');
   });
 
   it('No deberia mostrar las instrucciones de reclamo en la ficha de un objeto pendiente', () => {

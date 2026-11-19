@@ -1235,12 +1235,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:43:50.000Z",
       "message": "feat: aplicar instrucciones de reclamo solo a objetos publicados",
-      "url": "/commit/HEAD"
+      "url": "/commit/1e50192f33e6c3bd6345f5de6b6ac8aeab3c51bf"
     },
     "stats": {
       "total": 32,
@@ -1326,6 +1326,25 @@
     },
     "coverage": 81.05,
     "test_count": 109,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T03:10:26.000Z",
+      "message": "feat: mostrar instrucciones de reclamo como seccion desplegable",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 13,
+      "deletions": 3,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 110,
     "failed_tests": 0,
     "conclusion": "success"
   }

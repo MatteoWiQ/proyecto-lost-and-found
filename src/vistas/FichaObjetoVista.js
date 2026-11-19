@@ -52,8 +52,8 @@ function dibujarAvisos(seccion, instrucciones) {
 }
 
 function dibujarInstruccionesReclamo(informacion, instrucciones) {
-  const seccion = crearNodo('section', '', 'instrucciones-reclamo');
-  seccion.appendChild(crearNodo('h3', instrucciones.obtenerTitulo()));
+  const seccion = crearNodo('details', '', 'instrucciones-reclamo');
+  seccion.appendChild(crearNodo('summary', instrucciones.obtenerTitulo()));
   dibujarPasos(seccion, instrucciones.obtenerPasos());
   dibujarRequisitos(seccion, instrucciones.obtenerRequisitos());
   dibujarOficina(seccion, instrucciones);

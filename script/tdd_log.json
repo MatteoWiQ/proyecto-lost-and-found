@@ -3602,7 +3602,7 @@
     "testId": 137
   },
   {
-    "commitId": "HEAD",
+    "commitId": "13172ade29081900c0e9eacae04567ab8909a803",
     "commitName": "feat: Validar permisos administrativos para rechazar publicaciones",
     "commitTimestamp": 1795030172146,
     "testId": 137
@@ -3752,5 +3752,19 @@
     "commitName": "feat: mostrar ubicacion y horario de atencion para reclamo",
     "commitTimestamp": 1795056047037,
     "testId": 135
+  },
+  {
+    "numPassedTests": 103,
+    "failedTests": 0,
+    "numTotalTests": 103,
+    "timestamp": 1795056129973,
+    "success": true,
+    "testId": 136
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aclarar que consultar instrucciones no es reserva ni confirmacion",
+    "commitTimestamp": 1795056135343,
+    "testId": 136
   }
 ]

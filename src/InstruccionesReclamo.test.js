@@ -40,4 +40,11 @@ describe('Instrucciones de reclamo', () => {
     const instrucciones = new InstruccionesReclamo();
     expect(instrucciones.obtenerHorario()).toEqual('lunes a viernes de 08:30 a 16:00');
   });
+
+  it('Deberia aclarar que consultar no es una reserva ni confirma la propiedad', () => {
+    const instrucciones = new InstruccionesReclamo();
+    expect(instrucciones.obtenerAclaracion()).toEqual(
+      'Consultar esta ficha o estas instrucciones no constituye una reserva del objeto ni una confirmación de propiedad.'
+    );
+  });
 });

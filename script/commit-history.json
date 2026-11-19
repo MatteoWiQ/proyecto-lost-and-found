@@ -1121,12 +1121,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "13172ade29081900c0e9eacae04567ab8909a803",
     "author": "Mateo Wilson",
     "commit": {
       "date": "2026-11-18T21:21:54.000Z",
       "message": "fix: ocultar acceso administrativo para usuarios",
-      "url": "/commit/HEAD"
+      "url": "/commit/13172ade29081900c0e9eacae04567ab8909a803"
     },
     "stats": {
       "total": 2,
@@ -1212,6 +1212,25 @@
     },
     "coverage": 78.5,
     "test_count": 102,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:42:14.000Z",
+      "message": "feat: aclarar que consultar instrucciones no es reserva ni confirmacion",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.55,
+    "test_count": 103,
     "failed_tests": 0,
     "conclusion": "success"
   }

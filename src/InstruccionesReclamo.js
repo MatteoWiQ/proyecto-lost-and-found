@@ -31,6 +31,10 @@ class InstruccionesReclamo {
   obtenerHorario() {
     return configuracionBienestar.horario;
   }
+
+  obtenerAclaracion() {
+    return 'Consultar esta ficha o estas instrucciones no constituye una reserva del objeto ni una confirmación de propiedad.';
+  }
 }
 
 export default InstruccionesReclamo;

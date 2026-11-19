@@ -1273,12 +1273,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "60342f78df20f29d51879195709724674fd1741b",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:48:35.000Z",
       "message": "feat: conectar instrucciones de reclamo a la ficha del catalogo",
-      "url": "/commit/HEAD"
+      "url": "/commit/60342f78df20f29d51879195709724674fd1741b"
     },
     "stats": {
       "total": 20,
@@ -1363,6 +1363,25 @@
       "date": "2026-11-19"
     },
     "coverage": 81.05,
+    "test_count": 110,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T03:14:15.000Z",
+      "message": "refactor: quitar estilos de imagen duplicados de la ficha",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 1,
+      "deletions": 2,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.01,
     "test_count": 110,
     "failed_tests": 0,
     "conclusion": "success"

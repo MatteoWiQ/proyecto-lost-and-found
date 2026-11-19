@@ -71,7 +71,6 @@ export function crearVistaFicha(contenedor, informacion, botonCerrar, instruccio
       const imagen = document.createElement("img");
       imagen.src = typeof ficha.foto === "string" ? ficha.foto : URL.createObjectURL(ficha.foto);
       imagen.alt = ficha.nombre;
-      Object.assign(imagen.style, { maxWidth: "100%", height: "150px", objectFit: "cover", borderRadius: "8px" });
       informacion.replaceChildren(imagen);
 
       usuario.consultarFicha(objeto).forEach((campo) => {

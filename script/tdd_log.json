@@ -3776,7 +3776,7 @@
     "testId": 137
   },
   {
-    "commitId": "HEAD",
+    "commitId": "60342f78df20f29d51879195709724674fd1741b",
     "commitName": "feat: aplicar instrucciones de reclamo solo a objetos publicados",
     "commitTimestamp": 1795056232032,
     "testId": 137
@@ -3878,5 +3878,19 @@
     "commitName": "style: dar estilo a la seccion de instrucciones de reclamo",
     "commitTimestamp": 1795057848442,
     "testId": 144
+  },
+  {
+    "numPassedTests": 110,
+    "failedTests": 0,
+    "numTotalTests": 110,
+    "timestamp": 1795058051137,
+    "success": true,
+    "testId": 145
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: quitar estilos de imagen duplicados de la ficha",
+    "commitTimestamp": 1795058056623,
+    "testId": 145
   }
 ]

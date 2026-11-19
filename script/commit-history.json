@@ -1159,12 +1159,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "44a7f097d461d1f1aa1d352befb0d2e113400f2c",
     "author": "Soria",
     "commit": {
       "date": "2026-11-19T02:21:16.000Z",
       "message": "feat: mostrar titulo y pasos de las instrucciones de reclamo",
-      "url": "/commit/HEAD"
+      "url": "/commit/44a7f097d461d1f1aa1d352befb0d2e113400f2c"
     },
     "stats": {
       "total": 36,
@@ -1250,6 +1250,25 @@
     },
     "coverage": 78.61,
     "test_count": 106,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:46:48.000Z",
+      "message": "feat: mostrar instrucciones de reclamo en la ficha de objetos publicados",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 140,
+      "additions": 139,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 81.05,
+    "test_count": 109,
     "failed_tests": 0,
     "conclusion": "success"
   }

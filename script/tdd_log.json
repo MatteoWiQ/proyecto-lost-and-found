@@ -3686,7 +3686,7 @@
     "testId": 139
   },
   {
-    "commitId": "HEAD",
+    "commitId": "44a7f097d461d1f1aa1d352befb0d2e113400f2c",
     "commitName": "refactor: Arreglo de errores en los archivos",
     "commitTimestamp": 1795039422468,
     "testId": 139
@@ -3780,5 +3780,19 @@
     "commitName": "feat: aplicar instrucciones de reclamo solo a objetos publicados",
     "commitTimestamp": 1795056232032,
     "testId": 137
+  },
+  {
+    "numPassedTests": 109,
+    "failedTests": 0,
+    "numTotalTests": 109,
+    "timestamp": 1795056403776,
+    "success": true,
+    "testId": 138
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar instrucciones de reclamo en la ficha de objetos publicados",
+    "commitTimestamp": 1795056409999,
+    "testId": 138
   }
 ]

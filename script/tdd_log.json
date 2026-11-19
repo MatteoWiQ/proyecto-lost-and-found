@@ -3504,7 +3504,7 @@
     "testId": 134
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e31fee5473c257532c66e99cef8eaf4da2fced02",
     "commitName": "feat: Mostrar accion de rechazo y permitir ingresar motivo",
     "commitTimestamp": 1795022653900,
     "testId": 134
@@ -3710,5 +3710,19 @@
     "commitName": "fix: ocultar acceso administrativo para usuarios",
     "commitTimestamp": 1795036915099,
     "testId": 132
+  },
+  {
+    "numPassedTests": 98,
+    "failedTests": 0,
+    "numTotalTests": 98,
+    "timestamp": 1795054871222,
+    "success": true,
+    "testId": 133
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar titulo y pasos de las instrucciones de reclamo",
+    "commitTimestamp": 1795054877999,
+    "testId": 133
   }
 ]

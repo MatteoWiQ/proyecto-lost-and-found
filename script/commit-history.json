@@ -1064,12 +1064,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e31fee5473c257532c66e99cef8eaf4da2fced02",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T19:29:32.000Z",
       "message": "feat: Validar permisos administrativos para rechazar publicaciones",
-      "url": "/commit/HEAD"
+      "url": "/commit/e31fee5473c257532c66e99cef8eaf4da2fced02"
     },
     "stats": {
       "total": 48,
@@ -1155,6 +1155,25 @@
     },
     "coverage": 78.08,
     "test_count": 96,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:21:16.000Z",
+      "message": "feat: mostrar titulo y pasos de las instrucciones de reclamo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 36,
+      "additions": 36,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.24,
+    "test_count": 98,
     "failed_tests": 0,
     "conclusion": "success"
   }

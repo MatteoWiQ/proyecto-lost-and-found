@@ -6,12 +6,24 @@ const PASOS_RECLAMO = [
 ];
 
 class InstruccionesReclamo {
+  constructor(configuracion) {
+    this.configuracion = configuracion;
+  }
+
   obtenerTitulo() {
     return 'Instrucciones de reclamo';
   }
 
   obtenerPasos() {
     return PASOS_RECLAMO;
+  }
+
+  obtenerRequisitos() {
+    return this.configuracion.requisitos;
+  }
+
+  obtenerAvisoVerificacion() {
+    return 'Bienestar Estudiantil verificará que el objeto pertenece a quien lo reclama.';
   }
 }
 

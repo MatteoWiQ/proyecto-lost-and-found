@@ -1083,12 +1083,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3328ade75cef7f79ef9e74afceaff5b5fde23f1d",
     "author": "Santiago Lazcano Quiroga",
     "commit": {
       "date": "2026-11-18T19:45:01.000Z",
       "message": "feat: Manejar errores durante el rechazo de publicaciones",
-      "url": "/commit/HEAD"
+      "url": "/commit/3328ade75cef7f79ef9e74afceaff5b5fde23f1d"
     },
     "stats": {
       "total": 32,
@@ -1174,6 +1174,25 @@
     },
     "coverage": 78.24,
     "test_count": 98,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Soria",
+    "commit": {
+      "date": "2026-11-19T02:24:08.000Z",
+      "message": "feat: mostrar requisitos y aviso de verificacion de reclamo",
+      "url": "/commit/HEAD"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 33,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 78.4,
+    "test_count": 100,
     "failed_tests": 0,
     "conclusion": "success"
   }

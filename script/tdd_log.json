@@ -3526,7 +3526,7 @@
     "testId": 135
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3328ade75cef7f79ef9e74afceaff5b5fde23f1d",
     "commitName": "feat: Solicitar confirmacion de rechazo identificando el objeto",
     "commitTimestamp": 1795027811712,
     "testId": 135
@@ -3724,5 +3724,19 @@
     "commitName": "feat: mostrar titulo y pasos de las instrucciones de reclamo",
     "commitTimestamp": 1795054877999,
     "testId": 133
+  },
+  {
+    "numPassedTests": 100,
+    "failedTests": 0,
+    "numTotalTests": 100,
+    "timestamp": 1795055044328,
+    "success": true,
+    "testId": 134
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar requisitos y aviso de verificacion de reclamo",
+    "commitTimestamp": 1795055049901,
+    "testId": 134
   }
 ]
